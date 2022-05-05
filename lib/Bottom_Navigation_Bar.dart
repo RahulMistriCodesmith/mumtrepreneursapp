@@ -2,6 +2,9 @@
 
 import 'package:flutter/material.dart';
 import 'package:mumtrepreneursapp/Home_Page.dart';
+import 'package:mumtrepreneursapp/feeds.dart';
+import 'package:mumtrepreneursapp/message.dart';
+import 'package:mumtrepreneursapp/user_profile.dart';
 class Bottom_Navigation_Bar extends StatefulWidget {
   const Bottom_Navigation_Bar({Key key}) : super(key: key);
 
@@ -14,6 +17,9 @@ class _Bottom_Navigation_BarState extends State<Bottom_Navigation_Bar> {
   int _pState = 0;
   var pages = [
     Home_Page(),
+    Message(),
+    Feeds(),
+    User_Profile(),
 
   ];
 

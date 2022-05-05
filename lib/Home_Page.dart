@@ -1,7 +1,10 @@
 
 
 import 'package:flutter/material.dart';
+import 'package:mumtrepreneursapp/Events.dart';
 import 'package:mumtrepreneursapp/Resources.dart';
+import 'package:mumtrepreneursapp/communitycourse.dart';
+import 'package:mumtrepreneursapp/essential_info.dart';
 class Home_Page extends StatefulWidget {
   const Home_Page({Key key}) : super(key: key);
 
@@ -37,6 +40,7 @@ class _Home_PageState extends State<Home_Page> {
               Padding(
                 padding: const EdgeInsets.only(right: 30),
                 child: Container(
+                  padding: EdgeInsets.only(left: 15,bottom: 3),
                   width: 325,
                   height: 45,
                   decoration: BoxDecoration(
@@ -156,7 +160,7 @@ class _Home_PageState extends State<Home_Page> {
                           ),
                           onTap: (){
                             setState(() {
-
+                              Navigator.push(context, MaterialPageRoute(builder: (context) => const CommunityCourse()));
                             });
                           },
                         ),
@@ -222,7 +226,11 @@ class _Home_PageState extends State<Home_Page> {
                                 ],
                               ),
                             ),
-                            onTap: (){},
+                            onTap: (){
+                              setState(() {
+                                Navigator.push(context, MaterialPageRoute(builder: (context) => const Events()));
+                              });
+                            },
                           ),
 
                           GestureDetector(
@@ -280,7 +288,9 @@ class _Home_PageState extends State<Home_Page> {
                                 ),
                               ),
                             ),
-                            onTap: (){},
+                            onTap: (){
+                              Navigator.push(context, MaterialPageRoute(builder: (context) => const Essential_Info()));
+                            },
                           ),
 
 
