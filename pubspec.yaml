@@ -103,6 +103,28 @@ flutter:
     - assets/Image/membershiptype_icon.png
     - assets/Image/like_icon.png
     - assets/Image/share_icon.png
+    - assets/Image/notification_icon.png
+    - assets/Image/search_icon.png
+    - assets/Image/lois_icon.png
+    - assets/Image/pop_icon.png
+    - assets/Image/unfollow_icon.png
+    - assets/Image/link_icon.png
+    - assets/Image/mute_icon.png
+    - assets/Image/post_image.png
+    - assets/Image/like_icon2.png
+    - assets/Image/comment_icon.png
+    - assets/Image/learning_g_icon.png
+    - assets/Image/post_image_2.png
+    - assets/Image/floating_icon.png
+    - assets/Image/nawel_image.png
+    - assets/Image/garcia_icon.png
+    - assets/Image/block_icon.png
+    - assets/Image/location_live.png
+    - assets/Image/location.png
+    - assets/Image/invite_images.png
+    - assets/Image/logout_icon.png
+    - assets/Image/edit_icon.png
+    - assets/Image/delete_icon.png
 
 
   # To add assets to your application, add an assets section, like this:

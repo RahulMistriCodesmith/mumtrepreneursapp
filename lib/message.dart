@@ -16,7 +16,7 @@ class _MessageState extends State<Message> {
         backgroundColor: Colors.transparent,
         bottomOpacity: 0.0,
         elevation: 0.0,
-        foregroundColor: Color(0xff12496D),
+        toolbarOpacity: 0,
 
 
         title: Padding(
@@ -26,6 +26,9 @@ class _MessageState extends State<Message> {
         titleTextStyle: TextStyle(color: Colors.black,fontSize: 16,fontFamily: 'Sk-Modernist',fontWeight: FontWeight.bold),
 
       ),
+
+      body: TabBarView(),
+
     );
   }
 }

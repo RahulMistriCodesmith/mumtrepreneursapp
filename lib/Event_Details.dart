@@ -23,7 +23,7 @@ class _Event_DetailsState extends State<Event_Details> {
                   padding: const EdgeInsets.only(top: 310,left: 25),
                   child: Row(
                     children: [
-                      Image.asset('assets/Image/location_icon.png',width: 11.67,height: 14,),
+                      Image.asset('assets/Image/location.png',width: 11.67,height: 14,),
                       Padding(
                         padding: const EdgeInsets.only(left: 11),
                         child: Text('Livestream the Mumtrepreneurs',style: TextStyle(color: Colors.white,fontSize: 14,fontFamily: 'Sk-Modernist'),),
@@ -89,13 +89,14 @@ class _Event_DetailsState extends State<Event_Details> {
                             child: Row(
                               children: [
                                 Image.asset('assets/Image/invite_images.png',width: 63,height: 22.5,),
+
                                 Padding(
                                   padding: const EdgeInsets.only(left: 10),
                                   child: Text('75 more',style: TextStyle(color: Colors.grey,fontSize: 14,fontFamily: 'Sk-Modernist'),),
                                 ),
 
                                 Padding(
-                                  padding: const EdgeInsets.only(left: 85,right: 5),
+                                  padding: const EdgeInsets.only(left: 110,right: 5),
                                   child: Container(
                                     width: 123,
                                     height: 45,
