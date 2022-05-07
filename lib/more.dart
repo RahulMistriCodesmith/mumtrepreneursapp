@@ -1,22 +1,20 @@
-
-
 import 'package:flutter/material.dart';
 import 'package:mumtrepreneursapp/Events.dart';
 import 'package:mumtrepreneursapp/Resources.dart';
 import 'package:mumtrepreneursapp/communitycourse.dart';
 import 'package:mumtrepreneursapp/essential_info.dart';
-class Home_Page extends StatefulWidget {
-  const Home_Page({Key key}) : super(key: key);
+import 'package:mumtrepreneursapp/faq.dart';
+class More extends StatefulWidget {
+  const More({Key key}) : super(key: key);
 
   @override
-  State<Home_Page> createState() => _Home_PageState();
+  State<More> createState() => _MoreState();
 }
 
-class _Home_PageState extends State<Home_Page> {
+class _MoreState extends State<More> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xffE5E5E5),
 
       body: SingleChildScrollView(
         child: Padding(
@@ -24,71 +22,40 @@ class _Home_PageState extends State<Home_Page> {
           child: Column(
             children: [
               Padding(
-                padding: const EdgeInsets.only(left: 15,right: 5,bottom: 30),
-                child: Row(
-                  children: [
-                    Text('Hi, Riyad',style: TextStyle(fontFamily: 'Gilroy-Bold',fontSize: 20,fontWeight: FontWeight.bold),),
-                    Image.asset('assets/Image/image 2.png',width: 19,height: 19,),
-                    Padding(
-                      padding: const EdgeInsets.only(left: 203),
-                      child: Icon(Icons.notifications_none,color: Color(0xff130F26),),
-                    ),
-                  ],
-                ),
+                padding: const EdgeInsets.only(left: 25,right: 322,bottom: 30),
+                child: Text('More',style: TextStyle(fontFamily: 'Gilroy-Bold',fontSize: 16,fontWeight: FontWeight.bold),),
               ),
 
-              Padding(
-                padding: const EdgeInsets.only(right: 30),
-                child: Container(
-                  padding: EdgeInsets.only(left: 15,bottom: 3),
-                  width: 325,
-                  height: 45,
-                  decoration: BoxDecoration(
-                    color: Colors.white,
-                    borderRadius: BorderRadius.circular(5),
-                  ),
-                  child: TextFormField(
-                    decoration: InputDecoration(
-                      border: InputBorder.none,
-                      hintText: 'Search Here',
-                      hintStyle: TextStyle(color: Colors.grey,fontSize: 15,fontFamily: 'Sk-Modernist'),
-                      suffixIcon: Icon(Icons.search,color: Colors.grey,),
-                    ),
-                  ),
-                ),
-              ),
 
               Padding(
                 padding: const EdgeInsets.only(right: 30,top: 30),
                 child: Container(
                   width: 325,
-                  height: 116,
+                  height: 80.74,
                   decoration: BoxDecoration(
-                    color: Color(0xffE79573),
+                    color: Color(0xff12496D),
                     borderRadius: BorderRadius.circular(5),
                   ),
                   child: Padding(
-                    padding: const EdgeInsets.only(top: 22,left: 20),
-                    child: Column(
+                    padding: const EdgeInsets.only(top: 19.37,left: 25),
+                    child: Row(
                       children: [
-                        Padding(
-                          padding: const EdgeInsets.only(right: 50),
-                          child: Text('Start with our guide to learn more',
-                            style: TextStyle(color: Color(0xff272727),fontSize: 16,fontFamily: 'Sk-Modernist'),),
-                        ),
-                        Row(
+                        Column(
                           children: [
-                            Padding(
-                              padding: const EdgeInsets.only(right: 155),
-                              child: TextButton(
-                                onPressed: (){},
-                                child: Text('Learn more',
-                                  style: TextStyle(color: Color(0xff12496D),fontSize: 15,fontFamily: 'Sk-Modernist',),),
-                              ),
-                            ),
-                            Image.asset('assets/Image/Document.png',width: 33.56,height: 37,),
+                            Text('Upgrade Membership',
+                              style: TextStyle(fontFamily: 'Sk-Modernist',fontWeight: FontWeight.bold,fontSize: 15,color: Colors.white),),
+
+                            Text('Get all priemium features',
+                              style: TextStyle(fontFamily: 'Sk-Modernist',fontSize: 14,color: Colors.white),),
+
                           ],
                         ),
+
+                        Padding(
+                          padding: const EdgeInsets.only(left: 97,bottom: 19.43),
+                          child: Image.asset('assets/Image/membership_icon.png',width: 31,height: 42.94,),
+                        ),
+
                       ],
                     ),
                   ),
@@ -127,7 +94,7 @@ class _Home_PageState extends State<Home_Page> {
                           ),
                           onTap: (){
                             setState(() {
-                              Navigator.push(context, MaterialPageRoute(builder: (context) => const Resources()));
+                              Navigator.push(context, MaterialPageRoute(builder: (context) => Resources()));
                             });
                           },
                         ),
@@ -160,7 +127,7 @@ class _Home_PageState extends State<Home_Page> {
                           ),
                           onTap: (){
                             setState(() {
-                              Navigator.push(context, MaterialPageRoute(builder: (context) => const CommunityCourse()));
+                              Navigator.push(context, MaterialPageRoute(builder: (context) => CommunityCourse()));
                             });
                           },
                         ),
@@ -185,6 +152,35 @@ class _Home_PageState extends State<Home_Page> {
                                   Padding(
                                     padding: const EdgeInsets.only(top: 15,left: 23,right: 10),
                                     child: Text('Feedback & Support',
+                                      style: TextStyle(fontSize: 15,fontWeight: FontWeight.bold,fontFamily: 'Sk-Modernist',color: Colors.white),),
+                                  ),
+                                ],
+                              ),
+                            ),
+                          ),
+                          onTap: (){},
+                        ),
+
+                        GestureDetector(
+
+                          child: Padding(
+                            padding: const EdgeInsets.only(top: 19),
+                            child: Container(
+                              width: 153,
+                              height: 116,
+                              decoration: BoxDecoration(
+                                color: Color(0xff9DC8C7),
+                                borderRadius: BorderRadius.circular(5),
+                              ),
+                              child: Column(
+                                children: [
+                                  Padding(
+                                    padding: const EdgeInsets.only(top: 21,right: 85),
+                                    child: Image.asset('assets/Image/2user_icon.png',width: 30.16,height: 31,color: Colors.white,),
+                                  ),
+                                  Padding(
+                                    padding: const EdgeInsets.only(top: 15,left: 23,right: 10),
+                                    child: Text('Member Directiory',
                                       style: TextStyle(fontSize: 15,fontWeight: FontWeight.bold,fontFamily: 'Sk-Modernist',color: Colors.white),),
                                   ),
                                 ],
@@ -228,7 +224,7 @@ class _Home_PageState extends State<Home_Page> {
                             ),
                             onTap: (){
                               setState(() {
-                                Navigator.push(context, MaterialPageRoute(builder: (context) => const Events()));
+                                Navigator.push(context, MaterialPageRoute(builder: (context) => Events()));
                               });
                             },
                           ),
@@ -289,7 +285,38 @@ class _Home_PageState extends State<Home_Page> {
                               ),
                             ),
                             onTap: (){
-                              Navigator.push(context, MaterialPageRoute(builder: (context) => const Essential_Info()));
+                              Navigator.push(context, MaterialPageRoute(builder: (context) => Essential_Info()));
+                            },
+                          ),
+
+                          GestureDetector(
+
+                            child: Padding(
+                              padding: const EdgeInsets.only(top: 19),
+                              child: Container(
+                                width: 153,
+                                height: 116,
+                                decoration: BoxDecoration(
+                                  color: Color(0xffE7957E),
+                                  borderRadius: BorderRadius.circular(5),
+                                ),
+                                child: Column(
+                                  children: [
+                                    Padding(
+                                      padding: const EdgeInsets.only(top: 21,right: 85),
+                                      child: Image.asset('assets/Image/faq_icon.png',width: 31,height: 31,),
+                                    ),
+                                    Padding(
+                                      padding: const EdgeInsets.only(top: 15,left: 23,right: 95),
+                                      child: Text('FAQ',
+                                        style: TextStyle(fontSize: 15,fontWeight: FontWeight.bold,fontFamily: 'Sk-Modernist',color: Colors.white),),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ),
+                            onTap: (){
+                              Navigator.push(context, MaterialPageRoute(builder: (context) => Faq()));
                             },
                           ),
 
@@ -310,6 +337,6 @@ class _Home_PageState extends State<Home_Page> {
         ),
       ),
 
-    );
+      );
   }
 }

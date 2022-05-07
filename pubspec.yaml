@@ -125,6 +125,14 @@ flutter:
     - assets/Image/logout_icon.png
     - assets/Image/edit_icon.png
     - assets/Image/delete_icon.png
+    - assets/Image/live_video_icon.png
+    - assets/Image/photo_icon.png
+    - assets/Image/plus_icon.png
+    - assets/Image/tag_icon.png
+    - assets/Image/video_icon.png
+    - assets/Image/membership_icon.png
+    - assets/Image/faq_icon.png
+
 
 
   # To add assets to your application, add an assets section, like this:

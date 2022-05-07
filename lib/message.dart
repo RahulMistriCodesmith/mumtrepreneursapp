@@ -16,7 +16,8 @@ class _MessageState extends State<Message> {
         backgroundColor: Colors.transparent,
         bottomOpacity: 0.0,
         elevation: 0.0,
-        toolbarOpacity: 0,
+        foregroundColor: Colors.black,
+
 
 
         title: Padding(
@@ -27,7 +28,6 @@ class _MessageState extends State<Message> {
 
       ),
 
-      body: TabBarView(),
 
     );
   }

@@ -1,6 +1,8 @@
 // ignore_for_file: deprecated_member_use, prefer_const_constructors, prefer_const_literals_to_create_immutables, sized_box_for_whitespace, void_checks
 
 import 'package:flutter/material.dart';
+import 'package:mumtrepreneursapp/edit_post.dart';
+import 'package:mumtrepreneursapp/edit_profile.dart';
 class Profile extends StatefulWidget {
   const Profile({Key key}) : super(key: key);
 
@@ -13,7 +15,7 @@ class _ProfileState extends State<Profile> {
   Widget build(BuildContext context) {
     return DefaultTabController(
       length: 2,
-      initialIndex: 1,
+      initialIndex: 0,
       child: Scaffold(
           backgroundColor: Color(0xffE5E5E5),
           appBar: AppBar(
@@ -155,7 +157,9 @@ class _ProfileState extends State<Profile> {
                           ],
                           ),
 
-                          onPressed: (){},
+                          onPressed: (){
+                            Navigator.push(context, MaterialPageRoute(builder: (context) => const EditProfile()));
+                          },
                         ),
                       ),
                     ),
@@ -513,6 +517,11 @@ class _ProfileState extends State<Profile> {
                                                 ],
                                               ),
 
+                                              onTap: (){
+                                                setState(() {
+                                                  return Navigator.push(context, MaterialPageRoute(builder: (context) => const EditPost()));
+                                                });
+                                              },
 
                                             ),
 

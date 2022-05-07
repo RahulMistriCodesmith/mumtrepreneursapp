@@ -14,7 +14,7 @@ class _ResourcesState extends State<Resources> {
   Widget build(BuildContext context) {
     return DefaultTabController(
       length: 2,
-      initialIndex: 1,
+      initialIndex: 0,
       child: Scaffold(
         backgroundColor: Color(0xffE5E5E5),
         appBar: AppBar(

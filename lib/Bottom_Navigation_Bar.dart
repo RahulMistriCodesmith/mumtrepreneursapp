@@ -4,6 +4,7 @@ import 'package:flutter/material.dart';
 import 'package:mumtrepreneursapp/Home_Page.dart';
 import 'package:mumtrepreneursapp/feeds.dart';
 import 'package:mumtrepreneursapp/message.dart';
+import 'package:mumtrepreneursapp/more.dart';
 import 'package:mumtrepreneursapp/profile.dart';
 class Bottom_Navigation_Bar extends StatefulWidget {
   const Bottom_Navigation_Bar({Key key}) : super(key: key);
@@ -20,6 +21,7 @@ class _Bottom_Navigation_BarState extends State<Bottom_Navigation_Bar> {
     Message(),
     Feeds(),
     Profile(),
+    More(),
 
   ];
 
@@ -32,7 +34,7 @@ class _Bottom_Navigation_BarState extends State<Bottom_Navigation_Bar> {
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
-      length: 4,
+      length: 5,
         child: Scaffold(
 
           body:  pages[_currentindex],
