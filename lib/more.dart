@@ -1,9 +1,16 @@
+
+
 import 'package:flutter/material.dart';
 import 'package:mumtrepreneursapp/Events.dart';
 import 'package:mumtrepreneursapp/Resources.dart';
-import 'package:mumtrepreneursapp/communitycourse.dart';
-import 'package:mumtrepreneursapp/essential_info.dart';
-import 'package:mumtrepreneursapp/faq.dart';
+import 'package:mumtrepreneursapp/accountsettings.dart';
+import 'package:mumtrepreneursapp/blog.dart';
+import 'package:mumtrepreneursapp/events2.dart';
+import 'package:mumtrepreneursapp/mycoursecentre.dart';
+import 'package:mumtrepreneursapp/mygroups.dart';
+import 'package:mumtrepreneursapp/mynetwork.dart';
+import 'package:mumtrepreneursapp/subscription.dart';
+import 'package:mumtrepreneursapp/support.dart';
 class More extends StatefulWidget {
   const More({Key key}) : super(key: key);
 
@@ -27,39 +34,46 @@ class _MoreState extends State<More> {
               ),
 
 
-              Padding(
-                padding: const EdgeInsets.only(right: 30,top: 30),
-                child: Container(
-                  width: 325,
-                  height: 80.74,
-                  decoration: BoxDecoration(
-                    color: Color(0xff12496D),
-                    borderRadius: BorderRadius.circular(5),
-                  ),
-                  child: Padding(
-                    padding: const EdgeInsets.only(top: 19.37,left: 25),
-                    child: Row(
-                      children: [
-                        Column(
-                          children: [
-                            Text('Upgrade Membership',
-                              style: TextStyle(fontFamily: 'Sk-Modernist',fontWeight: FontWeight.bold,fontSize: 15,color: Colors.white),),
+              GestureDetector(
 
-                            Text('Get all priemium features',
-                              style: TextStyle(fontFamily: 'Sk-Modernist',fontSize: 14,color: Colors.white),),
+                onTap: (){
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => Subscription()));
+                },
 
-                          ],
-                        ),
-
-                        Padding(
-                          padding: const EdgeInsets.only(left: 97,bottom: 19.43),
-                          child: Image.asset('assets/Image/membership_icon.png',width: 31,height: 42.94,),
-                        ),
-
-                      ],
+                child: Padding(
+                  padding: const EdgeInsets.only(right: 30,top: 30),
+                  child: Container(
+                    width: 325,
+                    height: 80.74,
+                    decoration: BoxDecoration(
+                      color: Color(0xff12496D),
+                      borderRadius: BorderRadius.circular(5),
                     ),
-                  ),
+                    child: Padding(
+                      padding: const EdgeInsets.only(top: 19.37,left: 25),
+                      child: Row(
+                        children: [
+                          Column(
+                            children: [
+                              Text('Upgrade Membership',
+                                style: TextStyle(fontFamily: 'Sk-Modernist',fontWeight: FontWeight.bold,fontSize: 15,color: Colors.white),),
 
+                              Text('Get all priemium features',
+                                style: TextStyle(fontFamily: 'Sk-Modernist',fontSize: 14,color: Colors.white),),
+
+                            ],
+                          ),
+
+                          Padding(
+                            padding: const EdgeInsets.only(left: 97,bottom: 19.43),
+                            child: Image.asset('assets/Image/membership_icon.png',width: 31,height: 42.94,),
+                          ),
+
+                        ],
+                      ),
+                    ),
+
+                  ),
                 ),
               ),
 
@@ -114,11 +128,11 @@ class _MoreState extends State<More> {
                                 children: [
                                   Padding(
                                     padding: const EdgeInsets.only(top: 21,right: 85),
-                                    child: Image.asset('assets/Image/3 User.png',width: 28.13,height: 31,),
+                                    child: Image.asset('assets/Image/network_icon.png',width: 30,height: 34,),
                                   ),
                                   Padding(
-                                    padding: const EdgeInsets.only(top: 15,left: 23,right: 10),
-                                    child: Text('Community Course',
+                                    padding: const EdgeInsets.only(top: 15,left: 23,right: 40),
+                                    child: Text('My Network',
                                       style: TextStyle(fontSize: 15,fontWeight: FontWeight.bold,fontFamily: 'Sk-Modernist',color: Colors.white),),
                                   ),
                                 ],
@@ -127,7 +141,7 @@ class _MoreState extends State<More> {
                           ),
                           onTap: (){
                             setState(() {
-                              Navigator.push(context, MaterialPageRoute(builder: (context) => CommunityCourse()));
+                              Navigator.push(context, MaterialPageRoute(builder: (context) => My_Network()));
                             });
                           },
                         ),
@@ -147,18 +161,20 @@ class _MoreState extends State<More> {
                                 children: [
                                   Padding(
                                     padding: const EdgeInsets.only(top: 21,right: 85),
-                                    child: Image.asset('assets/Image/Vector.png',width: 28.13,height: 31,),
+                                    child: Image.asset('assets/Image/setting_icon.png',width: 27.74,height: 31,),
                                   ),
                                   Padding(
-                                    padding: const EdgeInsets.only(top: 15,left: 23,right: 10),
-                                    child: Text('Feedback & Support',
+                                    padding: const EdgeInsets.only(top: 15,left: 23,right: 72),
+                                    child: Text('Account Settings',
                                       style: TextStyle(fontSize: 15,fontWeight: FontWeight.bold,fontFamily: 'Sk-Modernist',color: Colors.white),),
                                   ),
                                 ],
                               ),
                             ),
                           ),
-                          onTap: (){},
+                          onTap: (){
+                            Navigator.push(context, MaterialPageRoute(builder: (context) => Account_Settings()));
+                          },
                         ),
 
                         GestureDetector(
@@ -176,18 +192,20 @@ class _MoreState extends State<More> {
                                 children: [
                                   Padding(
                                     padding: const EdgeInsets.only(top: 21,right: 85),
-                                    child: Image.asset('assets/Image/2user_icon.png',width: 30.16,height: 31,color: Colors.white,),
+                                    child: Image.asset('assets/Image/Vector.png',width: 34,height: 33,color: Colors.white,),
                                   ),
                                   Padding(
-                                    padding: const EdgeInsets.only(top: 15,left: 23,right: 10),
-                                    child: Text('Member Directiory',
+                                    padding: const EdgeInsets.only(top: 15,left: 23,right: 74),
+                                    child: Text('Support',
                                       style: TextStyle(fontSize: 15,fontWeight: FontWeight.bold,fontFamily: 'Sk-Modernist',color: Colors.white),),
                                   ),
                                 ],
                               ),
                             ),
                           ),
-                          onTap: (){},
+                          onTap: (){
+                            Navigator.push(context, MaterialPageRoute(builder: (context) => Support()));
+                          },
                         ),
 
 
@@ -212,11 +230,11 @@ class _MoreState extends State<More> {
                                 children: [
                                   Padding(
                                     padding: const EdgeInsets.only(top: 21,right: 85),
-                                    child: Image.asset('assets/Image/Calendar.png',width: 28.13,height: 31,),
+                                    child: Image.asset('assets/Image/course_icon.png',width: 36.3,height: 34.15,),
                                   ),
                                   Padding(
-                                    padding: const EdgeInsets.only(top: 30,right: 55),
-                                    child: Text('Events',
+                                    padding: const EdgeInsets.only(top: 10.23,left: 20,right: 55),
+                                    child: Text('My Course Centre',
                                       style: TextStyle(fontSize: 15,fontWeight: FontWeight.bold,fontFamily: 'Sk-Modernist',color: Colors.white),),
                                   ),
                                 ],
@@ -224,7 +242,7 @@ class _MoreState extends State<More> {
                             ),
                             onTap: (){
                               setState(() {
-                                Navigator.push(context, MaterialPageRoute(builder: (context) => Events()));
+                                Navigator.push(context, MaterialPageRoute(builder: (context) => Course_Centre()));
                               });
                             },
                           ),
@@ -244,18 +262,20 @@ class _MoreState extends State<More> {
                                   children: [
                                     Padding(
                                       padding: const EdgeInsets.only(top: 21,right: 85),
-                                      child: Image.asset('assets/Image/Vector(2).png',width: 28.13,height: 31,),
+                                      child: Image.asset('assets/Image/3 User.png',width: 38.14,height: 31,),
                                     ),
                                     Padding(
-                                      padding: const EdgeInsets.only(top: 15,left: 23,right: 10),
-                                      child: Text('Monetization Course',
+                                      padding: const EdgeInsets.only(top: 15,left: 20,right: 55),
+                                      child: Text('My Groups',
                                         style: TextStyle(fontSize: 15,fontWeight: FontWeight.bold,fontFamily: 'Sk-Modernist',color: Colors.white),),
                                     ),
                                   ],
                                 ),
                               ),
                             ),
-                            onTap: (){},
+                            onTap: (){
+                              Navigator.push(context, MaterialPageRoute(builder: (context) => MY_Groups()));
+                            },
                           ),
 
                           GestureDetector(
@@ -273,11 +293,11 @@ class _MoreState extends State<More> {
                                   children: [
                                     Padding(
                                       padding: const EdgeInsets.only(top: 21,right: 85),
-                                      child: Image.asset('assets/Image/Vector (1).png',width: 28.13,height: 31,),
+                                      child: Image.asset('assets/Image/Calendar.png',width: 28.75,height: 31,),
                                     ),
                                     Padding(
-                                      padding: const EdgeInsets.only(top: 15,left: 23,right: 30),
-                                      child: Text('Essential info',
+                                      padding: const EdgeInsets.only(top: 31.38,left: 23,right: 85),
+                                      child: Text('Event',
                                         style: TextStyle(fontSize: 15,fontWeight: FontWeight.bold,fontFamily: 'Sk-Modernist',color: Colors.white),),
                                     ),
                                   ],
@@ -285,7 +305,7 @@ class _MoreState extends State<More> {
                               ),
                             ),
                             onTap: (){
-                              Navigator.push(context, MaterialPageRoute(builder: (context) => Essential_Info()));
+                              Navigator.push(context, MaterialPageRoute(builder: (context) => Events2()));
                             },
                           ),
 
@@ -304,11 +324,11 @@ class _MoreState extends State<More> {
                                   children: [
                                     Padding(
                                       padding: const EdgeInsets.only(top: 21,right: 85),
-                                      child: Image.asset('assets/Image/faq_icon.png',width: 31,height: 31,),
+                                      child: Image.asset('assets/Image/blog_icon.png',width: 34.94,height: 31,),
                                     ),
                                     Padding(
-                                      padding: const EdgeInsets.only(top: 15,left: 23,right: 95),
-                                      child: Text('FAQ',
+                                      padding: const EdgeInsets.only(top: 25,left: 23,right: 95),
+                                      child: Text('Blog',
                                         style: TextStyle(fontSize: 15,fontWeight: FontWeight.bold,fontFamily: 'Sk-Modernist',color: Colors.white),),
                                     ),
                                   ],
@@ -316,7 +336,7 @@ class _MoreState extends State<More> {
                               ),
                             ),
                             onTap: (){
-                              Navigator.push(context, MaterialPageRoute(builder: (context) => Faq()));
+                              Navigator.push(context, MaterialPageRoute(builder: (context) => Blog()));
                             },
                           ),
 

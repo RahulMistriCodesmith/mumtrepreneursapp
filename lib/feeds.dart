@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:mumtrepreneursapp/like.dart';
+import 'package:mumtrepreneursapp/notifications.dart';
 class Feeds extends StatefulWidget {
   const Feeds({Key key}) : super(key: key);
 
@@ -55,7 +56,13 @@ class _FeedsState extends State<Feeds> {
                     child: Image.asset('assets/Image/search_icon.png',width: 18.6,height: 18.6,),
                   ),
 
-                  Image.asset('assets/Image/notification_icon.png',width: 15.76,height: 20.38,),
+                  GestureDetector(
+
+                    onTap: (){
+                      Navigator.push(context, MaterialPageRoute(builder: (context) => Notifications()));
+                    },
+
+                      child: Image.asset('assets/Image/notification_icon.png',width: 15.76,height: 20.38,)),
 
                 ],
               ),

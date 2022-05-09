@@ -5,6 +5,7 @@ import 'package:mumtrepreneursapp/Events.dart';
 import 'package:mumtrepreneursapp/Resources.dart';
 import 'package:mumtrepreneursapp/communitycourse.dart';
 import 'package:mumtrepreneursapp/essential_info.dart';
+import 'package:mumtrepreneursapp/notifications.dart';
 class Home_Page extends StatefulWidget {
   const Home_Page({Key key}) : super(key: key);
 
@@ -28,10 +29,19 @@ class _Home_PageState extends State<Home_Page> {
                 child: Row(
                   children: [
                     Text('Hi, Riyad',style: TextStyle(fontFamily: 'Gilroy-Bold',fontSize: 20,fontWeight: FontWeight.bold),),
+
                     Image.asset('assets/Image/image 2.png',width: 19,height: 19,),
-                    Padding(
-                      padding: const EdgeInsets.only(left: 203),
-                      child: Icon(Icons.notifications_none,color: Color(0xff130F26),),
+
+                    GestureDetector(
+
+                      onTap: (){
+                        Navigator.push(context, MaterialPageRoute(builder: (context) => Notifications()));
+                      },
+
+                      child: Padding(
+                        padding: const EdgeInsets.only(left: 203),
+                        child: Icon(Icons.notifications_none,color: Color(0xff130F26),),
+                      ),
                     ),
                   ],
                 ),
