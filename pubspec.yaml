@@ -36,6 +36,7 @@ dependencies:
   cupertino_icons: ^1.0.2
   image_picker: ^0.8.5
   pin_code_fields: ^7.4.0
+  chat_bubbles: ^1.2.0
 
 dev_dependencies:
   flutter_test:
@@ -149,6 +150,7 @@ flutter:
     - assets/Image/cancel_icon.png
     - assets/Image/ticksquare.png
     - assets/Image/read_icon.png
+    - assets/Image/send_icon.png
 
 
 
