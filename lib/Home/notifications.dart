@@ -43,17 +43,27 @@ class _NotificationsState extends State<Notifications> {
 
                   Padding(
                     padding: const EdgeInsets.only(left: 180),
-                    child: Switch(
-                      value: isSwitched,
-                        onChanged: (value){
-                      setState(() {
-                        isSwitched = value;
-                      });
-                        },
-                      activeTrackColor: Color(0xff12496D),
-                      activeColor: Colors.white,
+                    child: Container(
 
-                        ),
+                      width: 37.82,
+                      height: 21.61,
+                      decoration: BoxDecoration(
+                        color: Color(0xff12496D),
+                        borderRadius: BorderRadius.circular(10.806),
+                      ),
+                      child: Switch(
+                        value: isSwitched,
+                          onChanged: (value){
+                        setState(() {
+                          isSwitched = value;
+                        });
+                          },
+
+                        activeTrackColor: Color(0xff12496D),
+                        activeColor: Colors.white,
+
+                          ),
+                    ),
                   )
 
                 ],
