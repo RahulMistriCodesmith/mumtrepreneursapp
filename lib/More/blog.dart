@@ -1,7 +1,13 @@
-// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables, sized_box_for_whitespace
+// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables, sized_box_for_whitespace, avoid_returning_null_for_void
 
+import 'dart:io';
+
+import 'package:file_picker/file_picker.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_share/flutter_share.dart';
 import 'package:mumtrepreneursapp/More/loremipsum.dart';
+
+import '../Feeds/userprofile.dart';
 class Blog extends StatefulWidget {
   const Blog({Key key}) : super(key: key);
 
@@ -10,6 +16,49 @@ class Blog extends StatefulWidget {
 }
 
 class _BlogState extends State<Blog> {
+
+  final _controller = ScreenshotController();
+
+  Future<void> share() async {
+    await FlutterShare.share(
+        title: 'Example share',
+        text: 'Example share text',
+        linkUrl: 'https://flutter.dev/',
+        chooserTitle: 'Example Chooser Title');
+  }
+
+  Future<void> shareFile() async {
+    final result = await FilePicker.platform.pickFiles();
+    if (result == null || result.files.isEmpty) return null;
+
+    await FlutterShare.shareFile(
+      title: 'Example share',
+      text: 'Example share text',
+      filePath: result.files[0] as String,
+    );
+  }
+
+  Future<void> shareScreenshot() async {
+    Directory directory;
+    if (Platform.isAndroid) {
+      directory = await getExternalStorageDirectory();
+    } else {
+      directory = await getApplicationDocumentsDirectory();
+    }
+    final String localPath =
+        '${directory.path}/${DateTime.now().toIso8601String()}.png';
+
+    await _controller.captureAndSave(localPath);
+
+    await Future.delayed(Duration(seconds: 1));
+
+    await FlutterShare.shareFile(
+        title: 'Comparator component',
+        filePath: localPath,
+        fileType: 'image/png'
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -88,7 +137,11 @@ class _BlogState extends State<Blog> {
                         padding: const EdgeInsets.only(left: 7,right: 165),
                         child: Text('251',style: TextStyle(color: Colors.grey,fontFamily: 'Sk-Modernist',fontSize: 14),),
                       ),
-                      Image.asset('assets/Image/share_icon.png',width: 14.67,height: 16,color: Colors.grey,),
+                      InkWell(
+                          onTap: (){
+                            share();
+                          },
+                          child: Image.asset('assets/Image/share_icon.png',width: 14.67,height: 16,color: Colors.grey,)),
 
                     ],
                   ),
@@ -140,8 +193,13 @@ class _BlogState extends State<Blog> {
                             ),
 
                             Padding(
-                              padding: const EdgeInsets.only(left: 100,right: 20),
-                              child: Image.asset('assets/Image/share_icon.png',width: 14.67,height: 16,color: Colors.grey,),
+                              padding: const EdgeInsets.only(left: 90,right: 20),
+                              child: InkWell(
+                                  onTap: (){
+                                    share();
+                                  },
+
+                                  child: Image.asset('assets/Image/share_icon.png',width: 14.67,height: 16,color: Colors.grey,)),
                             ),
 
                           ],
@@ -191,7 +249,12 @@ class _BlogState extends State<Blog> {
 
                             Padding(
                               padding: const EdgeInsets.only(left: 92,right: 20),
-                              child: Image.asset('assets/Image/share_icon.png',width: 14.67,height: 16,color: Colors.grey,),
+                              child: InkWell(
+
+                                  onTap: (){
+                                    share();
+                                  },
+                                  child: Image.asset('assets/Image/share_icon.png',width: 14.67,height: 16,color: Colors.grey,)),
                             ),
 
                           ],
@@ -247,7 +310,12 @@ class _BlogState extends State<Blog> {
 
                               Padding(
                                 padding: const EdgeInsets.only(left: 92,right: 20),
-                                child: Image.asset('assets/Image/share_icon.png',width: 14.67,height: 16,color: Colors.grey,),
+                                child: InkWell(
+
+                                    onTap: (){
+                                      share();
+                                    },
+                                    child: Image.asset('assets/Image/share_icon.png',width: 14.67,height: 16,color: Colors.grey,)),
                               ),
 
                             ],
@@ -270,4 +338,10 @@ class _BlogState extends State<Blog> {
 
     );
   }
+
+  getExternalStorageDirectory() {}
+
+  getApplicationDocumentsDirectory() {}
+
+
 }

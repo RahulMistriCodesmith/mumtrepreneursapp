@@ -1,6 +1,12 @@
-// ignore_for_file: camel_case_types, prefer_const_constructors, prefer_const_literals_to_create_immutables, avoid_unnecessary_containers
+// ignore_for_file: camel_case_types, prefer_const_constructors, prefer_const_literals_to_create_immutables, avoid_unnecessary_containers, avoid_returning_null_for_void
 
+import 'dart:io';
+
+import 'package:file_picker/file_picker.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_share/flutter_share.dart';
+
+import '../Feeds/userprofile.dart';
 class MY_Groups extends StatefulWidget {
   const MY_Groups({Key key}) : super(key: key);
 
@@ -9,6 +15,48 @@ class MY_Groups extends StatefulWidget {
 }
 
 class _MY_GroupsState extends State<MY_Groups> {
+  final _controller = ScreenshotController();
+
+  Future<void> share() async {
+    await FlutterShare.share(
+        title: 'Example share',
+        text: 'Example share text',
+        linkUrl: 'https://flutter.dev/',
+        chooserTitle: 'Example Chooser Title');
+  }
+
+  Future<void> shareFile() async {
+    final result = await FilePicker.platform.pickFiles();
+    if (result == null || result.files.isEmpty) return null;
+
+    await FlutterShare.shareFile(
+      title: 'Example share',
+      text: 'Example share text',
+      filePath: result.files[0] as String,
+    );
+  }
+
+  Future<void> shareScreenshot() async {
+    Directory directory;
+    if (Platform.isAndroid) {
+      directory = await getExternalStorageDirectory();
+    } else {
+      directory = await getApplicationDocumentsDirectory();
+    }
+    final String localPath =
+        '${directory.path}/${DateTime.now().toIso8601String()}.png';
+
+    await _controller.captureAndSave(localPath);
+
+    await Future.delayed(Duration(seconds: 1));
+
+    await FlutterShare.shareFile(
+        title: 'Comparator component',
+        filePath: localPath,
+        fileType: 'image/png'
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -174,7 +222,11 @@ class _MY_GroupsState extends State<MY_Groups> {
                         Text('250',style: TextStyle(fontSize: 14,fontFamily: 'Sk-Modernist',fontWeight: FontWeight.bold),),
                         Padding(
                           padding: const EdgeInsets.only(left: 195,right: 22),
-                          child: Image.asset('assets/Image/share_icon.png',width: 17.42,height: 19,),
+                          child: InkWell(
+                              onTap: (){
+                                share();
+                              },
+                              child: Image.asset('assets/Image/share_icon.png',width: 17.42,height: 19,)),
                         ),
                       ],
                     ),
@@ -322,7 +374,13 @@ class _MY_GroupsState extends State<MY_Groups> {
                           Text('250',style: TextStyle(fontSize: 14,fontFamily: 'Sk-Modernist',fontWeight: FontWeight.bold),),
                           Padding(
                             padding: const EdgeInsets.only(left: 195,right: 22),
-                            child: Image.asset('assets/Image/share_icon.png',width: 17.42,height: 19,),
+                            child: InkWell(
+
+                                onTap: (){
+                                  share();
+                                },
+
+                                child: Image.asset('assets/Image/share_icon.png',width: 17.42,height: 19,)),
                           ),
                         ],
                       ),
@@ -470,7 +528,13 @@ class _MY_GroupsState extends State<MY_Groups> {
                           Text('250',style: TextStyle(fontSize: 14,fontFamily: 'Sk-Modernist',fontWeight: FontWeight.bold),),
                           Padding(
                             padding: const EdgeInsets.only(left: 195,right: 22),
-                            child: Image.asset('assets/Image/share_icon.png',width: 17.42,height: 19,),
+                            child: InkWell(
+
+                              onTap: (){
+                                share();
+                              },
+
+                                child: Image.asset('assets/Image/share_icon.png',width: 17.42,height: 19,)),
                           ),
                         ],
                       ),
@@ -495,4 +559,10 @@ class _MY_GroupsState extends State<MY_Groups> {
 
     );
   }
+
+  getExternalStorageDirectory() {}
+
+  getApplicationDocumentsDirectory() {}
+
+
 }

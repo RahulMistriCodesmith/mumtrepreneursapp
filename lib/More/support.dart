@@ -9,6 +9,16 @@ class Support extends StatefulWidget {
 }
 
 class _SupportState extends State<Support> {
+
+  TextEditingController fullname = TextEditingController();
+  TextEditingController email = TextEditingController();
+  TextEditingController subject = TextEditingController();
+  TextEditingController message = TextEditingController();
+
+
+
+  final _formKey = GlobalKey<FormState>();
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -32,147 +42,184 @@ class _SupportState extends State<Support> {
       ),
 
       body: SingleChildScrollView(
-        child: Padding(
-          padding: const EdgeInsets.only(left: 45,top: 40),
-          child: Column(
-            children: [
-              Container(
-                width: 325,
-                height: 162,
-                decoration: BoxDecoration(
-                  color: Color(0xff12496D),
-                  borderRadius: BorderRadius.circular(5),
-                ),
-                child: Center(
-                  child: Padding(
-                    padding: const EdgeInsets.only(top: 39),
-                    child: Column(
-                      children: [
-                        Image.asset('assets/Image/Vector.png',width: 41,height: 40,),
-                        Text('Support',style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold,fontFamily: 'Sk-Modernist',fontSize: 28),),
-                      ],
-                    ),
-                  ),
-                ),
-              ),
+        child: Form(
 
+          key: _formKey,
 
-              Padding(
-                padding: const EdgeInsets.only(top: 33.44,right: 255,bottom: 11),
-                child: Text('Full Name',style: TextStyle(fontFamily: 'Sk-Modernist',fontSize: 15,),),
-              ),
-
-              Container(
-                padding: EdgeInsets.only(left: 19.72),
-                width: 325,
-                height: 50,
-                decoration: BoxDecoration(
-                  color: Colors.white,
-                  borderRadius: BorderRadius.circular(5),
-                ),
-                child: TextFormField(
-                  decoration: InputDecoration(
-                    border: InputBorder.none,
-                    hintText: 'Enter your Full Name',
-                    hintStyle: TextStyle(color: Colors.grey,fontSize: 15,fontFamily: 'Sk-Modernist'),
-                  ),
-                ),
-              ),
-
-
-              Padding(
-                padding: const EdgeInsets.only(top: 33.44,right: 285,bottom: 11),
-                child: Text('Email',style: TextStyle(fontFamily: 'Sk-Modernist',fontSize: 15,),),
-              ),
-
-              Container(
-                padding: EdgeInsets.only(left: 19.72),
-                width: 325,
-                height: 50,
-                decoration: BoxDecoration(
-                  color: Colors.white,
-                  borderRadius: BorderRadius.circular(5),
-                ),
-                child: TextFormField(
-                  decoration: InputDecoration(
-                    border: InputBorder.none,
-                    hintText: 'Enter your Email',
-                    hintStyle: TextStyle(color: Colors.grey,fontSize: 15,fontFamily: 'Sk-Modernist'),
-                  ),
-                ),
-              ),
-
-
-
-              Padding(
-                padding: const EdgeInsets.only(top: 33.44,right: 260,bottom: 11),
-                child: Text('Subject',style: TextStyle(fontFamily: 'Sk-Modernist',fontSize: 15,),),
-
-              ),
-
-              Container(
-                padding: EdgeInsets.only(left: 19.72),
-                width: 325,
-                height: 50,
-                decoration: BoxDecoration(
-                  color: Colors.white,
-                  borderRadius: BorderRadius.circular(5),
-                ),
-                child: TextFormField(
-                  decoration: InputDecoration(
-                    border: InputBorder.none,
-                    hintText: 'Enter your Subject',
-                    hintStyle: TextStyle(color: Colors.grey,fontSize: 15,fontFamily: 'Sk-Modernist'),
-                  ),
-                ),
-              ),
-
-
-              Padding(
-                padding: const EdgeInsets.only(top: 33.44,right: 255,bottom: 11),
-                child: Text('Message',style: TextStyle(fontFamily: 'Sk-Modernist',fontSize: 15,),),
-              ),
-
-              Container(
-                padding: EdgeInsets.only(left: 19.72),
-                width: 325,
-                height: 100,
-                decoration: BoxDecoration(
-                  color: Colors.white,
-                  borderRadius: BorderRadius.circular(5),
-                ),
-                child: TextFormField(
-                  decoration: InputDecoration(
-                    border: InputBorder.none,
-                    hintText: 'Enter your Message',
-                    hintStyle: TextStyle(color: Colors.grey,fontSize: 15,fontFamily: 'Sk-Modernist'),
-                  ),
-                ),
-              ),
-
-              Padding(
-                padding: const EdgeInsets.only(bottom: 32),
-                child: Container(
+          child: Padding(
+            padding: const EdgeInsets.only(left: 45,top: 40),
+            child: Column(
+              children: [
+                Container(
                   width: 325,
-                  height: 55,
-                  child: RaisedButton(
+                  height: 162,
+                  decoration: BoxDecoration(
                     color: Color(0xff12496D),
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(5),
+                    borderRadius: BorderRadius.circular(5),
+                  ),
+                  child: Center(
+                    child: Padding(
+                      padding: const EdgeInsets.only(top: 39),
+                      child: Column(
+                        children: [
+                          Image.asset('assets/Image/Vector.png',width: 41,height: 40,),
+                          Text('Support',style: TextStyle(color: Colors.white,fontWeight: FontWeight.bold,fontFamily: 'Sk-Modernist',fontSize: 28),),
+                        ],
+                      ),
                     ),
-
-                    child: Text('SUBMIT',style: TextStyle(fontSize: 14,color: Colors.white,fontFamily: 'Sk-Modernist',fontWeight: FontWeight.bold),),
-
-                    onPressed: (){
-
-                    },
                   ),
                 ),
-              ),
+
+
+                Padding(
+                  padding: const EdgeInsets.only(top: 33.44,right: 255,bottom: 11),
+                  child: Text('Full Name',style: TextStyle(fontFamily: 'Sk-Modernist',fontSize: 15,),),
+                ),
+
+                Container(
+                  padding: EdgeInsets.only(left: 19.72),
+                  width: 325,
+
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(5),
+                  ),
+                  child: TextFormField(
+                    controller: fullname,
+                    validator: (value) {
+                      if (value == null || value.isEmpty) {
+                        return 'enter full name';
+                      }
+                      return null;
+                    },
+                    decoration: InputDecoration(
+                      border: InputBorder.none,
+                      hintText: 'Enter your Full Name',
+                      hintStyle: TextStyle(color: Colors.grey,fontSize: 15,fontFamily: 'Sk-Modernist'),
+                    ),
+                  ),
+                ),
+
+
+                Padding(
+                  padding: const EdgeInsets.only(top: 33.44,right: 285,bottom: 11),
+                  child: Text('Email',style: TextStyle(fontFamily: 'Sk-Modernist',fontSize: 15,),),
+                ),
+
+                Container(
+                  padding: EdgeInsets.only(left: 19.72),
+                  width: 325,
+
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(5),
+                  ),
+                  child: TextFormField(
+                    controller: email,
+                    validator: (value) {
+                      if (value == null || value.isEmpty) {
+                        return 'enter email';
+                      }
+                      return null;
+                    },
+                    decoration: InputDecoration(
+                      border: InputBorder.none,
+                      hintText: 'Enter your Email',
+                      hintStyle: TextStyle(color: Colors.grey,fontSize: 15,fontFamily: 'Sk-Modernist'),
+                    ),
+                  ),
+                ),
 
 
 
-            ],
+                Padding(
+                  padding: const EdgeInsets.only(top: 33.44,right: 260,bottom: 11),
+                  child: Text('Subject',style: TextStyle(fontFamily: 'Sk-Modernist',fontSize: 15,),),
+
+                ),
+
+                Container(
+                  padding: EdgeInsets.only(left: 19.72),
+                  width: 325,
+
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(5),
+                  ),
+                  child: TextFormField(
+                    controller: subject,
+                    validator: (value) {
+                      if (value == null || value.isEmpty) {
+                        return 'enter subject';
+                      }
+                      return null;
+                    },
+                    decoration: InputDecoration(
+                      border: InputBorder.none,
+                      hintText: 'Enter your Subject',
+                      hintStyle: TextStyle(color: Colors.grey,fontSize: 15,fontFamily: 'Sk-Modernist'),
+                    ),
+                  ),
+                ),
+
+
+                Padding(
+                  padding: const EdgeInsets.only(top: 33.44,right: 255,bottom: 11),
+                  child: Text('Message',style: TextStyle(fontFamily: 'Sk-Modernist',fontSize: 15,),),
+                ),
+
+                Container(
+                  padding: EdgeInsets.only(left: 19.72),
+                  width: 325,
+
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.circular(5),
+                  ),
+                  child: TextFormField(
+                    controller: message,
+                    validator: (value) {
+                      if (value == null || value.isEmpty) {
+                        return 'enter text';
+                      }
+                      return null;
+                    },
+                    decoration: InputDecoration(
+                      border: InputBorder.none,
+                      hintText: 'Enter your Message',
+                      hintStyle: TextStyle(color: Colors.grey,fontSize: 15,fontFamily: 'Sk-Modernist'),
+                    ),
+                  ),
+                ),
+
+                Padding(
+                  padding: const EdgeInsets.only(bottom: 32),
+                  child: Container(
+                    width: 325,
+                    height: 55,
+                    child: RaisedButton(
+                      color: Color(0xff12496D),
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(5),
+                      ),
+
+                      child: Text('SUBMIT',style: TextStyle(fontSize: 14,color: Colors.white,fontFamily: 'Sk-Modernist',fontWeight: FontWeight.bold),),
+
+                      onPressed: (){
+                        if (_formKey.currentState.validate()) {
+
+
+                        }
+
+                      },
+                    ),
+                  ),
+                ),
+
+
+
+              ],
+            ),
           ),
         ),
       ),

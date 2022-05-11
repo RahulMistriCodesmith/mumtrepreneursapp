@@ -1,6 +1,11 @@
-// ignore_for_file: deprecated_member_use, prefer_const_constructors, use_full_hex_values_for_flutter_colors, sized_box_for_whitespace
+// ignore_for_file: deprecated_member_use, prefer_const_constructors, use_full_hex_values_for_flutter_colors, sized_box_for_whitespace, avoid_returning_null_for_void
 
+import 'dart:io';
+
+import 'package:file_picker/file_picker.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_share/flutter_share.dart';
+import 'package:mumtrepreneursapp/Feeds/userprofile.dart';
 import 'package:mumtrepreneursapp/Home/Event_Details.dart';
 class Events extends StatefulWidget {
   const Events({Key key}) : super(key: key);
@@ -10,6 +15,49 @@ class Events extends StatefulWidget {
 }
 
 class _EventsState extends State<Events> {
+
+  final _controller = ScreenshotController();
+
+  Future<void> share() async {
+    await FlutterShare.share(
+        title: 'Example share',
+        text: 'Example share text',
+        linkUrl: 'https://flutter.dev/',
+        chooserTitle: 'Example Chooser Title');
+  }
+
+  Future<void> shareFile() async {
+    final result = await FilePicker.platform.pickFiles();
+    if (result == null || result.files.isEmpty) return null;
+
+    await FlutterShare.shareFile(
+      title: 'Example share',
+      text: 'Example share text',
+      filePath: result.files[0] as String,
+    );
+  }
+
+  Future<void> shareScreenshot() async {
+    Directory directory;
+    if (Platform.isAndroid) {
+      directory = await getExternalStorageDirectory();
+    } else {
+      directory = await getApplicationDocumentsDirectory();
+    }
+    final String localPath =
+        '${directory.path}/${DateTime.now().toIso8601String()}.png';
+
+    await _controller.captureAndSave(localPath);
+
+    await Future.delayed(Duration(seconds: 1));
+
+    await FlutterShare.shareFile(
+        title: 'Comparator component',
+        filePath: localPath,
+        fileType: 'image/png'
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -87,7 +135,11 @@ class _EventsState extends State<Events> {
                                 borderRadius: BorderRadius.circular(17),
                                 color: Color(0xff00000061),
                               ),
-                              child: Image.asset('assets/Image/Vector1.png',scale: 4,),
+                              child: InkWell(
+                                  onTap: (){
+                                    share();
+                                  },
+                                  child: Image.asset('assets/Image/Vector1.png',scale: 4,)),
                             ),
                           ),
                         ],
@@ -182,7 +234,11 @@ class _EventsState extends State<Events> {
                                 borderRadius: BorderRadius.circular(17),
                                 color: Color(0xff00000061),
                               ),
-                              child: Image.asset('assets/Image/Vector1.png',scale: 4,),
+                              child: InkWell(
+                                  onTap: (){
+                                    share();
+                                  },
+                                  child: Image.asset('assets/Image/Vector1.png',scale: 4,)),
                             ),
                           ),
                         ],
@@ -258,4 +314,10 @@ class _EventsState extends State<Events> {
       ),
     );
   }
+
+  getExternalStorageDirectory() {}
+
+  getApplicationDocumentsDirectory() {}
+
+
 }

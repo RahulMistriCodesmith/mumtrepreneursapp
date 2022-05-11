@@ -60,8 +60,8 @@ class _NotificationsState extends State<Notifications> {
                           },
 
                         activeTrackColor: Color(0xff12496D),
+                        inactiveTrackColor: Color(0xff12496D),
                         activeColor: Colors.white,
-
                           ),
                     ),
                   )

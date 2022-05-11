@@ -1,7 +1,14 @@
-// ignore_for_file: deprecated_member_use
+// ignore_for_file: deprecated_member_use, prefer_const_constructors, prefer_const_literals_to_create_immutables, sized_box_for_whitespace, avoid_print, avoid_returning_null_for_void
 
+import 'dart:io';
+
+import 'package:file_picker/file_picker.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_share/flutter_share.dart';
 import 'package:mumtrepreneursapp/Feeds/like.dart';
+import 'package:mumtrepreneursapp/Profile/followers.dart';
+import 'dart:async';
+
 class UserProfile extends StatefulWidget {
   const UserProfile({Key key}) : super(key: key);
 
@@ -10,6 +17,48 @@ class UserProfile extends StatefulWidget {
 }
 
 class _UserProfileState extends State<UserProfile> {
+
+  final _controller = ScreenshotController();
+
+  Future<void> share() async {
+    await FlutterShare.share(
+        title: 'Example share',
+        text: 'Example share text',
+        linkUrl: 'https://flutter.dev/',
+        chooserTitle: 'Example Chooser Title');
+  }
+
+  Future<void> shareFile() async {
+    final result = await FilePicker.platform.pickFiles();
+    if (result == null || result.files.isEmpty) return null;
+
+    await FlutterShare.shareFile(
+      title: 'Example share',
+      text: 'Example share text',
+      filePath: result.files[0] as String,
+    );
+  }
+
+  Future<void> shareScreenshot() async {
+    Directory directory;
+    if (Platform.isAndroid) {
+      directory = await getExternalStorageDirectory();
+    } else {
+      directory = await getApplicationDocumentsDirectory();
+    }
+    final String localPath =
+        '${directory.path}/${DateTime.now().toIso8601String()}.png';
+
+    await _controller.captureAndSave(localPath);
+
+    await Future.delayed(Duration(seconds: 1));
+
+    await FlutterShare.shareFile(
+        title: 'Comparator component',
+        filePath: localPath,
+        fileType: 'image/png'
+    );
+  }
 
   @override
   Widget build(BuildContext context) {
@@ -47,6 +96,8 @@ class _UserProfileState extends State<UserProfile> {
 
           child: Column(
             children: [
+
+
               Container(
                 width: 409,
                 height: 425,
@@ -110,71 +161,78 @@ class _UserProfileState extends State<UserProfile> {
                       ],
                     ),
 
-                    Padding(
-                      padding: const EdgeInsets.only(top: 16.84, left: 90),
-                      child: Row(
-                        children: [
-                          Column(
-                            children: [
-                              Text('150', style: TextStyle(
-                                  fontFamily: 'Sk-Modernist',
-                                  fontWeight: FontWeight.bold,
-                                  fontSize: 18),),
-                              Text('Posts', style: TextStyle(
-                                  fontFamily: 'Sk-Modernist',
-                                  color: Colors.grey,
-                                  fontSize: 14),),
-                            ],
-                          ),
+                    GestureDetector(
 
-                          Padding(
-                            padding: const EdgeInsets.only(
-                                left: 15.94, right: 30.5),
-                            child: Container(
-                              width: 1,
-                              height: 33,
-                              color: Colors.black,
+                      onTap: (){
+                        Navigator.push(context, MaterialPageRoute(builder: (context) => const Follower()));
+                      },
+
+                      child: Padding(
+                        padding: const EdgeInsets.only(top: 16.84, left: 90),
+                        child: Row(
+                          children: [
+                            Column(
+                              children: [
+                                Text('150', style: TextStyle(
+                                    fontFamily: 'Sk-Modernist',
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 18),),
+                                Text('Posts', style: TextStyle(
+                                    fontFamily: 'Sk-Modernist',
+                                    color: Colors.grey,
+                                    fontSize: 14),),
+                              ],
                             ),
-                          ),
 
-                          Column(
-                            children: [
-                              Text('5.2K', style: TextStyle(
-                                  fontFamily: 'Sk-Modernist',
-                                  fontWeight: FontWeight.bold,
-                                  fontSize: 18),),
-                              Text('Follower', style: TextStyle(
-                                  fontFamily: 'Sk-Modernist',
-                                  color: Colors.grey,
-                                  fontSize: 14),),
-                            ],
-                          ),
-
-                          Padding(
-                            padding: const EdgeInsets.only(
-                                left: 25, right: 25.45),
-                            child: Container(
-                              width: 1,
-                              height: 33,
-                              color: Colors.black,
+                            Padding(
+                              padding: const EdgeInsets.only(
+                                  left: 15.94, right: 30.5),
+                              child: Container(
+                                width: 1,
+                                height: 33,
+                                color: Colors.black,
+                              ),
                             ),
-                          ),
 
-                          Column(
-                            children: [
-                              Text('1.5K', style: TextStyle(
-                                  fontFamily: 'Sk-Modernist',
-                                  fontWeight: FontWeight.bold,
-                                  fontSize: 18),),
-                              Text('Following', style: TextStyle(
-                                  fontFamily: 'Sk-Modernist',
-                                  color: Colors.grey,
-                                  fontSize: 14),),
-                            ],
-                          ),
+                            Column(
+                              children: [
+                                Text('5.2K', style: TextStyle(
+                                    fontFamily: 'Sk-Modernist',
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 18),),
+                                Text('Follower', style: TextStyle(
+                                    fontFamily: 'Sk-Modernist',
+                                    color: Colors.grey,
+                                    fontSize: 14),),
+                              ],
+                            ),
+
+                            Padding(
+                              padding: const EdgeInsets.only(
+                                  left: 25, right: 25.45),
+                              child: Container(
+                                width: 1,
+                                height: 33,
+                                color: Colors.black,
+                              ),
+                            ),
+
+                            Column(
+                              children: [
+                                Text('1.5K', style: TextStyle(
+                                    fontFamily: 'Sk-Modernist',
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 18),),
+                                Text('Following', style: TextStyle(
+                                    fontFamily: 'Sk-Modernist',
+                                    color: Colors.grey,
+                                    fontSize: 14),),
+                              ],
+                            ),
 
 
-                        ],
+                          ],
+                        ),
                       ),
                     ),
 
@@ -482,11 +540,14 @@ class _UserProfileState extends State<UserProfile> {
                                         fontFamily: 'Sk-Modernist',
                                         fontWeight: FontWeight.bold),),
                                     Padding(
-                                      padding: const EdgeInsets.only(
-                                          left: 195, right: 22),
-                                      child: Image.asset(
-                                        'assets/Image/share_icon.png',
-                                        width: 17.42, height: 19,),
+                                      padding: const EdgeInsets.only(left: 195, right: 22),
+                                      child: InkWell(onTap: (){
+                                        share();
+                                      },
+
+                                        child: Image.asset('assets/Image/share_icon.png',
+                                          width: 17.42, height: 19,),
+                                      ),
                                     ),
                                   ],
                                 ),
@@ -725,9 +786,15 @@ class _UserProfileState extends State<UserProfile> {
 
                                       Padding(
                                         padding: const EdgeInsets.only(left: 195, right: 22),
-                                        child: Image.asset(
-                                          'assets/Image/share_icon.png',width: 17.42, height: 19,),
+                                        child: InkWell(
+
+                                          onTap: (){
+                                            share();
+                                          },
+
+                                            child: Image.asset('assets/Image/share_icon.png',width: 17.42, height: 19,)),
                                       ),
+
                                     ],
                                   ),
                                 ),
@@ -754,7 +821,8 @@ class _UserProfileState extends State<UserProfile> {
                                 Padding(
                                   padding: const EdgeInsets.only(
                                       top: 21, right: 155),
-                                  child: Text('Industry', style: TextStyle(
+                                  child: Text('Industry',
+                                    style: TextStyle(
                                       fontWeight: FontWeight.bold,
                                       fontSize: 14,
                                       fontFamily: 'Sk-Modernist'),),
@@ -804,8 +872,7 @@ class _UserProfileState extends State<UserProfile> {
                         Card(
                           color: Color(0xffE5E5E5),
                           child: Padding(
-                            padding: const EdgeInsets.only(
-                                left: 25, right: 183),
+                            padding: const EdgeInsets.only(left: 25, right: 183),
                             child: Column(
                               children: [
                                 Padding(
@@ -840,7 +907,8 @@ class _UserProfileState extends State<UserProfile> {
                                 Padding(
                                   padding: const EdgeInsets.only(
                                       top: 21, right: 65),
-                                  child: Text('Social URL', style: TextStyle(
+                                  child: Text('Social URL',
+                                    style: TextStyle(
                                       fontWeight: FontWeight.bold,
                                       fontSize: 14,
                                       fontFamily: 'Sk-Modernist'),),
@@ -869,7 +937,8 @@ class _UserProfileState extends State<UserProfile> {
                                 Padding(
                                   padding: const EdgeInsets.only(
                                       top: 21, right: 90),
-                                  child: Text('Location', style: TextStyle(
+                                  child: Text('Location',
+                                    style: TextStyle(
                                       fontWeight: FontWeight.bold,
                                       fontSize: 14,
                                       fontFamily: 'Sk-Modernist'),),
@@ -908,7 +977,14 @@ class _UserProfileState extends State<UserProfile> {
     );
   }
 
+  getApplicationDocumentsDirectory() {}
+
+  getExternalStorageDirectory() {}
 
 
+}
+
+class ScreenshotController {
+  captureAndSave(String localPath) {}
 
 }

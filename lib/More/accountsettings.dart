@@ -13,8 +13,7 @@ class _Account_SettingsState extends State<Account_Settings> {
 
   @override
   Widget build(BuildContext context) {
-  final width = MediaQuery.of(context).size.width;
-  final height = MediaQuery.of(context).size.height;
+
     return Scaffold(
       backgroundColor: Color(0xffE5E5E5),
       appBar: AppBar(
@@ -68,7 +67,7 @@ class _Account_SettingsState extends State<Account_Settings> {
               ),
 
               Container(
-                width: width /2,
+                width: 409,
                 height: 53,
                 decoration: BoxDecoration(
 

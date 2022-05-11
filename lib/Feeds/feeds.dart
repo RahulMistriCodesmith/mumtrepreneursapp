@@ -1,6 +1,10 @@
-// ignore_for_file: sized_box_for_whitespace, unnecessary_const, prefer_const_literals_to_create_immutables, avoid_unnecessary_containers, void_checks, void_checks, deprecated_member_use, duplicate_ignore, prefer_const_constructors
+// ignore_for_file: sized_box_for_whitespace, unnecessary_const, prefer_const_literals_to_create_immutables, avoid_unnecessary_containers, void_checks, void_checks, deprecated_member_use, duplicate_ignore, prefer_const_constructors, avoid_returning_null_for_void
 
+import 'dart:io';
+
+import 'package:file_picker/file_picker.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_share/flutter_share.dart';
 import 'package:mumtrepreneursapp/Feeds/createpost.dart';
 import 'package:mumtrepreneursapp/Feeds/edit_post.dart';
 import 'package:mumtrepreneursapp/Feeds/like.dart';
@@ -14,6 +18,49 @@ class Feeds extends StatefulWidget {
 }
 
 class _FeedsState extends State<Feeds> {
+
+  final _controller = ScreenshotController();
+
+  Future<void> share() async {
+    await FlutterShare.share(
+        title: 'Example share',
+        text: 'Example share text',
+        linkUrl: 'https://flutter.dev/',
+        chooserTitle: 'Example Chooser Title');
+  }
+
+  Future<void> shareFile() async {
+    final result = await FilePicker.platform.pickFiles();
+    if (result == null || result.files.isEmpty) return null;
+
+    await FlutterShare.shareFile(
+      title: 'Example share',
+      text: 'Example share text',
+      filePath: result.files[0] as String,
+    );
+  }
+
+  Future<void> shareScreenshot() async {
+    Directory directory;
+    if (Platform.isAndroid) {
+      directory = await getExternalStorageDirectory();
+    } else {
+      directory = await getApplicationDocumentsDirectory();
+    }
+    final String localPath =
+        '${directory.path}/${DateTime.now().toIso8601String()}.png';
+
+    await _controller.captureAndSave(localPath);
+
+    await Future.delayed(Duration(seconds: 1));
+
+    await FlutterShare.shareFile(
+        title: 'Comparator component',
+        filePath: localPath,
+        fileType: 'image/png'
+    );
+  }
+
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
@@ -240,7 +287,11 @@ class _FeedsState extends State<Feeds> {
                                 const Text('250',style: const TextStyle(fontSize: 14,fontFamily: 'Sk-Modernist',fontWeight: FontWeight.bold),),
                                 Padding(
                                   padding: const EdgeInsets.only(left: 195,right: 22),
-                                  child: Image.asset('assets/Image/share_icon.png',width: 17.42,height: 19,),
+                                  child: InkWell(
+                                    onTap: (){
+                                      share();
+                                    },
+                                      child: Image.asset('assets/Image/share_icon.png',width: 17.42,height: 19,)),
                                 ),
                               ],
                             ),
@@ -464,7 +515,11 @@ class _FeedsState extends State<Feeds> {
                                   Text('250',style: TextStyle(fontSize: 14,fontFamily: 'Sk-Modernist',fontWeight: FontWeight.bold),),
                                   Padding(
                                     padding: const EdgeInsets.only(left: 195,right: 22),
-                                    child: Image.asset('assets/Image/share_icon.png',width: 17.42,height: 19,),
+                                    child: InkWell(
+                                        onTap: (){
+                                          share();
+                                        },
+                                        child: Image.asset('assets/Image/share_icon.png',width: 17.42,height: 19,)),
                                   ),
                                 ],
                               ),
@@ -630,7 +685,12 @@ class _FeedsState extends State<Feeds> {
                                 const Text('250',style: TextStyle(fontSize: 14,fontFamily: 'Sk-Modernist',fontWeight: FontWeight.bold),),
                                 Padding(
                                   padding: const EdgeInsets.only(left: 195,right: 22),
-                                  child: Image.asset('assets/Image/share_icon.png',width: 17.42,height: 19,),
+                                  child: InkWell(
+                                    onTap: (){
+                                      share();
+                                    },
+
+                                      child: Image.asset('assets/Image/share_icon.png',width: 17.42,height: 19,)),
                                 ),
                               ],
                             ),
@@ -777,7 +837,11 @@ class _FeedsState extends State<Feeds> {
                                   Text('250',style: TextStyle(fontSize: 14,fontFamily: 'Sk-Modernist',fontWeight: FontWeight.bold),),
                                   Padding(
                                     padding: const EdgeInsets.only(left: 195,right: 22),
-                                    child: Image.asset('assets/Image/share_icon.png',width: 17.42,height: 19,),
+                                    child: InkWell(
+                                        onTap: (){
+                                          share();
+                                        },
+                                        child: Image.asset('assets/Image/share_icon.png',width: 17.42,height: 19,)),
                                   ),
                                 ],
                               ),
@@ -813,4 +877,9 @@ class _FeedsState extends State<Feeds> {
 
     );
   }
+
+  getExternalStorageDirectory() {}
+
+  getApplicationDocumentsDirectory() {}
+
 }
