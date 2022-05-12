@@ -58,7 +58,7 @@ class _Forgot_password1State extends State<Forgot_password1> {
       body: SingleChildScrollView(
         scrollDirection: Axis.vertical,
        child: Padding(
-          padding: const EdgeInsets.only(top: 235),
+          padding: EdgeInsets.only(top: 235),
           child: Column(
             children: [
               Center(
@@ -67,13 +67,13 @@ class _Forgot_password1State extends State<Forgot_password1> {
               ),
 
               Padding(
-                padding: const EdgeInsets.only(left: 80,right: 80),
+                padding: EdgeInsets.only(left: 80,right: 80),
                 child: Text('Please enter the 4-digit code we    sent to your email',
                   style: TextStyle(color: Colors.grey,fontFamily: 'Sk-Modernist',fontSize: 15),),
               ),
 
               Padding(
-                padding: const EdgeInsets.only(bottom: 20),
+                padding: EdgeInsets.only(bottom: 20),
                 child: Text('riyad***@gmail.com',style: TextStyle(fontSize: 15,fontFamily: 'Sk-Modernist',fontWeight: FontWeight.bold),),
               ),
 
@@ -119,7 +119,7 @@ class _Forgot_password1State extends State<Forgot_password1> {
 
 
               Padding(
-                padding: const EdgeInsets.only(left: 90,right: 50,top: 105),
+                padding: EdgeInsets.only(left: 90,right: 50,top: 105),
                 child: Row(
                   children: [
                     Text('Did you don’t code ?',style: TextStyle(color: Colors.grey,fontSize: 15,fontFamily: 'Sk-Modernist'),),
@@ -130,7 +130,7 @@ class _Forgot_password1State extends State<Forgot_password1> {
 
 
               Padding(
-                padding: const EdgeInsets.only(left: 10,top: 170,right: 13,),
+                padding: EdgeInsets.only(left: 10,top: 170,right: 13,),
                 child: Container(
                   width: 325,
                   height: 55,
@@ -141,7 +141,7 @@ class _Forgot_password1State extends State<Forgot_password1> {
                     child: Text('RECOVER PASSWORD',
                       style: TextStyle(color: Color(0xffFFFFFF),fontSize: 15,fontWeight: FontWeight.bold,fontFamily: 'Sk-Modernist'),),
                     onPressed: (){
-                      Navigator.push(context, MaterialPageRoute(builder: (context) => const New_Password()));
+                      Navigator.push(context, MaterialPageRoute(builder: (context) => New_Password()));
                     },
                   ),
                 ),

@@ -1,4 +1,4 @@
-// ignore_for_file: deprecated_member_use, file_names, camel_case_types, prefer_const_constructors, sized_box_for_whitespace
+// ignore_for_file: deprecated_member_use, file_names, camel_case_types, prefer_const_constructors, sized_box_for_whitespace, prefer_const_literals_to_create_immutables
 
 import 'package:flutter/material.dart';
 import 'package:mumtrepreneursapp/Authorization/Login_Page.dart';
@@ -33,23 +33,34 @@ class _Sign_PageState extends State<Sign_Page> {
             mainAxisAlignment: MainAxisAlignment.start,
             children: [
               Padding(
-                padding: const EdgeInsets.only(top: 160,right: 225,bottom: 32.25),
+                padding: EdgeInsets.only(top: 160,right: 225,bottom: 32.25),
                 child: Image.asset('assets/Image/MumTrepreneurs.png',width: 92,height: 63.98),
               ),
 
               Padding(
-                padding: const EdgeInsets.only(left: 27,right: 20),
+                padding: EdgeInsets.only(left: 27,right: 20),
                 child: Text('Let’s create your account',
                   style: TextStyle(color: Colors.black,fontSize: 28,fontWeight: FontWeight.bold,fontFamily: 'Sk-Modernist'),),
               ),
 
               Padding(
-                padding: const EdgeInsets.only(left: 25,top: 37,right: 13),
+                padding: EdgeInsets.only(left: 25,top: 37,right: 13),
                 child: Container(
                   padding: EdgeInsets.only(top: 3),
                   width: 325,
 
                   decoration: BoxDecoration(
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.grey,
+                        offset: Offset(
+                          2.0,
+                          4.0,
+                        ),
+                        blurRadius: 5.0,
+                        spreadRadius: 0.5,
+                      ),
+                    ],
                     color: Color(0xffFFFFFF),
                     borderRadius: BorderRadius.circular(5),
                   ),
@@ -75,12 +86,23 @@ class _Sign_PageState extends State<Sign_Page> {
               ),
 
               Padding(
-                padding: const EdgeInsets.only(left: 25,top: 37,right: 13),
+                padding: EdgeInsets.only(left: 25,top: 37,right: 13),
                 child: Container(
                   padding: EdgeInsets.only(top: 3),
                   width: 325,
 
                   decoration: BoxDecoration(
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.grey,
+                        offset: Offset(
+                          2.0,
+                          4.0,
+                        ),
+                        blurRadius: 5.0,
+                        spreadRadius: 0.5,
+                      ),
+                    ],
                     color: Color(0xffFFFFFF),
                     borderRadius: BorderRadius.circular(5),
                   ),
@@ -117,7 +139,7 @@ class _Sign_PageState extends State<Sign_Page> {
 
 
               Padding(
-                padding: const EdgeInsets.only(left: 25,top: 37,right: 13),
+                padding: EdgeInsets.only(left: 25,top: 37,right: 13),
                 child: Container(
                   width: 325,
                   height: 55,
@@ -128,7 +150,7 @@ class _Sign_PageState extends State<Sign_Page> {
                     child: Text('NEXT',
                       style: TextStyle(color: Color(0xffFFFFFF),fontSize: 15,fontWeight: FontWeight.bold,fontFamily: 'Sk-Modernist'),),
                     onPressed: (){
-                      Navigator.push(context, MaterialPageRoute(builder: (context) => const Signup_2()));
+                      Navigator.push(context, MaterialPageRoute(builder: (context) => Signup_2()));
 
                       if (_formKey.currentState.validate()) {
 
@@ -140,7 +162,7 @@ class _Sign_PageState extends State<Sign_Page> {
               ),
 
               Padding(
-                padding: const EdgeInsets.only(left: 110,top: 125),
+                padding: EdgeInsets.only(left: 110,top: 125),
                 child: Row(
                   children: [
                     Text('Already a member?',
@@ -148,7 +170,7 @@ class _Sign_PageState extends State<Sign_Page> {
                     TextButton(child: Text('LOG IN',
                       style: TextStyle(color: Color(0xff12496D),fontSize: 14,fontWeight: FontWeight.bold,fontFamily: 'Sk-Modernist'),),
                       onPressed: (){
-                        Navigator.push(context, MaterialPageRoute(builder: (context) => const Login_Page()));
+                        Navigator.push(context, MaterialPageRoute(builder: (context) => Login_Page()));
                       },
                     ),
                   ],

@@ -1,6 +1,6 @@
 
 
-// ignore_for_file: camel_case_types, prefer_const_constructors, file_names
+// ignore_for_file: camel_case_types, prefer_const_constructors, file_names, prefer_const_literals_to_create_immutables
 
 import 'package:flutter/material.dart';
 import 'package:mumtrepreneursapp/Home/Events.dart';
@@ -56,6 +56,17 @@ class _Home_PageState extends State<Home_Page> {
                   width: 325,
                   height: 45,
                   decoration: BoxDecoration(
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.grey,
+                        offset: const Offset(
+                          2.0,
+                          4.0,
+                        ),
+                        blurRadius: 5.0,
+                        spreadRadius: 0.5,
+                      ),
+                    ],
                     color: Colors.white,
                     borderRadius: BorderRadius.circular(5),
                   ),

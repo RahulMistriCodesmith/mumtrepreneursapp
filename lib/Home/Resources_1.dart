@@ -16,6 +16,7 @@ class _Resources_1State extends State<Resources_1> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Color(0xffE5E5E5),
       body: SingleChildScrollView(
         child: Column(
           children: [

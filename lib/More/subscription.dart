@@ -17,7 +17,8 @@ class _SubscriptionState extends State<Subscription> {
 
       body: SingleChildScrollView(
         child: Padding(
-          padding: const EdgeInsets.only(top: 63,left: 33),
+          padding: const EdgeInsets.only(top: 63,left: 45),
+
           child: Column(
             children: [
               Row(
@@ -43,7 +44,7 @@ class _SubscriptionState extends State<Subscription> {
               ),
 
               Padding(
-                padding: const EdgeInsets.only(top: 40),
+                padding: const EdgeInsets.only(top: 40,left: 5),
                 child: Row(
                   children: [
                     Text('FEATURES',style: TextStyle(fontFamily: 'Sk-Modernist',fontWeight: FontWeight.bold,fontSize: 14),),
@@ -57,7 +58,7 @@ class _SubscriptionState extends State<Subscription> {
               ),
 
               Padding(
-                padding: const EdgeInsets.only(top: 20),
+                padding: const EdgeInsets.only(top: 20,left: 5),
                 child: Row(
                   children: [
                     Text('Weekly Digest Zoom',style: TextStyle(fontFamily: 'Sk-Modernist',color: Colors.grey,fontSize: 14),),
@@ -78,7 +79,7 @@ class _SubscriptionState extends State<Subscription> {
               ),
 
               Padding(
-                padding: const EdgeInsets.only(top: 20),
+                padding: const EdgeInsets.only(top: 20,left: 5),
                 child: Row(
                   children: [
                     Text('Free resources to download',style: TextStyle(fontFamily: 'Sk-Modernist',color: Colors.grey,fontSize: 14),),
@@ -99,13 +100,13 @@ class _SubscriptionState extends State<Subscription> {
               ),
 
               Padding(
-                padding: const EdgeInsets.only(top: 20),
+                padding: const EdgeInsets.only(top: 20,left: 5),
                 child: Row(
                   children: [
                     Text('Business dev clinic',style: TextStyle(fontFamily: 'Sk-Modernist',color: Colors.grey,fontSize: 14),),
 
                     Padding(
-                      padding: const EdgeInsets.only(left: 85,right: 57),
+                      padding: const EdgeInsets.only(left: 88,right: 57),
                       child: Container(
                         width: 20,
                         height: 2,
@@ -120,13 +121,13 @@ class _SubscriptionState extends State<Subscription> {
               ),
 
               Padding(
-                padding: const EdgeInsets.only(top: 20),
+                padding: const EdgeInsets.only(top: 20,left: 5),
                 child: Row(
                   children: [
                     Text('Free monthly webinars',style: TextStyle(fontFamily: 'Sk-Modernist',color: Colors.grey,fontSize: 14),),
 
                     Padding(
-                      padding: const EdgeInsets.only(left: 63,right: 57),
+                      padding: const EdgeInsets.only(left: 67,right: 57),
                       child: Container(
                         width: 20,
                         height: 2,
@@ -141,7 +142,7 @@ class _SubscriptionState extends State<Subscription> {
               ),
 
               Padding(
-                padding: const EdgeInsets.only(top: 20),
+                padding: const EdgeInsets.only(top: 20,left: 7),
                 child: Row(
                   children: [
                     Text('Networking events FREE',style: TextStyle(fontFamily: 'Sk-Modernist',color: Colors.grey,fontSize: 14),),

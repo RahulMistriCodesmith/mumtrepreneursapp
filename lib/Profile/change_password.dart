@@ -62,6 +62,18 @@ class _Change_PasswordState extends State<Change_Password> {
                 width: 325,
 
                 decoration: BoxDecoration(
+                  // ignore: prefer_const_literals_to_create_immutables
+                  boxShadow: [
+                    BoxShadow(
+                      color: Colors.grey,
+                      offset: const Offset(
+                        2.0,
+                        4.0,
+                      ),
+                      blurRadius: 5.0,
+                      spreadRadius: 0.5,
+                    ),
+                  ],
                   color: Colors.white,
                   borderRadius: BorderRadius.circular(5),
                 ),
@@ -95,6 +107,18 @@ class _Change_PasswordState extends State<Change_Password> {
                   width: 325,
 
                   decoration: BoxDecoration(
+                    // ignore: prefer_const_literals_to_create_immutables
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.grey,
+                        offset: const Offset(
+                          2.0,
+                          4.0,
+                        ),
+                        blurRadius: 5.0,
+                        spreadRadius: 0.5,
+                      ),
+                    ],
                     color: Color(0xffFFFFFF),
                     borderRadius: BorderRadius.circular(5),
                   ),
@@ -141,6 +165,18 @@ class _Change_PasswordState extends State<Change_Password> {
                   width: 325,
 
                   decoration: BoxDecoration(
+                    // ignore: prefer_const_literals_to_create_immutables
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.grey,
+                        offset: const Offset(
+                          2.0,
+                          4.0,
+                        ),
+                        blurRadius: 5.0,
+                        spreadRadius: 0.5,
+                      ),
+                    ],
                     color: Color(0xffFFFFFF),
                     borderRadius: BorderRadius.circular(5),
                   ),

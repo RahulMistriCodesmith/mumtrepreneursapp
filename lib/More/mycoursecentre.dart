@@ -46,6 +46,17 @@ class _Course_CentreState extends State<Course_Centre> {
                     width: 325,
                     height: 45,
                     decoration: BoxDecoration(
+                      boxShadow: [
+                        BoxShadow(
+                          color: Colors.grey,
+                          offset: const Offset(
+                            2.0,
+                            4.0,
+                          ),
+                          blurRadius: 5.0,
+                          spreadRadius: 0.5,
+                        ),
+                      ],
                       color: Colors.white,
                       borderRadius: BorderRadius.circular(5),
                     ),
@@ -114,6 +125,17 @@ class _Course_CentreState extends State<Course_Centre> {
                                     width: 153,
                                     height: 196,
                                     decoration: BoxDecoration(
+                                      boxShadow: [
+                                        BoxShadow(
+                                          color: Colors.grey,
+                                          offset: const Offset(
+                                            2.0,
+                                            4.0,
+                                          ),
+                                          blurRadius: 5.0,
+                                          spreadRadius: 0.5,
+                                        ),
+                                      ],
                                       color: Colors.white,
                                       borderRadius: BorderRadius.circular(5),
                                     ),
@@ -168,6 +190,17 @@ class _Course_CentreState extends State<Course_Centre> {
                                       width: 153,
                                       height: 196,
                                       decoration: BoxDecoration(
+                                        boxShadow: [
+                                          BoxShadow(
+                                            color: Colors.grey,
+                                            offset: const Offset(
+                                              2.0,
+                                              4.0,
+                                            ),
+                                            blurRadius: 5.0,
+                                            spreadRadius: 0.5,
+                                          ),
+                                        ],
                                         color: Colors.white,
                                         borderRadius: BorderRadius.circular(5),
                                       ),
@@ -242,6 +275,17 @@ class _Course_CentreState extends State<Course_Centre> {
                                     width: 153,
                                     height: 177,
                                     decoration: BoxDecoration(
+                                      boxShadow: [
+                                        BoxShadow(
+                                          color: Colors.grey,
+                                          offset: const Offset(
+                                            2.0,
+                                            4.0,
+                                          ),
+                                          blurRadius: 5.0,
+                                          spreadRadius: 0.5,
+                                        ),
+                                      ],
                                       color: Colors.white,
                                       borderRadius: BorderRadius.circular(5),
                                     ),
@@ -287,6 +331,17 @@ class _Course_CentreState extends State<Course_Centre> {
                                       width: 153,
                                       height: 177,
                                       decoration: BoxDecoration(
+                                        boxShadow: [
+                                          BoxShadow(
+                                            color: Colors.grey,
+                                            offset: const Offset(
+                                              2.0,
+                                              4.0,
+                                            ),
+                                            blurRadius: 5.0,
+                                            spreadRadius: 0.5,
+                                          ),
+                                        ],
                                         color: Colors.white,
                                         borderRadius: BorderRadius.circular(5),
                                       ),
@@ -336,6 +391,17 @@ class _Course_CentreState extends State<Course_Centre> {
                                       width: 153,
                                       height: 177,
                                       decoration: BoxDecoration(
+                                        boxShadow: [
+                                          BoxShadow(
+                                            color: Colors.grey,
+                                            offset: const Offset(
+                                              2.0,
+                                              4.0,
+                                            ),
+                                            blurRadius: 5.0,
+                                            spreadRadius: 0.5,
+                                          ),
+                                        ],
                                         color: Colors.white,
                                         borderRadius: BorderRadius.circular(5),
                                       ),
@@ -379,6 +445,17 @@ class _Course_CentreState extends State<Course_Centre> {
                                         width: 153,
                                         height: 177,
                                         decoration: BoxDecoration(
+                                          boxShadow: [
+                                            BoxShadow(
+                                              color: Colors.grey,
+                                              offset: const Offset(
+                                                2.0,
+                                                4.0,
+                                              ),
+                                              blurRadius: 5.0,
+                                              spreadRadius: 0.5,
+                                            ),
+                                          ],
                                           color: Colors.white,
                                           borderRadius: BorderRadius.circular(5),
                                         ),

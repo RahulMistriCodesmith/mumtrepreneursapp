@@ -41,6 +41,7 @@ class _Bottom_Navigation_BarState extends State<Bottom_Navigation_Bar> {
           bottomNavigationBar: BottomNavigationBar(
             type: BottomNavigationBarType.fixed,
             currentIndex: _currentindex,
+            iconSize: 20,
 
             backgroundColor: Colors.white,
             selectedItemColor: Color(0xff12496D),
@@ -48,27 +49,27 @@ class _Bottom_Navigation_BarState extends State<Bottom_Navigation_Bar> {
             onTap: _onItemTapped,
             items: const <BottomNavigationBarItem>[
               BottomNavigationBarItem(
-                icon: Icon(Icons.home_outlined),
+                icon: ImageIcon(AssetImage('assets/Image/home_icon.png',)),
                 label: 'Home',
                 backgroundColor: Colors.white,
               ),
               BottomNavigationBarItem(
-                icon: Icon(Icons.chat_outlined),
+                icon: ImageIcon(AssetImage('assets/Image/comment_icon.png')),
                 label: 'SMS',
                 backgroundColor: Colors.white,
               ),
               BottomNavigationBarItem(
-                icon: Icon(Icons.feed_outlined),
+                icon: ImageIcon(AssetImage('assets/Image/feed_icon.png')),
                 label: 'Feed',
                 backgroundColor: Colors.white,
               ),
               BottomNavigationBarItem(
-                icon: Icon(Icons.person_outlined),
+                icon: ImageIcon(AssetImage('assets/Image/edit_image.png')),
                 label: 'Profile',
                 backgroundColor: Colors.white,
               ),
               BottomNavigationBarItem(
-                icon: Icon(Icons.category_outlined),
+                icon: ImageIcon(AssetImage('assets/Image/category_icon.png')),
                 label: 'More',
                 backgroundColor: Colors.white,
               ),

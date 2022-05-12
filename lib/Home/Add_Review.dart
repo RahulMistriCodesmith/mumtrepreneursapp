@@ -22,7 +22,7 @@ class _Add_ReviewState extends State<Add_Review> {
 
 
         title: Padding(
-          padding: const EdgeInsets.only(left: 97),
+          padding:  EdgeInsets.only(left: 97),
           child: Text('Add Review'),
         ),
         titleTextStyle: TextStyle(color: Colors.black,fontSize: 16,fontFamily: 'Sk-Modernist',fontWeight: FontWeight.bold),
@@ -30,14 +30,14 @@ class _Add_ReviewState extends State<Add_Review> {
       ),
       body: SingleChildScrollView(
         child: Padding(
-          padding: const EdgeInsets.only(top: 44),
+          padding:  EdgeInsets.only(top: 44),
           child: Column(
             children: [
               Center(
                   child: Image.asset('assets/Image/Mask group2.png',width: 100,height: 100,)
               ),
               Padding(
-                padding: const EdgeInsets.only(top: 5,left: 130),
+                padding:  EdgeInsets.only(top: 5,left: 130),
                 child: Row(
                   children: [
                     Text('Riyad Mostofa',style: TextStyle(fontSize: 22,fontWeight: FontWeight.bold,fontFamily: 'Sk-Modernist'),),
@@ -49,7 +49,7 @@ class _Add_ReviewState extends State<Add_Review> {
               Text('@riyadmostofa',style: TextStyle(fontSize: 15,color: Colors.grey,fontFamily: 'Sk-Modernist'),),
 
               Padding(
-                padding: const EdgeInsets.only(top: 28,bottom: 25,left: 25,right: 25),
+                padding:  EdgeInsets.only(top: 28,bottom: 25,left: 25,right: 25),
                 child: Divider(
                   color: Colors.black,
                   thickness: 1,
@@ -57,17 +57,17 @@ class _Add_ReviewState extends State<Add_Review> {
               ),
 
               Padding(
-                padding: const EdgeInsets.only(right: 90),
+                padding:  EdgeInsets.only(right: 90),
                 child: Text('Rate your trip with Allyson D. Grover',style: TextStyle(fontSize: 16,color: Colors.grey,fontFamily: 'Sk-Modernist'),),
               ),
 
               Padding(
-                padding: const EdgeInsets.only(top: 25,right: 150),
+                padding:  EdgeInsets.only(top: 25,right: 150),
                 child: Image.asset('assets/Image/Group 37048.png',width: 193.6,height: 26.21,),
               ),
 
               Padding(
-                padding: const EdgeInsets.only(top: 35.79,bottom: 12,right: 145),
+                padding:  EdgeInsets.only(top: 35.79,bottom: 12,right: 145),
                 child: Text('What did you like or dislike?',style: TextStyle(fontFamily: 'Sk-Modernist',fontSize: 15),),
               ),
 
@@ -89,7 +89,7 @@ class _Add_ReviewState extends State<Add_Review> {
               ),
 
               Padding(
-                padding: const EdgeInsets.only(left: 8,top: 88.55,right: 3,),
+                padding:  EdgeInsets.only(left: 8,top: 88.55,right: 3,),
                 child: Container(
                   width: 325,
                   height: 55,

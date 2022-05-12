@@ -87,6 +87,17 @@ class _BlogState extends State<Blog> {
               width: 325,
               height: 45,
               decoration: BoxDecoration(
+                boxShadow: [
+                  BoxShadow(
+                    color: Colors.grey,
+                    offset: const Offset(
+                      2.0,
+                      4.0,
+                    ),
+                    blurRadius: 5.0,
+                    spreadRadius: 0.5,
+                  ),
+                ],
                 color: Colors.white,
                 borderRadius: BorderRadius.circular(5),
               ),

@@ -23,14 +23,17 @@ class _MoreState extends State<More> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Color(0xffE5E5E5),
 
       body: SingleChildScrollView(
         child: Padding(
           padding: const EdgeInsets.only(top: 100,left: 25),
           child: Column(
+
             children: [
+
               Padding(
-                padding: const EdgeInsets.only(left: 25,right: 322,bottom: 30),
+                padding: const EdgeInsets.only(left: 25,right: 322,bottom: 20),
                 child: Text('More',style: TextStyle(fontFamily: 'Gilroy-Bold',fontSize: 16,fontWeight: FontWeight.bold),),
               ),
 

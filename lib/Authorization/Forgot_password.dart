@@ -1,9 +1,8 @@
-// ignore_for_file: deprecated_member_use, camel_case_types, prefer_typing_uninitialized_variables, prefer_const_constructors, sized_box_for_whitespace, file_names
+// ignore_for_file: deprecated_member_use, camel_case_types, prefer_typing_uninitialized_variables, prefer_const_constructors, sized_box_for_whitespace, file_names, prefer_const_literals_to_create_immutables
 
 
 import 'package:flutter/material.dart';
 import 'package:mumtrepreneursapp/Authorization/Forgot_password1.dart';
-import 'package:pin_code_fields/pin_code_fields.dart';
 class Forgot_password extends StatefulWidget {
   const Forgot_password({Key key}) : super(key: key);
 
@@ -34,23 +33,34 @@ class _Forgot_passwordState extends State<Forgot_password> {
           child: Column(
             children: [
               Padding(
-                padding: const EdgeInsets.only(top: 232,right: 130),
+                padding: EdgeInsets.only(top: 232,right: 130),
                 child: Text('Forgot Password',style: TextStyle(fontFamily: 'Sk-Modernist',fontWeight: FontWeight.bold,fontSize: 28),),
               ),
               Padding(
-                padding: const EdgeInsets.only(left: 30,top: 13,right: 30),
+                padding: EdgeInsets.only(left: 30,top: 13,right: 30),
                 child: Text('Please enter your email below and we’ll send you an OTP to reset your password',
                 style: TextStyle(color: Colors.grey,fontFamily: 'Sk-Modernist',fontSize: 15),
                 ),
               ),
 
               Padding(
-                padding: const EdgeInsets.only(left: 10,top: 37,right: 13,bottom: 275),
+                padding: EdgeInsets.only(left: 10,top: 37,right: 13,bottom: 275),
                 child: Container(
                   padding: EdgeInsets.only(top: 3),
                   width: 325,
 
                   decoration: BoxDecoration(
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.grey,
+                        offset: Offset(
+                          2.0,
+                          4.0,
+                        ),
+                        blurRadius: 5.0,
+                        spreadRadius: 0.5,
+                      ),
+                    ],
                     color: Color(0xffFFFFFF),
                     borderRadius: BorderRadius.circular(5),
 
@@ -76,7 +86,7 @@ class _Forgot_passwordState extends State<Forgot_password> {
               ),
 
               Padding(
-                padding: const EdgeInsets.only(left: 10,top: 23,right: 13,bottom: 23),
+                padding: EdgeInsets.only(left: 10,top: 23,right: 13,bottom: 23),
                 child: Container(
                   width: 325,
                   height: 55,

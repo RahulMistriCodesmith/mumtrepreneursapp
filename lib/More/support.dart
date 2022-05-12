@@ -54,6 +54,7 @@ class _SupportState extends State<Support> {
                   width: 325,
                   height: 162,
                   decoration: BoxDecoration(
+
                     color: Color(0xff12496D),
                     borderRadius: BorderRadius.circular(5),
                   ),
@@ -81,6 +82,18 @@ class _SupportState extends State<Support> {
                   width: 325,
 
                   decoration: BoxDecoration(
+                    // ignore: prefer_const_literals_to_create_immutables
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.grey,
+                        offset: const Offset(
+                          2.0,
+                          4.0,
+                        ),
+                        blurRadius: 5.0,
+                        spreadRadius: 0.5,
+                      ),
+                    ],
                     color: Colors.white,
                     borderRadius: BorderRadius.circular(5),
                   ),
@@ -111,6 +124,18 @@ class _SupportState extends State<Support> {
                   width: 325,
 
                   decoration: BoxDecoration(
+                    // ignore: prefer_const_literals_to_create_immutables
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.grey,
+                        offset: const Offset(
+                          2.0,
+                          4.0,
+                        ),
+                        blurRadius: 5.0,
+                        spreadRadius: 0.5,
+                      ),
+                    ],
                     color: Colors.white,
                     borderRadius: BorderRadius.circular(5),
                   ),
@@ -143,6 +168,18 @@ class _SupportState extends State<Support> {
                   width: 325,
 
                   decoration: BoxDecoration(
+                    // ignore: prefer_const_literals_to_create_immutables
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.grey,
+                        offset: const Offset(
+                          2.0,
+                          4.0,
+                        ),
+                        blurRadius: 5.0,
+                        spreadRadius: 0.5,
+                      ),
+                    ],
                     color: Colors.white,
                     borderRadius: BorderRadius.circular(5),
                   ),
@@ -173,6 +210,18 @@ class _SupportState extends State<Support> {
                   width: 325,
 
                   decoration: BoxDecoration(
+                    // ignore: prefer_const_literals_to_create_immutables
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.grey,
+                        offset: const Offset(
+                          2.0,
+                          4.0,
+                        ),
+                        blurRadius: 5.0,
+                        spreadRadius: 0.5,
+                      ),
+                    ],
                     color: Colors.white,
                     borderRadius: BorderRadius.circular(5),
                   ),
@@ -184,10 +233,12 @@ class _SupportState extends State<Support> {
                       }
                       return null;
                     },
+                    maxLines: 3,
                     decoration: InputDecoration(
                       border: InputBorder.none,
                       hintText: 'Enter your Message',
                       hintStyle: TextStyle(color: Colors.grey,fontSize: 15,fontFamily: 'Sk-Modernist'),
+
                     ),
                   ),
                 ),

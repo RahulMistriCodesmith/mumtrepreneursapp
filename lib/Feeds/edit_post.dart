@@ -1,4 +1,4 @@
-// ignore_for_file: camel_case_types, void_checks, deprecated_member_use, prefer_const_constructors, sized_box_for_whitespace
+// ignore_for_file: camel_case_types, void_checks, deprecated_member_use, prefer_const_constructors, sized_box_for_whitespace, prefer_const_literals_to_create_immutables
 
 import 'package:flutter/material.dart';
 class EditPost extends StatefulWidget {
@@ -23,7 +23,7 @@ class _EditPostState extends State<EditPost> {
 
 
         title: Padding(
-          padding: const EdgeInsets.only(left: 100),
+          padding: EdgeInsets.only(left: 100),
           child: Text('Edit Post'),
         ),
         titleTextStyle: TextStyle(color: Colors.black,fontSize: 16,fontFamily: 'Sk-Modernist',fontWeight: FontWeight.bold),
@@ -32,7 +32,7 @@ class _EditPostState extends State<EditPost> {
 
       body: SingleChildScrollView(
         child: Padding(
-          padding: const EdgeInsets.only(top: 39),
+          padding: EdgeInsets.only(top: 39),
           child: Column(
             children: [
               Container(
@@ -53,9 +53,9 @@ class _EditPostState extends State<EditPost> {
                           Column(
                             children: [
                               Padding(
-                                padding: const EdgeInsets.only(left: 9),
+                                padding: EdgeInsets.only(left: 9),
                                 child: RichText(
-                                  text: const TextSpan(
+                                  text: TextSpan(
                                     text: 'Riyad Mostofa',
                                     style: TextStyle(
                                         fontWeight: FontWeight.bold,
@@ -77,7 +77,7 @@ class _EditPostState extends State<EditPost> {
                                 ),
                               ),
                               Padding(
-                                padding: const EdgeInsets.only(left: 9,right: 65),
+                                padding: EdgeInsets.only(left: 9,right: 65),
                                 child: Text('@riyadmostofa',style: TextStyle(color: Colors.grey,fontFamily: 'Sk-Modernist',fontSize: 13),),
                               ),
                             ],
@@ -118,7 +118,7 @@ class _EditPostState extends State<EditPost> {
                                       child: Column(
                                         children: [
                                           Padding(
-                                            padding: const EdgeInsets.only(top: 15,bottom: 5),
+                                            padding: EdgeInsets.only(top: 15,bottom: 5),
                                             child: Container(
                                               width: 40,
                                               height: 4,
@@ -131,12 +131,12 @@ class _EditPostState extends State<EditPost> {
 
                                           Card(
                                             child: Padding(
-                                              padding: const EdgeInsets.only(left: 26,top: 16,bottom: 18),
+                                              padding: EdgeInsets.only(left: 26,top: 16,bottom: 18),
                                               child: Row(
                                                 children: [
                                                   Image.asset('assets/Image/photo_icon.png',width: 17,height: 17,),
                                                   Padding(
-                                                    padding: const EdgeInsets.only(left: 14,right: 265),
+                                                    padding: EdgeInsets.only(left: 14,right: 265),
                                                     child: Text('Photo',style: TextStyle(fontSize: 14,fontFamily: 'Sk-Modernist'),),
                                                   ),
                                                   Image.asset('assets/Image/plus_icon.png',width: 17,height: 17,),
@@ -147,12 +147,12 @@ class _EditPostState extends State<EditPost> {
 
                                           Card(
                                             child: Padding(
-                                              padding: const EdgeInsets.only(left: 26,top: 16,bottom: 18),
+                                              padding: EdgeInsets.only(left: 26,top: 16,bottom: 18),
                                               child: Row(
                                                 children: [
                                                   Image.asset('assets/Image/video_icon.png',width: 17,height: 17,),
                                                   Padding(
-                                                    padding: const EdgeInsets.only(left: 14,right: 268),
+                                                    padding: EdgeInsets.only(left: 14,right: 268),
                                                     child: Text('Video',style: TextStyle(fontSize: 14,fontFamily: 'Sk-Modernist'),),
                                                   ),
                                                   Image.asset('assets/Image/plus_icon.png',width: 17,height: 17,),
@@ -163,12 +163,12 @@ class _EditPostState extends State<EditPost> {
 
                                           Card(
                                             child: Padding(
-                                              padding: const EdgeInsets.only(left: 26,top: 16,bottom: 18),
+                                              padding: EdgeInsets.only(left: 26,top: 16,bottom: 18),
                                               child: Row(
                                                 children: [
                                                   Image.asset('assets/Image/live_video_icon.png',width: 17,height: 17,),
                                                   Padding(
-                                                    padding: const EdgeInsets.only(left: 14,right: 242),
+                                                    padding: EdgeInsets.only(left: 14,right: 242),
                                                     child: Text('Live Video',style: TextStyle(fontSize: 14,fontFamily: 'Sk-Modernist'),),
                                                   ),
                                                   Image.asset('assets/Image/plus_icon.png',width: 17,height: 17,),
@@ -179,12 +179,12 @@ class _EditPostState extends State<EditPost> {
 
                                           Card(
                                             child: Padding(
-                                              padding: const EdgeInsets.only(left: 26,top: 16,bottom: 18),
+                                              padding: EdgeInsets.only(left: 26,top: 16,bottom: 18),
                                               child: Row(
                                                 children: [
                                                   Image.asset('assets/Image/tag_icon.png',width: 17,height: 17,),
                                                   Padding(
-                                                    padding: const EdgeInsets.only(left: 14,right: 239),
+                                                    padding: EdgeInsets.only(left: 14,right: 239),
                                                     child: Text('Tag People',style: TextStyle(fontSize: 14,fontFamily: 'Sk-Modernist'),),
                                                   ),
                                                   Image.asset('assets/Image/plus_icon.png',width: 17,height: 17,),
@@ -194,7 +194,7 @@ class _EditPostState extends State<EditPost> {
                                           ),
 
                                           Padding(
-                                            padding: const EdgeInsets.only(top: 44.17),
+                                            padding: EdgeInsets.only(top: 44.17),
                                             child: Container(
                                               width: 345,
                                               height: 55,
@@ -225,7 +225,7 @@ class _EditPostState extends State<EditPost> {
                       },
 
                       child: Padding(
-                        padding: const EdgeInsets.only(top: 23.5,left: 25,right: 25),
+                        padding: EdgeInsets.only(top: 23.5,left: 25,right: 25),
                         child: Container(
                           padding: EdgeInsets.only(left: 10,right: 25),
                           width: 375,
@@ -233,7 +233,9 @@ class _EditPostState extends State<EditPost> {
                           child: TextField(
 
                             decoration: InputDecoration(
+
                               border: InputBorder.none,
+
 
                             ),
                           ),

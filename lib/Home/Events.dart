@@ -92,9 +92,11 @@ class _EventsState extends State<Events> {
 
       ),
       body: SingleChildScrollView(
+
         child: Padding(
           padding: const EdgeInsets.only(left: 40,top: 31),
           child: Column(
+
             children: [
 
               Padding(
@@ -104,6 +106,18 @@ class _EventsState extends State<Events> {
                   width: 325,
                   height: 45,
                   decoration: BoxDecoration(
+                    // ignore: prefer_const_literals_to_create_immutables
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.grey,
+                        offset: const Offset(
+                          2.0,
+                          4.0,
+                        ),
+                        blurRadius: 5.0,
+                        spreadRadius: 0.5,
+                      ),
+                    ],
                     color: Colors.white,
                     borderRadius: BorderRadius.circular(5),
                   ),
@@ -126,14 +140,29 @@ class _EventsState extends State<Events> {
               Padding(
                 padding: const EdgeInsets.only(right: 20),
                 child: Container(
+
                   width: 325,
                   height: 284,
                   decoration: BoxDecoration(
+                    // ignore: prefer_const_literals_to_create_immutables
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.grey,
+                        offset: const Offset(
+                          2.0,
+                          4.0,
+                        ),
+                        blurRadius: 5.0,
+                        spreadRadius: 0.5,
+                      ),
+                    ],
                     color: Colors.white,
                     borderRadius: BorderRadius.circular(5),
                   ),
                   child: Column(
+
                     children: [
+
                       Stack(
                         children: [
                           Padding(
@@ -233,6 +262,18 @@ class _EventsState extends State<Events> {
                   width: 325,
                   height: 284,
                   decoration: BoxDecoration(
+                    // ignore: prefer_const_literals_to_create_immutables
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.grey,
+                        offset: const Offset(
+                          2.0,
+                          4.0,
+                        ),
+                        blurRadius: 5.0,
+                        spreadRadius: 0.5,
+                      ),
+                    ],
                     color: Colors.white,
                     borderRadius: BorderRadius.circular(5),
                   ),

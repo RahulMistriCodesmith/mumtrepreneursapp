@@ -1,4 +1,4 @@
-// ignore_for_file: deprecated_member_use, prefer_const_constructors, use_full_hex_values_for_flutter_colors, sized_box_for_whitespace, avoid_returning_null_for_void, avoid_print
+// ignore_for_file: deprecated_member_use, prefer_const_constructors, use_full_hex_values_for_flutter_colors, sized_box_for_whitespace, avoid_returning_null_for_void, avoid_print, prefer_const_literals_to_create_immutables, duplicate_ignore
 
 import 'dart:io';
 
@@ -26,10 +26,11 @@ class _Events2State extends State<Events2> {
         initialDate: currentDate,
         firstDate: DateTime(2015),
         lastDate: DateTime(2050));
-    if (pickedDate != null && pickedDate != currentDate)
+    if (pickedDate != null && pickedDate != currentDate) {
       setState(() {
         currentDate = pickedDate;
       });
+    }
   }
 
 
@@ -103,8 +104,6 @@ class _Events2State extends State<Events2> {
           child: Column(
             children: [
 
-
-
               Padding(
                 padding: const EdgeInsets.only(right: 30),
                 child: Container(
@@ -112,6 +111,18 @@ class _Events2State extends State<Events2> {
                   width: 325,
                   height: 45,
                   decoration: BoxDecoration(
+
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.grey,
+                        offset: const Offset(
+                          2.0,
+                          4.0,
+                        ),
+                        blurRadius: 5.0,
+                        spreadRadius: 0.5,
+                      ),
+                    ],
                     color: Colors.white,
                     borderRadius: BorderRadius.circular(5),
                   ),
@@ -138,6 +149,18 @@ class _Events2State extends State<Events2> {
                   width: 325,
                   height: 284,
                   decoration: BoxDecoration(
+                    // ignore: prefer_const_literals_to_create_immutables
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.grey,
+                        offset: const Offset(
+                          2.0,
+                          4.0,
+                        ),
+                        blurRadius: 5.0,
+                        spreadRadius: 0.5,
+                      ),
+                    ],
                     color: Colors.white,
                     borderRadius: BorderRadius.circular(5),
                   ),
@@ -246,6 +269,18 @@ class _Events2State extends State<Events2> {
                   width: 325,
                   height: 284,
                   decoration: BoxDecoration(
+                    // ignore: prefer_const_literals_to_create_immutables
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.grey,
+                        offset: const Offset(
+                          2.0,
+                          4.0,
+                        ),
+                        blurRadius: 5.0,
+                        spreadRadius: 0.5,
+                      ),
+                    ],
                     color: Colors.white,
                     borderRadius: BorderRadius.circular(5),
                   ),
@@ -358,6 +393,17 @@ class _Events2State extends State<Events2> {
                   width: 325,
                   height: 284,
                   decoration: BoxDecoration(
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.grey,
+                        offset: const Offset(
+                          2.0,
+                          4.0,
+                        ),
+                        blurRadius: 5.0,
+                        spreadRadius: 0.5,
+                      ),
+                    ],
                     color: Colors.white,
                     borderRadius: BorderRadius.circular(5),
                   ),
@@ -464,6 +510,17 @@ class _Events2State extends State<Events2> {
                   width: 325,
                   height: 284,
                   decoration: BoxDecoration(
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.grey,
+                        offset: const Offset(
+                          2.0,
+                          4.0,
+                        ),
+                        blurRadius: 5.0,
+                        spreadRadius: 0.5,
+                      ),
+                    ],
                     color: Colors.white,
                     borderRadius: BorderRadius.circular(5),
                   ),

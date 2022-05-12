@@ -1,4 +1,4 @@
-// ignore_for_file: prefer_const_literals_to_create_immutables, prefer_const_constructors
+// ignore_for_file: prefer_const_literals_to_create_immutables, prefer_const_constructors, file_names
 
 import 'package:flutter/material.dart';
 import 'package:mumtrepreneursapp/Home/Resources_1.dart';
@@ -46,6 +46,17 @@ class _ResourcesState extends State<Resources> {
                     width: 325,
                     height: 45,
                     decoration: BoxDecoration(
+                      boxShadow: [
+                        BoxShadow(
+                          color: Colors.grey,
+                          offset: const Offset(
+                            2.0,
+                            4.0,
+                          ),
+                          blurRadius: 5.0,
+                          spreadRadius: 0.5,
+                        ),
+                      ],
                       color: Colors.white,
                       borderRadius: BorderRadius.circular(5),
                     ),
@@ -108,6 +119,17 @@ class _ResourcesState extends State<Resources> {
                               width: 153,
                               height: 196,
                               decoration: BoxDecoration(
+                                boxShadow: [
+                                  BoxShadow(
+                                    color: Colors.grey,
+                                    offset: const Offset(
+                                      2.0,
+                                      4.0,
+                                    ),
+                                    blurRadius: 5.0,
+                                    spreadRadius: 0.5,
+                                  ),
+                                ],
                                 color: Colors.white,
                                 borderRadius: BorderRadius.circular(5),
                               ),
@@ -161,6 +183,17 @@ class _ResourcesState extends State<Resources> {
                               width: 153,
                               height: 196,
                               decoration: BoxDecoration(
+                                boxShadow: [
+                                  BoxShadow(
+                                    color: Colors.grey,
+                                    offset: const Offset(
+                                      2.0,
+                                      4.0,
+                                    ),
+                                    blurRadius: 5.0,
+                                    spreadRadius: 0.5,
+                                  ),
+                                ],
                                 color: Colors.white,
                                 borderRadius: BorderRadius.circular(5),
                               ),
@@ -217,6 +250,17 @@ class _ResourcesState extends State<Resources> {
                               width: 153,
                               height: 196,
                               decoration: BoxDecoration(
+                                boxShadow: [
+                                  BoxShadow(
+                                    color: Colors.grey,
+                                    offset: const Offset(
+                                      2.0,
+                                      4.0,
+                                    ),
+                                    blurRadius: 5.0,
+                                    spreadRadius: 0.5,
+                                  ),
+                                ],
                                 color: Colors.white,
                                 borderRadius: BorderRadius.circular(5),
                               ),
@@ -266,6 +310,17 @@ class _ResourcesState extends State<Resources> {
                                 width: 153,
                                 height: 196,
                                 decoration: BoxDecoration(
+                                  boxShadow: [
+                                    BoxShadow(
+                                      color: Colors.grey,
+                                      offset: const Offset(
+                                        2.0,
+                                        4.0,
+                                      ),
+                                      blurRadius: 5.0,
+                                      spreadRadius: 0.5,
+                                    ),
+                                  ],
                                   color: Colors.white,
                                   borderRadius: BorderRadius.circular(5),
                                 ),

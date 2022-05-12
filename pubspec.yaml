@@ -40,6 +40,7 @@ dependencies:
   flutter_share: ^2.0.0
   file_picker: ^3.0.4
   table_calendar: ^2.1.0
+  readmore: ^2.1.0
 
 
 dev_dependencies:
@@ -155,6 +156,9 @@ flutter:
     - assets/Image/ticksquare.png
     - assets/Image/read_icon.png
     - assets/Image/send_icon.png
+    - assets/Image/home_icon.png
+    - assets/Image/feed_icon.png
+    - assets/Image/category_icon.png
 
 
 

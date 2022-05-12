@@ -1,4 +1,4 @@
-// ignore_for_file: deprecated_member_use, file_names, camel_case_types, prefer_const_constructors, sized_box_for_whitespace
+// ignore_for_file: deprecated_member_use, file_names, camel_case_types, prefer_const_constructors, sized_box_for_whitespace, prefer_const_literals_to_create_immutables
 
 import 'package:flutter/material.dart';
 import 'package:mumtrepreneursapp/Authorization/Login_Page.dart';
@@ -35,23 +35,34 @@ class _New_PasswordState extends State<New_Password> {
           child: Column(
             children: [
               Padding(
-                padding: const EdgeInsets.only(top: 232,right: 100),
+                padding: EdgeInsets.only(top: 232,right: 100),
                 child: Text('New Password',style: TextStyle(fontFamily: 'Sk-Modernist',fontWeight: FontWeight.bold,fontSize: 28),),
               ),
               Padding(
-                padding: const EdgeInsets.only(left: 30,top: 13,right: 150),
+                padding: EdgeInsets.only(left: 30,top: 13,right: 150),
                 child: Text('Enter your new password',
                   style: TextStyle(color: Colors.grey,fontFamily: 'Sk-Modernist',fontSize: 15),
                 ),
               ),
 
               Padding(
-                padding: const EdgeInsets.only(left: 40,top: 37,right: 13),
+                padding: EdgeInsets.only(left: 40,top: 37,right: 13),
                 child: Container(
                   padding: EdgeInsets.only(top: 3),
                   width: 325,
 
                   decoration: BoxDecoration(
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.grey,
+                        offset: Offset(
+                          2.0,
+                          4.0,
+                        ),
+                        blurRadius: 5.0,
+                        spreadRadius: 0.5,
+                      ),
+                    ],
                     color: Color(0xffFFFFFF),
                     borderRadius: BorderRadius.circular(5),
                   ),
@@ -86,7 +97,7 @@ class _New_PasswordState extends State<New_Password> {
               ),
 
               Padding(
-                padding: const EdgeInsets.only(left: 40,top: 280,right: 13,bottom: 23),
+                padding: EdgeInsets.only(left: 40,top: 280,right: 13,bottom: 23),
                 child: Container(
                   width: 325,
                   height: 55,
@@ -97,7 +108,7 @@ class _New_PasswordState extends State<New_Password> {
                     child: Text('UPDATE PASSWORD',
                       style: TextStyle(color: Color(0xffFFFFFF),fontSize: 15,fontWeight: FontWeight.bold,fontFamily: 'Sk-Modernist'),),
                     onPressed: (){
-                      Navigator.push(context, MaterialPageRoute(builder: (context) => const Login_Page()));
+                      Navigator.push(context, MaterialPageRoute(builder: (context) => Login_Page()));
                       if (_formKey.currentState.validate()) {}
                     },
                   ),

@@ -40,6 +40,17 @@ class _EventMembersState extends State<EventMembers> {
                   width: 325,
                   height: 45,
                   decoration: BoxDecoration(
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.grey,
+                        offset: const Offset(
+                          2.0,
+                          4.0,
+                        ),
+                        blurRadius: 5.0,
+                        spreadRadius: 0.5,
+                      ),
+                    ],
                     color: Colors.white,
                     borderRadius: BorderRadius.circular(5),
                   ),
@@ -48,7 +59,7 @@ class _EventMembersState extends State<EventMembers> {
                       border: InputBorder.none,
                       hintText: 'Search Here',
                       hintStyle: TextStyle(color: Colors.grey,fontSize: 15,fontFamily: 'Sk-Modernist'),
-                      suffixIcon: Icon(Icons.search,color: Colors.grey,),
+                      suffixIcon: Image.asset('assets/Image/search_icon.png',scale: 4,color: Colors.grey,),
                     ),
                   ),
                 ),

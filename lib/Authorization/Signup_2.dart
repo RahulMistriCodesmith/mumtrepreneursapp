@@ -48,7 +48,7 @@ class _Signup_2State extends State<Signup_2> {
           key: _formKey,
 
           child: Padding(
-            padding: const EdgeInsets.only(top: 30),
+            padding: EdgeInsets.only(top: 30),
             child: Column(
               children: [
                 Center(
@@ -77,7 +77,7 @@ class _Signup_2State extends State<Signup_2> {
                   ),
                 ),
                 Padding(
-                  padding: const EdgeInsets.only(top: 20.88),
+                  padding: EdgeInsets.only(top: 20.88),
                   child: Container(
                     width: 139,
                     height: 40,
@@ -101,17 +101,28 @@ class _Signup_2State extends State<Signup_2> {
                 ),
 
                 Padding(
-                  padding: const EdgeInsets.only(top: 29.12,right: 255,bottom: 12),
+                  padding: EdgeInsets.only(top: 29.12,right: 255,bottom: 12),
                   child: Text('Username',style: TextStyle(fontFamily: 'Sk-Modernist',fontSize: 15),),
                 ),
 
                 Container(
                   padding: EdgeInsets.only(left: 19.72),
                   width: 325,
-
                   decoration: BoxDecoration(
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.grey,
+                        offset: Offset(
+                          2.0,
+                          4.0,
+                        ),
+                        blurRadius: 5.0,
+                        spreadRadius: 0.5,
+                      ),
+                    ],
                     color: Colors.white,
                     borderRadius: BorderRadius.circular(5),
+                    
                   ),
                   child: TextFormField(
 
@@ -124,6 +135,7 @@ class _Signup_2State extends State<Signup_2> {
                     },
 
                     decoration: InputDecoration(
+
                       border: InputBorder.none,
                       hintText: 'Enter your username',
                       hintStyle: TextStyle(color: Colors.grey,fontSize: 15,fontFamily: 'Sk-Modernist'),
@@ -132,7 +144,7 @@ class _Signup_2State extends State<Signup_2> {
                 ),
 
                 Padding(
-                  padding: const EdgeInsets.only(top: 21,right: 250,bottom: 12),
+                  padding: EdgeInsets.only(top: 21,right: 250,bottom: 12),
                   child: Text('First Name',style: TextStyle(fontFamily: 'Sk-Modernist',fontSize: 15),),
                 ),
 
@@ -141,6 +153,17 @@ class _Signup_2State extends State<Signup_2> {
                   width: 325,
 
                   decoration: BoxDecoration(
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.grey,
+                        offset: Offset(
+                          2.0,
+                          4.0,
+                        ),
+                        blurRadius: 5.0,
+                        spreadRadius: 0.5,
+                      ),
+                    ],
                     color: Colors.white,
                     borderRadius: BorderRadius.circular(5),
                   ),
@@ -163,7 +186,7 @@ class _Signup_2State extends State<Signup_2> {
                 ),
 
                 Padding(
-                  padding: const EdgeInsets.only(top: 21,right: 250,bottom: 12),
+                  padding: EdgeInsets.only(top: 21,right: 250,bottom: 12),
                   child: Text('Last Name',style: TextStyle(fontFamily: 'Sk-Modernist',fontSize: 15),),
                 ),
 
@@ -172,6 +195,17 @@ class _Signup_2State extends State<Signup_2> {
                   width: 325,
 
                   decoration: BoxDecoration(
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.grey,
+                        offset: Offset(
+                          2.0,
+                          4.0,
+                        ),
+                        blurRadius: 5.0,
+                        spreadRadius: 0.5,
+                      ),
+                    ],
                     color: Colors.white,
                     borderRadius: BorderRadius.circular(5),
                   ),
@@ -194,7 +228,7 @@ class _Signup_2State extends State<Signup_2> {
                 ),
 
                 Padding(
-                  padding: const EdgeInsets.only(top: 21,right: 265,bottom: 12),
+                  padding: EdgeInsets.only(top: 21,right: 265,bottom: 12),
                   child: Text('Industry',style: TextStyle(fontFamily: 'Sk-Modernist',fontSize: 15),),
                 ),
 
@@ -203,6 +237,17 @@ class _Signup_2State extends State<Signup_2> {
                   width: 325,
                   height: 50,
                   decoration: BoxDecoration(
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.grey,
+                        offset: Offset(
+                          2.0,
+                          4.0,
+                        ),
+                        blurRadius: 5.0,
+                        spreadRadius: 0.5,
+                      ),
+                    ],
                     color: Colors.white,
                     borderRadius: BorderRadius.circular(5),
                   ),
@@ -213,11 +258,11 @@ class _Signup_2State extends State<Signup_2> {
                     value: dropdownValue,
 
                     icon: Padding(
-                      padding: const EdgeInsets.only(right: 10),
-                      child: const Icon(Icons.arrow_drop_down,),
+                      padding: EdgeInsets.only(right: 10),
+                      child: Icon(Icons.arrow_drop_down,),
                     ),
                     elevation: 16,
-                    style: const TextStyle(color: Colors.grey,fontSize: 15),
+                    style: TextStyle(color: Colors.grey,fontSize: 15),
                     onChanged: (String newValue) {
                       setState(() {
                         dropdownValue = newValue;
@@ -235,7 +280,7 @@ class _Signup_2State extends State<Signup_2> {
 
 
                 Padding(
-                  padding: const EdgeInsets.only(top: 21,right: 200,bottom: 12),
+                  padding: EdgeInsets.only(top: 21,right: 200,bottom: 12),
                   child: Text('Personal Website',style: TextStyle(fontFamily: 'Sk-Modernist',fontSize: 15),),
                 ),
 
@@ -244,6 +289,17 @@ class _Signup_2State extends State<Signup_2> {
                   width: 325,
 
                   decoration: BoxDecoration(
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.grey,
+                        offset: Offset(
+                          2.0,
+                          4.0,
+                        ),
+                        blurRadius: 5.0,
+                        spreadRadius: 0.5,
+                      ),
+                    ],
                     color: Colors.white,
                     borderRadius: BorderRadius.circular(5),
                   ),
@@ -266,7 +322,7 @@ class _Signup_2State extends State<Signup_2> {
                 ),
 
                 Padding(
-                  padding: const EdgeInsets.only(left: 124,right: 124,top: 26, bottom: 20),
+                  padding: EdgeInsets.only(left: 124,right: 124,top: 26, bottom: 20),
                   child: Divider(
                     thickness: 4,
                     color: Colors.grey,
@@ -278,6 +334,17 @@ class _Signup_2State extends State<Signup_2> {
                   width: 325,
 
                   decoration: BoxDecoration(
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.grey,
+                        offset: Offset(
+                          2.0,
+                          4.0,
+                        ),
+                        blurRadius: 5.0,
+                        spreadRadius: 0.5,
+                      ),
+                    ],
                     color: Colors.white,
                     borderRadius: BorderRadius.circular(5),
                   ),
@@ -300,7 +367,7 @@ class _Signup_2State extends State<Signup_2> {
 
 
                 Padding(
-                  padding: const EdgeInsets.only(top: 21,right: 230,bottom: 12),
+                  padding: EdgeInsets.only(top: 21,right: 230,bottom: 12),
                   child: Text('Social URL',style: TextStyle(fontFamily: 'Sk-Modernist',fontSize: 15),),
                 ),
 
@@ -309,6 +376,17 @@ class _Signup_2State extends State<Signup_2> {
                   width: 325,
 
                   decoration: BoxDecoration(
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.grey,
+                        offset: Offset(
+                          2.0,
+                          4.0,
+                        ),
+                        blurRadius: 5.0,
+                        spreadRadius: 0.5,
+                      ),
+                    ],
                     color: Colors.white,
                     borderRadius: BorderRadius.circular(5),
                   ),
@@ -334,7 +412,21 @@ class _Signup_2State extends State<Signup_2> {
                   width: 325,
 
                     duration: Duration(seconds: 2),
-                  color: Colors.white,
+
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.grey,
+                        offset: Offset(
+                          2.0,
+                          4.0,
+                        ),
+                        blurRadius: 5.0,
+                        spreadRadius: 0.5,
+                      ),
+                    ],
+                  ),
                   transform: _isInitialValue ? Matrix4.identity() : Matrix4.rotationX(radians(45)),
                   child: TextFormField(
 
@@ -354,17 +446,28 @@ class _Signup_2State extends State<Signup_2> {
                 ),
 
                 Padding(
-                  padding: const EdgeInsets.only(top: 1),
+                  padding: EdgeInsets.only(top: 1),
                   child: Container(
                     width: 325,
                     height: 50,
                     decoration: BoxDecoration(
+                      boxShadow: [
+                        BoxShadow(
+                          color: Colors.grey,
+                          offset: Offset(
+                            2.0,
+                            4.0,
+                          ),
+                          blurRadius: 5.0,
+                          spreadRadius: 0.5,
+                        ),
+                      ],
                       color: Colors.white,
                       borderRadius: BorderRadius.circular(5),
                     ),
                     child: TextButton(
                       child: Padding(
-                        padding: const EdgeInsets.only(right: 150),
+                        padding: EdgeInsets.only(right: 150),
                         child: Text('+ Add another URL',style: TextStyle(fontFamily: 'Sk-Modernist',fontSize: 15,color: Colors.black),),
                       ),
 
@@ -381,7 +484,7 @@ class _Signup_2State extends State<Signup_2> {
                 ),
 
                 Padding(
-                  padding: const EdgeInsets.only(top: 21,right: 260,bottom: 12),
+                  padding: EdgeInsets.only(top: 21,right: 260,bottom: 12),
                   child: Text('Country',style: TextStyle(fontFamily: 'Sk-Modernist',fontSize: 15),),
                 ),
 
@@ -390,7 +493,19 @@ class _Signup_2State extends State<Signup_2> {
                   width: 325,
                   height: 50,
                   decoration: BoxDecoration(
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.grey,
+                        offset: Offset(
+                          2.0,
+                          4.0,
+                        ),
+                        blurRadius: 5.0,
+                        spreadRadius: 0.5,
+                      ),
+                    ],
                     color: Colors.white,
+
                     borderRadius: BorderRadius.circular(5),
                   ),
                   child: DropdownButtonFormField(
@@ -400,11 +515,11 @@ class _Signup_2State extends State<Signup_2> {
                     value: dropdownValue1,
 
                     icon: Padding(
-                      padding: const EdgeInsets.only(right: 10),
-                      child: const Icon(Icons.arrow_drop_down,),
+                      padding: EdgeInsets.only(right: 10),
+                      child: Icon(Icons.arrow_drop_down,),
                     ),
                     elevation: 16,
-                    style: const TextStyle(color: Colors.grey,fontSize: 15),
+                    style: TextStyle(color: Colors.grey,fontSize: 15),
                     onChanged: (String newValue) {
                       setState(() {
                         dropdownValue1 = newValue;
@@ -421,7 +536,7 @@ class _Signup_2State extends State<Signup_2> {
                 ),
 
                 Padding(
-                  padding: const EdgeInsets.only(top: 21,right: 285,bottom: 12),
+                  padding: EdgeInsets.only(top: 21,right: 285,bottom: 12),
                   child: Text('City',style: TextStyle(fontFamily: 'Sk-Modernist',fontSize: 15),),
                 ),
 
@@ -430,6 +545,17 @@ class _Signup_2State extends State<Signup_2> {
                   width: 325,
                   height: 50,
                   decoration: BoxDecoration(
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.grey,
+                        offset: Offset(
+                          2.0,
+                          4.0,
+                        ),
+                        blurRadius: 5.0,
+                        spreadRadius: 0.5,
+                      ),
+                    ],
                     color: Colors.white,
                     borderRadius: BorderRadius.circular(5),
                   ),
@@ -440,11 +566,11 @@ class _Signup_2State extends State<Signup_2> {
                     value: dropdownValue2,
 
                     icon: Padding(
-                      padding: const EdgeInsets.only(right: 10),
-                      child: const Icon(Icons.arrow_drop_down,),
+                      padding: EdgeInsets.only(right: 10),
+                      child: Icon(Icons.arrow_drop_down,),
                     ),
                     elevation: 16,
-                    style: const TextStyle(color: Colors.grey,fontSize: 15),
+                    style: TextStyle(color: Colors.grey,fontSize: 15),
                     onChanged: (String newValue) {
                       setState(() {
                         dropdownValue2 = newValue;
@@ -461,7 +587,7 @@ class _Signup_2State extends State<Signup_2> {
                 ),
 
                 Padding(
-                  padding: const EdgeInsets.only(top: 21,right: 290,bottom: 12),
+                  padding: EdgeInsets.only(top: 21,right: 290,bottom: 12),
                   child: Text('Bio',style: TextStyle(fontFamily: 'Sk-Modernist',fontSize: 15),),
                 ),
 
@@ -470,6 +596,17 @@ class _Signup_2State extends State<Signup_2> {
                   width: 325,
 
                   decoration: BoxDecoration(
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.grey,
+                        offset: Offset(
+                          2.0,
+                          4.0,
+                        ),
+                        blurRadius: 5.0,
+                        spreadRadius: 0.5,
+                      ),
+                    ],
                     color: Colors.white,
                     borderRadius: BorderRadius.circular(5),
                   ),
@@ -492,7 +629,7 @@ class _Signup_2State extends State<Signup_2> {
 
 
                 Padding(
-                  padding: const EdgeInsets.only(left: 35,top: 23),
+                  padding: EdgeInsets.only(left: 35,top: 23),
                   child: Row(
                     children: [
                       Checkbox(
@@ -512,7 +649,7 @@ class _Signup_2State extends State<Signup_2> {
                         children: [
                           Text('I have read and agreed the Terms and',style: TextStyle(fontFamily: 'Sk-Modernist',fontSize: 15),),
                           Padding(
-                            padding: const EdgeInsets.only(right: 177),
+                            padding: EdgeInsets.only(right: 177),
                             child: Text(' Conditions',style: TextStyle(fontFamily: 'Sk-Modernist',fontSize: 15),),
                           ),
                         ],
@@ -523,7 +660,7 @@ class _Signup_2State extends State<Signup_2> {
                 ),
 
                 Padding(
-                  padding: const EdgeInsets.only(left: 25,top: 23,right: 13,bottom: 23),
+                  padding: EdgeInsets.only(left: 25,top: 23,right: 13,bottom: 23),
                   child: Container(
                     width: 325,
                     height: 55,
@@ -534,9 +671,9 @@ class _Signup_2State extends State<Signup_2> {
                       child: Text('SIGN UP',
                         style: TextStyle(color: Color(0xffFFFFFF),fontSize: 15,fontWeight: FontWeight.bold,fontFamily: 'Sk-Modernist'),),
                       onPressed: (){
-                        Navigator.push(context, MaterialPageRoute(builder: (context) => const Login_Page()));
+                        Navigator.push(context, MaterialPageRoute(builder: (context) => Login_Page()));
                         if(_formKey.currentState.validate()){
-                          ScaffoldMessenger.of(context).showSnackBar(const SnackBar(
+                          ScaffoldMessenger.of(context).showSnackBar(SnackBar(
                             content: Text("SIGN UP"),
                           ));
                         }

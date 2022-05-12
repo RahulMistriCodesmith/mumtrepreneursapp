@@ -23,7 +23,7 @@ class _LikeState extends State<Like> {
 
 
         title: Padding(
-          padding: const EdgeInsets.only(left: 120),
+          padding: EdgeInsets.only(left: 120),
           child: Text('Like'),
         ),
         titleTextStyle: TextStyle(color: Colors.black,fontSize: 16,fontFamily: 'Sk-Modernist',fontWeight: FontWeight.bold),
@@ -41,6 +41,17 @@ class _LikeState extends State<Like> {
                 width: 325,
                 height: 45,
                 decoration: BoxDecoration(
+                  boxShadow: [
+                    BoxShadow(
+                      color: Colors.grey,
+                      offset: Offset(
+                        2.0,
+                        4.0,
+                      ),
+                      blurRadius: 5.0,
+                      spreadRadius: 0.5,
+                    ),
+                  ],
                   color: Colors.white,
                   borderRadius: BorderRadius.circular(5),
                 ),
@@ -59,17 +70,17 @@ class _LikeState extends State<Like> {
               color: Color(0xffE5E5E5),
 
               child: Padding(
-                padding: const EdgeInsets.only(top: 20,bottom: 20,left: 25.27),
+                padding: EdgeInsets.only(top: 20,bottom: 20,left: 25.27),
                 child: Row(
                   children: [
                     Image.asset('assets/Image/lois_icon.png',width: 45,height: 45,),
 
                     Padding(
-                      padding: const EdgeInsets.only(left: 14),
+                      padding: EdgeInsets.only(left: 14),
                       child: Column(
                         children: [
                           Padding(
-                            padding: const EdgeInsets.only(right: 8),
+                            padding: EdgeInsets.only(right: 8),
                             child: Text('Tittany Jay',style: TextStyle(fontSize: 15,fontWeight: FontWeight.bold,fontFamily: 'Sk-Modernist'),),
                           ),
                           Text('1.5M followers',style: TextStyle(fontSize: 13,fontFamily: 'Sk-Modernist',color: Colors.grey)),
@@ -78,7 +89,7 @@ class _LikeState extends State<Like> {
                     ),
 
                     Padding(
-                      padding: const EdgeInsets.only(left: 120),
+                      padding: EdgeInsets.only(left: 120),
                       child: Container(
                         width: 90.66,
                         height: 35,
@@ -108,17 +119,17 @@ class _LikeState extends State<Like> {
               color: Color(0xffE5E5E5),
 
               child: Padding(
-                padding: const EdgeInsets.only(top: 20,bottom: 20,left: 25.27),
+                padding: EdgeInsets.only(top: 20,bottom: 20,left: 25.27),
                 child: Row(
                   children: [
                     Image.asset('assets/Image/nawel_image.png',width: 45,height: 45,),
 
                     Padding(
-                      padding: const EdgeInsets.only(left: 14),
+                      padding: EdgeInsets.only(left: 14),
                       child: Column(
                         children: [
                           Padding(
-                            padding: const EdgeInsets.only(right: 8),
+                            padding: EdgeInsets.only(right: 8),
                             child: Text('Rias Nawel',style: TextStyle(fontSize: 15,fontWeight: FontWeight.bold,fontFamily: 'Sk-Modernist'),),
                           ),
                           Text('1.5M followers',style: TextStyle(fontSize: 13,fontFamily: 'Sk-Modernist',color: Colors.grey)),
@@ -127,7 +138,7 @@ class _LikeState extends State<Like> {
                     ),
 
                     Padding(
-                      padding: const EdgeInsets.only(left: 120),
+                      padding: EdgeInsets.only(left: 120),
                       child: Container(
                         width: 90.66,
                         height: 35,
@@ -157,17 +168,17 @@ class _LikeState extends State<Like> {
               color: Color(0xffE5E5E5),
 
               child: Padding(
-                padding: const EdgeInsets.only(top: 20,bottom: 20,left: 25.27),
+                padding: EdgeInsets.only(top: 20,bottom: 20,left: 25.27),
                 child: Row(
                   children: [
                     Image.asset('assets/Image/garcia_icon.png',width: 45,height: 45,),
 
                     Padding(
-                      padding: const EdgeInsets.only(left: 14),
+                      padding: EdgeInsets.only(left: 14),
                       child: Column(
                         children: [
                           Padding(
-                            padding: const EdgeInsets.only(right: 8),
+                            padding: EdgeInsets.only(right: 8),
                             child: Text('James Lee',style: TextStyle(fontSize: 15,fontWeight: FontWeight.bold,fontFamily: 'Sk-Modernist'),),
                           ),
                           Text('1.5M followers',style: TextStyle(fontSize: 13,fontFamily: 'Sk-Modernist',color: Colors.grey)),
@@ -176,7 +187,7 @@ class _LikeState extends State<Like> {
                     ),
 
                     Padding(
-                      padding: const EdgeInsets.only(left: 120),
+                      padding: EdgeInsets.only(left: 120),
                       child: Container(
                         width: 90.66,
                         height: 35,
@@ -206,17 +217,17 @@ class _LikeState extends State<Like> {
               color: Color(0xffE5E5E5),
 
               child: Padding(
-                padding: const EdgeInsets.only(top: 20,bottom: 20,left: 25.27),
+                padding: EdgeInsets.only(top: 20,bottom: 20,left: 25.27),
                 child: Row(
                   children: [
                     Image.asset('assets/Image/hartle_icon.png',width: 45,height: 45,),
 
                     Padding(
-                      padding: const EdgeInsets.only(left: 14),
+                      padding: EdgeInsets.only(left: 14),
                       child: Column(
                         children: [
                           Padding(
-                            padding: const EdgeInsets.only(right: 8),
+                            padding: EdgeInsets.only(right: 8),
                             child: Text('Tamanna',style: TextStyle(fontSize: 15,fontWeight: FontWeight.bold,fontFamily: 'Sk-Modernist'),),
                           ),
                           Text('1.5M followers',style: TextStyle(fontSize: 13,fontFamily: 'Sk-Modernist',color: Colors.grey)),
@@ -225,7 +236,7 @@ class _LikeState extends State<Like> {
                     ),
 
                     Padding(
-                      padding: const EdgeInsets.only(left: 120),
+                      padding: EdgeInsets.only(left: 120),
                       child: Container(
                         width: 90.66,
                         height: 35,
@@ -255,17 +266,17 @@ class _LikeState extends State<Like> {
               color: Color(0xffE5E5E5),
 
               child: Padding(
-                padding: const EdgeInsets.only(top: 20,bottom: 20,left: 25.27),
+                padding: EdgeInsets.only(top: 20,bottom: 20,left: 25.27),
                 child: Row(
                   children: [
                     Image.asset('assets/Image/lois_icon.png',width: 45,height: 45,),
 
                     Padding(
-                      padding: const EdgeInsets.only(left: 14),
+                      padding: EdgeInsets.only(left: 14),
                       child: Column(
                         children: [
                           Padding(
-                            padding: const EdgeInsets.only(right: 8),
+                            padding: EdgeInsets.only(right: 8),
                             child: Text('Tittany Jay',style: TextStyle(fontSize: 15,fontWeight: FontWeight.bold,fontFamily: 'Sk-Modernist'),),
                           ),
                           Text('1.5M followers',style: TextStyle(fontSize: 13,fontFamily: 'Sk-Modernist',color: Colors.grey)),
@@ -274,7 +285,7 @@ class _LikeState extends State<Like> {
                     ),
 
                     Padding(
-                      padding: const EdgeInsets.only(left: 120),
+                      padding: EdgeInsets.only(left: 120),
                       child: Container(
                         width: 90.66,
                         height: 35,
@@ -304,17 +315,17 @@ class _LikeState extends State<Like> {
               color: Color(0xffE5E5E5),
 
               child: Padding(
-                padding: const EdgeInsets.only(top: 20,bottom: 20,left: 25.27),
+                padding: EdgeInsets.only(top: 20,bottom: 20,left: 25.27),
                 child: Row(
                   children: [
                     Image.asset('assets/Image/nawel_image.png',width: 45,height: 45,),
 
                     Padding(
-                      padding: const EdgeInsets.only(left: 14),
+                      padding: EdgeInsets.only(left: 14),
                       child: Column(
                         children: [
                           Padding(
-                            padding: const EdgeInsets.only(right: 8),
+                            padding: EdgeInsets.only(right: 8),
                             child: Text('Rias Nawel',style: TextStyle(fontSize: 15,fontWeight: FontWeight.bold,fontFamily: 'Sk-Modernist'),),
                           ),
                           Text('1.5M followers',style: TextStyle(fontSize: 13,fontFamily: 'Sk-Modernist',color: Colors.grey)),
@@ -323,7 +334,7 @@ class _LikeState extends State<Like> {
                     ),
 
                     Padding(
-                      padding: const EdgeInsets.only(left: 120),
+                      padding: EdgeInsets.only(left: 120),
                       child: Container(
                         width: 90.66,
                         height: 35,
@@ -354,17 +365,17 @@ class _LikeState extends State<Like> {
               color: Color(0xffE5E5E5),
 
               child: Padding(
-                padding: const EdgeInsets.only(top: 20,bottom: 20,left: 25.27),
+                padding: EdgeInsets.only(top: 20,bottom: 20,left: 25.27),
                 child: Row(
                   children: [
                     Image.asset('assets/Image/lois_icon.png',width: 45,height: 45,),
 
                     Padding(
-                      padding: const EdgeInsets.only(left: 14),
+                      padding: EdgeInsets.only(left: 14),
                       child: Column(
                         children: [
                           Padding(
-                            padding: const EdgeInsets.only(right: 8),
+                            padding: EdgeInsets.only(right: 8),
                             child: Text('Tittany Jay',style: TextStyle(fontSize: 15,fontWeight: FontWeight.bold,fontFamily: 'Sk-Modernist'),),
                           ),
                           Text('1.5M followers',style: TextStyle(fontSize: 13,fontFamily: 'Sk-Modernist',color: Colors.grey)),
@@ -373,7 +384,7 @@ class _LikeState extends State<Like> {
                     ),
 
                     Padding(
-                      padding: const EdgeInsets.only(left: 120),
+                      padding: EdgeInsets.only(left: 120),
                       child: Container(
                         width: 90.66,
                         height: 35,

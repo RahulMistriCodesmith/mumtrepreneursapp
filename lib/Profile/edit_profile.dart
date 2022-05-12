@@ -1,4 +1,4 @@
-// ignore_for_file: deprecated_member_use, prefer_const_constructors, sized_box_for_whitespace
+// ignore_for_file: deprecated_member_use, prefer_const_constructors, sized_box_for_whitespace, prefer_const_literals_to_create_immutables
 
 import 'package:flutter/material.dart';
 import 'package:mumtrepreneursapp/Profile/change_password.dart';
@@ -80,6 +80,17 @@ class _EditProfileState extends State<EditProfile> {
                 width: 325,
 
                 decoration: BoxDecoration(
+                  boxShadow: [
+                    BoxShadow(
+                      color: Colors.grey,
+                      offset: const Offset(
+                        2.0,
+                        4.0,
+                      ),
+                      blurRadius: 5.0,
+                      spreadRadius: 0.5,
+                    ),
+                  ],
                   color: Colors.white,
                   borderRadius: BorderRadius.circular(5),
                 ),
@@ -110,6 +121,18 @@ class _EditProfileState extends State<EditProfile> {
                 width: 325,
 
                 decoration: BoxDecoration(
+                  boxShadow: [
+                    BoxShadow(
+                      color: Colors.grey,
+                      offset: const Offset(
+                        2.0,
+                        4.0,
+                      ),
+                      blurRadius: 5.0,
+                      spreadRadius: 0.5,
+                    ),
+                  ],
+
                   color: Colors.white,
                   borderRadius: BorderRadius.circular(5),
                 ),
@@ -139,6 +162,17 @@ class _EditProfileState extends State<EditProfile> {
                 width: 325,
 
                 decoration: BoxDecoration(
+                  boxShadow: [
+                    BoxShadow(
+                      color: Colors.grey,
+                      offset: const Offset(
+                        2.0,
+                        4.0,
+                      ),
+                      blurRadius: 5.0,
+                      spreadRadius: 0.5,
+                    ),
+                  ],
                   color: Colors.white,
                   borderRadius: BorderRadius.circular(5),
                 ),
@@ -168,6 +202,17 @@ class _EditProfileState extends State<EditProfile> {
                 width: 325,
 
                 decoration: BoxDecoration(
+                  boxShadow: [
+                    BoxShadow(
+                      color: Colors.grey,
+                      offset: const Offset(
+                        2.0,
+                        4.0,
+                      ),
+                      blurRadius: 5.0,
+                      spreadRadius: 0.5,
+                    ),
+                  ],
                   color: Colors.white,
                   borderRadius: BorderRadius.circular(5),
                 ),
