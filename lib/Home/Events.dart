@@ -58,6 +58,20 @@ class _EventsState extends State<Events> {
     );
   }
 
+  DateTime currentDate = DateTime.now();
+  Future<void> _selectDate(BuildContext context) async {
+    final DateTime pickedDate = await showDatePicker(
+        context: context,
+        initialDate: currentDate,
+        firstDate: DateTime(2015),
+        lastDate: DateTime(2050));
+    if (pickedDate != null && pickedDate != currentDate) {
+      setState(() {
+        currentDate = pickedDate;
+      });
+    }
+  }
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -189,14 +203,19 @@ class _EventsState extends State<Events> {
                             ),
                           ),
 
-                          Container(
-                            width: 51,
-                            height: 45,
-                            decoration: BoxDecoration(
-                              border: Border.all(color: Color(0xff12496D)),
-                              borderRadius: BorderRadius.circular(5),
+                          InkWell(
+
+                            onTap: () => _selectDate(context),
+
+                            child: Container(
+                              width: 51,
+                              height: 45,
+                              decoration: BoxDecoration(
+                                border: Border.all(color: Color(0xff12496D)),
+                                borderRadius: BorderRadius.circular(5),
+                              ),
+                              child: Image.asset('assets/Image/Calendar.png',scale: 6,color: Color(0xff12496D),),
                             ),
-                            child: Image.asset('assets/Image/Calendar.png',scale: 6,color: Color(0xff12496D),),
                           ),
 
                         ],
@@ -288,14 +307,19 @@ class _EventsState extends State<Events> {
                             ),
                           ),
 
-                          Container(
-                            width: 51,
-                            height: 45,
-                            decoration: BoxDecoration(
-                              border: Border.all(color: Color(0xff12496D)),
-                              borderRadius: BorderRadius.circular(5),
+                          InkWell(
+
+                            onTap: () => _selectDate(context),
+
+                            child: Container(
+                              width: 51,
+                              height: 45,
+                              decoration: BoxDecoration(
+                                border: Border.all(color: Color(0xff12496D)),
+                                borderRadius: BorderRadius.circular(5),
+                              ),
+                              child: Image.asset('assets/Image/Calendar.png',scale: 6,color: Color(0xff12496D),),
                             ),
-                            child: Image.asset('assets/Image/Calendar.png',scale: 6,color: Color(0xff12496D),),
                           ),
 
                         ],
