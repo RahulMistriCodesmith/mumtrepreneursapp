@@ -1,6 +1,7 @@
 // ignore_for_file: deprecated_member_use, file_names, camel_case_types, prefer_const_constructors, sized_box_for_whitespace
 
 import 'package:flutter/material.dart';
+import 'package:flutter_rating_bar/flutter_rating_bar.dart';
 class Add_Review extends StatefulWidget {
   const Add_Review({Key key}) : super(key: key);
 
@@ -57,14 +58,28 @@ class _Add_ReviewState extends State<Add_Review> {
               ),
 
               Padding(
-                padding:  EdgeInsets.only(right: 90),
+                padding:  EdgeInsets.only(right: 80),
                 child: Text('Rate your trip with Allyson D. Grover',style: TextStyle(fontSize: 16,color: Colors.grey,fontFamily: 'Sk-Modernist'),),
               ),
 
-              Padding(
-                padding:  EdgeInsets.only(top: 25,right: 150),
-                child: Image.asset('assets/Image/Group 37048.png',width: 193.6,height: 26.21,),
+          Padding(
+            padding: const EdgeInsets.only(right: 95,top: 10),
+            child: RatingBar.builder(
+              initialRating: 3,
+              minRating: 1,
+              direction: Axis.horizontal,
+              allowHalfRating: true,
+              itemCount: 5,
+              itemPadding: EdgeInsets.symmetric(horizontal: 5.0),
+              itemBuilder: (context, _) => Icon(
+                Icons.star,
+                color: Colors.amber,
               ),
+              onRatingUpdate: (rating) {
+                print(rating);
+              },
+            ),
+          ),
 
               Padding(
                 padding:  EdgeInsets.only(top: 35.79,bottom: 12,right: 145),
@@ -89,7 +104,7 @@ class _Add_ReviewState extends State<Add_Review> {
               ),
 
               Padding(
-                padding:  EdgeInsets.only(left: 8,top: 88.55,right: 3,),
+                padding: EdgeInsets.only(left: 8,top: 88.55,right: 3,),
                 child: Container(
                   width: 325,
                   height: 55,

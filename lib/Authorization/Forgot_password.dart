@@ -97,10 +97,12 @@ class _Forgot_passwordState extends State<Forgot_password> {
                     child: Text('SEND OTP',
                       style: TextStyle(color: Color(0xffFFFFFF),fontSize: 15,fontWeight: FontWeight.bold,fontFamily: 'Sk-Modernist'),),
                     onPressed: (){
-                      Navigator.push(context, MaterialPageRoute(builder: (context) =>  Forgot_password1()));
 
 
-                      if (_formKey.currentState.validate()) {}
+
+                      if (_formKey.currentState.validate()) {
+                        Navigator.push(context, MaterialPageRoute(builder: (context) =>  Forgot_password1()));
+                      }
 
                     },
                   ),

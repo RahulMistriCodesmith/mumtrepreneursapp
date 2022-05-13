@@ -32,14 +32,14 @@ class _FollowerState extends State<Follower> {
 
       body: SingleChildScrollView(
         child: Padding(
-          padding: const EdgeInsets.only(top: 50,left: 35),
+          padding: const EdgeInsets.only(top: 50),
           child: Column(
 
             children: [
 
 
               Padding(
-                padding: const EdgeInsets.only(left: 15,bottom: 24),
+                padding: const EdgeInsets.only(left: 50,bottom: 24),
                 child: Row(
                   children: [
                     Container(
@@ -69,7 +69,7 @@ class _FollowerState extends State<Follower> {
               ),
 
               Padding(
-                padding: const EdgeInsets.only(right: 30,bottom: 24.27),
+                padding: const EdgeInsets.only(left: 40,right: 30,bottom: 24.27),
                 child: Container(
                   padding: EdgeInsets.only(left: 17,bottom: 4),
                   width: 325,
@@ -104,7 +104,7 @@ class _FollowerState extends State<Follower> {
                 color: Color(0xffE5E5E5),
 
                 child: Padding(
-                  padding: const EdgeInsets.only(top: 20,bottom: 20,left: 25.27),
+                  padding: const EdgeInsets.only(top: 10,bottom: 10,left: 40),
                   child: Row(
                     children: [
                       Image.asset('assets/Image/lois_icon.png',width: 45,height: 45,),
@@ -123,7 +123,7 @@ class _FollowerState extends State<Follower> {
                       ),
 
                       Padding(
-                        padding: const EdgeInsets.only(left: 80),
+                        padding: const EdgeInsets.only(left: 100),
                         child: Container(
                           width: 90.66,
                           height: 35,
@@ -153,7 +153,7 @@ class _FollowerState extends State<Follower> {
                 color: Color(0xffE5E5E5),
 
                 child: Padding(
-                  padding: const EdgeInsets.only(top: 20,bottom: 20,left: 25.27),
+                  padding: const EdgeInsets.only(top: 10,bottom: 10,left: 40),
                   child: Row(
                     children: [
                       Image.asset('assets/Image/nawel_image.png',width: 45,height: 45,),
@@ -172,7 +172,7 @@ class _FollowerState extends State<Follower> {
                       ),
 
                       Padding(
-                        padding: const EdgeInsets.only(left: 80),
+                        padding: const EdgeInsets.only(left: 100),
                         child: Container(
                           width: 90.66,
                           height: 35,
@@ -202,7 +202,7 @@ class _FollowerState extends State<Follower> {
                 color: Color(0xffE5E5E5),
 
                 child: Padding(
-                  padding: const EdgeInsets.only(top: 20,bottom: 20,left: 25.27),
+                  padding: const EdgeInsets.only(top: 10,bottom: 10,left: 40),
                   child: Row(
                     children: [
                       Image.asset('assets/Image/garcia_icon.png',width: 45,height: 45,),
@@ -221,7 +221,7 @@ class _FollowerState extends State<Follower> {
                       ),
 
                       Padding(
-                        padding: const EdgeInsets.only(left: 80),
+                        padding: const EdgeInsets.only(left: 105),
                         child: Container(
                           width: 90.66,
                           height: 35,
@@ -251,7 +251,7 @@ class _FollowerState extends State<Follower> {
                 color: Color(0xffE5E5E5),
 
                 child: Padding(
-                  padding: const EdgeInsets.only(top: 20,bottom: 20,left: 25.27),
+                  padding: const EdgeInsets.only(top: 10,bottom: 10,left: 40),
                   child: Row(
                     children: [
                       Image.asset('assets/Image/hartle_icon.png',width: 45,height: 45,),
@@ -261,7 +261,7 @@ class _FollowerState extends State<Follower> {
                         child: Column(
                           children: [
                             Padding(
-                              padding: const EdgeInsets.only(right: 8),
+                              padding: const EdgeInsets.only(right: 20),
                               child: Text('Tamanna',style: TextStyle(fontSize: 15,fontWeight: FontWeight.bold,fontFamily: 'Sk-Modernist'),),
                             ),
                             Text('1.5M followers',style: TextStyle(fontSize: 13,fontFamily: 'Sk-Modernist',color: Colors.grey)),
@@ -270,7 +270,7 @@ class _FollowerState extends State<Follower> {
                       ),
 
                       Padding(
-                        padding: const EdgeInsets.only(left: 90),
+                        padding: const EdgeInsets.only(left: 100),
                         child: Container(
                           width: 90.66,
                           height: 35,
@@ -300,7 +300,7 @@ class _FollowerState extends State<Follower> {
                 color: Color(0xffE5E5E5),
 
                 child: Padding(
-                  padding: const EdgeInsets.only(top: 20,bottom: 20,left: 25.27),
+                  padding: const EdgeInsets.only(top: 10,bottom: 10,left: 40),
                   child: Row(
                     children: [
                       Image.asset('assets/Image/lois_icon.png',width: 45,height: 45,),
@@ -319,7 +319,7 @@ class _FollowerState extends State<Follower> {
                       ),
 
                       Padding(
-                        padding: const EdgeInsets.only(left: 90),
+                        padding: const EdgeInsets.only(left: 100),
                         child: Container(
                           width: 90.66,
                           height: 35,
@@ -349,7 +349,7 @@ class _FollowerState extends State<Follower> {
                 color: Color(0xffE5E5E5),
 
                 child: Padding(
-                  padding: const EdgeInsets.only(top: 20,bottom: 20,left: 25.27),
+                  padding: const EdgeInsets.only(top: 10,bottom: 10,left: 40),
                   child: Row(
                     children: [
                       Image.asset('assets/Image/nawel_image.png',width: 45,height: 45,),
@@ -368,7 +368,7 @@ class _FollowerState extends State<Follower> {
                       ),
 
                       Padding(
-                        padding: const EdgeInsets.only(left: 95),
+                        padding: const EdgeInsets.only(left: 100),
                         child: Container(
                           width: 90.66,
                           height: 35,
@@ -399,7 +399,7 @@ class _FollowerState extends State<Follower> {
                 color: Color(0xffE5E5E5),
 
                 child: Padding(
-                  padding: const EdgeInsets.only(top: 20,bottom: 20,left: 25.27),
+                  padding: const EdgeInsets.only(top: 10,bottom: 10,left: 40),
                   child: Row(
                     children: [
                       Image.asset('assets/Image/lois_icon.png',width: 45,height: 45,),
@@ -418,7 +418,7 @@ class _FollowerState extends State<Follower> {
                       ),
 
                       Padding(
-                        padding: const EdgeInsets.only(left: 90),
+                        padding: const EdgeInsets.only(left: 100),
                         child: Container(
                           width: 90.66,
                           height: 35,

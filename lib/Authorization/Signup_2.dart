@@ -53,6 +53,7 @@ class _Signup_2State extends State<Signup_2> {
               children: [
                 Center(
                   child: Container(
+
                     width: 100,
                     height: 100,
 
@@ -68,9 +69,10 @@ class _Signup_2State extends State<Signup_2> {
 
                      : Image.file(
 
+
                         _imageFile,
 
-                      fit: BoxFit.cover,
+                      fit: BoxFit.fitWidth,
 
                     ),
 
@@ -671,11 +673,14 @@ class _Signup_2State extends State<Signup_2> {
                       child: Text('SIGN UP',
                         style: TextStyle(color: Color(0xffFFFFFF),fontSize: 15,fontWeight: FontWeight.bold,fontFamily: 'Sk-Modernist'),),
                       onPressed: (){
-                        Navigator.push(context, MaterialPageRoute(builder: (context) => Login_Page()));
+
                         if(_formKey.currentState.validate()){
                           ScaffoldMessenger.of(context).showSnackBar(SnackBar(
                             content: Text("SIGN UP"),
                           ));
+
+                          Navigator.push(context, MaterialPageRoute(builder: (context) => Login_Page()));
+
                         }
                       },
                     ),

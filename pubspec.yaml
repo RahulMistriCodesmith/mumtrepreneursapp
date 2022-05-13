@@ -41,6 +41,8 @@ dependencies:
   file_picker: ^3.0.4
   table_calendar: ^2.1.0
   readmore: ^2.1.0
+  flutter_rating_bar: ^4.0.0
+  video_player: ^2.4.2
 
 
 dev_dependencies:
@@ -159,6 +161,7 @@ flutter:
     - assets/Image/home_icon.png
     - assets/Image/feed_icon.png
     - assets/Image/category_icon.png
+    - assets/Image/intro.mp4
 
 
 

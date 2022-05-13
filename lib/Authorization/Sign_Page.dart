@@ -150,10 +150,10 @@ class _Sign_PageState extends State<Sign_Page> {
                     child: Text('NEXT',
                       style: TextStyle(color: Color(0xffFFFFFF),fontSize: 15,fontWeight: FontWeight.bold,fontFamily: 'Sk-Modernist'),),
                     onPressed: (){
-                      Navigator.push(context, MaterialPageRoute(builder: (context) => Signup_2()));
+
 
                       if (_formKey.currentState.validate()) {
-
+                        Navigator.push(context, MaterialPageRoute(builder: (context) => Signup_2()));
                       }
 
                     },

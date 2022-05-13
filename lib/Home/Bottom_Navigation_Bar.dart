@@ -46,6 +46,7 @@ class _Bottom_Navigation_BarState extends State<Bottom_Navigation_Bar> {
             backgroundColor: Colors.white,
             selectedItemColor: Color(0xff12496D),
             unselectedItemColor: Colors.grey,
+
             onTap: _onItemTapped,
             items: const <BottomNavigationBarItem>[
               BottomNavigationBarItem(

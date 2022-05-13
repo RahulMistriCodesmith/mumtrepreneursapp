@@ -39,6 +39,17 @@ class _EditPostState extends State<EditPost> {
                 width: 409,
                 height: 281,
                 decoration: BoxDecoration(
+                  boxShadow: [
+                    BoxShadow(
+                      color: Colors.grey,
+                      offset: const Offset(
+                        2.0,
+                        4.0,
+                      ),
+                      blurRadius: 5.0,
+                      spreadRadius: 0.5,
+                    ),
+                  ],
                   color: Colors.white,
 
                 ),
@@ -68,7 +79,6 @@ class _EditPostState extends State<EditPost> {
                                           style: TextStyle(
                                               color: Colors.grey,
                                               fontFamily: 'Sk-Modernist',
-                                              fontWeight: FontWeight.normal,
                                               fontSize: 13)
                                       ),
 
@@ -230,6 +240,7 @@ class _EditPostState extends State<EditPost> {
                           padding: EdgeInsets.only(left: 10,right: 25),
                           width: 375,
                           height: 120,
+
                           child: TextField(
 
                             decoration: InputDecoration(

@@ -20,7 +20,6 @@ class _Home_PageState extends State<Home_Page> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Color(0xffE5E5E5),
-
       body: SingleChildScrollView(
         child: Padding(
           padding: const EdgeInsets.only(top: 100,left: 25),
@@ -87,7 +86,18 @@ class _Home_PageState extends State<Home_Page> {
                   width: 325,
                   height: 116,
                   decoration: BoxDecoration(
-                    color: Color(0xffE79573),
+                    boxShadow: [
+                      BoxShadow(
+                        color: Colors.grey,
+                        offset: const Offset(
+                          2.0,
+                          4.0,
+                        ),
+                        blurRadius: 5.0,
+                        spreadRadius: 0.5,
+                      ),
+                    ],
+                    color: Color(0xffE7957E),
                     borderRadius: BorderRadius.circular(5),
                   ),
 
@@ -133,6 +143,17 @@ class _Home_PageState extends State<Home_Page> {
                             width: 153,
                             height: 116,
                             decoration: BoxDecoration(
+                              boxShadow: [
+                                BoxShadow(
+                                  color: Colors.grey,
+                                  offset: const Offset(
+                                    2.0,
+                                    4.0,
+                                  ),
+                                  blurRadius: 5.0,
+                                  spreadRadius: 0.5,
+                                ),
+                              ],
                               color: Color(0xff12496D),
                               borderRadius: BorderRadius.circular(5),
                             ),
@@ -165,6 +186,17 @@ class _Home_PageState extends State<Home_Page> {
                               width: 153,
                               height: 116,
                               decoration: BoxDecoration(
+                                boxShadow: [
+                                  BoxShadow(
+                                    color: Colors.grey,
+                                    offset: const Offset(
+                                      2.0,
+                                      4.0,
+                                    ),
+                                    blurRadius: 5.0,
+                                    spreadRadius: 0.5,
+                                  ),
+                                ],
                                 color: Color(0xff9DC8C7),
                                 borderRadius: BorderRadius.circular(5),
                               ),
@@ -198,6 +230,17 @@ class _Home_PageState extends State<Home_Page> {
                               width: 153,
                               height: 116,
                               decoration: BoxDecoration(
+                                boxShadow: [
+                                  BoxShadow(
+                                    color: Colors.grey,
+                                    offset: const Offset(
+                                      2.0,
+                                      4.0,
+                                    ),
+                                    blurRadius: 5.0,
+                                    spreadRadius: 0.5,
+                                  ),
+                                ],
                                 color: Color(0xffE7957E),
                                 borderRadius: BorderRadius.circular(5),
                               ),
@@ -234,6 +277,17 @@ class _Home_PageState extends State<Home_Page> {
                               width: 153,
                               height: 116,
                               decoration: BoxDecoration(
+                                boxShadow: [
+                                  BoxShadow(
+                                    color: Colors.grey,
+                                    offset: const Offset(
+                                      2.0,
+                                      4.0,
+                                    ),
+                                    blurRadius: 5.0,
+                                    spreadRadius: 0.5,
+                                  ),
+                                ],
                                 color: Color(0xff9DC8C7),
                                 borderRadius: BorderRadius.circular(5),
                               ),
@@ -266,6 +320,17 @@ class _Home_PageState extends State<Home_Page> {
                                 width: 153,
                                 height: 116,
                                 decoration: BoxDecoration(
+                                  boxShadow: [
+                                    BoxShadow(
+                                      color: Colors.grey,
+                                      offset: const Offset(
+                                        2.0,
+                                        4.0,
+                                      ),
+                                      blurRadius: 5.0,
+                                      spreadRadius: 0.5,
+                                    ),
+                                  ],
                                   color: Color(0xffE7957E),
                                   borderRadius: BorderRadius.circular(5),
                                 ),
@@ -295,6 +360,17 @@ class _Home_PageState extends State<Home_Page> {
                                 width: 153,
                                 height: 116,
                                 decoration: BoxDecoration(
+                                  boxShadow: [
+                                    BoxShadow(
+                                      color: Colors.grey,
+                                      offset: const Offset(
+                                        2.0,
+                                        4.0,
+                                      ),
+                                      blurRadius: 5.0,
+                                      spreadRadius: 0.5,
+                                    ),
+                                  ],
                                   color: Color(0xff12496D),
                                   borderRadius: BorderRadius.circular(5),
                                 ),

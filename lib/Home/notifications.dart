@@ -15,6 +15,7 @@ class _NotificationsState extends State<Notifications> {
     return Scaffold(
 
       backgroundColor: Color(0xffE5E5E5),
+
       appBar: AppBar(
 
         backgroundColor: Color(0xffE5E5E5),

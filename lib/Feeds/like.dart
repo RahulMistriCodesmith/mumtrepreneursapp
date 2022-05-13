@@ -66,51 +66,54 @@ class _LikeState extends State<Like> {
               ),
             ),
 
-            Card(
-              color: Color(0xffE5E5E5),
+            Padding(
+              padding: const EdgeInsets.only(top: 10),
+              child: Card(
+                color: Color(0xffE5E5E5),
 
-              child: Padding(
-                padding: EdgeInsets.only(top: 20,bottom: 20,left: 25.27),
-                child: Row(
-                  children: [
-                    Image.asset('assets/Image/lois_icon.png',width: 45,height: 45,),
+                child: Padding(
+                  padding: EdgeInsets.only(top: 10,bottom: 10,left: 25.27),
+                  child: Row(
+                    children: [
+                      Image.asset('assets/Image/lois_icon.png',width: 45,height: 45,),
 
-                    Padding(
-                      padding: EdgeInsets.only(left: 14),
-                      child: Column(
-                        children: [
-                          Padding(
-                            padding: EdgeInsets.only(right: 8),
-                            child: Text('Tittany Jay',style: TextStyle(fontSize: 15,fontWeight: FontWeight.bold,fontFamily: 'Sk-Modernist'),),
-                          ),
-                          Text('1.5M followers',style: TextStyle(fontSize: 13,fontFamily: 'Sk-Modernist',color: Colors.grey)),
-                        ],
-                      ),
-                    ),
-
-                    Padding(
-                      padding: EdgeInsets.only(left: 120),
-                      child: Container(
-                        width: 90.66,
-                        height: 35,
-                        decoration: BoxDecoration(
-                          borderRadius: BorderRadius.circular(17.5),
-                          border: Border.all(color: Color(0xff12496D))
+                      Padding(
+                        padding: EdgeInsets.only(left: 14),
+                        child: Column(
+                          children: [
+                            Padding(
+                              padding: EdgeInsets.only(right: 8),
+                              child: Text('Tittany Jay',style: TextStyle(fontSize: 15,fontWeight: FontWeight.bold,fontFamily: 'Sk-Modernist'),),
+                            ),
+                            Text('1.5M followers',style: TextStyle(fontSize: 13,fontFamily: 'Sk-Modernist',color: Colors.grey)),
+                          ],
                         ),
+                      ),
 
-                        child: RaisedButton(
-                          color: Colors.white,
-                          shape: RoundedRectangleBorder(
+                      Padding(
+                        padding: EdgeInsets.only(left: 120),
+                        child: Container(
+                          width: 90.66,
+                          height: 35,
+                          decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(17.5),
+                            border: Border.all(color: Color(0xff12496D))
                           ),
-                          child: Text('Follow',style: TextStyle(color: Color(0xff12496D),fontSize: 14,fontWeight: FontWeight.bold,fontFamily: 'Sk-Modernist'),),
 
-                          onPressed: (){},
+                          child: RaisedButton(
+                            color: Colors.white,
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(17.5),
+                            ),
+                            child: Text('Follow',style: TextStyle(color: Color(0xff12496D),fontSize: 14,fontWeight: FontWeight.bold,fontFamily: 'Sk-Modernist'),),
+
+                            onPressed: (){},
+                          ),
                         ),
                       ),
-                    ),
 
-                  ],
+                    ],
+                  ),
                 ),
               ),
             ),
@@ -119,7 +122,7 @@ class _LikeState extends State<Like> {
               color: Color(0xffE5E5E5),
 
               child: Padding(
-                padding: EdgeInsets.only(top: 20,bottom: 20,left: 25.27),
+                padding: EdgeInsets.only(top: 10,bottom: 10,left: 25.27),
                 child: Row(
                   children: [
                     Image.asset('assets/Image/nawel_image.png',width: 45,height: 45,),
@@ -168,7 +171,7 @@ class _LikeState extends State<Like> {
               color: Color(0xffE5E5E5),
 
               child: Padding(
-                padding: EdgeInsets.only(top: 20,bottom: 20,left: 25.27),
+                padding: EdgeInsets.only(top: 10,bottom: 10,left: 25.27),
                 child: Row(
                   children: [
                     Image.asset('assets/Image/garcia_icon.png',width: 45,height: 45,),
@@ -217,7 +220,7 @@ class _LikeState extends State<Like> {
               color: Color(0xffE5E5E5),
 
               child: Padding(
-                padding: EdgeInsets.only(top: 20,bottom: 20,left: 25.27),
+                padding: EdgeInsets.only(top: 10,bottom: 10,left: 25.27),
                 child: Row(
                   children: [
                     Image.asset('assets/Image/hartle_icon.png',width: 45,height: 45,),
@@ -266,7 +269,7 @@ class _LikeState extends State<Like> {
               color: Color(0xffE5E5E5),
 
               child: Padding(
-                padding: EdgeInsets.only(top: 20,bottom: 20,left: 25.27),
+                padding: EdgeInsets.only(top: 10,bottom: 10,left: 25.27),
                 child: Row(
                   children: [
                     Image.asset('assets/Image/lois_icon.png',width: 45,height: 45,),
@@ -315,7 +318,7 @@ class _LikeState extends State<Like> {
               color: Color(0xffE5E5E5),
 
               child: Padding(
-                padding: EdgeInsets.only(top: 20,bottom: 20,left: 25.27),
+                padding: EdgeInsets.only(top: 10,bottom: 10,left: 25.27),
                 child: Row(
                   children: [
                     Image.asset('assets/Image/nawel_image.png',width: 45,height: 45,),
@@ -365,7 +368,7 @@ class _LikeState extends State<Like> {
               color: Color(0xffE5E5E5),
 
               child: Padding(
-                padding: EdgeInsets.only(top: 20,bottom: 20,left: 25.27),
+                padding: EdgeInsets.only(top: 10,bottom: 10,left: 25.27),
                 child: Row(
                   children: [
                     Image.asset('assets/Image/lois_icon.png',width: 45,height: 45,),

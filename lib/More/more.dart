@@ -27,7 +27,7 @@ class _MoreState extends State<More> {
 
       body: SingleChildScrollView(
         child: Padding(
-          padding: const EdgeInsets.only(top: 100,left: 25),
+          padding: const EdgeInsets.only(top: 90,left: 25),
           child: Column(
 
             children: [
@@ -50,6 +50,17 @@ class _MoreState extends State<More> {
                     width: 325,
                     height: 80.74,
                     decoration: BoxDecoration(
+                      boxShadow: [
+                        BoxShadow(
+                          color: Colors.grey,
+                          offset: const Offset(
+                            2.0,
+                            4.0,
+                          ),
+                          blurRadius: 5.0,
+                          spreadRadius: 0.5,
+                        ),
+                      ],
                       color: Color(0xff12496D),
                       borderRadius: BorderRadius.circular(5),
                     ),
@@ -93,6 +104,17 @@ class _MoreState extends State<More> {
                             width: 153,
                             height: 116,
                             decoration: BoxDecoration(
+                              boxShadow: [
+                                BoxShadow(
+                                  color: Colors.grey,
+                                  offset: const Offset(
+                                    2.0,
+                                    4.0,
+                                  ),
+                                  blurRadius: 5.0,
+                                  spreadRadius: 0.5,
+                                ),
+                              ],
                               color: Color(0xff12496D),
                               borderRadius: BorderRadius.circular(5),
                             ),
@@ -125,6 +147,17 @@ class _MoreState extends State<More> {
                               width: 153,
                               height: 116,
                               decoration: BoxDecoration(
+                                boxShadow: [
+                                  BoxShadow(
+                                    color: Colors.grey,
+                                    offset: const Offset(
+                                      2.0,
+                                      4.0,
+                                    ),
+                                    blurRadius: 5.0,
+                                    spreadRadius: 0.5,
+                                  ),
+                                ],
                                 color: Color(0xff9DC8C7),
                                 borderRadius: BorderRadius.circular(5),
                               ),
@@ -158,6 +191,17 @@ class _MoreState extends State<More> {
                               width: 153,
                               height: 116,
                               decoration: BoxDecoration(
+                                boxShadow: [
+                                  BoxShadow(
+                                    color: Colors.grey,
+                                    offset: const Offset(
+                                      2.0,
+                                      4.0,
+                                    ),
+                                    blurRadius: 5.0,
+                                    spreadRadius: 0.5,
+                                  ),
+                                ],
                                 color: Color(0xffE7957E),
                                 borderRadius: BorderRadius.circular(5),
                               ),
@@ -189,6 +233,17 @@ class _MoreState extends State<More> {
                               width: 153,
                               height: 116,
                               decoration: BoxDecoration(
+                                boxShadow: [
+                                  BoxShadow(
+                                    color: Colors.grey,
+                                    offset: const Offset(
+                                      2.0,
+                                      4.0,
+                                    ),
+                                    blurRadius: 5.0,
+                                    spreadRadius: 0.5,
+                                  ),
+                                ],
                                 color: Color(0xff9DC8C7),
                                 borderRadius: BorderRadius.circular(5),
                               ),
@@ -227,6 +282,17 @@ class _MoreState extends State<More> {
                               width: 153,
                               height: 116,
                               decoration: BoxDecoration(
+                                boxShadow: [
+                                  BoxShadow(
+                                    color: Colors.grey,
+                                    offset: const Offset(
+                                      2.0,
+                                      4.0,
+                                    ),
+                                    blurRadius: 5.0,
+                                    spreadRadius: 0.5,
+                                  ),
+                                ],
                                 color: Color(0xff9DC8C7),
                                 borderRadius: BorderRadius.circular(5),
                               ),
@@ -259,6 +325,17 @@ class _MoreState extends State<More> {
                                 width: 153,
                                 height: 116,
                                 decoration: BoxDecoration(
+                                  boxShadow: [
+                                    BoxShadow(
+                                      color: Colors.grey,
+                                      offset: const Offset(
+                                        2.0,
+                                        4.0,
+                                      ),
+                                      blurRadius: 5.0,
+                                      spreadRadius: 0.5,
+                                    ),
+                                  ],
                                   color: Color(0xffE7957E),
                                   borderRadius: BorderRadius.circular(5),
                                 ),
@@ -290,6 +367,17 @@ class _MoreState extends State<More> {
                                 width: 153,
                                 height: 116,
                                 decoration: BoxDecoration(
+                                  boxShadow: [
+                                    BoxShadow(
+                                      color: Colors.grey,
+                                      offset: const Offset(
+                                        2.0,
+                                        4.0,
+                                      ),
+                                      blurRadius: 5.0,
+                                      spreadRadius: 0.5,
+                                    ),
+                                  ],
                                   color: Color(0xff12496D),
                                   borderRadius: BorderRadius.circular(5),
                                 ),
@@ -321,6 +409,17 @@ class _MoreState extends State<More> {
                                 width: 153,
                                 height: 116,
                                 decoration: BoxDecoration(
+                                  boxShadow: [
+                                    BoxShadow(
+                                      color: Colors.grey,
+                                      offset: const Offset(
+                                        2.0,
+                                        4.0,
+                                      ),
+                                      blurRadius: 5.0,
+                                      spreadRadius: 0.5,
+                                    ),
+                                  ],
                                   color: Color(0xffE7957E),
                                   borderRadius: BorderRadius.circular(5),
                                 ),

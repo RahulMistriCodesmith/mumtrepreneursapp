@@ -117,6 +117,7 @@ class _Login_PageState extends State<Login_Page> {
                       }
                       return null;
                     },
+
                     obscureText: _isObscure,
                     decoration: InputDecoration(
                       border: InputBorder.none,

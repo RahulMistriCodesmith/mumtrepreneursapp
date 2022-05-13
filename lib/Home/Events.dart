@@ -59,6 +59,7 @@ class _EventsState extends State<Events> {
   }
 
   DateTime currentDate = DateTime.now();
+
   Future<void> _selectDate(BuildContext context) async {
     final DateTime pickedDate = await showDatePicker(
         context: context,

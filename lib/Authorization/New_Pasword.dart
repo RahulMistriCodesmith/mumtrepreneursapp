@@ -108,8 +108,10 @@ class _New_PasswordState extends State<New_Password> {
                     child: Text('UPDATE PASSWORD',
                       style: TextStyle(color: Color(0xffFFFFFF),fontSize: 15,fontWeight: FontWeight.bold,fontFamily: 'Sk-Modernist'),),
                     onPressed: (){
-                      Navigator.push(context, MaterialPageRoute(builder: (context) => Login_Page()));
-                      if (_formKey.currentState.validate()) {}
+
+                      if (_formKey.currentState.validate()) {
+                        Navigator.push(context, MaterialPageRoute(builder: (context) => Login_Page()));
+                      }
                     },
                   ),
                 ),

@@ -14,6 +14,7 @@ class _MessageState extends State<Message> {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Color(0xffE5E5E5),
+
       appBar: AppBar(
 
         backgroundColor: Colors.transparent,
