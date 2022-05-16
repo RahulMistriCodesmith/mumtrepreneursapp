@@ -37,17 +37,19 @@ class _Resources_1State extends State<Resources_1> {
             Stack(
               children: [
 
+                Image.asset('assets/Image/image 464.png',width: 500,height: 350,),
 
-                Image.asset('assets/Image/image 464.png',height: 375,width: 500,),
-
-                Image.asset('assets/Image/Play.png',width: 45,height: 45,),
+                Padding(
+                  padding: const EdgeInsets.only(top: 150,left: 180),
+                  child: Image.asset('assets/Image/Play.png',width: 45,height: 45,),
+                ),
 
 
                 Padding(
-                  padding: const EdgeInsets.only(top: 350),
+                  padding: const EdgeInsets.only(top: 300),
                   child: Container(
                     width: 420,
-                    height: 553,
+                    height: 600,
                     decoration: BoxDecoration(
                       color: Colors.white,
                       borderRadius: BorderRadius.only(
@@ -62,7 +64,8 @@ class _Resources_1State extends State<Resources_1> {
 
                           Row(
                             children: [
-                              Text('Mindset Course',style: TextStyle(fontWeight: FontWeight.bold,fontSize: 20,fontFamily: 'Sk-Modernist'),),
+                              Text('Mindset Course',
+                                style: TextStyle(fontWeight: FontWeight.bold,fontSize: 20,fontFamily: 'Sk-Modernist'),),
                               Padding(
                                 padding: const EdgeInsets.only(left: 145),
                                 child: Text('€99.00',
@@ -87,7 +90,9 @@ class _Resources_1State extends State<Resources_1> {
                                       });
 
                                     },
-                                    child: Text('Videos')),
+                                    child: Text('Videos')
+                                ),
+
                                 Padding(
                                   padding: const EdgeInsets.only(left: 23),
                                   child: TextButton(
@@ -142,7 +147,8 @@ class _Resources_1State extends State<Resources_1> {
                                                       Icon(Icons.access_time,size: 13,color: Colors.grey,),
                                                       Padding(
                                                         padding: const EdgeInsets.only(left: 5,right: 10),
-                                                        child: Text('2h 15Min',style: TextStyle(color: Colors.grey,fontSize: 12,fontFamily: 'Sk-Modernist'),),
+                                                        child: Text('2h 15Min',
+                                                          style: TextStyle(color: Colors.grey,fontSize: 12,fontFamily: 'Sk-Modernist'),),
                                                       ),
 
                                                     ],
@@ -170,27 +176,64 @@ class _Resources_1State extends State<Resources_1> {
                                       onTap: (){
                                         setState(() {
 
-                                          /*_video.value.isPlaying
+                                          _video.value.isPlaying
                                               ? _video.pause()
-                                              : _video.play();*/
+                                              : _video.play();
+                                          
                                           showModalBottomSheet(
+                                              shape: RoundedRectangleBorder(
+                                                borderRadius: BorderRadius.only(
+                                                    topRight: Radius.circular(65),
+                                                    topLeft: Radius.circular(65)
+                                                ),
+                                              ),
+                                              backgroundColor: Colors.white,
                                               context: context,
                                               // ignore: missing_return
                                               builder: (BuildContext context){
 
-                                                _video.value.isPlaying
-                                                    ? _video.pause()
-                                                    : _video.play();
-                                               return Container(
+                                                return Wrap(
 
-                                                  child:  _video.value.isInitialized
-                                                      ? AspectRatio(
-                                                    aspectRatio: _video.value.aspectRatio,
-                                                    child: VideoPlayer(_video),
-                                                  )
+                                                  children: [
 
-                                                      : Container(),
+                                                    Container(
+                                                      width: 409,
+                                                      height: 400,
+
+                                                      decoration: BoxDecoration(
+                                                        color: Colors.white,
+                                                        borderRadius: BorderRadius.only(
+                                                          topRight: Radius.circular(20),
+                                                          topLeft: Radius.circular(20),
+                                                        ),
+                                                      ),
+                                                      child: Column(
+                                                        mainAxisAlignment: MainAxisAlignment.center,
+                                                        children: [
+
+                                                      Padding(
+                                                        padding: const EdgeInsets.all(20),
+                                                        child: Container(
+
+
+                                                        child:  _video.value.isInitialized
+                                                        ? AspectRatio(
+                                                        aspectRatio: _video.value.aspectRatio,
+                                                          child: VideoPlayer(_video),
+                                                        )
+
+                                                          : Container(),
+
+                                                      ),
+                                                      ),
+
+                                                        ],
+                                                      ),
+                                                    ),
+                                                  ],
                                                 );
+
+
                                               });
 
                                         });
@@ -230,6 +273,7 @@ class _Resources_1State extends State<Resources_1> {
                                               ],
                                             ),
                                           ),
+                                          
                                           Padding(
                                             padding: const EdgeInsets.only(left: 160),
                                             child: Container(

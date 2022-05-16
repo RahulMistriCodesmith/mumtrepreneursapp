@@ -9,6 +9,7 @@ class My_Network extends StatefulWidget {
 }
 
 class _My_NetworkState extends State<My_Network> {
+  Color _color = Colors.black;
   String dropdownValue = 'New Members';
   String dropdownValue1 = 'Select your industry';
   String dropdownValue2 = 'Select your industry';
@@ -332,19 +333,24 @@ class _My_NetworkState extends State<My_Network> {
                       child: Container(
                         width: 90.66,
                         height: 35,
+
                         decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(17.5),
                             border: Border.all(color: Color(0xff12496D))
                         ),
 
                         child: RaisedButton(
-                          color: Color(0xff12496D),
+                          color: _color,
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(17.5),
                           ),
                           child: Text('Unfollow',style: TextStyle(color: Colors.white,fontSize: 14,fontWeight: FontWeight.bold,fontFamily: 'Sk-Modernist'),),
 
-                          onPressed: (){},
+                          onPressed: (){
+                            _color == Color(0xff12496D)
+                                ? _color = Colors.black
+                                : _color = Color(0xff12496D);
+                          },
                         ),
                       ),
                     ),
