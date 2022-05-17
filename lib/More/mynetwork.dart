@@ -9,7 +9,14 @@ class My_Network extends StatefulWidget {
 }
 
 class _My_NetworkState extends State<My_Network> {
-  Color _color = Colors.black;
+  bool _flag = true;
+  bool _flag1 = true;
+  bool _flag2 = true;
+  bool _flag3 = true;
+  bool _flag4 = true;
+  bool _flag5 = true;
+  bool _flag6 = true;
+
   String dropdownValue = 'New Members';
   String dropdownValue1 = 'Select your industry';
   String dropdownValue2 = 'Select your industry';
@@ -330,27 +337,15 @@ class _My_NetworkState extends State<My_Network> {
 
                     Padding(
                       padding: const EdgeInsets.only(left: 80),
-                      child: Container(
-                        width: 90.66,
-                        height: 35,
+                      child: ElevatedButton(
 
-                        decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(17.5),
-                            border: Border.all(color: Color(0xff12496D))
-                        ),
-
-                        child: RaisedButton(
-                          color: _color,
+                        onPressed: () => setState(() => _flag = !_flag),
+                        child: Text(_flag ? 'Unfollow' : 'Follow'),
+                        style: ElevatedButton.styleFrom(
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(17.5),
                           ),
-                          child: Text('Unfollow',style: TextStyle(color: Colors.white,fontSize: 14,fontWeight: FontWeight.bold,fontFamily: 'Sk-Modernist'),),
-
-                          onPressed: (){
-                            _color == Color(0xff12496D)
-                                ? _color = Colors.black
-                                : _color = Color(0xff12496D);
-                          },
+                          primary: _flag ? Color(0xff12496D) : Colors.redAccent, // This is what you need!
                         ),
                       ),
                     ),
@@ -384,22 +379,14 @@ class _My_NetworkState extends State<My_Network> {
 
                     Padding(
                       padding: const EdgeInsets.only(left: 100),
-                      child: Container(
-                        width: 90.66,
-                        height: 35,
-                        decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(17.5),
-                            border: Border.all(color: Color(0xff12496D))
-                        ),
-
-                        child: RaisedButton(
-                          color: Color(0xff12496D),
+                      child: ElevatedButton(
+                        onPressed: () => setState(() => _flag1 = !_flag1),
+                        child: Text(_flag1 ? 'Unfollow' : 'Follow'),
+                        style: ElevatedButton.styleFrom(
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(17.5),
                           ),
-                          child: Text('Unfollow',style: TextStyle(color: Colors.white,fontSize: 14,fontWeight: FontWeight.bold,fontFamily: 'Sk-Modernist'),),
-
-                          onPressed: (){},
+                          primary: _flag1 ? Color(0xff12496D) : Colors.redAccent, // This is what you need!
                         ),
                       ),
                     ),
@@ -433,22 +420,15 @@ class _My_NetworkState extends State<My_Network> {
 
                     Padding(
                       padding: const EdgeInsets.only(left: 100),
-                      child: Container(
-                        width: 90.66,
-                        height: 35,
-                        decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(17.5),
-                            border: Border.all(color: Color(0xff12496D))
-                        ),
+                      child: ElevatedButton(
 
-                        child: RaisedButton(
-                          color: Color(0xff12496D),
+                        onPressed: () => setState(() => _flag2 = !_flag2),
+                        child: Text(_flag2 ? 'Unfollow' : 'Follow'),
+                        style: ElevatedButton.styleFrom(
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(17.5),
                           ),
-                          child: Text('Unfollow',style: TextStyle(color: Colors.white,fontSize: 14,fontWeight: FontWeight.bold,fontFamily: 'Sk-Modernist'),),
-
-                          onPressed: (){},
+                          primary: _flag2 ? Color(0xff12496D) : Colors.redAccent, // This is what you need!
                         ),
                       ),
                     ),
@@ -482,22 +462,14 @@ class _My_NetworkState extends State<My_Network> {
 
                     Padding(
                       padding: const EdgeInsets.only(left: 100),
-                      child: Container(
-                        width: 90.66,
-                        height: 35,
-                        decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(17.5),
-                            border: Border.all(color: Color(0xff12496D))
-                        ),
-
-                        child: RaisedButton(
-                          color: Color(0xff12496D),
+                      child: ElevatedButton(
+                        onPressed: () => setState(() => _flag3 = !_flag3),
+                        child: Text(_flag3 ? 'Unfollow' : 'Follow'),
+                        style: ElevatedButton.styleFrom(
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(17.5),
                           ),
-                          child: Text('Unfollow',style: TextStyle(color: Colors.white,fontSize: 14,fontWeight: FontWeight.bold,fontFamily: 'Sk-Modernist'),),
-
-                          onPressed: (){},
+                          primary: _flag3 ? Color(0xff12496D) : Colors.redAccent, // This is what you need!
                         ),
                       ),
                     ),
@@ -531,22 +503,14 @@ class _My_NetworkState extends State<My_Network> {
 
                     Padding(
                       padding: const EdgeInsets.only(left: 70),
-                      child: Container(
-                        width: 90.66,
-                        height: 35,
-                        decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(17.5),
-                            border: Border.all(color: Color(0xff12496D))
-                        ),
-
-                        child: RaisedButton(
-                          color: Color(0xff12496D),
+                      child: ElevatedButton(
+                        onPressed: () => setState(() => _flag4 = !_flag4),
+                        child: Text(_flag4 ? 'Unfollow' : 'Follow'),
+                        style: ElevatedButton.styleFrom(
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(17.5),
                           ),
-                          child: Text('Unfollow',style: TextStyle(color: Colors.white,fontSize: 14,fontWeight: FontWeight.bold,fontFamily: 'Sk-Modernist'),),
-
-                          onPressed: (){},
+                          primary: _flag4 ? Color(0xff12496D) : Colors.redAccent, // This is what you need!
                         ),
                       ),
                     ),
@@ -582,22 +546,14 @@ class _My_NetworkState extends State<My_Network> {
 
                     Padding(
                       padding: const EdgeInsets.only(left: 100),
-                      child: Container(
-                        width: 90.66,
-                        height: 35,
-                        decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(17.5),
-                            border: Border.all(color: Color(0xff12496D))
-                        ),
-
-                        child: RaisedButton(
-                          color: Color(0xff12496D),
+                      child: ElevatedButton(
+                        onPressed: () => setState(() => _flag5 = !_flag5),
+                        child: Text(_flag5 ? 'Unfollow' : 'Follow'),
+                        style: ElevatedButton.styleFrom(
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(17.5),
                           ),
-                          child: Text('Unfollow',style: TextStyle(color: Colors.white,fontSize: 14,fontWeight: FontWeight.bold,fontFamily: 'Sk-Modernist'),),
-
-                          onPressed: (){},
+                          primary: _flag5 ? Color(0xff12496D) : Colors.redAccent, // This is what you need!
                         ),
                       ),
                     ),
@@ -632,22 +588,14 @@ class _My_NetworkState extends State<My_Network> {
 
                     Padding(
                       padding: const EdgeInsets.only(left: 100),
-                      child: Container(
-                        width: 90.66,
-                        height: 35,
-                        decoration: BoxDecoration(
-                            borderRadius: BorderRadius.circular(17.5),
-                            border: Border.all(color: Color(0xff12496D))
-                        ),
-
-                        child: RaisedButton(
-                          color: Color(0xff12496D),
+                      child: ElevatedButton(
+                        onPressed: () => setState(() => _flag6 = !_flag6),
+                        child: Text(_flag6 ? 'Unfollow' : 'Follow'),
+                        style: ElevatedButton.styleFrom(
                           shape: RoundedRectangleBorder(
                             borderRadius: BorderRadius.circular(17.5),
                           ),
-                          child: Text('Unfollow',style: TextStyle(color: Colors.white,fontSize: 14,fontWeight: FontWeight.bold,fontFamily: 'Sk-Modernist'),),
-
-                          onPressed: (){},
+                          primary: _flag6 ? Color(0xff12496D) : Colors.redAccent, // This is what you need!
                         ),
                       ),
                     ),

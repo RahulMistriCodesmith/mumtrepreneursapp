@@ -369,7 +369,7 @@ class _FeedsState extends State<Feeds> {
                                             setState( () {
 
                                               return showDialog(
-                                                barrierColor: Color(0xff373738a),
+                                                barrierColor: Color(0xff7373738A),
                                                 context: context,
                                                 builder: (ctx) => AlertDialog(
                                                   title: Text("Delete Post?",

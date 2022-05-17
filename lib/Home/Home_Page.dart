@@ -2,12 +2,15 @@
 
 // ignore_for_file: camel_case_types, prefer_const_constructors, file_names, prefer_const_literals_to_create_immutables
 
+
+
 import 'package:flutter/material.dart';
 import 'package:mumtrepreneursapp/Home/Events.dart';
 import 'package:mumtrepreneursapp/Home/Resources.dart';
 import 'package:mumtrepreneursapp/Home/communitycourse.dart';
 import 'package:mumtrepreneursapp/Home/essential_info.dart';
 import 'package:mumtrepreneursapp/Home/notifications.dart';
+import 'package:mumtrepreneursapp/Home/feedback.dart';
 class Home_Page extends StatefulWidget {
 
   const Home_Page({Key key}) : super(key: key);
@@ -17,6 +20,8 @@ class Home_Page extends StatefulWidget {
 }
 
 class _Home_PageState extends State<Home_Page> {
+
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -25,7 +30,12 @@ class _Home_PageState extends State<Home_Page> {
         child: Padding(
           padding: const EdgeInsets.only(top: 100,left: 25),
           child: Column(
+
+
+
             children: [
+
+
               Padding(
                 padding: const EdgeInsets.only(left: 15,right: 5,bottom: 30),
                 child: Row(
@@ -260,7 +270,9 @@ class _Home_PageState extends State<Home_Page> {
                               ),
                             ),
                           ),
-                          onTap: (){},
+                          onTap: (){
+                            Navigator.push(context, MaterialPageRoute(builder: (context) => Feedback_Support()));
+                          },
                         ),
 
 

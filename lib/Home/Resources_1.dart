@@ -1,4 +1,4 @@
-// ignore_for_file: deprecated_member_use, file_names, prefer_const_constructors, camel_case_types, prefer_const_literals_to_create_immutables, avoid_print, avoid_unnecessary_containers, sized_box_for_whitespace
+// ignore_for_file: deprecated_member_use, file_names, prefer_const_constructors, camel_case_types, prefer_const_literals_to_create_immutables, avoid_print, avoid_unnecessary_containers, sized_box_for_whitespace, use_full_hex_values_for_flutter_colors
 
 import 'package:flutter/material.dart';
 import 'package:mumtrepreneursapp/Home/Add_Review.dart';
@@ -156,6 +156,7 @@ class _Resources_1State extends State<Resources_1> {
                                                 ],
                                               ),
                                             ),
+
                                             Padding(
                                               padding: const EdgeInsets.only(left: 190),
                                               child: Container(
@@ -174,72 +175,72 @@ class _Resources_1State extends State<Resources_1> {
                                       ),
 
                                       onTap: (){
-                                        setState(() {
+                                        setState(() async {
 
                                           _video.value.isPlaying
                                               ? _video.pause()
                                               : _video.play();
-                                          
-                                          showModalBottomSheet(
-                                              shape: RoundedRectangleBorder(
-                                                borderRadius: BorderRadius.only(
-                                                    topRight: Radius.circular(65),
-                                                    topLeft: Radius.circular(65)
+
+                                        return showDialog(
+                                          barrierColor: Color(0xff373738a),
+                                          context: context,
+                                          builder: (ctx) => AlertDialog(
+                                            title: Text("Delete Post?",
+                                                style: TextStyle(fontSize: 14,fontFamily: 'Sk-Modernist',fontWeight: FontWeight.bold),),
+                                            content:   Container(
+                                              width: 409,
+                                              height: 200,
+
+                                              decoration: BoxDecoration(
+                                                  color: Colors.white,
+                                                  borderRadius: BorderRadius.only(
+                                                    topRight: Radius.circular(20),
+                                                    topLeft: Radius.circular(20),
+                                                  ),
                                                 ),
-                                              ),
-                                              backgroundColor: Colors.white,
-                                              context: context,
-                                              // ignore: missing_return
-                                              builder: (BuildContext context){
-
-                                                return Wrap(
-
+                                              child: Column(
+                                                  mainAxisAlignment: MainAxisAlignment.center,
                                                   children: [
-
                                                     Container(
-                                                      width: 409,
-                                                      height: 400,
 
-                                                      decoration: BoxDecoration(
-                                                        color: Colors.white,
-                                                        borderRadius: BorderRadius.only(
-                                                          topRight: Radius.circular(20),
-                                                          topLeft: Radius.circular(20),
-                                                        ),
-                                                      ),
-                                                      child: Column(
-                                                        mainAxisAlignment: MainAxisAlignment.center,
-                                                        children: [
-
-                                                      Padding(
-                                                        padding: const EdgeInsets.all(20),
-                                                        child: Container(
-
-
-                                                        child:  _video.value.isInitialized
-                                                        ? AspectRatio(
-                                                        aspectRatio: _video.value.aspectRatio,
-                                                          child: VideoPlayer(_video),
-                                                        )
-
+                                                      child:  _video.value.isInitialized
+                                                          ? AspectRatio(
+                                                           aspectRatio: _video.value.aspectRatio,
+                                                           child: VideoPlayer(_video),
+                                                      )
                                                           : Container(),
 
-                                                      ),
-                                                      ),
-
-                                                        ],
-                                                      ),
                                                     ),
+
                                                   ],
-                                                );
+                                                ),
+                                              ),
 
+                                           actions: <Widget> [
 
-                                              });
+                                             Container(
+                                                 width: 124,
+                                                 height: 40,
+                                               child: FlatButton(
+                                                    onPressed: () {
+                                                      Navigator.of(ctx).pop();
+                                                    },
+                                                    color: Color(0xff12496D),
+                                                    shape: RoundedRectangleBorder(
+                                                      borderRadius: BorderRadius.circular(5),
+                                                    ),
+                                                    child: Text("Cancel",
+                                                      style: TextStyle(fontWeight: FontWeight.bold,color: Colors.white,fontFamily: 'Sk-Modernist',fontSize: 14),),
+                                                  ),
+                                                ),
+
+                                              ],
+                                            ),
+                                          );
 
                                         });
                                       },
                                     ),
-
 
                                     Padding(
                                       padding: const EdgeInsets.only(left: 10,top: 20),
@@ -267,13 +268,12 @@ class _Resources_1State extends State<Resources_1> {
                                                       padding: const EdgeInsets.only(left: 5,right: 30),
                                                       child: Text('Size 25MB',style: TextStyle(color: Colors.grey,fontSize: 12,fontFamily: 'Sk-Modernist'),),
                                                     ),
-
                                                   ],
                                                 ),
                                               ],
                                             ),
                                           ),
-                                          
+
                                           Padding(
                                             padding: const EdgeInsets.only(left: 160),
                                             child: Container(
@@ -289,6 +289,7 @@ class _Resources_1State extends State<Resources_1> {
                                         ],
                                       ),
                                     ),
+
 
                                     Padding(
                                       padding: const EdgeInsets.only(left: 10,top: 20),
@@ -418,6 +419,7 @@ class _Resources_1State extends State<Resources_1> {
                                               ],
                                             ),
                                           ),
+
                                           Padding(
                                             padding: const EdgeInsets.only(left: 150),
                                             child: Container(
@@ -610,10 +612,6 @@ class _Resources_1State extends State<Resources_1> {
                               )
 
                           ),
-
-
-
-
 
 
                         ],
