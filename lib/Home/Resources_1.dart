@@ -388,6 +388,7 @@ class _Resources_1State extends State<Resources_1> {
                                               ],
                                             ),
                                           ),
+
                                           Padding(
                                             padding: const EdgeInsets.only(left: 150),
                                             child: Container(
