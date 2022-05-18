@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:mumtrepreneursapp/Home/Add_Review.dart';
+import 'package:mumtrepreneursapp/document01.dart';
 import 'package:video_player/video_player.dart';
 class Resources_1 extends StatefulWidget {
   const Resources_1({Key key}) : super(key: key);
@@ -242,100 +243,116 @@ class _Resources_1State extends State<Resources_1> {
                                       },
                                     ),
 
-                                    Padding(
-                                      padding: const EdgeInsets.only(left: 10,top: 20),
-                                      child: Row(
-                                        children: [
-                                          Container(
-                                            width: 32,
-                                            height: 32,
-                                            decoration: BoxDecoration(
-                                              color: Color(0xff12496D),
-                                              borderRadius: BorderRadius.circular(100),
-                                            ),
-                                            child: Image.asset('assets/Image/Download.png',scale: 4,),
-                                          ),
-                                          Padding(
-                                            padding: const EdgeInsets.only(left: 10),
-                                            child: Column(
-                                              children: [
-                                                Text('Document 01.pdf',
-                                                  style: TextStyle(fontFamily: 'Sk-Modernist',fontSize: 14,fontWeight: FontWeight.bold),),
-                                                Row(
-                                                  children: [
-                                                    Icon(Icons.access_time,size: 13,color: Colors.grey,),
-                                                    Padding(
-                                                      padding: const EdgeInsets.only(left: 5,right: 30),
-                                                      child: Text('Size 25MB',style: TextStyle(color: Colors.grey,fontSize: 12,fontFamily: 'Sk-Modernist'),),
-                                                    ),
-                                                  ],
-                                                ),
-                                              ],
-                                            ),
-                                          ),
+                                    InkWell(
 
-                                          Padding(
-                                            padding: const EdgeInsets.only(left: 160),
-                                            child: Container(
+                                      onTap: (){
+                                        Navigator.push(context, MaterialPageRoute(builder: (context) => Document01()));
+                                      },
+
+
+                                      child: Padding(
+                                        padding: const EdgeInsets.only(left: 10,top: 20),
+                                        child: Row(
+                                          children: [
+                                            Container(
                                               width: 32,
                                               height: 32,
                                               decoration: BoxDecoration(
-                                                color: Color(0xffF5F5F5),
+                                                color: Color(0xff12496D),
                                                 borderRadius: BorderRadius.circular(100),
                                               ),
-                                              child: Image.asset('assets/Image/Lock.png',scale: 5,color: Color(0xff12496D),),
+                                              child: Image.asset('assets/Image/Download.png',scale: 4,),
                                             ),
-                                          ),
-                                        ],
+                                            Padding(
+                                              padding: const EdgeInsets.only(left: 10),
+                                              child: Column(
+                                                children: [
+                                                  Text('Document 01.pdf',
+                                                    style: TextStyle(fontFamily: 'Sk-Modernist',fontSize: 14,fontWeight: FontWeight.bold),),
+                                                  Row(
+                                                    children: [
+                                                      Icon(Icons.access_time,size: 13,color: Colors.grey,),
+                                                      Padding(
+                                                        padding: const EdgeInsets.only(left: 5,right: 30),
+                                                        child: Text('Size 25MB',style: TextStyle(color: Colors.grey,fontSize: 12,fontFamily: 'Sk-Modernist'),),
+                                                      ),
+                                                    ],
+                                                  ),
+                                                ],
+                                              ),
+                                            ),
+
+                                            Padding(
+                                              padding: const EdgeInsets.only(left: 160),
+                                              child: Container(
+                                                width: 32,
+                                                height: 32,
+                                                decoration: BoxDecoration(
+                                                  color: Color(0xffF5F5F5),
+                                                  borderRadius: BorderRadius.circular(100),
+                                                ),
+                                                child: Image.asset('assets/Image/Lock.png',scale: 5,color: Color(0xff12496D),),
+                                              ),
+                                            ),
+                                          ],
+                                        ),
                                       ),
                                     ),
 
 
-                                    Padding(
-                                      padding: const EdgeInsets.only(left: 10,top: 20),
-                                      child: Row(
-                                        children: [
-                                          Container(
-                                            width: 32,
-                                            height: 32,
-                                            decoration: BoxDecoration(
-                                              color: Color(0xff12496D),
-                                              borderRadius: BorderRadius.circular(100),
-                                            ),
-                                            child: Image.asset('assets/Image/Download.png',scale: 4,),
-                                          ),
-                                          Padding(
-                                            padding: const EdgeInsets.only(left: 10),
-                                            child: Column(
-                                              children: [
-                                                Text('Document 02.pdf',
-                                                  style: TextStyle(fontFamily: 'Sk-Modernist',fontSize: 14,fontWeight: FontWeight.bold),),
-                                                Row(
-                                                  children: [
-                                                    Icon(Icons.access_time,size: 13,color: Colors.grey,),
-                                                    Padding(
-                                                      padding: const EdgeInsets.only(left: 5,right: 30),
-                                                      child: Text('Size 26MB',style: TextStyle(color: Colors.grey,fontSize: 12,fontFamily: 'Sk-Modernist'),),
-                                                    ),
+                                    InkWell(
 
-                                                  ],
-                                                ),
-                                              ],
-                                            ),
-                                          ),
-                                          Padding(
-                                            padding: const EdgeInsets.only(left: 160),
-                                            child: Container(
+                                      onTap: (){
+                                        Navigator.push(context, MaterialPageRoute(builder: (context) => Document01()));
+                                      },
+
+                                      child: Padding(
+                                        padding: const EdgeInsets.only(left: 10,top: 20),
+                                        child: Row(
+                                          children: [
+                                            Container(
                                               width: 32,
                                               height: 32,
                                               decoration: BoxDecoration(
-                                                color: Color(0xffF5F5F5),
+                                                color: Color(0xff12496D),
                                                 borderRadius: BorderRadius.circular(100),
                                               ),
-                                              child: Image.asset('assets/Image/Lock.png',scale: 5,color: Color(0xff12496D),),
+                                              child: Image.asset('assets/Image/Download.png',scale: 4,),
                                             ),
-                                          ),
-                                        ],
+                                            Padding(
+                                              padding: const EdgeInsets.only(left: 10),
+                                              child: Column(
+                                                children: [
+                                                  Text('Document 02.pdf',
+                                                    style: TextStyle(fontFamily: 'Sk-Modernist',fontSize: 14,fontWeight: FontWeight.bold),),
+                                                  Row(
+                                                    children: [
+                                                      Icon(Icons.access_time,size: 13,color: Colors.grey,),
+                                                      Padding(
+                                                        padding: const EdgeInsets.only(left: 5,right: 30),
+                                                        child: Text('Size 26MB',style: TextStyle(color: Colors.grey,fontSize: 12,fontFamily: 'Sk-Modernist'),),
+                                                      ),
+
+                                                    ],
+                                                  ),
+                                                ],
+                                              ),
+                                            ),
+
+                                            Padding(
+                                              padding: const EdgeInsets.only(left: 160),
+                                              child: Container(
+                                                width: 32,
+                                                height: 32,
+                                                decoration: BoxDecoration(
+                                                  color: Color(0xffF5F5F5),
+                                                  borderRadius: BorderRadius.circular(100),
+                                                ),
+                                                child: Image.asset('assets/Image/Lock.png',scale: 5,color: Color(0xff12496D),),
+                                              ),
+                                            ),
+                                          ],
+                                        ),
                                       ),
                                     ),
 
