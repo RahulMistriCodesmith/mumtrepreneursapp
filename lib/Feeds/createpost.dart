@@ -222,9 +222,8 @@ class _Create_PostState extends State<Create_Post> {
 
                   _imageFile == null
 
-
-
                   ? TextFormField(
+                    maxLines: 8,
                     decoration: InputDecoration(
                       border: InputBorder.none,
                       hintText: 'What’s  on your mind?',

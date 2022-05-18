@@ -66,7 +66,7 @@ class _Add_ReviewState extends State<Add_Review> {
             padding: const EdgeInsets.only(right: 95,top: 10),
             child: RatingBar.builder(
               initialRating: 3,
-              minRating: 1,
+              minRating: 0.5,
               direction: Axis.horizontal,
               allowHalfRating: true,
               itemCount: 5,

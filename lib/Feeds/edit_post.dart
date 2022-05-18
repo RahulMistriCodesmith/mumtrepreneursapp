@@ -242,12 +242,9 @@ class _EditPostState extends State<EditPost> {
                           height: 120,
 
                           child: TextField(
-
+                            maxLines: 8,
                             decoration: InputDecoration(
-
                               border: InputBorder.none,
-
-
                             ),
                           ),
                         ),

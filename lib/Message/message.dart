@@ -16,7 +16,6 @@ class _MessageState extends State<Message> {
       backgroundColor: Color(0xffE5E5E5),
 
       appBar: AppBar(
-
         backgroundColor: Colors.transparent,
         bottomOpacity: 0.0,
         elevation: 0.0,
@@ -32,7 +31,9 @@ class _MessageState extends State<Message> {
       ),
 
       body: SingleChildScrollView(
+
         child: Column(
+
           children: [
 
             Padding(
@@ -79,7 +80,9 @@ class _MessageState extends State<Message> {
                 height: 55,
                 color: Color(0xffE5E5E5),
                 child: Row(
+
                   children: [
+
                     Stack(
                       children: [
                         Image.asset('assets/Image/garcia_icon.png',width: 36,height: 36,),
@@ -89,6 +92,7 @@ class _MessageState extends State<Message> {
                         ),
                       ],
                     ),
+
                     Padding(
                       padding: const EdgeInsets.only(left: 15,top: 10),
                       child: Column(
@@ -130,8 +134,11 @@ class _MessageState extends State<Message> {
                 width: 409,
                 height: 55,
                 color: Color(0xffE5E5E5),
+
                 child: Row(
+
                   children: [
+
                     Stack(
                       children: [
                         Image.asset('assets/Image/lois_icon.png',width: 36,height: 36,),
@@ -141,6 +148,7 @@ class _MessageState extends State<Message> {
                         ),
                       ],
                     ),
+
                     Padding(
                       padding: const EdgeInsets.only(left: 15,top: 10),
                       child: Column(
@@ -164,8 +172,6 @@ class _MessageState extends State<Message> {
                                   padding: const EdgeInsets.only(right: 150),
                                   child: Text('But also the leap into',style: TextStyle(fontFamily: 'Sk-Modernist',fontSize: 14,color: Colors.grey)),
                                 ),
-
-
                               ],
                             ),
                           ),

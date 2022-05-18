@@ -47,6 +47,7 @@ dependencies:
   path_provider: ^2.0.10
   permission_handler: ^9.2.0
   syncfusion_flutter_pdfviewer: ^20.1.56-beta
+  side_navigation: ^1.0.2
 
 
 
@@ -168,6 +169,8 @@ flutter:
     - assets/Image/category_icon.png
     - assets/Image/intro.mp4
     - assets/Image/sample.pdf
+    - assets/Image/chapman_image.png
+    - assets/Image/post_image_3.png
 
 
 

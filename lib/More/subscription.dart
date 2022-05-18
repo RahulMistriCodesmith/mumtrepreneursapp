@@ -10,9 +10,13 @@ class Subscription extends StatefulWidget {
 
 class _SubscriptionState extends State<Subscription> {
   bool isChecked = false;
+  bool isChecked1 = false;
+  bool isChecked2 = false;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+
       backgroundColor: Color(0xffE5E5E5),
 
       body: SingleChildScrollView(
@@ -234,10 +238,10 @@ class _SubscriptionState extends State<Subscription> {
                               shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(7),
                               ),
-                              value: isChecked,
+                              value: isChecked1,
                               onChanged:  (bool value) {
                                 setState(() {
-                                  isChecked = value;
+                                  isChecked1 = value;
 
                                 });
                               }),
@@ -282,10 +286,10 @@ class _SubscriptionState extends State<Subscription> {
                               shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(7),
                               ),
-                              value: isChecked,
+                              value: isChecked2,
                               onChanged:  (bool value) {
                                 setState(() {
-                                  isChecked = value;
+                                  isChecked2 = value;
 
                                 });
                               }),

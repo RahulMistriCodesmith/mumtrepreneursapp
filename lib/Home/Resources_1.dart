@@ -369,6 +369,7 @@ class _Resources_1State extends State<Resources_1> {
                                             ),
                                             child: Image.asset('assets/Image/Fill 4.png',scale: 4,),
                                           ),
+
                                           Padding(
                                             padding: const EdgeInsets.only(left: 10),
                                             child: Column(
@@ -616,10 +617,9 @@ class _Resources_1State extends State<Resources_1> {
                                             color: Color(0xff12496D),
 
                                             child: Text('BUY NOW',
-                                              style: TextStyle(color: Color(0xffFFFFFF),fontSize: 15,fontWeight: FontWeight.bold,fontFamily: 'Sk-Modernist'),),
-                                            onPressed: (){
-
-                                            },
+                                              style: TextStyle(color: Color(0xffFFFFFF),fontSize: 15,fontWeight: FontWeight.bold,fontFamily: 'Sk-Modernist'),
+                                            ),
+                                            onPressed: (){},
                                           ),
                                         ),
                                       ),

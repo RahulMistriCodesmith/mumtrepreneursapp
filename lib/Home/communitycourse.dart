@@ -26,14 +26,18 @@ class _CommunityCourseState extends State<CommunityCourse> {
           padding: EdgeInsets.only(left: 70),
           child: Text('Community Course'),
         ),
+
         titleTextStyle: TextStyle(color: Colors.black,fontSize: 16,fontFamily: 'Sk-Modernist',fontWeight: FontWeight.bold),
 
       ),
       body: SingleChildScrollView(
+
         child: Padding(
           padding:  EdgeInsets.only(top: 31,left: 15,right: 10),
           child: Column(
+
             children: [
+
               Container(
                 padding: EdgeInsets.only(left: 15,bottom: 3),
                 width: 325,
@@ -66,9 +70,10 @@ class _CommunityCourseState extends State<CommunityCourse> {
               Padding(
                 padding:  EdgeInsets.only(top: 19,left: 30),
                 child: Row(
-                  children: [
-                    GestureDetector(
 
+                  children: [
+
+                    GestureDetector(
                       child: Container(
                         width: 153,
                         height: 177,
