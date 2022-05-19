@@ -559,7 +559,7 @@ class _CourseEdit1State extends State<CourseEdit1> {
                             ),
                           ),
                           Padding(
-                            padding: const EdgeInsets.only(left: 121),
+                            padding: const EdgeInsets.only(left: 120),
                             child: Image.asset('assets/Image/2user_icon.png',width: 16.54,height: 17,color: Color(0xff46454C),),
                           ),
                           PopupMenuButton(
