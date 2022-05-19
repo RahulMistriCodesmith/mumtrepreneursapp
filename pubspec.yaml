@@ -171,6 +171,15 @@ flutter:
     - assets/Image/sample.pdf
     - assets/Image/chapman_image.png
     - assets/Image/post_image_3.png
+    - assets/Image/community_image.png
+    - assets/Image/uiux_image.png
+    - assets/Image/community_post.png
+    - assets/Image/uiux_post.png
+    - assets/Image/pause_icon.png
+    - assets/Image/remove_icon.png
+    - assets/Image/rebecca_image.png
+    - assets/Image/warning_icon.png
+    - assets/Image/upload_icon.png
 
 
 

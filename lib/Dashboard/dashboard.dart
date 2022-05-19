@@ -10,7 +10,7 @@ import 'package:mumtrepreneursapp/Dashboard/userstats.dart';
 import 'package:mumtrepreneursapp/Dashboard/calendar.dart';
 import 'package:mumtrepreneursapp/Dashboard/a_events.dart';
 import 'package:mumtrepreneursapp/Dashboard/a_resources.dart';
-import 'package:mumtrepreneursapp/a_members.dart';
+import 'package:mumtrepreneursapp/Dashboard/a_members.dart';
 import 'package:side_navigation/side_navigation.dart';
 class Dashboard extends StatefulWidget {
   const Dashboard({Key key}) : super(key: key);
@@ -103,7 +103,6 @@ class _DashboardState extends State<Dashboard> {
               onTap: _onItemTapped,
             ),
 
-            /// Make it take the rest of the available width
             Expanded(
               child: views.elementAt(selectedIndex),
             )
