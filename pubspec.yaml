@@ -39,7 +39,6 @@ dependencies:
   chat_bubbles: ^1.2.0
   flutter_share: ^2.0.0
   file_picker: ^3.0.4
-  table_calendar: ^2.1.0
   readmore: ^2.1.0
   flutter_rating_bar: ^4.0.0
   video_player: ^2.4.2
@@ -48,6 +47,8 @@ dependencies:
   permission_handler: ^9.2.0
   syncfusion_flutter_pdfviewer: ^20.1.56-beta
   side_navigation: ^1.0.2
+  table_calendar: ^3.0.5
+  syncfusion_flutter_calendar: ^20.1.56
 
 
 
@@ -180,6 +181,9 @@ flutter:
     - assets/Image/rebecca_image.png
     - assets/Image/warning_icon.png
     - assets/Image/upload_icon.png
+    - assets/Image/diana_image.png
+    - assets/Image/diana_icon.png
+    - assets/Image/ticksquare(1).png
 
 
 

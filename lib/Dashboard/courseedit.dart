@@ -2,7 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:mumtrepreneursapp/Home/Add_Review.dart';
-import 'package:mumtrepreneursapp/courseedit1.dart';
+import 'package:mumtrepreneursapp/Dashboard/courseedit1.dart';
 import 'package:mumtrepreneursapp/document01.dart';
 import 'package:video_player/video_player.dart';
 class CourseEdit extends StatefulWidget {

@@ -16,7 +16,7 @@ class _Feeds1State extends State<Feeds1> {
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
-length: 2,
+       length: 2,
       child: Scaffold(
         appBar: AppBar(
           automaticallyImplyLeading: false,
@@ -56,6 +56,7 @@ length: 2,
         body: TabBarView(
           children: <Widget>[
             SingleChildScrollView(
+              scrollDirection: Axis.vertical,
               child: Column(
                 children: [
                   Padding(

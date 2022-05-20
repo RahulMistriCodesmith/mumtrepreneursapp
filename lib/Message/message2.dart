@@ -257,6 +257,7 @@ class _Message_2State extends State<Message_2> {
            ],),
        ),
      ),
+
       body: SingleChildScrollView(
 
         child: Padding(

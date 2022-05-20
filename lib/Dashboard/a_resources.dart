@@ -3,7 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:mumtrepreneursapp/Home/Resources_1.dart';
 import 'package:mumtrepreneursapp/Dashboard/uploadcourse.dart';
-import 'package:mumtrepreneursapp/courseedit.dart';
+import 'package:mumtrepreneursapp/Dashboard/courseedit.dart';
 class A_Resources extends StatefulWidget {
   const A_Resources({Key key}) : super(key: key);
 

@@ -1,31 +1,31 @@
+// ignore_for_file: deprecated_member_use
+
 import 'package:flutter/material.dart';
 import 'package:mumtrepreneursapp/Dashboard/a_user_profile.dart';
-import 'package:mumtrepreneursapp/Dashboard/francesgarcia.dart';
-class UserStats extends StatefulWidget {
-  const UserStats({Key key}) : super(key: key);
+class InviteMembers extends StatefulWidget {
+  const InviteMembers({Key key}) : super(key: key);
 
   @override
-  State<UserStats> createState() => _UserStatsState();
+  State<InviteMembers> createState() => _InviteMembersState();
 }
 
-class _UserStatsState extends State<UserStats> {
+class _InviteMembersState extends State<InviteMembers> {
+
   String dropdownValue = 'All Users';
   String dropdownValue1 = 'View all Members';
   bool isChecked = false;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Color(0xffE5E5E5),
+
       appBar: AppBar(
-        automaticallyImplyLeading: false,
+        foregroundColor: Color(0xff12496D),
         backgroundColor: Colors.white,
-        title: Text('User Stats'),
+        elevation: 1,
+        title: Text('Trainer'),
         titleTextStyle: TextStyle(color: Colors.black,fontSize: 16,fontFamily: 'Sk-Modernist',fontWeight: FontWeight.w700),
-        actions: [
-          Padding(
-            padding: const EdgeInsets.only(right: 21.6),
-            child: Image.asset('assets/Image/notification_icon.png',width: 14.53,height: 18.79,),
-          )
-        ],
+
       ),
       body: SingleChildScrollView(
 
@@ -206,11 +206,11 @@ class _UserStatsState extends State<UserStats> {
                       Image.asset('assets/Image/garcia_icon.png',width: 35,height: 35,),
 
                       Padding(
-                        padding: const EdgeInsets.only(left: 13,right: 125),
+                        padding: const EdgeInsets.only(left: 13,right: 180),
                         child: GestureDetector(
 
                           onTap: (){
-                            Navigator.push(context, MaterialPageRoute(builder: (context) => UserStats2()));
+                            Navigator.push(context, MaterialPageRoute(builder: (context) => A_User_Profile()));
                           },
 
                           child: Column(
@@ -218,14 +218,15 @@ class _UserStatsState extends State<UserStats> {
                               Text('Frances Garcia',style: TextStyle(fontFamily: 'Sk-Modernist',fontWeight: FontWeight.w700,fontSize: 13,),),
 
                               Padding(
-                                padding: const EdgeInsets.only(right: 10),
-                                child: Text('Premium User',style: TextStyle(fontFamily: 'Sk-Modernist',fontWeight: FontWeight.w400,fontSize: 13,color: Colors.grey),),
+                                padding: const EdgeInsets.only(right: 50),
+                                child: Text('Expert',style: TextStyle(fontFamily: 'Sk-Modernist',fontWeight: FontWeight.w400,fontSize: 13,color: Colors.grey),),
                               ),
                             ],
                           ),
                         ),
                       ),
 
+                      Image.asset('assets/Image/remove_icon.png',width: 18.5,height: 18.5,color: Colors.grey,),
 
 
                     ],
@@ -250,21 +251,22 @@ class _UserStatsState extends State<UserStats> {
                       Image.asset('assets/Image/lois_icon.png',width: 35,height: 35,),
 
                       Padding(
-                        padding: const EdgeInsets.only(left: 13,right: 140),
+                        padding: const EdgeInsets.only(left: 13,right: 188),
                         child: Column(
                           children: [
                             Padding(
-                              padding: const EdgeInsets.only(right: 8),
+                              padding: const EdgeInsets.only(right: 15),
                               child: Text('Lois A. Day',style: TextStyle(fontFamily: 'Sk-Modernist',fontWeight: FontWeight.w700,fontSize: 13,),),
                             ),
 
                             Padding(
-                              padding: const EdgeInsets.only(left: 1),
-                              child: Text('Premium User',style: TextStyle(fontFamily: 'Sk-Modernist',fontWeight: FontWeight.w400,fontSize: 13,color: Colors.grey),),
+                              padding: const EdgeInsets.only(right: 25),
+                              child: Text('Champion',style: TextStyle(fontFamily: 'Sk-Modernist',fontWeight: FontWeight.w400,fontSize: 13,color: Colors.grey),),
                             ),
                           ],
                         ),
                       ),
+                      Image.asset('assets/Image/remove_icon.png',width: 18.5,height: 18.5,color: Colors.grey,),
 
 
                     ],
@@ -298,7 +300,7 @@ class _UserStatsState extends State<UserStats> {
                       ),
 
                       Padding(
-                        padding: const EdgeInsets.only(left: 13,right: 125),
+                        padding: const EdgeInsets.only(left: 13,right: 190),
                         child: Column(
                           children: [
                             Padding(
@@ -307,12 +309,14 @@ class _UserStatsState extends State<UserStats> {
                             ),
 
                             Padding(
-                              padding: const EdgeInsets.only(right: 5),
-                              child: Text('Premium User',style: TextStyle(fontFamily: 'Sk-Modernist',fontWeight: FontWeight.w400,fontSize: 13,color: Colors.grey),),
+                              padding: const EdgeInsets.only(right: 45),
+                              child: Text('Expert',style: TextStyle(fontFamily: 'Sk-Modernist',fontWeight: FontWeight.w400,fontSize: 13,color: Colors.grey),),
                             ),
                           ],
                         ),
                       ),
+
+                      Image.asset('assets/Image/remove_icon.png',width: 18.5,height: 18.5,color: Colors.grey,),
 
 
                     ],
@@ -337,18 +341,20 @@ class _UserStatsState extends State<UserStats> {
                       Image.asset('assets/Image/hartle_icon.png',width: 35,height: 35,),
 
                       Padding(
-                        padding: const EdgeInsets.only(left: 13,right: 120),
+                        padding: const EdgeInsets.only(left: 13,right: 180),
                         child: Column(
                           children: [
                             Text('Mckinley Hartle',style: TextStyle(fontFamily: 'Sk-Modernist',fontWeight: FontWeight.w700,fontSize: 13,),),
 
                             Padding(
-                              padding: const EdgeInsets.only(right: 10),
-                              child: Text('Premium User',style: TextStyle(fontFamily: 'Sk-Modernist',fontWeight: FontWeight.w400,fontSize: 13,color: Colors.grey),),
+                              padding: const EdgeInsets.only(right: 30),
+                              child: Text('Champion',style: TextStyle(fontFamily: 'Sk-Modernist',fontWeight: FontWeight.w400,fontSize: 13,color: Colors.grey),),
                             ),
                           ],
                         ),
                       ),
+
+                      Image.asset('assets/Image/remove_icon.png',width: 18.5,height: 18.5,color: Colors.grey,),
 
 
                     ],
@@ -373,7 +379,7 @@ class _UserStatsState extends State<UserStats> {
                       Image.asset('assets/Image/perez_icon.png',width: 35,height: 35,),
 
                       Padding(
-                        padding: const EdgeInsets.only(left: 13,right: 125),
+                        padding: const EdgeInsets.only(left: 13,right: 190),
                         child: Column(
                           children: [
                             Padding(
@@ -382,12 +388,13 @@ class _UserStatsState extends State<UserStats> {
                             ),
 
                             Padding(
-                              padding: const EdgeInsets.only(right: 1),
-                              child: Text('Premium User',style: TextStyle(fontFamily: 'Sk-Modernist',fontWeight: FontWeight.w400,fontSize: 13,color: Colors.grey),),
+                              padding: const EdgeInsets.only(right: 40),
+                              child: Text('Expert',style: TextStyle(fontFamily: 'Sk-Modernist',fontWeight: FontWeight.w400,fontSize: 13,color: Colors.grey),),
                             ),
                           ],
                         ),
                       ),
+                      Image.asset('assets/Image/remove_icon.png',width: 18.5,height: 18.5,color: Colors.grey,),
 
 
                     ],
@@ -412,18 +419,19 @@ class _UserStatsState extends State<UserStats> {
                       Image.asset('assets/Image/garcia_icon.png',width: 35,height: 35,),
 
                       Padding(
-                        padding: const EdgeInsets.only(left: 13,right: 125),
+                        padding: const EdgeInsets.only(left: 13,right: 180),
                         child: Column(
                           children: [
                             Text('Frances Garcia',style: TextStyle(fontFamily: 'Sk-Modernist',fontWeight: FontWeight.w700,fontSize: 13,),),
 
                             Padding(
-                              padding: const EdgeInsets.only(right: 5),
-                              child: Text('Premium User',style: TextStyle(fontFamily: 'Sk-Modernist',fontWeight: FontWeight.w400,fontSize: 13,color: Colors.grey),),
+                              padding: const EdgeInsets.only(right: 30),
+                              child: Text('Champion',style: TextStyle(fontFamily: 'Sk-Modernist',fontWeight: FontWeight.w400,fontSize: 13,color: Colors.grey),),
                             ),
                           ],
                         ),
                       ),
+                      Image.asset('assets/Image/remove_icon.png',width: 18.5,height: 18.5,color: Colors.grey,),
 
 
                     ],
@@ -433,7 +441,7 @@ class _UserStatsState extends State<UserStats> {
             ),
 
             Padding(
-              padding: const EdgeInsets.only(left: 20,right: 20,top: 15),
+              padding: const EdgeInsets.only(left: 20,right: 20,top: 16),
               child: Container(
 
                 decoration: BoxDecoration(
@@ -448,7 +456,7 @@ class _UserStatsState extends State<UserStats> {
                       Image.asset('assets/Image/lois_icon.png',width: 35,height: 35,),
 
                       Padding(
-                        padding: const EdgeInsets.only(left: 13,right: 125),
+                        padding: const EdgeInsets.only(left: 13,right: 185),
                         child: Column(
                           children: [
                             Padding(
@@ -457,12 +465,13 @@ class _UserStatsState extends State<UserStats> {
                             ),
 
                             Padding(
-                              padding: const EdgeInsets.only(right: 5),
-                              child: Text('Premium User',style: TextStyle(fontFamily: 'Sk-Modernist',fontWeight: FontWeight.w400,fontSize: 13,color: Colors.grey),),
+                              padding: const EdgeInsets.only(right: 45),
+                              child: Text('Expert',style: TextStyle(fontFamily: 'Sk-Modernist',fontWeight: FontWeight.w400,fontSize: 13,color: Colors.grey),),
                             ),
                           ],
                         ),
                       ),
+                      Image.asset('assets/Image/remove_icon.png',width: 18.5,height: 18.5,color: Colors.grey,),
 
 
                     ],
@@ -472,7 +481,7 @@ class _UserStatsState extends State<UserStats> {
             ),
 
             Padding(
-              padding: const EdgeInsets.only(left: 20,right: 20,top: 15),
+              padding: const EdgeInsets.only(left: 20,right: 20,top: 16),
               child: Container(
 
                 decoration: BoxDecoration(
@@ -496,22 +505,48 @@ class _UserStatsState extends State<UserStats> {
                       ),
 
                       Padding(
-                        padding: const EdgeInsets.only(left: 13,right: 125),
+                        padding: const EdgeInsets.only(left: 13,right: 190),
                         child: Column(
                           children: [
                             Text('Annie Blythe',style: TextStyle(fontFamily: 'Sk-Modernist',fontWeight: FontWeight.w700,fontSize: 13,),),
 
                             Padding(
-                              padding: const EdgeInsets.only(left: 2),
-                              child: Text('Premium User',style: TextStyle(fontFamily: 'Sk-Modernist',fontWeight: FontWeight.w400,fontSize: 13,color: Colors.grey),),
+                              padding: const EdgeInsets.only(right: 25),
+                              child: Text('Champion',style: TextStyle(fontFamily: 'Sk-Modernist',fontWeight: FontWeight.w400,fontSize: 13,color: Colors.grey),),
                             ),
                           ],
                         ),
                       ),
+                      Image.asset('assets/Image/remove_icon.png',width: 18.5,height: 18.5,color: Colors.grey,),
 
 
                     ],
                   ),
+                ),
+              ),
+            ),
+
+            Padding(
+              padding: const EdgeInsets.only(left: 20,right: 20,top: 10,bottom: 10),
+              child: Container(
+
+                child: RaisedButton(
+
+                  color: Color(0xff12496D),
+
+                  child: Padding(
+                    padding: const EdgeInsets.only(left: 130,top: 14,bottom: 17),
+                    child: Row(
+                      children: [
+                        Icon(Icons.add,color: Colors.white,size: 20,),
+                        Text('INVITE',
+                          style: TextStyle(color: Colors.white,fontSize: 15,fontWeight: FontWeight.bold,fontFamily: 'Sk-Modernist'),),
+                      ],
+                    ),
+                  ),
+                  onPressed: (){
+                    Navigator.push(context, MaterialPageRoute(builder: (context) => const InviteMembers()));
+                  },
                 ),
               ),
             ),
