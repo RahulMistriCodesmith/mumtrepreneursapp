@@ -3,6 +3,9 @@ import 'package:mumtrepreneursapp/Dashboard/deletepost.dart';
 import 'package:mumtrepreneursapp/Dashboard/warning.dart';
 import 'package:mumtrepreneursapp/Feeds/like.dart';
 import 'package:mumtrepreneursapp/Profile/followers.dart';
+import 'package:mumtrepreneursapp/Dashboard/creategroup.dart';
+import 'package:mumtrepreneursapp/Dashboard/acreatepost.dart';
+import 'package:mumtrepreneursapp/Dashboard/communitygroup.dart';
 class AdminProfile extends StatefulWidget {
   const AdminProfile({Key key}) : super(key: key);
 
@@ -49,57 +52,28 @@ class _AdminProfileState extends State<AdminProfile> {
                   ),
                   child: Column(
                     children: [
-                      Image.asset('assets/Image/Mask group2.png', width: 100, height: 100,),
+                      Image.asset('assets/Image/chapman_image.png', width: 100, height: 100,),
                       Padding(
                         padding: EdgeInsets.only(top: 13.28, left: 130, bottom: 6.72),
                         child: Row(
                           children: [
-                            Text('Riyad Mostofa', style: TextStyle(fontSize: 22,
-                                fontWeight: FontWeight.bold,
-                                fontFamily: 'Sk-Modernist'),),
-                            Padding(
-                              padding: const EdgeInsets.only(left: 7),
-                              child: Image.asset(
-                                'assets/Image/Group.png', width: 15.23,
-                                height: 15.24,),
-                            ),
+                            Text('Louis Chapman', style: TextStyle(fontSize: 22, fontWeight: FontWeight.bold,fontFamily: 'Sk-Modernist'),),
+
                           ],
                         ),
                       ),
 
-                      Text('@riyadmostofa',
-                        style: TextStyle(
-                            fontSize: 14,
-                            fontFamily: 'Sk-Modernist',
-                            color: Colors.grey),),
+                      Text('Admin',
+                        style: TextStyle(fontSize: 14, fontFamily: 'Sk-Modernist', color: Colors.grey),),
 
                       Padding(
                         padding: EdgeInsets.only(left: 38.05, right: 37.95, top: 15.5, bottom: 17.49),
-                        child: Text(
-                          'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has',
-                          style: TextStyle(
-                              fontSize: 14,
-                              fontFamily: 'Sk-Modernist',
-                              color: Colors.grey),
+                        child: Text('Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has',
+                          style: TextStyle(fontSize: 14, fontFamily: 'Sk-Modernist',color: Colors.grey),
                         ),
                       ),
 
-                      Row(
-                        children: [
-                          Padding(
-                            padding: EdgeInsets.only(left: 130, right: 4.13),
-                            child: Image.asset(
-                              'assets/Image/location.png', color: Colors.grey,
-                              width: 15,
-                              height: 15,),
-                          ),
-                          Text('Dhaka, Bangladesh',
-                            style: TextStyle(
-                                fontSize: 14,
-                                fontFamily: 'Sk-Modernist',
-                                color: Colors.grey),),
-                        ],
-                      ),
+
 
                       GestureDetector(
 
@@ -113,14 +87,8 @@ class _AdminProfileState extends State<AdminProfile> {
                             children: [
                               Column(
                                 children: [
-                                  Text('150', style: TextStyle(
-                                      fontFamily: 'Sk-Modernist',
-                                      fontWeight: FontWeight.bold,
-                                      fontSize: 18),),
-                                  Text('Posts', style: TextStyle(
-                                      fontFamily: 'Sk-Modernist',
-                                      color: Colors.grey,
-                                      fontSize: 14),),
+                                  Text('150', style: TextStyle(fontFamily: 'Sk-Modernist', fontWeight: FontWeight.bold, fontSize: 18),),
+                                  Text('Posts', style: TextStyle(fontFamily: 'Sk-Modernist', color: Colors.grey, fontSize: 14),),
                                 ],
                               ),
 
@@ -135,14 +103,8 @@ class _AdminProfileState extends State<AdminProfile> {
 
                               Column(
                                 children: [
-                                  Text('5.2K', style: TextStyle(
-                                      fontFamily: 'Sk-Modernist',
-                                      fontWeight: FontWeight.bold,
-                                      fontSize: 18),),
-                                  Text('Follower', style: TextStyle(
-                                      fontFamily: 'Sk-Modernist',
-                                      color: Colors.grey,
-                                      fontSize: 14),),
+                                  Text('5.2K', style: TextStyle(fontFamily: 'Sk-Modernist', fontWeight: FontWeight.bold, fontSize: 18),),
+                                  Text('Follower', style: TextStyle(fontFamily: 'Sk-Modernist', color: Colors.grey, fontSize: 14),),
                                 ],
                               ),
 
@@ -157,14 +119,8 @@ class _AdminProfileState extends State<AdminProfile> {
 
                               Column(
                                 children: [
-                                  Text('1.5K', style: TextStyle(
-                                      fontFamily: 'Sk-Modernist',
-                                      fontWeight: FontWeight.bold,
-                                      fontSize: 18),),
-                                  Text('Following', style: TextStyle(
-                                      fontFamily: 'Sk-Modernist',
-                                      color: Colors.grey,
-                                      fontSize: 14),),
+                                  Text('1.5K', style: TextStyle(fontFamily: 'Sk-Modernist', fontWeight: FontWeight.bold, fontSize: 18),),
+                                  Text('Following', style: TextStyle(fontFamily: 'Sk-Modernist', color: Colors.grey, fontSize: 14),),
                                 ],
                               ),
 
@@ -197,7 +153,7 @@ class _AdminProfileState extends State<AdminProfile> {
                     tabs: <Widget>[
                       Tab(
                         height: 30,
-                        text: 'All Posts',
+                        text: 'Posts',
                       ),
 
                       Tab(
@@ -235,29 +191,19 @@ class _AdminProfileState extends State<AdminProfile> {
                                   padding: EdgeInsets.only(left: 25.73, top: 23.5),
                                   child: Row(
                                     children: [
-                                      Image.asset(
-                                        'assets/Image/lois_icon.png', width: 40,
-                                        height: 40,),
+                                      Image.asset('assets/Image/chapman_image.png', width: 40, height: 40,),
                                       Column(
                                         children: [
                                           Padding(
                                             padding: const EdgeInsets.only(left: 9,right: 7),
                                             child: RichText(
                                               text: const TextSpan(
-                                                text: 'Riyad Mostofa',
-                                                style: TextStyle(
-                                                    fontWeight: FontWeight.bold,
-                                                    color: Colors.black,
-                                                    fontFamily: 'Sk-Modernist',
-                                                    fontSize: 14),
+                                                text: 'Louis Chapman',
+                                                style: TextStyle(fontWeight: FontWeight.bold, color: Colors.black, fontFamily: 'Sk-Modernist', fontSize: 14),
                                                 children: <TextSpan>[
                                                   TextSpan(
-                                                      text: '  1 day ago',
-                                                      style: TextStyle(
-                                                          color: Colors.grey,
-                                                          fontFamily: 'Sk-Modernist',
-                                                          fontWeight: FontWeight.normal,
-                                                          fontSize: 13)
+                                                      text: ' 1 day ago',
+                                                      style: TextStyle(color: Colors.grey, fontFamily: 'Sk-Modernist',fontWeight: FontWeight.normal,fontSize: 13)
                                                   ),
 
                                                 ],
@@ -265,17 +211,15 @@ class _AdminProfileState extends State<AdminProfile> {
                                             ),
                                           ),
                                           Padding(
-                                            padding: EdgeInsets.only(left: 9, right: 75),
-                                            child: Text('@riyadmostofa',
-                                              style: TextStyle(color: Colors.grey,
-                                                  fontFamily: 'Sk-Modernist',
-                                                  fontSize: 13),),
+                                            padding: EdgeInsets.only(left: 9, right: 130),
+                                            child: Text('Admin',
+                                              style: TextStyle(color: Colors.grey, fontFamily: 'Sk-Modernist', fontSize: 13),),
                                           ),
                                         ],
                                       ),
 
                                       Padding(
-                                        padding: const EdgeInsets.only(right: 5, left: 82,),
+                                        padding: const EdgeInsets.only(right: 5, left: 75),
                                         child: PopupMenuButton(
                                           color: Colors.white,
                                           elevation: 20,
@@ -291,22 +235,14 @@ class _AdminProfileState extends State<AdminProfile> {
 
                                             PopupMenuItem(
 
-                                              child: InkWell(
-
-                                                onTap: (){
-                                                  Navigator.push(context, MaterialPageRoute(builder: (context) => const Warning()));
-
-                                                },
-
-                                                child: Row(
-                                                  children: [
-                                                    Image.asset('assets/Image/warning_icon.png',width: 17.94, height: 17,),
-                                                    Padding(
-                                                      padding: EdgeInsets.only(left: 10.99),
-                                                      child: Text("Warning", style: TextStyle(fontSize: 16,fontFamily: 'Sk-Modernist'),),
-                                                    ),
-                                                  ],
-                                                ),
+                                              child: Row(
+                                                children: [
+                                                  Image.asset('assets/Image/pin_icon.png',width: 17.94, height: 17,),
+                                                  Padding(
+                                                    padding: EdgeInsets.only(left: 10.99),
+                                                    child: Text("Pin to top of Page", style: TextStyle(fontSize: 16,fontFamily: 'Sk-Modernist'),),
+                                                  ),
+                                                ],
                                               ),
 
 
@@ -314,19 +250,14 @@ class _AdminProfileState extends State<AdminProfile> {
 
                                             PopupMenuItem(
 
-                                              child: InkWell(
-                                                onTap: (){
-                                                  Navigator.push(context, MaterialPageRoute(builder: (context) => const DeletePost()));
-                                                },
-                                                child: Row(
-                                                  children: [
-                                                    Image.asset('assets/Image/delete_icon.png',width: 15.73, height: 18,),
-                                                    Padding(
-                                                      padding: EdgeInsets.only(left: 10.99),
-                                                      child: Text("Delete Post", style: TextStyle(fontSize: 16, fontFamily: 'Sk-Modernist'),),
-                                                    ),
-                                                  ],
-                                                ),
+                                              child: Row(
+                                                children: [
+                                                  Image.asset('assets/Image/delete_icon.png',width: 15.73, height: 18,),
+                                                  Padding(
+                                                    padding: EdgeInsets.only(left: 10.99),
+                                                    child: Text("Delete Post", style: TextStyle(fontSize: 16, fontFamily: 'Sk-Modernist'),),
+                                                  ),
+                                                ],
                                               ),
 
 
@@ -343,12 +274,8 @@ class _AdminProfileState extends State<AdminProfile> {
                                 ),
 
                                 Padding(
-                                  padding: EdgeInsets.only(
-                                      top: 8, left: 25, right: 25),
-                                  child: Text(
-                                    'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum... see more',
-                                    style: TextStyle(fontSize: 14,
-                                      fontFamily: 'Sk-Modernist',),),
+                                  padding: EdgeInsets.only(top: 8, left: 25, right: 25),
+                                  child: Text('Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum... see more', style: TextStyle(fontSize: 14, fontFamily: 'Sk-Modernist',),),
                                 ),
 
                                 Padding(
@@ -360,12 +287,10 @@ class _AdminProfileState extends State<AdminProfile> {
                                   padding: EdgeInsets.only(top: 15.39, left: 15,bottom: 17.53),
                                   child: Row(
                                     children: [
-                                      Image.asset(
-                                        'assets/Image/like_icon2.png',width: 19,height: 16.97,),
+                                      Image.asset('assets/Image/like_icon2.png',width: 19,height: 16.97,),
                                       GestureDetector(
                                         onTap: () {
-                                          Navigator.push(context,
-                                              MaterialPageRoute(builder: (context) => Like()));
+                                          Navigator.push(context,MaterialPageRoute(builder: (context) => Like()));
                                         },
 
                                         child: Padding(
@@ -385,8 +310,7 @@ class _AdminProfileState extends State<AdminProfile> {
 
                                         },
 
-                                          child: Image.asset('assets/Image/share_icon.png',
-                                            width: 17.42, height: 19,),
+                                          child: Image.asset('assets/Image/share_icon.png', width: 17.42, height: 19,),
                                         ),
                                       ),
                                     ],
@@ -409,16 +333,14 @@ class _AdminProfileState extends State<AdminProfile> {
                                     padding: EdgeInsets.only(left: 25.73, top: 23.5),
                                     child: Row(
                                       children: [
-                                        Image.asset(
-                                          'assets/Image/lois_icon.png', width: 40,
-                                          height: 40,),
+                                        Image.asset('assets/Image/chapman_image.png', width: 40, height: 40,),
                                         Column(
                                           children: [
                                             Padding(
                                               padding: const EdgeInsets.only(left: 9,right: 7),
                                               child: RichText(
                                                 text: const TextSpan(
-                                                  text: 'Riyad Mostofa',
+                                                  text: 'Louis Chapman',
                                                   style: TextStyle(
                                                       fontWeight: FontWeight.bold,
                                                       color: Colors.black,
@@ -426,7 +348,7 @@ class _AdminProfileState extends State<AdminProfile> {
                                                       fontSize: 14),
                                                   children: <TextSpan>[
                                                     TextSpan(
-                                                        text: '  1 day ago',
+                                                        text: ' 1 day ago',
                                                         style: TextStyle(
                                                             color: Colors.grey,
                                                             fontFamily: 'Sk-Modernist',
@@ -439,17 +361,14 @@ class _AdminProfileState extends State<AdminProfile> {
                                               ),
                                             ),
                                             Padding(
-                                              padding: EdgeInsets.only(left: 9, right: 75),
-                                              child: Text('@riyadmostofa',
-                                                style: TextStyle(color: Colors.grey,
-                                                    fontFamily: 'Sk-Modernist',
-                                                    fontSize: 13),),
+                                              padding: EdgeInsets.only(left: 9, right: 120),
+                                              child: Text('Admin',style: TextStyle(color: Colors.grey, fontFamily: 'Sk-Modernist', fontSize: 13),),
                                             ),
                                           ],
                                         ),
 
                                         Padding(
-                                          padding: const EdgeInsets.only(right: 5, left: 82,),
+                                          padding: const EdgeInsets.only(right: 5, left: 75,),
                                           child: PopupMenuButton(
                                             color: Colors.white,
                                             elevation: 20,
@@ -466,10 +385,10 @@ class _AdminProfileState extends State<AdminProfile> {
 
                                                 child: Row(
                                                   children: [
-                                                    Image.asset('assets/Image/warning_icon.png',width: 17.94, height: 17,),
+                                                    Image.asset('assets/Image/pin_icon.png',width: 17.94, height: 17,),
                                                     Padding(
                                                       padding: EdgeInsets.only(left: 10.99),
-                                                      child: Text("Warning", style: TextStyle(fontSize: 16,fontFamily: 'Sk-Modernist'),),
+                                                      child: Text("Pin to top of Page", style: TextStyle(fontSize: 16,fontFamily: 'Sk-Modernist'),),
                                                     ),
                                                   ],
                                                 ),
@@ -502,10 +421,8 @@ class _AdminProfileState extends State<AdminProfile> {
                                   Padding(
                                     padding: EdgeInsets.only(
                                         top: 8, left: 25, right: 25),
-                                    child: Text(
-                                      'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum... see more',
-                                      style: TextStyle(fontSize: 14,
-                                        fontFamily: 'Sk-Modernist',),),
+                                    child: Text('Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum... see more',
+                                      style: TextStyle(fontSize: 14,fontFamily: 'Sk-Modernist',),),
                                   ),
 
                                   Padding(
@@ -517,8 +434,7 @@ class _AdminProfileState extends State<AdminProfile> {
                                     padding: EdgeInsets.only(top: 15.39, left: 15,bottom: 17.53),
                                     child: Row(
                                       children: [
-                                        Image.asset(
-                                          'assets/Image/like_icon2.png',width: 19,height: 16.97,),
+                                        Image.asset('assets/Image/like_icon2.png',width: 19,height: 16.97,),
                                         GestureDetector(
                                           onTap: () {
                                             Navigator.push(context,
@@ -542,8 +458,7 @@ class _AdminProfileState extends State<AdminProfile> {
 
                                           },
 
-                                            child: Image.asset('assets/Image/share_icon.png',
-                                              width: 17.42, height: 19,),
+                                            child: Image.asset('assets/Image/share_icon.png',width: 17.42, height: 19,),
                                           ),
                                         ),
                                       ],
@@ -561,11 +476,181 @@ class _AdminProfileState extends State<AdminProfile> {
                       ),
 
 
+
+
+
+
                       Column(
                         children: [
-                          Text('sdfgk'),
+
+                          Container(
+                            color: Colors.white,
+
+
+                            child: Padding(
+                              padding: const EdgeInsets.only(left: 16.08,top: 15,bottom: 14),
+                              child: InkWell(
+
+                                onTap: (){
+                                  Navigator.push(context, MaterialPageRoute(builder: (context) => CommunityGroup()));
+                                },
+
+                                child: Row(
+                                  children: [
+                                    Image.asset('assets/Image/community_image.png',width: 35,height: 35,),
+                                    Padding(
+                                      padding: const EdgeInsets.only(left: 13),
+                                      child: Column(
+                                        children: [
+                                          Text('Community Group',style: TextStyle(fontSize: 14, fontFamily: 'Sk-Modernist', fontWeight: FontWeight.w700),),
+                                          Row(
+                                            children: [
+                                              Image.asset('assets/Image/3 User.png',width: 14,height: 11.38,color: Colors.grey,),
+                                              SizedBox(
+                                                width: 5,
+                                              ),
+                                              Padding(
+                                                padding: const EdgeInsets.only(right: 75),
+                                                child: Text('36',style: TextStyle(fontSize: 14, fontFamily: 'Sk-Modernist', fontWeight: FontWeight.w400,color: Colors.grey),),
+                                              ),
+
+                                            ],
+                                          ),
+                                        ],
+                                      ),
+                                    ),
+                                    Padding(
+                                      padding: const EdgeInsets.only(left: 160),
+                                      child: Icon(Icons.arrow_forward_ios_rounded,size: 15,color: Colors.grey,),
+                                    ),
+                                  ],
+                                ),
+                              ),
+                            ),
+                          ),
+
+                          Container(
+                            color: Colors.white,
+                            child: Padding(
+                              padding: const EdgeInsets.only(left: 16.08,top: 15,bottom: 14),
+                              child: Row(
+                                children: [
+                                  Image.asset('assets/Image/uiux_image.png',width: 35,height: 35,),
+                                  Padding(
+                                    padding: const EdgeInsets.only(left: 13),
+                                    child: Column(
+                                      children: [
+                                        Padding(
+                                          padding: const EdgeInsets.only(right: 50),
+                                          child: Text('UI UX Group',style: TextStyle(fontSize: 14, fontFamily: 'Sk-Modernist', fontWeight: FontWeight.w700),),
+                                        ),
+                                        Row(
+                                          children: [
+                                            Image.asset('assets/Image/3 User.png',width: 14,height: 11.38,color: Colors.grey,),
+                                            SizedBox(
+                                              width: 5,
+                                            ),
+                                            Padding(
+                                              padding: const EdgeInsets.only(right: 90),
+                                              child: Text('36',style: TextStyle(fontSize: 14, fontFamily: 'Sk-Modernist', fontWeight: FontWeight.w400,color: Colors.grey),),
+                                            ),
+
+                                          ],
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                  Padding(
+                                    padding: const EdgeInsets.only(left: 150),
+                                    child: Icon(Icons.arrow_forward_ios_rounded,size: 15,color: Colors.grey,),
+                                  ),
+                                ],
+                              ),
+                            ),
+                          ),
+
+                          Container(
+                            color: Colors.white,
+                            child: Padding(
+                              padding: const EdgeInsets.only(left: 16.08,top: 15,bottom: 14),
+                              child: Row(
+                                children: [
+                                  Image.asset('assets/Image/community_image.png',width: 35,height: 35,),
+                                  Padding(
+                                    padding: const EdgeInsets.only(left: 13),
+                                    child: Column(
+                                      children: [
+                                        Text('Community Group',style: TextStyle(fontSize: 14, fontFamily: 'Sk-Modernist', fontWeight: FontWeight.w700),),
+                                        Row(
+                                          children: [
+                                            Image.asset('assets/Image/3 User.png',width: 14,height: 11.38,color: Colors.grey,),
+                                            SizedBox(
+                                              width: 5,
+                                            ),
+                                            Padding(
+                                              padding: const EdgeInsets.only(right: 75),
+                                              child: Text('36',style: TextStyle(fontSize: 14, fontFamily: 'Sk-Modernist', fontWeight: FontWeight.w400,color: Colors.grey),),
+                                            ),
+
+                                          ],
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                  Padding(
+                                    padding: const EdgeInsets.only(left: 160),
+                                    child: Icon(Icons.arrow_forward_ios_rounded,size: 15,color: Colors.grey,),
+                                  ),
+                                ],
+                              ),
+                            ),
+                          ),
+
+                          Container(
+                            color: Colors.white,
+                            child: Padding(
+                              padding: const EdgeInsets.only(left: 16.08,top: 15,bottom: 14),
+                              child: Row(
+                                children: [
+                                  Image.asset('assets/Image/uiux_image.png',width: 35,height: 35,),
+                                  Padding(
+                                    padding: const EdgeInsets.only(left: 13),
+                                    child: Column(
+                                      children: [
+                                        Padding(
+                                          padding: const EdgeInsets.only(right: 50),
+                                          child: Text('UI UX Group',style: TextStyle(fontSize: 14, fontFamily: 'Sk-Modernist', fontWeight: FontWeight.w700),),
+                                        ),
+                                        Row(
+                                          children: [
+                                            Image.asset('assets/Image/3 User.png',width: 14,height: 11.38,color: Colors.grey,),
+                                            SizedBox(
+                                              width: 5,
+                                            ),
+                                            Padding(
+                                              padding: const EdgeInsets.only(right: 90),
+                                              child: Text('36',style: TextStyle(fontSize: 14, fontFamily: 'Sk-Modernist', fontWeight: FontWeight.w400,color: Colors.grey),),
+                                            ),
+
+                                          ],
+                                        ),
+                                      ],
+                                    ),
+                                  ),
+                                  Padding(
+                                    padding: const EdgeInsets.only(left: 150),
+                                    child: Icon(Icons.arrow_forward_ios_rounded,size: 15,color: Colors.grey,),
+                                  ),
+                                ],
+                              ),
+                            ),
+                          ),
+
                         ],
                       ),
+
+
+
 
 
                       Column(
@@ -573,17 +658,17 @@ class _AdminProfileState extends State<AdminProfile> {
                           Card(
                             color: Color(0xffE5E5E5),
                             child: Padding(
-                              padding: EdgeInsets.only(left: 20, right: 130),
+                              padding: EdgeInsets.only(left: 20),
                               child: Column(
                                 children: [
                                   Padding(
-                                    padding: EdgeInsets.only(top: 21, right: 155),
-                                    child: Text('Industry',
+                                    padding: EdgeInsets.only(top: 21, right: 279),
+                                    child: Text('Full Name',
                                       style: TextStyle(fontWeight: FontWeight.bold,fontSize: 14,fontFamily: 'Sk-Modernist'),),
                                   ),
                                   Padding(
-                                    padding:  EdgeInsets.only(bottom: 18),
-                                    child: Text('Lorem Ipsum is simply dummy text',
+                                    padding:  EdgeInsets.only(bottom: 18,right: 245),
+                                    child: Text('Louis Chapman',
                                       style: TextStyle(color: Colors.grey, fontSize: 14, fontFamily: 'Sk-Modernist'),),
                                   ),
                                 ],
@@ -594,17 +679,17 @@ class _AdminProfileState extends State<AdminProfile> {
                           Card(
                             color: Color(0xffE5E5E5),
                             child: Padding(
-                              padding:  EdgeInsets.only(left: 20, right: 173),
+                              padding:  EdgeInsets.only(left: 20,),
                               child: Column(
                                 children: [
                                   Padding(
-                                    padding:  EdgeInsets.only(top: 21, right: 50),
-                                    child: Text('Personal Website',
+                                    padding:  EdgeInsets.only(top: 21, right: 305),
+                                    child: Text('Email',
                                       style: TextStyle(fontWeight: FontWeight.bold, fontSize: 14, fontFamily: 'Sk-Modernist'),),
                                   ),
                                   Padding(
-                                    padding:  EdgeInsets.only(bottom: 18,),
-                                    child: Text('www.personalwebsite.com',
+                                    padding:  EdgeInsets.only(bottom: 18,right: 215),
+                                    child: Text('louischa@email.com',
                                       style: TextStyle(color: Colors.grey, fontSize: 14,fontFamily: 'Sk-Modernist'),),
                                   ),
                                 ],
@@ -615,61 +700,17 @@ class _AdminProfileState extends State<AdminProfile> {
                           Card(
                             color: Color(0xffE5E5E5),
                             child: Padding(
-                              padding:  EdgeInsets.only(left: 20, right: 173),
+                              padding:  EdgeInsets.only(left: 20,),
                               child: Column(
                                 children: [
                                   Padding(
-                                    padding:  EdgeInsets.only(top: 21, right: 49),
-                                    child: Text('Company Website',
+                                    padding:  EdgeInsets.only(top: 21, right: 240),
+                                    child: Text('Phone Number',
                                       style: TextStyle(fontWeight: FontWeight.bold, fontSize: 14, fontFamily: 'Sk-Modernist'),),
                                   ),
                                   Padding(
-                                    padding:  EdgeInsets.only(bottom: 18,),
-                                    child: Text('www.companywebsite.com',
-                                      style: TextStyle(color: Colors.grey, fontSize: 14, fontFamily: 'Sk-Modernist'),),
-                                  ),
-                                ],
-                              ),
-                            ),
-                          ),
-
-                          Card(
-                            color: Color(0xffE5E5E5),
-                            child: Padding(
-                              padding:  EdgeInsets.only(left: 20, right: 230),
-                              child: Column(
-                                children: [
-                                  Padding(
-                                    padding:  EdgeInsets.only(top: 21, right: 40),
-                                    child: Text('Social URL',
-                                      style: TextStyle(fontWeight: FontWeight.bold, fontSize: 14, fontFamily: 'Sk-Modernist'),),
-                                  ),
-                                  Padding(
-                                    padding:  EdgeInsets.only(bottom: 18,),
-                                    child: Text('www.website.com',
-                                      style: TextStyle(color: Colors.grey, fontSize: 14, fontFamily: 'Sk-Modernist'),),
-                                  ),
-                                ],
-                              ),
-                            ),
-                          ),
-
-
-                          Card(
-                            color: Color(0xffE5E5E5),
-                            child: Padding(
-                              padding:  EdgeInsets.only(left: 20, right: 218),
-                              child: Column(
-                                children: [
-                                  Padding(
-                                    padding:  EdgeInsets.only(top: 21, right: 65),
-                                    child: Text('Location',
-                                      style: TextStyle(fontWeight: FontWeight.bold, fontSize: 14, fontFamily: 'Sk-Modernist'),),
-                                  ),
-                                  Padding(
-                                    padding:  EdgeInsets.only(
-                                      bottom: 18,),
-                                    child: Text('Dhaka, Bangladesh',
+                                    padding:  EdgeInsets.only(bottom: 18,right: 210),
+                                    child: Text('+00 123 000 8008',
                                       style: TextStyle(color: Colors.grey, fontSize: 14, fontFamily: 'Sk-Modernist'),),
                                   ),
                                 ],
@@ -690,6 +731,79 @@ class _AdminProfileState extends State<AdminProfile> {
 
             ],
           ),
+        ),
+        floatingActionButton: FloatingActionButton(
+
+          backgroundColor: Color(0xff12496D),
+           child: PopupMenuButton(
+              color: Colors.white,
+              elevation: 20,
+              enabled: true,
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(10),
+              ),
+              icon: ImageIcon(AssetImage('assets/Image/floating_icon.png')),
+              iconSize: 17,
+              onSelected: (value) {
+                setState(() {});
+              },
+              itemBuilder: (context) =>
+              [
+
+                PopupMenuItem(
+
+
+                    child: InkWell(
+
+                      onTap: (){
+                        Navigator.push(context, MaterialPageRoute(builder: (context) => CreateGroup()));
+                      },
+
+                      child: Row(
+                        children: [
+                          Image.asset('assets/Image/3 User.png',width: 17.94, height: 17,color: Colors.black,),
+                          Padding(
+                            padding: EdgeInsets.only(left: 10.99),
+                            child: Text("Create Group", style: TextStyle(fontSize: 16,fontFamily: 'Sk-Modernist'),),
+                          ),
+                        ],
+                      ),
+                    ),
+
+
+
+                ),
+
+                PopupMenuItem(
+
+                  child: InkWell(
+
+                    onTap: (){
+                      Navigator.push(context, MaterialPageRoute(builder: (context) => A_CreatePost()));
+                    },
+
+                    child: Row(
+                      children: [
+                        Image.asset('assets/Image/photo_icon.png',width: 15.73, height: 18,),
+                        Padding(
+                          padding: EdgeInsets.only(left: 10.99),
+                          child: Text("Create Post", style: TextStyle(fontSize: 16, fontFamily: 'Sk-Modernist'),),
+                        ),
+                      ],
+                    ),
+                  ),
+
+
+
+                ),
+
+
+              ],
+            ),
+          onPressed: (){
+
+          },
+
         ),
 
       ),

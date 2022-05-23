@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:mumtrepreneursapp/adminprofile.dart';
+import 'package:mumtrepreneursapp/Dashboard/adminprofile.dart';
+import 'package:mumtrepreneursapp/Dashboard/achangepassword.dart';
+import 'package:mumtrepreneursapp/Dashboard/anotifications.dart';
 class Settings extends StatefulWidget {
   const Settings({Key key}) : super(key: key);
 
@@ -20,7 +22,13 @@ class _SettingsState extends State<Settings> {
         actions: [
           Padding(
             padding: const EdgeInsets.only(right: 21.6),
-            child: Image.asset('assets/Image/notification_icon.png',width: 14.53,height: 18.79,),
+            child: InkWell(
+
+              onTap: (){
+                Navigator.push(context, MaterialPageRoute(builder: (context) => ANotifications()));
+              },
+
+                child: Image.asset('assets/Image/notification_icon.png',width: 14.53,height: 18.79,)),
           ),
         ],
       ),
@@ -65,15 +73,22 @@ class _SettingsState extends State<Settings> {
 
             Padding(
               padding: const EdgeInsets.only(left: 23),
-              child: Row(
-                children: [
-                  Image.asset('assets/Image/Lock.png',width: 12,height: 18,color: Colors.black,),
-                  Padding(
-                    padding: const EdgeInsets.only(left: 22.5,right: 160),
-                    child: Text('Change Password',style: TextStyle(fontSize: 14,fontFamily: 'Sk-Modernist',fontWeight: FontWeight.w400),),
-                  ),
-                  Icon(Icons.arrow_forward_ios_rounded,size: 13,)
-                ],
+              child: InkWell(
+
+                onTap: (){
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => AChangePassword()));
+                },
+
+                child: Row(
+                  children: [
+                    Image.asset('assets/Image/Lock.png',width: 12,height: 18,color: Colors.black,),
+                    Padding(
+                      padding: const EdgeInsets.only(left: 22.5,right: 160),
+                      child: Text('Change Password',style: TextStyle(fontSize: 14,fontFamily: 'Sk-Modernist',fontWeight: FontWeight.w400),),
+                    ),
+                    Icon(Icons.arrow_forward_ios_rounded,size: 13,)
+                  ],
+                ),
               ),
             ),
 

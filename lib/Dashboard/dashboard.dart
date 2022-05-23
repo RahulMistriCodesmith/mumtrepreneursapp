@@ -44,12 +44,13 @@ class _DashboardState extends State<Dashboard> {
     });
   }
 
+
+
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
       length: 10,
       child: Scaffold(
-
         body: Row(
           children: [
 
@@ -101,6 +102,14 @@ class _DashboardState extends State<Dashboard> {
 
               ],
               onTap: _onItemTapped,
+
+              theme: SideNavigationBarTheme(
+                backgroundColor: Colors.white,
+                togglerTheme: SideNavigationBarTogglerTheme.standard(),
+                itemTheme: SideNavigationBarItemTheme.standard(),
+                dividerTheme: SideNavigationBarDividerTheme.standard(),
+              ),
+
             ),
 
             Expanded(

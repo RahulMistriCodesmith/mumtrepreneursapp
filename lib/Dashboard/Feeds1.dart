@@ -18,6 +18,7 @@ class _Feeds1State extends State<Feeds1> {
     return DefaultTabController(
        length: 2,
       child: Scaffold(
+        backgroundColor: Color(0xffE5E5E5),
         appBar: AppBar(
           automaticallyImplyLeading: false,
           backgroundColor: Colors.white,

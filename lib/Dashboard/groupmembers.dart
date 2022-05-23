@@ -1,42 +1,45 @@
 import 'package:flutter/material.dart';
 import 'package:mumtrepreneursapp/Dashboard/a_user_profile.dart';
-import 'package:mumtrepreneursapp/Dashboard/francesgarcia.dart';
-class UserStats extends StatefulWidget {
-  const UserStats({Key key}) : super(key: key);
+class GroupMembers extends StatefulWidget {
+  const GroupMembers({Key key}) : super(key: key);
 
   @override
-  State<UserStats> createState() => _UserStatsState();
+  State<GroupMembers> createState() => _GroupMembersState();
 }
 
-class _UserStatsState extends State<UserStats> {
+class _GroupMembersState extends State<GroupMembers> {
+
   String dropdownValue = 'All Users';
   String dropdownValue1 = 'View all Members';
   bool isChecked = false;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: Color(0xffE5E5E5),
+
       appBar: AppBar(
-        automaticallyImplyLeading: false,
+        foregroundColor: Color(0xff12496D),
         backgroundColor: Colors.white,
-        title: Text('User Stats'),
+        elevation: 1,
+        title: Text('Group Members'),
         titleTextStyle: TextStyle(color: Colors.black,fontSize: 16,fontFamily: 'Sk-Modernist',fontWeight: FontWeight.w700),
         actions: [
           Padding(
             padding: const EdgeInsets.only(right: 21.6),
-            child: Image.asset('assets/Image/notification_icon.png',width: 14.53,height: 18.79,),
-          )
+            child: Image.asset('assets/Image/plus_icon.png',color: Colors.black,width: 19,height: 19,),
+          ),
         ],
       ),
-      body: SingleChildScrollView(
 
+      body: SingleChildScrollView(
 
         child: Column(
 
           children: [
 
             Padding(
-              padding: const EdgeInsets.only(left: 20,right: 20,top: 21),
+              padding: const EdgeInsets.only(left: 25,right: 25,top: 21),
               child: Container(
                 padding: EdgeInsets.only(bottom: 4),
 
@@ -193,7 +196,7 @@ class _UserStatsState extends State<UserStats> {
             ),
 
             Padding(
-              padding: const EdgeInsets.only(left: 20,right: 20,top: 16),
+              padding: const EdgeInsets.only(left: 25,right: 25,top: 16),
               child: Container(
 
                 decoration: BoxDecoration(
@@ -208,27 +211,48 @@ class _UserStatsState extends State<UserStats> {
                       Image.asset('assets/Image/garcia_icon.png',width: 35,height: 35,),
 
                       Padding(
-                        padding: const EdgeInsets.only(left: 13,right: 125),
-                        child: GestureDetector(
+                        padding: const EdgeInsets.only(left: 13,right: 155),
+                        child: Column(
+                          children: [
+                            Text('Frances Garcia',style: TextStyle(fontFamily: 'Sk-Modernist',fontWeight: FontWeight.w700,fontSize: 13,),),
 
-                          onTap: (){
-                            Navigator.push(context, MaterialPageRoute(builder: (context) => UserStats2()));
-                          },
-
-                          child: Column(
-                            children: [
-                              Text('Frances Garcia',style: TextStyle(fontFamily: 'Sk-Modernist',fontWeight: FontWeight.w700,fontSize: 13,),),
-
-                              Padding(
-                                padding: const EdgeInsets.only(right: 10),
-                                child: Text('Premium User',style: TextStyle(fontFamily: 'Sk-Modernist',fontWeight: FontWeight.w400,fontSize: 13,color: Colors.grey),),
-                              ),
-                            ],
-                          ),
+                            Padding(
+                              padding: const EdgeInsets.only(right: 45),
+                              child: Text('Expert',style: TextStyle(fontFamily: 'Sk-Modernist',fontWeight: FontWeight.w400,fontSize: 13,color: Colors.grey),),
+                            ),
+                          ],
                         ),
                       ),
 
+                      PopupMenuButton(
+                        color: Colors.white,
+                        elevation: 20,
+                        enabled: true,
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(10),
+                        ),
+                        onSelected: (value) {
+                          setState(() {
+                          });
+                        },
+                        itemBuilder:(context) => [
+                          PopupMenuItem(
 
+                            child: Row(
+                              children: [
+                                Image.asset('assets/Image/delete_icon.png',width: 17,height: 17,),
+                                Padding(
+                                  padding: EdgeInsets.only(left: 10.99),
+                                  child: Text("Remove",style: TextStyle(fontSize: 16,fontFamily: 'Sk-Modernist'),),
+                                ),
+                              ],
+                            ),
+
+                          ),
+
+
+                        ],
+                      ),
 
                     ],
                   ),
@@ -237,7 +261,7 @@ class _UserStatsState extends State<UserStats> {
             ),
 
             Padding(
-              padding: const EdgeInsets.only(left: 20,right: 20,top: 16),
+              padding: const EdgeInsets.only(left: 25,right: 25,top: 16),
               child: Container(
 
                 decoration: BoxDecoration(
@@ -252,7 +276,7 @@ class _UserStatsState extends State<UserStats> {
                       Image.asset('assets/Image/lois_icon.png',width: 35,height: 35,),
 
                       Padding(
-                        padding: const EdgeInsets.only(left: 13,right: 140),
+                        padding: const EdgeInsets.only(left: 13,right: 175),
                         child: Column(
                           children: [
                             Padding(
@@ -261,13 +285,42 @@ class _UserStatsState extends State<UserStats> {
                             ),
 
                             Padding(
-                              padding: const EdgeInsets.only(left: 1),
-                              child: Text('Premium User',style: TextStyle(fontFamily: 'Sk-Modernist',fontWeight: FontWeight.w400,fontSize: 13,color: Colors.grey),),
+                              padding: const EdgeInsets.only(right: 10),
+                              child: Text('Champion',style: TextStyle(fontFamily: 'Sk-Modernist',fontWeight: FontWeight.w400,fontSize: 13,color: Colors.grey),),
                             ),
                           ],
                         ),
                       ),
 
+                      PopupMenuButton(
+                        color: Colors.white,
+                        elevation: 20,
+                        enabled: true,
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(10),
+                        ),
+                        onSelected: (value) {
+                          setState(() {
+                          });
+                        },
+                        itemBuilder:(context) => [
+                          PopupMenuItem(
+
+                            child: Row(
+                              children: [
+                                Image.asset('assets/Image/delete_icon.png',width: 17,height: 17,),
+                                Padding(
+                                  padding: EdgeInsets.only(left: 10.99),
+                                  child: Text("Remove",style: TextStyle(fontSize: 16,fontFamily: 'Sk-Modernist'),),
+                                ),
+                              ],
+                            ),
+
+                          ),
+
+
+                        ],
+                      ),
 
                     ],
                   ),
@@ -276,7 +329,7 @@ class _UserStatsState extends State<UserStats> {
             ),
 
             Padding(
-              padding: const EdgeInsets.only(left: 20,right: 20,top: 16),
+              padding: const EdgeInsets.only(left: 25,right: 25,top: 16),
               child: Container(
 
                 decoration: BoxDecoration(
@@ -300,7 +353,7 @@ class _UserStatsState extends State<UserStats> {
                       ),
 
                       Padding(
-                        padding: const EdgeInsets.only(left: 13,right: 125),
+                        padding: const EdgeInsets.only(left: 13,right: 165),
                         child: Column(
                           children: [
                             Padding(
@@ -309,13 +362,41 @@ class _UserStatsState extends State<UserStats> {
                             ),
 
                             Padding(
-                              padding: const EdgeInsets.only(right: 5),
-                              child: Text('Premium User',style: TextStyle(fontFamily: 'Sk-Modernist',fontWeight: FontWeight.w400,fontSize: 13,color: Colors.grey),),
+                              padding: const EdgeInsets.only(right: 41),
+                              child: Text('Expert',style: TextStyle(fontFamily: 'Sk-Modernist',fontWeight: FontWeight.w400,fontSize: 13,color: Colors.grey),),
                             ),
                           ],
                         ),
                       ),
 
+                      PopupMenuButton(
+                        color: Colors.white,
+                        elevation: 20,
+                        enabled: true,
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(10),
+                        ),
+                        onSelected: (value) {
+                          setState(() {
+                          });
+                        },
+                        itemBuilder:(context) => [
+                          PopupMenuItem(
+
+                            child: Row(
+                              children: [
+                                Image.asset('assets/Image/delete_icon.png',width: 17,height: 17,),
+                                Padding(
+                                  padding: EdgeInsets.only(left: 10.99),
+                                  child: Text("Remove",style: TextStyle(fontSize: 16,fontFamily: 'Sk-Modernist'),),
+                                ),
+                              ],
+                            ),
+
+                          ),
+
+                        ],
+                      ),
 
                     ],
                   ),
@@ -324,7 +405,7 @@ class _UserStatsState extends State<UserStats> {
             ),
 
             Padding(
-              padding: const EdgeInsets.only(left: 20,right: 20,top: 16),
+              padding: const EdgeInsets.only(left: 25,right: 25,top: 16),
               child: Container(
 
                 decoration: BoxDecoration(
@@ -339,19 +420,47 @@ class _UserStatsState extends State<UserStats> {
                       Image.asset('assets/Image/hartle_icon.png',width: 35,height: 35,),
 
                       Padding(
-                        padding: const EdgeInsets.only(left: 13,right: 120),
+                        padding: const EdgeInsets.only(left: 13,right: 155),
                         child: Column(
                           children: [
                             Text('Mckinley Hartle',style: TextStyle(fontFamily: 'Sk-Modernist',fontWeight: FontWeight.w700,fontSize: 13,),),
 
                             Padding(
-                              padding: const EdgeInsets.only(right: 10),
-                              child: Text('Premium User',style: TextStyle(fontFamily: 'Sk-Modernist',fontWeight: FontWeight.w400,fontSize: 13,color: Colors.grey),),
+                              padding: const EdgeInsets.only(right: 30),
+                              child: Text('Champion',style: TextStyle(fontFamily: 'Sk-Modernist',fontWeight: FontWeight.w400,fontSize: 13,color: Colors.grey),),
                             ),
                           ],
                         ),
                       ),
 
+                      PopupMenuButton(
+                        color: Colors.white,
+                        elevation: 20,
+                        enabled: true,
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(10),
+                        ),
+                        onSelected: (value) {
+                          setState(() {
+                          });
+                        },
+                        itemBuilder:(context) => [
+                          PopupMenuItem(
+
+                            child: Row(
+                              children: [
+                                Image.asset('assets/Image/delete_icon.png',width: 17,height: 17,),
+                                Padding(
+                                  padding: EdgeInsets.only(left: 10.99),
+                                  child: Text("Remove",style: TextStyle(fontSize: 16,fontFamily: 'Sk-Modernist'),),
+                                ),
+                              ],
+                            ),
+
+                          ),
+
+                        ],
+                      ),
 
                     ],
                   ),
@@ -360,7 +469,7 @@ class _UserStatsState extends State<UserStats> {
             ),
 
             Padding(
-              padding: const EdgeInsets.only(left: 20,right: 20,top: 16),
+              padding: const EdgeInsets.only(left: 25,right: 25,top: 16),
               child: Container(
 
                 decoration: BoxDecoration(
@@ -375,7 +484,7 @@ class _UserStatsState extends State<UserStats> {
                       Image.asset('assets/Image/perez_icon.png',width: 35,height: 35,),
 
                       Padding(
-                        padding: const EdgeInsets.only(left: 13,right: 125),
+                        padding: const EdgeInsets.only(left: 13,right: 165),
                         child: Column(
                           children: [
                             Padding(
@@ -384,13 +493,41 @@ class _UserStatsState extends State<UserStats> {
                             ),
 
                             Padding(
-                              padding: const EdgeInsets.only(right: 1),
-                              child: Text('Premium User',style: TextStyle(fontFamily: 'Sk-Modernist',fontWeight: FontWeight.w400,fontSize: 13,color: Colors.grey),),
+                              padding: const EdgeInsets.only(right: 35),
+                              child: Text('Expert',style: TextStyle(fontFamily: 'Sk-Modernist',fontWeight: FontWeight.w400,fontSize: 13,color: Colors.grey),),
                             ),
                           ],
                         ),
                       ),
 
+                      PopupMenuButton(
+                        color: Colors.white,
+                        elevation: 20,
+                        enabled: true,
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(10),
+                        ),
+                        onSelected: (value) {
+                          setState(() {
+                          });
+                        },
+                        itemBuilder:(context) => [
+                          PopupMenuItem(
+
+                            child: Row(
+                              children: [
+                                Image.asset('assets/Image/delete_icon.png',width: 17,height: 17,),
+                                Padding(
+                                  padding: EdgeInsets.only(left: 10.99),
+                                  child: Text("Remove",style: TextStyle(fontSize: 16,fontFamily: 'Sk-Modernist'),),
+                                ),
+                              ],
+                            ),
+
+                          ),
+
+                        ],
+                      ),
 
                     ],
                   ),
@@ -399,7 +536,7 @@ class _UserStatsState extends State<UserStats> {
             ),
 
             Padding(
-              padding: const EdgeInsets.only(left: 20,right: 20,top: 16),
+              padding: const EdgeInsets.only(left: 25,right: 25,top: 16),
               child: Container(
 
                 decoration: BoxDecoration(
@@ -414,19 +551,47 @@ class _UserStatsState extends State<UserStats> {
                       Image.asset('assets/Image/garcia_icon.png',width: 35,height: 35,),
 
                       Padding(
-                        padding: const EdgeInsets.only(left: 13,right: 125),
+                        padding: const EdgeInsets.only(left: 13,right: 155),
                         child: Column(
                           children: [
                             Text('Frances Garcia',style: TextStyle(fontFamily: 'Sk-Modernist',fontWeight: FontWeight.w700,fontSize: 13,),),
 
                             Padding(
-                              padding: const EdgeInsets.only(right: 5),
-                              child: Text('Premium User',style: TextStyle(fontFamily: 'Sk-Modernist',fontWeight: FontWeight.w400,fontSize: 13,color: Colors.grey),),
+                              padding: const EdgeInsets.only(right: 30),
+                              child: Text('Champion',style: TextStyle(fontFamily: 'Sk-Modernist',fontWeight: FontWeight.w400,fontSize: 13,color: Colors.grey),),
                             ),
                           ],
                         ),
                       ),
 
+                      PopupMenuButton(
+                        color: Colors.white,
+                        elevation: 20,
+                        enabled: true,
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(10),
+                        ),
+                        onSelected: (value) {
+                          setState(() {
+                          });
+                        },
+                        itemBuilder:(context) => [
+                          PopupMenuItem(
+
+                            child: Row(
+                              children: [
+                                Image.asset('assets/Image/delete_icon.png',width: 17,height: 17,),
+                                Padding(
+                                  padding: EdgeInsets.only(left: 10.99),
+                                  child: Text("Remove",style: TextStyle(fontSize: 16,fontFamily: 'Sk-Modernist'),),
+                                ),
+                              ],
+                            ),
+
+                          ),
+
+                        ],
+                      ),
 
                     ],
                   ),
@@ -435,7 +600,7 @@ class _UserStatsState extends State<UserStats> {
             ),
 
             Padding(
-              padding: const EdgeInsets.only(left: 20,right: 20,top: 15),
+              padding: const EdgeInsets.only(left: 25,right: 25,top: 16),
               child: Container(
 
                 decoration: BoxDecoration(
@@ -450,7 +615,7 @@ class _UserStatsState extends State<UserStats> {
                       Image.asset('assets/Image/lois_icon.png',width: 35,height: 35,),
 
                       Padding(
-                        padding: const EdgeInsets.only(left: 13,right: 125),
+                        padding: const EdgeInsets.only(left: 13,right: 160),
                         child: Column(
                           children: [
                             Padding(
@@ -459,13 +624,41 @@ class _UserStatsState extends State<UserStats> {
                             ),
 
                             Padding(
-                              padding: const EdgeInsets.only(right: 5),
-                              child: Text('Premium User',style: TextStyle(fontFamily: 'Sk-Modernist',fontWeight: FontWeight.w400,fontSize: 13,color: Colors.grey),),
+                              padding: const EdgeInsets.only(right: 45),
+                              child: Text('Expert',style: TextStyle(fontFamily: 'Sk-Modernist',fontWeight: FontWeight.w400,fontSize: 13,color: Colors.grey),),
                             ),
                           ],
                         ),
                       ),
 
+                      PopupMenuButton(
+                        color: Colors.white,
+                        elevation: 20,
+                        enabled: true,
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(10),
+                        ),
+                        onSelected: (value) {
+                          setState(() {
+                          });
+                        },
+                        itemBuilder:(context) => [
+                          PopupMenuItem(
+
+                            child: Row(
+                              children: [
+                                Image.asset('assets/Image/delete_icon.png',width: 17,height: 17,),
+                                Padding(
+                                  padding: EdgeInsets.only(left: 10.99),
+                                  child: Text("Remove",style: TextStyle(fontSize: 16,fontFamily: 'Sk-Modernist'),),
+                                ),
+                              ],
+                            ),
+
+                          ),
+
+                        ],
+                      ),
 
                     ],
                   ),
@@ -474,7 +667,7 @@ class _UserStatsState extends State<UserStats> {
             ),
 
             Padding(
-              padding: const EdgeInsets.only(left: 20,right: 20,top: 15),
+              padding: const EdgeInsets.only(left: 25,right: 25,top: 16,bottom: 15),
               child: Container(
 
                 decoration: BoxDecoration(
@@ -498,19 +691,47 @@ class _UserStatsState extends State<UserStats> {
                       ),
 
                       Padding(
-                        padding: const EdgeInsets.only(left: 13,right: 125),
+                        padding: const EdgeInsets.only(left: 13,right: 167),
                         child: Column(
                           children: [
                             Text('Annie Blythe',style: TextStyle(fontFamily: 'Sk-Modernist',fontWeight: FontWeight.w700,fontSize: 13,),),
 
                             Padding(
-                              padding: const EdgeInsets.only(left: 2),
-                              child: Text('Premium User',style: TextStyle(fontFamily: 'Sk-Modernist',fontWeight: FontWeight.w400,fontSize: 13,color: Colors.grey),),
+                              padding: const EdgeInsets.only(right: 20),
+                              child: Text('Champion',style: TextStyle(fontFamily: 'Sk-Modernist',fontWeight: FontWeight.w400,fontSize: 13,color: Colors.grey),),
                             ),
                           ],
                         ),
                       ),
 
+                      PopupMenuButton(
+                        color: Colors.white,
+                        elevation: 20,
+                        enabled: true,
+                        shape: RoundedRectangleBorder(
+                          borderRadius: BorderRadius.circular(10),
+                        ),
+                        onSelected: (value) {
+                          setState(() {
+                          });
+                        },
+                        itemBuilder:(context) => [
+                          PopupMenuItem(
+
+                            child: Row(
+                              children: [
+                                Image.asset('assets/Image/delete_icon.png',width: 17,height: 17,),
+                                Padding(
+                                  padding: EdgeInsets.only(left: 10.99),
+                                  child: Text("Remove",style: TextStyle(fontSize: 16,fontFamily: 'Sk-Modernist'),),
+                                ),
+                              ],
+                            ),
+
+                          ),
+
+                        ],
+                      ),
 
                     ],
                   ),
@@ -521,6 +742,7 @@ class _UserStatsState extends State<UserStats> {
           ],
         ),
       ),
+
     );
   }
 }
