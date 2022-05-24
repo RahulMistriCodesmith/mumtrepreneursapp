@@ -171,7 +171,7 @@ class _CourseAnalyticsState extends State<CourseAnalytics> {
                       child: Row(
                         children: [
                           Text('Wednesday',style: TextStyle(fontFamily: 'Sk-Modernist',fontSize: 14,fontWeight: FontWeight.w400,color: Colors.grey),),
-                          Text('  10/04/2022',style: TextStyle(fontFamily: 'Sk-Modernist',fontSize: 14,fontWeight: FontWeight.w400,color: Colors.grey),),
+                          Text(' 10/04/2022',style: TextStyle(fontFamily: 'Sk-Modernist',fontSize: 14,fontWeight: FontWeight.w400,color: Colors.grey),),
                         ],
                       ),
                     ),
@@ -460,8 +460,7 @@ class _CourseAnalyticsState extends State<CourseAnalytics> {
                             padding: const EdgeInsets.only(left: 80,right: 9.1),
                             child: Image.asset('assets/Image/Download.png',width: 16.9,height: 17,color: Colors.grey,),
                           ),
-                          Text('08',
-                              style: TextStyle(fontFamily: 'Sk-Modernist',fontSize: 14,fontWeight: FontWeight.w400,color: Colors.grey)),
+                          Text('08',style: TextStyle(fontFamily: 'Sk-Modernist',fontSize: 14,fontWeight: FontWeight.w400,color: Colors.grey)),
 
                         ],
                       ),
@@ -492,8 +491,7 @@ class _CourseAnalyticsState extends State<CourseAnalytics> {
                             padding: const EdgeInsets.only(left: 100,right: 9.1),
                             child: Image.asset('assets/Image/Download.png',width: 16.9,height: 17,color: Colors.grey,),
                           ),
-                          Text('04',
-                              style: TextStyle(fontFamily: 'Sk-Modernist',fontSize: 14,fontWeight: FontWeight.w400,color: Colors.grey)),
+                          Text('04',style: TextStyle(fontFamily: 'Sk-Modernist',fontSize: 14,fontWeight: FontWeight.w400,color: Colors.grey)),
 
                         ],
                       ),
@@ -524,8 +522,7 @@ class _CourseAnalyticsState extends State<CourseAnalytics> {
                             padding: const EdgeInsets.only(left: 80,right: 9.1),
                             child: Image.asset('assets/Image/Download.png',width: 16.9,height: 17,color: Colors.grey,),
                           ),
-                          Text('02',
-                              style: TextStyle(fontFamily: 'Sk-Modernist',fontSize: 14,fontWeight: FontWeight.w400,color: Colors.grey)),
+                          Text('02',style: TextStyle(fontFamily: 'Sk-Modernist',fontSize: 14,fontWeight: FontWeight.w400,color: Colors.grey)),
 
                         ],
                       ),

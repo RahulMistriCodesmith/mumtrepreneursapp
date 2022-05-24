@@ -127,7 +127,7 @@ class _A_MembersState extends State<A_Members> {
 
                               ],
                             ),
-                            
+
                           ],
                         ),
                       ),
@@ -406,7 +406,7 @@ class _A_MembersState extends State<A_Members> {
                               Icon(Icons.arrow_forward_ios_rounded,size: 15,),
 
                             ],
-                            
+
                           )
                       ),
 

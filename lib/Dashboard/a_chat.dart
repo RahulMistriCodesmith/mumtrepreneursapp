@@ -143,7 +143,9 @@ class _A_ChatState extends State<A_Chat> {
 
 
 
-                  onChanged: (String value) => setState(() {}),
+                  onChanged: (String value) => setState(() {
+
+                  }),
 
                 ),
 
@@ -195,7 +197,7 @@ class _A_ChatState extends State<A_Chat> {
       body: SingleChildScrollView(
 
         child: Padding(
-          padding: const EdgeInsets.only(top: 450,left: 10,right: 10),
+          padding: const EdgeInsets.only(top: 400,left: 10,right: 10),
           child: Column(
             children: [
 

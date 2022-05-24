@@ -1,6 +1,7 @@
 // ignore_for_file: void_checks, deprecated_member_use
 
 import 'package:flutter/material.dart';
+import 'package:mumtrepreneursapp/Dashboard/anotifications.dart';
 import 'package:mumtrepreneursapp/Feeds/createpost.dart';
 import 'package:mumtrepreneursapp/Feeds/edit_post.dart';
 import 'package:mumtrepreneursapp/Feeds/like.dart';
@@ -46,7 +47,13 @@ class _Feeds1State extends State<Feeds1> {
           ),
 
           actions: [
-            Image.asset('assets/Image/notification_icon.png',width: 14.53,height: 18.79,),
+            InkWell(
+
+              onTap: (){
+                Navigator.push(context, MaterialPageRoute(builder: (context) => ANotifications()));
+              },
+
+                child: Image.asset('assets/Image/notification_icon.png',width: 14.53,height: 18.79,)),
             Padding(
               padding: const EdgeInsets.only(left: 21.18,right: 21.21),
               child: Image.asset('assets/Image/comment_icon.png',width: 18.79,height: 18.79,),
@@ -57,9 +64,10 @@ class _Feeds1State extends State<Feeds1> {
         body: TabBarView(
           children: <Widget>[
             SingleChildScrollView(
-              scrollDirection: Axis.vertical,
+
               child: Column(
                 children: [
+                  
                   Padding(
                     padding: const EdgeInsets.only(left: 20,right: 20,top: 20),
                     child: Container(
@@ -223,7 +231,7 @@ class _Feeds1State extends State<Feeds1> {
                                 ),
                                 Text('250',style: TextStyle(fontSize: 14,fontFamily: 'Sk-Modernist',fontWeight: FontWeight.bold),),
                                 Padding(
-                                  padding: EdgeInsets.only(left: 68,right: 22),
+                                  padding: EdgeInsets.only(left: 110,right: 22),
                                   child: InkWell(
                                       onTap: (){
                                       },

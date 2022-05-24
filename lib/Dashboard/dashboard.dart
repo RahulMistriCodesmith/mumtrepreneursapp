@@ -1,4 +1,4 @@
-// ignore_for_file: unused_field
+// ignore_for_file: unused_field, prefer_const_constructors
 
 import 'package:flutter/material.dart';
 import 'package:mumtrepreneursapp/Dashboard/Blogs1.dart';
@@ -57,7 +57,7 @@ class _DashboardState extends State<Dashboard> {
             SideNavigationBar(
 
               selectedIndex: selectedIndex,
-              items: const [
+              items: const <SideNavigationBarItem> [
                 SideNavigationBarItem(
                   icon: Icons.settings,
                   label: 'Setting',

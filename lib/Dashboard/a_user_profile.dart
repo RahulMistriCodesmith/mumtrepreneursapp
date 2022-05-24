@@ -55,7 +55,13 @@ class _A_User_ProfileState extends State<A_User_Profile> {
                 PopupMenuItem(
                   child: Row(
                     children: [
-                      Image.asset('assets/Image/notification_icon.png',width: 13.15,height: 17,),
+                      InkWell(
+
+                          child: Image.asset('assets/Image/notification_icon.png',width: 13.15,height: 17,),
+                        onTap: (){
+
+                        },
+                      ),
                       Padding(
                         padding: EdgeInsets.only(left: 14.2),
                         child: Text("Notify",style: TextStyle(fontSize: 16,fontFamily: 'Sk-Modernist'),),

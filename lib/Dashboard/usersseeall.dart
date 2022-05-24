@@ -34,11 +34,10 @@ class _SeeAllState extends State<SeeAll> {
           children: [
 
             Padding(
-              padding: const EdgeInsets.only(left: 40,right: 30,top: 21),
+              padding: const EdgeInsets.only(left: 20,right: 20,top: 21),
               child: Container(
                 padding: EdgeInsets.only(bottom: 4),
-                width: 325,
-                height: 45,
+
                 decoration: BoxDecoration(
                   boxShadow: [
                     BoxShadow(
@@ -192,7 +191,7 @@ class _SeeAllState extends State<SeeAll> {
             ),
 
             Padding(
-              padding: const EdgeInsets.only(left: 50,right: 35,top: 16),
+              padding: const EdgeInsets.only(left: 20,right: 20,top: 16),
               child: Container(
 
                 decoration: BoxDecoration(
@@ -216,10 +215,13 @@ class _SeeAllState extends State<SeeAll> {
 
                           child: Column(
                             children: [
-                              Text('Frances Garcia',style: TextStyle(fontFamily: 'Sk-Modernist',fontWeight: FontWeight.w700,fontSize: 13,),),
+                              Padding(
+                                padding: const EdgeInsets.only(right: 40),
+                                child: Text('Frances Garcia',style: TextStyle(fontFamily: 'Sk-Modernist',fontWeight: FontWeight.w700,fontSize: 13,),),
+                              ),
 
                               Padding(
-                                padding: const EdgeInsets.only(right: 25),
+                                padding: const EdgeInsets.only(right: 70),
                                 child: Text('Silver User',style: TextStyle(fontFamily: 'Sk-Modernist',fontWeight: FontWeight.w400,fontSize: 13,color: Colors.grey),),
                               ),
                             ],
@@ -303,7 +305,7 @@ class _SeeAllState extends State<SeeAll> {
             ),
 
             Padding(
-              padding: const EdgeInsets.only(left: 50,right: 35,top: 16),
+              padding: const EdgeInsets.only(left: 20,right: 20,top: 16),
               child: Container(
 
                 decoration: BoxDecoration(
@@ -322,12 +324,12 @@ class _SeeAllState extends State<SeeAll> {
                         child: Column(
                           children: [
                             Padding(
-                              padding: const EdgeInsets.only(right: 8),
+                              padding: const EdgeInsets.only(right: 40),
                               child: Text('Lois A. Day',style: TextStyle(fontFamily: 'Sk-Modernist',fontWeight: FontWeight.w700,fontSize: 13,),),
                             ),
 
                             Padding(
-                              padding: const EdgeInsets.only(right: 25),
+                              padding: const EdgeInsets.only(right: 65),
                               child: Text('Pro User',style: TextStyle(fontFamily: 'Sk-Modernist',fontWeight: FontWeight.w400,fontSize: 13,color: Colors.grey),),
                             ),
                           ],
@@ -410,7 +412,7 @@ class _SeeAllState extends State<SeeAll> {
             ),
 
             Padding(
-              padding: const EdgeInsets.only(left: 50,right: 35,top: 16),
+              padding: const EdgeInsets.only(left: 20,right: 20,top: 16),
               child: Container(
 
                 decoration: BoxDecoration(
@@ -438,12 +440,12 @@ class _SeeAllState extends State<SeeAll> {
                         child: Column(
                           children: [
                             Padding(
-                              padding: const EdgeInsets.only(right: 7),
+                              padding: const EdgeInsets.only(right: 55),
                               child: Text('Annie Blythe',style: TextStyle(fontFamily: 'Sk-Modernist',fontWeight: FontWeight.w700,fontSize: 13,),),
                             ),
 
                             Padding(
-                              padding: const EdgeInsets.only(right: 25),
+                              padding: const EdgeInsets.only(right: 70),
                               child: Text('Silver User',style: TextStyle(fontFamily: 'Sk-Modernist',fontWeight: FontWeight.w400,fontSize: 13,color: Colors.grey),),
                             ),
                           ],
@@ -526,7 +528,7 @@ class _SeeAllState extends State<SeeAll> {
             ),
 
             Padding(
-              padding: const EdgeInsets.only(left: 50,right: 35,top: 16),
+              padding: const EdgeInsets.only(left: 20,right: 20,top: 16),
               child: Container(
 
                 decoration: BoxDecoration(
@@ -541,7 +543,7 @@ class _SeeAllState extends State<SeeAll> {
                       Image.asset('assets/Image/hartle_icon.png',width: 35,height: 35,),
 
                       Padding(
-                        padding: const EdgeInsets.only(left: 13,right: 120),
+                        padding: const EdgeInsets.only(left: 13,right: 165),
                         child: Column(
                           children: [
                             Text('Mckinley Hartle',style: TextStyle(fontFamily: 'Sk-Modernist',fontWeight: FontWeight.w700,fontSize: 13,),),
@@ -630,7 +632,7 @@ class _SeeAllState extends State<SeeAll> {
             ),
 
             Padding(
-              padding: const EdgeInsets.only(left: 50,right: 35,top: 16),
+              padding: const EdgeInsets.only(left: 20,right: 20,top: 16),
               child: Container(
 
                 decoration: BoxDecoration(
@@ -645,7 +647,7 @@ class _SeeAllState extends State<SeeAll> {
                       Image.asset('assets/Image/perez_icon.png',width: 35,height: 35,),
 
                       Padding(
-                        padding: const EdgeInsets.only(left: 13,right: 125),
+                        padding: const EdgeInsets.only(left: 13,right: 178),
                         child: Column(
                           children: [
                             Padding(
@@ -737,7 +739,7 @@ class _SeeAllState extends State<SeeAll> {
             ),
 
             Padding(
-              padding: const EdgeInsets.only(left: 50,right: 35,top: 16),
+              padding: const EdgeInsets.only(left: 20,right: 20,top: 16),
               child: Container(
 
                 decoration: BoxDecoration(
@@ -752,7 +754,7 @@ class _SeeAllState extends State<SeeAll> {
                       Image.asset('assets/Image/garcia_icon.png',width: 35,height: 35,),
 
                       Padding(
-                        padding: const EdgeInsets.only(left: 13,right: 125),
+                        padding: const EdgeInsets.only(left: 13,right: 170),
                         child: Column(
                           children: [
                             Text('Frances Garcia',style: TextStyle(fontFamily: 'Sk-Modernist',fontWeight: FontWeight.w700,fontSize: 13,),),
@@ -841,7 +843,7 @@ class _SeeAllState extends State<SeeAll> {
             ),
 
             Padding(
-              padding: const EdgeInsets.only(left: 50,right: 35,top: 16),
+              padding: const EdgeInsets.only(left: 20,right: 20,top: 16),
               child: Container(
 
                 decoration: BoxDecoration(
@@ -856,7 +858,7 @@ class _SeeAllState extends State<SeeAll> {
                       Image.asset('assets/Image/lois_icon.png',width: 35,height: 35,),
 
                       Padding(
-                        padding: const EdgeInsets.only(left: 13,right: 125),
+                        padding: const EdgeInsets.only(left: 13,right: 172),
                         child: Column(
                           children: [
                             Padding(
@@ -948,7 +950,7 @@ class _SeeAllState extends State<SeeAll> {
             ),
 
             Padding(
-              padding: const EdgeInsets.only(left: 50,right: 35,top: 16),
+              padding: const EdgeInsets.only(left: 20,right: 20,top: 16,bottom: 16),
               child: Container(
 
                 decoration: BoxDecoration(
@@ -972,7 +974,7 @@ class _SeeAllState extends State<SeeAll> {
                       ),
 
                       Padding(
-                        padding: const EdgeInsets.only(left: 13,right: 125),
+                        padding: const EdgeInsets.only(left: 13,right: 185),
                         child: Column(
                           children: [
                             Text('Annie Blythe',style: TextStyle(fontFamily: 'Sk-Modernist',fontWeight: FontWeight.w700,fontSize: 13,),),
