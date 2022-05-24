@@ -1,8 +1,6 @@
-// ignore_for_file: deprecated_member_use
+// ignore_for_file: deprecated_member_use, camel_case_types, prefer_const_constructors, sized_box_for_whitespace, prefer_const_literals_to_create_immutables
 
 import 'package:flutter/material.dart';
-import 'package:mumtrepreneursapp/Dashboard/courseedit1.dart';
-import 'package:mumtrepreneursapp/Home/event_members.dart';
 import 'package:mumtrepreneursapp/Dashboard/edit_events.dart';
 import 'package:mumtrepreneursapp/Dashboard/InviteMembers.dart';
 class A_EventDetails extends StatefulWidget {

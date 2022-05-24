@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables, avoid_unnecessary_containers
+
 import 'dart:io';
 
 import 'package:file_picker/file_picker.dart';
@@ -28,7 +30,7 @@ class _CommunityGroupState extends State<CommunityGroup> {
 
   Future<void> shareFile() async {
     final result = await FilePicker.platform.pickFiles();
-    if (result == null || result.files.isEmpty) return null;
+    if (result == null || result.files.isEmpty) return;
 
     await FlutterShare.shareFile(
       title: 'Example share',

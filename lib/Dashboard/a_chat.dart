@@ -1,4 +1,4 @@
-// ignore_for_file: unused_field, unused_element
+// ignore_for_file: unused_field, unused_element, camel_case_types, prefer_const_constructors
 
 import 'package:chat_bubbles/bubbles/bubble_normal.dart';
 import 'package:flutter/material.dart';
@@ -16,6 +16,7 @@ class _A_ChatState extends State<A_Chat> {
 
   List<String> people = [];
 
+  @override
   void initState() {
     super.initState();
     initPlatformState();

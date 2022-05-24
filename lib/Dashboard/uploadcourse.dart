@@ -1,4 +1,4 @@
-// ignore_for_file: missing_required_param, deprecated_member_use
+// ignore_for_file: missing_required_param, deprecated_member_use, prefer_const_constructors, use_full_hex_values_for_flutter_colors
 
 import 'package:flutter/material.dart';
 class UploadCourse extends StatefulWidget {
@@ -195,18 +195,15 @@ class _UploadCourseState extends State<UploadCourse> {
 
             Padding(
               padding: const EdgeInsets.only(top: 111),
-              child: Container(
+              child: RaisedButton(
+                  padding: EdgeInsets.only(top: 18.17,bottom: 18.83,left: 160,right: 160),
+                  color: Color(0xff12496D),
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(5),
+                  ),
+                  child: Text('Submit',style: TextStyle(color: Colors.white,fontSize: 15,fontFamily: 'Sk-Modernist',fontWeight: FontWeight.w700),),
 
-                child: RaisedButton(
-                    padding: EdgeInsets.only(top: 18.17,bottom: 18.83,left: 160,right: 160),
-                    color: Color(0xff12496D),
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(5),
-                    ),
-                    child: Text('Submit',style: TextStyle(color: Colors.white,fontSize: 15,fontFamily: 'Sk-Modernist',fontWeight: FontWeight.w700),),
-
-                    onPressed: (){}),
-              ),
+                  onPressed: (){}),
             ),
 
 

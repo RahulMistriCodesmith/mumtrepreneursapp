@@ -1,4 +1,4 @@
-// ignore_for_file: deprecated_member_use
+// ignore_for_file: deprecated_member_use, avoid_returning_null_for_void, prefer_const_constructors, prefer_const_literals_to_create_immutables, avoid_unnecessary_containers
 
 import 'dart:io';
 
@@ -6,8 +6,6 @@ import 'package:file_picker/file_picker.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_share/flutter_share.dart';
 import 'package:mumtrepreneursapp/Dashboard/uploadblog.dart';
-import 'package:mumtrepreneursapp/Dashboard/uploadcourse.dart';
-import 'package:mumtrepreneursapp/More/loremipsum.dart';
 
 import '../Feeds/userprofile.dart';
 class Blogs1 extends StatefulWidget {

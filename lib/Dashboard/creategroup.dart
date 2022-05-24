@@ -1,3 +1,5 @@
+// ignore_for_file: deprecated_member_use, prefer_const_constructors, prefer_const_literals_to_create_immutables
+
 import 'package:flutter/material.dart';
 class CreateGroup extends StatefulWidget {
   const CreateGroup({Key key}) : super(key: key);
@@ -100,18 +102,15 @@ class _CreateGroupState extends State<CreateGroup> {
 
             Padding(
               padding: const EdgeInsets.only(top: 430),
-              child: Container(
+              child: RaisedButton(
+                  padding: EdgeInsets.only(top: 18.17,bottom: 18.83,left: 160,right: 160),
+                  color: Color(0xff12496D),
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(5),
+                  ),
+                  child: Text('Submit',style: TextStyle(color: Colors.white,fontSize: 15,fontFamily: 'Sk-Modernist',fontWeight: FontWeight.w700),),
 
-                child: RaisedButton(
-                    padding: EdgeInsets.only(top: 18.17,bottom: 18.83,left: 160,right: 160),
-                    color: Color(0xff12496D),
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(5),
-                    ),
-                    child: Text('Submit',style: TextStyle(color: Colors.white,fontSize: 15,fontFamily: 'Sk-Modernist',fontWeight: FontWeight.w700),),
-
-                    onPressed: (){}),
-              ),
+                  onPressed: (){}),
             ),
 
 

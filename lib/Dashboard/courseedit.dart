@@ -1,4 +1,4 @@
-// ignore_for_file: deprecated_member_use
+// ignore_for_file: deprecated_member_use, prefer_const_constructors, prefer_const_literals_to_create_immutables, avoid_print, avoid_unnecessary_containers, use_full_hex_values_for_flutter_colors, sized_box_for_whitespace
 
 import 'package:flutter/material.dart';
 import 'package:mumtrepreneursapp/Home/Add_Review.dart';

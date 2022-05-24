@@ -1,4 +1,4 @@
-// ignore_for_file: deprecated_member_use
+// ignore_for_file: deprecated_member_use, prefer_const_constructors, prefer_const_literals_to_create_immutables, use_full_hex_values_for_flutter_colors, sized_box_for_whitespace
 
 import 'package:flutter/material.dart';
 class CourseEdit1 extends StatefulWidget {
@@ -658,7 +658,11 @@ class _CourseEdit1State extends State<CourseEdit1> {
                               ),
                               Text('Upload Files',style: TextStyle(color: Color(0xff12496D),fontWeight: FontWeight.w400,fontSize: 15,fontFamily: 'Sk-Modernist'),),
                             ],
+
                           ),
+
+                          onPressed: () {  },
+
                         ),
                       ),
                     ),

@@ -3,6 +3,7 @@
 import 'package:flutter/material.dart';
 import 'package:mumtrepreneursapp/Authorization/Splash.dart';
 
+
 const fileName = '/pspdfkit-flutter-quickstart-guide.pdf';
 
 // URL of the PDF file you'll download.
@@ -22,7 +23,7 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home: const Splash(),
+      home: Splash(),
       debugShowCheckedModeBanner: false,
 
     );

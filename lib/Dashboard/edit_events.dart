@@ -1,4 +1,4 @@
-// ignore_for_file: deprecated_member_use
+// ignore_for_file: deprecated_member_use, camel_case_types, prefer_const_constructors, prefer_const_literals_to_create_immutables, use_full_hex_values_for_flutter_colors
 
 import 'package:flutter/material.dart';
 import 'package:mumtrepreneursapp/Dashboard/trainer.dart';
@@ -227,6 +227,7 @@ class _Edit_EventsState extends State<Edit_Events> {
                           Text('Upload Cover',style: TextStyle(color: Color(0xff12496D),fontWeight: FontWeight.w400,fontSize: 15,fontFamily: 'Sk-Modernist'),),
                         ],
                       ),
+                      onPressed: () { },
                     ),
                   ],
                 ),
@@ -235,18 +236,15 @@ class _Edit_EventsState extends State<Edit_Events> {
 
             Padding(
               padding: const EdgeInsets.only(top: 16),
-              child: Container(
+              child: RaisedButton(
+                  padding: EdgeInsets.only(top: 18.17,bottom: 18.83,left: 160,right: 160),
+                  color: Color(0xff12496D),
+                  shape: RoundedRectangleBorder(
+                    borderRadius: BorderRadius.circular(5),
+                  ),
+                  child: Text('Save',style: TextStyle(color: Colors.white,fontSize: 15,fontFamily: 'Sk-Modernist',fontWeight: FontWeight.w700),),
 
-                child: RaisedButton(
-                    padding: EdgeInsets.only(top: 18.17,bottom: 18.83,left: 160,right: 160),
-                    color: Color(0xff12496D),
-                    shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(5),
-                    ),
-                    child: Text('Save',style: TextStyle(color: Colors.white,fontSize: 15,fontFamily: 'Sk-Modernist',fontWeight: FontWeight.w700),),
-
-                    onPressed: (){}),
-              ),
+                  onPressed: (){}),
             ),
 
 

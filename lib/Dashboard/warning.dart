@@ -1,4 +1,4 @@
-// ignore_for_file: unused_field, deprecated_member_use
+// ignore_for_file: unused_field, deprecated_member_use, prefer_typing_uninitialized_variables, prefer_const_constructors, sized_box_for_whitespace
 
 import 'package:flutter/material.dart';
 class Warning extends StatefulWidget {
@@ -10,7 +10,7 @@ class Warning extends StatefulWidget {
 
 class _WarningState extends State<Warning> {
 
-  Color _containerColor = Colors.white;
+  final Color _containerColor = Colors.white;
 
   var _colorContainer;
 
@@ -159,15 +159,17 @@ class _WarningState extends State<Warning> {
                 ),
               ),
 
-              Container(
-                width: 268,
-                height: 55,
+              Padding(
+                padding: const EdgeInsets.only(left: 21,right: 19.22),
                 child: RaisedButton(
                     color: Color(0xff12496D),
                     shape: RoundedRectangleBorder(
                       borderRadius: BorderRadius.circular(5),
                     ),
-                    child: Text('Submit',style: TextStyle(color: Colors.white,fontSize: 15,fontFamily: 'Sk-Modernist',fontWeight: FontWeight.w700),),
+                    child: Padding(
+                      padding: const EdgeInsets.only(left: 125,right: 126,top: 18.17,bottom: 18.83),
+                      child: Text('Submit',style: TextStyle(color: Colors.white,fontSize: 15,fontFamily: 'Sk-Modernist',fontWeight: FontWeight.w700),),
+                    ),
 
                     onPressed: (){}),
               ),

@@ -1,9 +1,11 @@
-// ignore_for_file: deprecated_member_use
+// ignore_for_file: deprecated_member_use, camel_case_types, prefer_const_constructors, prefer_const_literals_to_create_immutables, sized_box_for_whitespace
 
 import 'package:flutter/material.dart';
-import 'package:mumtrepreneursapp/Home/Resources_1.dart';
 import 'package:mumtrepreneursapp/Dashboard/uploadcourse.dart';
 import 'package:mumtrepreneursapp/Dashboard/courseedit.dart';
+
+import '../Components/Colors/AppColors.dart';
+import '../Components/Font/Font.dart';
 class A_Resources extends StatefulWidget {
   const A_Resources({Key key}) : super(key: key);
 
@@ -36,10 +38,7 @@ class _A_ResourcesState extends State<A_Resources> {
             children: [
               Padding(
                 padding: const EdgeInsets.only(top: 50,left: 20,right: 20),
-                child: Container(
-
-                  padding: EdgeInsets.only(left: 17,bottom: 4),
-
+                child:  Container(
                   decoration: BoxDecoration(
                     boxShadow: [
                       BoxShadow(
@@ -52,15 +51,13 @@ class _A_ResourcesState extends State<A_Resources> {
                         spreadRadius: 0.5,
                       ),
                     ],
-                    color: Colors.white,
-                    borderRadius: BorderRadius.circular(5),
                   ),
-                  child: TextFormField(
-                    decoration: InputDecoration(
-                      border: InputBorder.none,
-                      hintText: 'Search Here',
-                      hintStyle: TextStyle(color: Colors.grey,fontSize: 15,fontFamily: 'Sk-Modernist'),
-                      suffixIcon: Image.asset('assets/Image/Search Icon.png',scale: 5,),
+                  child: TextField (
+
+                    decoration: Inputdec1.inputDecoration.copyWith(
+                      fillColor: Colors.white,
+
+
                     ),
                   ),
                 ),
@@ -148,18 +145,20 @@ class _A_ResourcesState extends State<A_Resources> {
                                           child: Text('4.8',style: TextStyle(fontSize: 12,fontFamily: 'Sk-Modernist',),),
                                         ),
                                         Text('€49',
-                                          style: TextStyle(color: Color(0xff12496D),fontWeight: FontWeight.bold,fontSize: 14,fontFamily: 'Sk-Modernist'),),
+                                          style: Textstyle1Light18.appbartextstyle.copyWith(
+                                            color: Appcolors.bluedark)
+                                        ),
                                       ],
                                     ),
                                   ),
                                   Padding(
                                     padding: const EdgeInsets.only(top: 12,right: 40),
                                     child: Text('Am I ready',
-                                      style: TextStyle(fontWeight: FontWeight.bold,fontSize: 14,fontFamily: 'Sk-Modernist'),),
+                                      style: TextStyle(fontSize: 14,fontFamily: 'Sk-Modernist-Bold'),),
                                   ),
                                   Padding(
                                     padding: const EdgeInsets.only(right: 40),
-                                    child: Text('152 Videos',style: TextStyle(color: Colors.grey,fontSize: 14,fontFamily: 'Sk-Modernist'),),
+                                    child: Text('152 Videos',style: TextStyle(color: Colors.grey,fontSize: 14,fontFamily: 'Sk-Modernist-Regular'),),
                                   ),
                                 ],
                               ),
@@ -212,7 +211,8 @@ class _A_ResourcesState extends State<A_Resources> {
                                           child: Text('4.8',style: TextStyle(fontSize: 12,fontFamily: 'Sk-Modernist',),),
                                         ),
                                         Text('€349',
-                                          style: TextStyle(color: Color(0xff12496D),fontWeight: FontWeight.bold,fontSize: 14,fontFamily: 'Sk-Modernist'),),
+                                            style: Textstyle1Light18.appbartextstyle.copyWith(
+                                                color: Appcolors.bluedark)),
                                       ],
                                     ),
                                   ),
@@ -279,7 +279,8 @@ class _A_ResourcesState extends State<A_Resources> {
                                           child: Text('4.8',style: TextStyle(fontSize: 12,fontFamily: 'Sk-Modernist',),),
                                         ),
                                         Text('€99',
-                                          style: TextStyle(color: Color(0xff12496D),fontWeight: FontWeight.bold,fontSize: 14,fontFamily: 'Sk-Modernist'),),
+                                          style: Textstyle1Light18.appbartextstyle.copyWith(
+                                            color: Appcolors.bluedark)),
                                       ],
                                     ),
                                   ),
@@ -339,7 +340,8 @@ class _A_ResourcesState extends State<A_Resources> {
                                             child: Text('4.8',style: TextStyle(fontSize: 12,fontFamily: 'Sk-Modernist',),),
                                           ),
                                           Text('€0',
-                                            style: TextStyle(color: Color(0xff12496D),fontWeight: FontWeight.bold,fontSize: 14,fontFamily: 'Sk-Modernist'),),
+                                              style: Textstyle1Light18.appbartextstyle.copyWith(color: Appcolors.bluedark)
+                                          )
                                         ],
                                       ),
                                     ),

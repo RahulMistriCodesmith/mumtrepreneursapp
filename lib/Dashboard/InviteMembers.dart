@@ -1,4 +1,4 @@
-// ignore_for_file: deprecated_member_use
+// ignore_for_file: deprecated_member_use, prefer_const_constructors, prefer_const_literals_to_create_immutables
 
 import 'package:flutter/material.dart';
 import 'package:mumtrepreneursapp/Dashboard/a_user_profile.dart';
@@ -528,26 +528,23 @@ class _InviteMembersState extends State<InviteMembers> {
 
             Padding(
               padding: const EdgeInsets.only(left: 20,right: 20,top: 10,bottom: 10),
-              child: Container(
+              child: RaisedButton(
 
-                child: RaisedButton(
+                color: Color(0xff12496D),
 
-                  color: Color(0xff12496D),
-
-                  child: Padding(
-                    padding: const EdgeInsets.only(left: 130,top: 14,bottom: 17),
-                    child: Row(
-                      children: [
-                        Icon(Icons.add,color: Colors.white,size: 20,),
-                        Text('INVITE',
-                          style: TextStyle(color: Colors.white,fontSize: 15,fontWeight: FontWeight.bold,fontFamily: 'Sk-Modernist'),),
-                      ],
-                    ),
+                child: Padding(
+                  padding: const EdgeInsets.only(left: 130,top: 14,bottom: 17),
+                  child: Row(
+                    children: [
+                      Icon(Icons.add,color: Colors.white,size: 20,),
+                      Text('INVITE',
+                        style: TextStyle(color: Colors.white,fontSize: 15,fontWeight: FontWeight.bold,fontFamily: 'Sk-Modernist'),),
+                    ],
                   ),
-                  onPressed: (){
-                    Navigator.push(context, MaterialPageRoute(builder: (context) => const InviteMembers()));
-                  },
                 ),
+                onPressed: (){
+                  Navigator.push(context, MaterialPageRoute(builder: (context) => const InviteMembers()));
+                },
               ),
             ),
 

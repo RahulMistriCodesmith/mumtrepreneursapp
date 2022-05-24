@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors
+
 import 'package:flutter/material.dart';
 class ANotifications extends StatefulWidget {
   const ANotifications({Key key}) : super(key: key);

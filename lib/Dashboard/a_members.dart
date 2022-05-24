@@ -1,5 +1,9 @@
+// ignore_for_file: camel_case_types, prefer_const_constructors, prefer_const_literals_to_create_immutables
+
 import 'package:flutter/material.dart';
 import 'package:mumtrepreneursapp/Dashboard/usersseeall.dart';
+
+import '../Components/Colors/AppColors.dart';
 class A_Members extends StatefulWidget {
   const A_Members({Key key}) : super(key: key);
 
@@ -46,6 +50,8 @@ class _A_MembersState extends State<A_Members> {
                         child: Text('Users',style: TextStyle(color: Colors.grey,fontSize: 14,fontFamily: 'Sk-Modernist',fontWeight: FontWeight.w400),),
                       ),
 
+
+
                       Divider(),
 
                       Padding(
@@ -54,6 +60,8 @@ class _A_MembersState extends State<A_Members> {
                           children: [
                             Image.asset('assets/Image/frances_image.png',width: 31,height: 31,),
 
+
+                            
                             Padding(
                               padding: const EdgeInsets.only(left: 14,right: 110),
                               child: Text('Frances Garcia',style: TextStyle(fontSize: 14,fontFamily: 'Sk-Modernist',fontWeight: FontWeight.w700),),
@@ -144,7 +152,7 @@ class _A_MembersState extends State<A_Members> {
                               padding: const EdgeInsets.only(left: 14,right: 105),
                               child: Text('Anna Thompson',style: TextStyle(fontSize: 14,fontFamily: 'Sk-Modernist',fontWeight: FontWeight.w700),),
                             ),
-
+                            Expanded(child: SizedBox()),
                             PopupMenuButton(
                               color: Colors.white,
                               elevation: 20,
@@ -230,7 +238,7 @@ class _A_MembersState extends State<A_Members> {
                               padding: const EdgeInsets.only(left: 14,right: 105),
                               child: Text('Rebecca J. Ladd',style: TextStyle(fontSize: 14,fontFamily: 'Sk-Modernist',fontWeight: FontWeight.w700),),
                             ),
-
+                            Expanded(child: SizedBox()),
                             PopupMenuButton(
                               color: Colors.white,
                               elevation: 20,

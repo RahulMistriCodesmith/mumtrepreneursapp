@@ -1,3 +1,5 @@
+// ignore_for_file: deprecated_member_use, prefer_const_constructors, sized_box_for_whitespace
+
 import 'package:flutter/material.dart';
 class AChangePassword extends StatefulWidget {
   const AChangePassword({Key key}) : super(key: key);

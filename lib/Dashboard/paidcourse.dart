@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors, prefer_const_literals_to_create_immutables
+
 import 'package:flutter/material.dart';
 import 'package:syncfusion_flutter_charts/charts.dart';
 
@@ -143,36 +145,33 @@ class _PaidCourseState extends State<PaidCourse> {
                       child: Center(
                         child: Stack(
                           children: [
-                            Container(
-                                child: SfCartesianChart(
-                                    series: <ChartSeries>[
-                                      SplineSeries<ChartData, int>(
-                                          dataSource: chartData,
-                                          // Type of spline
-                                          splineType: SplineType.cardinal,
-                                          color: Color(0xffE7957E),
-                                          cardinalSplineTension: 0.9,
-                                          xValueMapper: (ChartData data, _) => data.x,
-                                          yValueMapper: (ChartData data, _) => data.y
-                                      )
-                                    ]
-                                )
+                            SfCartesianChart(
+                                series: <ChartSeries>[
+                                  SplineSeries<ChartData, int>(
+                                      dataSource: chartData,
+                                      // Type of spline
+                                      splineType: SplineType.cardinal,
+                                      color: Color(0xffE7957E),
+                                      cardinalSplineTension: 0.9,
+                                      xValueMapper: (ChartData data, _) => data.x,
+                                      yValueMapper: (ChartData data, _) => data.y
+                                  )
+                                ]
                             ),
 
-                            Container(
-                                child: SfCartesianChart(
-                                    series: <ChartSeries>[
-                                      SplineSeries<ChartData1, int>(
-                                          dataSource: chartData1,
-                                          // Type of spline
-                                          splineType: SplineType.cardinal,
-                                          color: Color(0xff12496D),
-                                          cardinalSplineTension: 0.5,
-                                          xValueMapper: (ChartData1 data, _) => data.x1,
-                                          yValueMapper: (ChartData1 data, _) => data.y1
-                                      )
-                                    ]
-                                )
+
+                            SfCartesianChart(
+                                series: <ChartSeries>[
+                                  SplineSeries<ChartData1, int>(
+                                      dataSource: chartData1,
+                                      // Type of spline
+                                      splineType: SplineType.cardinal,
+                                      color: Color(0xff12496D),
+                                      cardinalSplineTension: 0.5,
+                                      xValueMapper: (ChartData1 data, _) => data.x1,
+                                      yValueMapper: (ChartData1 data, _) => data.y1
+                                  )
+                                ]
                             )
                           ],
                         ),

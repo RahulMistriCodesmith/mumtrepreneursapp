@@ -1,4 +1,4 @@
-// ignore_for_file: deprecated_member_use
+// ignore_for_file: deprecated_member_use, camel_case_types, prefer_const_constructors, use_full_hex_values_for_flutter_colors, sized_box_for_whitespace, avoid_unnecessary_containers
 
 import 'dart:io';
 
@@ -6,7 +6,6 @@ import 'package:file_picker/file_picker.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_share/flutter_share.dart';
 import 'package:mumtrepreneursapp/Dashboard/uploadevents.dart';
-import 'package:mumtrepreneursapp/Home/Event_Details.dart';
 import 'package:mumtrepreneursapp/Dashboard/a_event_details.dart';
 
 import '../Feeds/userprofile.dart';
@@ -32,7 +31,7 @@ class _A_EventsState extends State<A_Events> {
 
   Future<void> shareFile() async {
     final result = await FilePicker.platform.pickFiles();
-    if (result == null || result.files.isEmpty) return null;
+    if (result == null || result.files.isEmpty) return;
 
     await FlutterShare.shareFile(
       title: 'Example share',

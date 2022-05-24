@@ -1,4 +1,4 @@
-// ignore_for_file: deprecated_member_use
+// ignore_for_file: deprecated_member_use, prefer_const_constructors, prefer_const_literals_to_create_immutables
 
 import 'package:flutter/material.dart';
 import 'package:mumtrepreneursapp/Dashboard/a_user_profile.dart';
@@ -974,7 +974,7 @@ class _SeeAllState extends State<SeeAll> {
                       ),
 
                       Padding(
-                        padding: const EdgeInsets.only(left: 13,right: 185),
+                        padding: const EdgeInsets.only(left: 13,right: 175),
                         child: Column(
                           children: [
                             Text('Annie Blythe',style: TextStyle(fontFamily: 'Sk-Modernist',fontWeight: FontWeight.w700,fontSize: 13,),),

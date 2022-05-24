@@ -1,6 +1,7 @@
-// ignore_for_file: void_checks, deprecated_member_use
+// ignore_for_file: void_checks, deprecated_member_use, prefer_const_constructors, prefer_const_literals_to_create_immutables, use_full_hex_values_for_flutter_colors, sized_box_for_whitespace, file_names
 
 import 'package:flutter/material.dart';
+import 'package:mumtrepreneursapp/Components/Colors/AppColors.dart';
 import 'package:mumtrepreneursapp/Dashboard/anotifications.dart';
 import 'package:mumtrepreneursapp/Feeds/createpost.dart';
 import 'package:mumtrepreneursapp/Feeds/edit_post.dart';
@@ -19,13 +20,13 @@ class _Feeds1State extends State<Feeds1> {
     return DefaultTabController(
        length: 2,
       child: Scaffold(
-        backgroundColor: Color(0xffE5E5E5),
+        backgroundColor: Appcolors.greylight,
         appBar: AppBar(
           automaticallyImplyLeading: false,
           backgroundColor: Colors.white,
-          toolbarHeight: 80,
+          toolbarHeight: 70,
           title: Text('Feeds'),
-          titleTextStyle: TextStyle(color: Colors.black,fontSize: 16,fontFamily: 'Sk-Modernist',fontWeight: FontWeight.w700),
+          titleTextStyle: TextStyle(color: Colors.black,fontSize: 16,fontFamily: 'Sk-Modernist-Bold',),
 
           bottom: TabBar(
 
@@ -97,17 +98,16 @@ class _Feeds1State extends State<Feeds1> {
                                           text: TextSpan(
                                             text: 'Louis Chapman',
                                             style: TextStyle(
-                                                fontWeight: FontWeight.bold,
                                                 color: Colors.black,
-                                                fontFamily: 'Sk-Modernist',
+                                                fontFamily: 'Sk-Modernist-Bold',
                                                 fontSize: 14),
                                             children: <TextSpan>[
                                               TextSpan(
                                                   text: ' 1 day ago',
                                                   style: TextStyle(
                                                       color: Colors.grey,
-                                                      fontFamily: 'Sk-Modernist',
-                                                      fontWeight: FontWeight.normal,
+                                                      fontFamily: 'Sk-Modernist-Regular',
+
                                                       fontSize: 13)
                                               ),
 
@@ -117,7 +117,7 @@ class _Feeds1State extends State<Feeds1> {
                                       ),
                                       Padding(
                                         padding: EdgeInsets.only(left: 8,right: 110),
-                                        child: Text('Admin',style: TextStyle(color: Colors.grey,fontFamily: 'Sk-Modernist',fontSize: 13),),
+                                        child: Text('Admin',style: TextStyle(color: Colors.grey,fontFamily: 'Sk-Modernist-Regular',fontSize: 13),),
                                       ),
                                     ],
                                   ),
@@ -144,7 +144,7 @@ class _Feeds1State extends State<Feeds1> {
                                             Image.asset('assets/Image/unfollow_icon.png',width: 16.37,height: 16.88,),
                                             Padding(
                                               padding: EdgeInsets.only(left: 10.99),
-                                              child: Text("Unfollow@tittany87",style: TextStyle(fontSize: 14,fontFamily: 'Sk-Modernist'),),
+                                              child: Text("Unfollow@tittany87",style: TextStyle(fontSize: 14,fontFamily: 'Sk-Modernist-Regular'),),
                                             ),
                                           ],
                                         ),
@@ -156,7 +156,7 @@ class _Feeds1State extends State<Feeds1> {
                                             Image.asset('assets/Image/infosquare.png',scale: 4,),
                                             Padding(
                                               padding: EdgeInsets.only(left: 14.2),
-                                              child: Text("Report Post",style: TextStyle(fontSize: 14,fontFamily: 'Sk-Modernist'),),
+                                              child: Text("Report Post",style: TextStyle(fontSize: 14,fontFamily: 'Sk-Modernist-Regular'),),
                                             ),
                                           ],
                                         ),
@@ -169,7 +169,7 @@ class _Feeds1State extends State<Feeds1> {
                                             Image.asset('assets/Image/mute_icon.png',width: 15.61,height: 15.34,),
                                             Padding(
                                               padding: EdgeInsets.only(left: 10.99),
-                                              child: Text("Mute @tittany87",style: TextStyle(fontSize: 14,fontFamily: 'Sk-Modernist'),),
+                                              child: Text("Mute @tittany87",style: TextStyle(fontSize: 14,fontFamily: 'Sk-Modernist-Regular'),),
                                             ),
                                           ],
                                         ),
@@ -183,7 +183,7 @@ class _Feeds1State extends State<Feeds1> {
                                             Image.asset('assets/Image/link_icon.png',width: 18.09,height: 18.09,),
                                             Padding(
                                               padding: EdgeInsets.only(left: 10.99),
-                                              child: Text("Copy Link",style: TextStyle(fontSize: 14,fontFamily: 'Sk-Modernist'),),
+                                              child: Text("Copy Link",style: TextStyle(fontSize: 14,fontFamily: 'Sk-Modernist-Regular'),),
                                             ),
                                           ],
                                         ),
@@ -202,7 +202,7 @@ class _Feeds1State extends State<Feeds1> {
                           Padding(
                             padding: EdgeInsets.only(top: 8,left: 25,right: 25),
                             child: Text('Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum... see more',
-                              style: TextStyle(fontSize: 14,fontFamily: 'Sk-Modernist',),),
+                              style: TextStyle(fontSize: 14,fontFamily: 'Sk-Modernist-Regular',),),
                           ),
 
                           Padding(
@@ -222,21 +222,21 @@ class _Feeds1State extends State<Feeds1> {
 
                                   child: Padding(
                                     padding: EdgeInsets.only(left: 8),
-                                    child: Text('1,525',style: TextStyle(fontSize: 14,fontFamily: 'Sk-Modernist',fontWeight: FontWeight.bold),),
+                                    child: Text('1,525',style: TextStyle(fontSize: 14,fontFamily: 'Sk-Modernist-Bold',),),
                                   ),
                                 ),
                                 Padding(
                                   padding: EdgeInsets.only(left: 31,right: 8),
                                   child: Image.asset('assets/Image/comment_icon.png',width: 17,height: 17,),
                                 ),
-                                Text('250',style: TextStyle(fontSize: 14,fontFamily: 'Sk-Modernist',fontWeight: FontWeight.bold),),
-                                Padding(
-                                  padding: EdgeInsets.only(left: 110,right: 22),
-                                  child: InkWell(
-                                      onTap: (){
-                                      },
-                                      child: Image.asset('assets/Image/share_icon.png',width: 17.42,height: 19,)),
+                                Text('250',style: TextStyle(fontSize: 14,fontFamily: 'Sk-Modernist-Bold',),),
+                                SizedBox(
+                                  width: 110,
                                 ),
+                                InkWell(
+                                    onTap: (){
+                                    },
+                                    child: Image.asset('assets/Image/share_icon.png',width: 17.42,height: 19,)),
                               ],
                             ),
                           ),
@@ -267,17 +267,15 @@ class _Feeds1State extends State<Feeds1> {
                                         text: TextSpan(
                                           text: 'James Lee',
                                           style: TextStyle(
-                                              fontWeight: FontWeight.bold,
                                               color: Colors.black,
-                                              fontFamily: 'Sk-Modernist',
+                                              fontFamily: 'Sk-Modernist-Bold',
                                               fontSize: 14),
                                           children: <TextSpan>[
                                             TextSpan(
                                                 text: ' 2 day ago',
                                                 style: TextStyle(
                                                     color: Colors.grey,
-                                                    fontFamily: 'Sk-Modernist',
-                                                    fontWeight: FontWeight.normal,
+                                                    fontFamily: 'Sk-Modernist-Regular',
                                                     fontSize: 13)
                                             ),
 
@@ -287,7 +285,7 @@ class _Feeds1State extends State<Feeds1> {
                                     ),
                                     Padding(
                                       padding: EdgeInsets.only(left: 9,right: 65),
-                                      child: Text('@jameslee85',style: TextStyle(color: Colors.grey,fontFamily: 'Sk-Modernist',fontSize: 13),),
+                                      child: Text('@jameslee85',style: TextStyle(color: Colors.grey,fontFamily: 'Sk-Modernist-Regular',fontSize: 13),),
                                     ),
                                   ],
                                 ),
@@ -316,9 +314,9 @@ class _Feeds1State extends State<Feeds1> {
                                               context: context,
                                               builder: (ctx) => AlertDialog(
                                                 title: Text("Delete Post?",
-                                                  style: TextStyle(fontSize: 14,fontFamily: 'Sk-Modernist',fontWeight: FontWeight.bold),),
+                                                  style: TextStyle(fontSize: 14,fontFamily: 'Sk-Modernist-Bold',),),
                                                 content: Text("This can’t be undone and it will be removed from your profile.",
-                                                  style: TextStyle(fontSize: 14,fontFamily: 'Sk-Modernist'),
+                                                  style: TextStyle(fontSize: 14,fontFamily: 'Sk-Modernist-Regular'),
                                                 ),
                                                 actions: <Widget>[
 
@@ -376,7 +374,7 @@ class _Feeds1State extends State<Feeds1> {
                                             Image.asset('assets/Image/delete_icon.png',scale: 4,),
                                             Padding(
                                               padding: EdgeInsets.only(left: 14.2),
-                                              child: Text("Delete",style: TextStyle(fontSize: 14,fontFamily: 'Sk-Modernist'),),
+                                              child: Text("Delete",style: TextStyle(fontSize: 14,fontFamily: 'Sk-Modernist-Regular'),),
                                             ),
                                           ],
                                         ),
@@ -389,7 +387,7 @@ class _Feeds1State extends State<Feeds1> {
                                             Image.asset('assets/Image/edit_icon.png',width: 15.61,height: 15.34,color: Colors.black,),
                                             Padding(
                                               padding: EdgeInsets.only(left: 10.99),
-                                              child: Text("Edit",style: TextStyle(fontSize: 14,fontFamily: 'Sk-Modernist'),),
+                                              child: Text("Edit",style: TextStyle(fontSize: 14,fontFamily: 'Sk-Modernist-Regular'),),
                                             ),
                                           ],
                                         ),
@@ -409,7 +407,7 @@ class _Feeds1State extends State<Feeds1> {
                                             Image.asset('assets/Image/link_icon.png',width: 18.09,height: 18.09,),
                                             Padding(
                                               padding: EdgeInsets.only(left: 10.99),
-                                              child: Text("Copy Link",style: TextStyle(fontSize: 14,fontFamily: 'Sk-Modernist'),),
+                                              child: Text("Copy Link",style: TextStyle(fontSize: 14,fontFamily: 'Sk-Modernist-Regular'),),
                                             ),
                                           ],
                                         ),
@@ -428,7 +426,7 @@ class _Feeds1State extends State<Feeds1> {
                           Padding(
                             padding: EdgeInsets.only(top: 8,left: 25,right: 25),
                             child: Text('Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum... see more',
-                              style: TextStyle(fontSize: 14,fontFamily: 'Sk-Modernist',),),
+                              style: TextStyle(fontSize: 14,fontFamily: 'Sk-Modernist-Regular',),),
                           ),
 
                           Padding(
@@ -462,7 +460,7 @@ class _Feeds1State extends State<Feeds1> {
                                 ),
                                 Text('250',style: TextStyle(fontSize: 14,fontFamily: 'Sk-Modernist',fontWeight: FontWeight.bold),),
                                 Padding(
-                                  padding: EdgeInsets.only(left: 70,right: 5),
+                                  padding: EdgeInsets.only(left: 110,right: 5),
                                   child: InkWell(
                                       onTap: (){
 
@@ -641,11 +639,9 @@ class _Feeds1State extends State<Feeds1> {
                                     Navigator.push(context, MaterialPageRoute(builder: (context) => Like()));
                                   },
 
-                                  child: Container(
-                                    child: Padding(
-                                      padding: EdgeInsets.only(left: 8),
-                                      child: Text('1,525',style: TextStyle(fontSize: 14,fontFamily: 'Sk-Modernist',fontWeight: FontWeight.bold),),
-                                    ),
+                                  child: Padding(
+                                    padding: EdgeInsets.only(left: 8),
+                                    child: Text('1,525',style: TextStyle(fontSize: 14,fontFamily: 'Sk-Modernist',fontWeight: FontWeight.bold),),
                                   ),
                                 ),
                                 Padding(

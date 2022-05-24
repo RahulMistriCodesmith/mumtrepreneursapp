@@ -45,71 +45,74 @@ class _DashboardState extends State<Dashboard> {
   }
 
 
-
   @override
   Widget build(BuildContext context) {
     return DefaultTabController(
       length: 10,
       child: Scaffold(
+        backgroundColor: Color(0xffE5E5E5),
         body: Row(
           children: [
 
-            SideNavigationBar(
+            Padding(
+              padding: const EdgeInsets.only(bottom: 250),
+              child: SideNavigationBar(
 
-              selectedIndex: selectedIndex,
-              items: const <SideNavigationBarItem> [
-                SideNavigationBarItem(
-                  icon: Icons.settings,
-                  label: 'Setting',
-                ),
-                SideNavigationBarItem(
-                  icon: Icons.message,
-                  label: 'Support',
-                ),
-                SideNavigationBarItem(
-                  icon: Icons.analytics,
-                  label: 'Course Analytics',
-                ),
-                SideNavigationBarItem(
-                  icon: Icons.pie_chart_rounded,
-                  label: 'User Stats',
-                ),
-                SideNavigationBarItem(
-                  icon: Icons.calendar_today_outlined,
-                  label: 'Calendar',
-                ),
-                SideNavigationBarItem(
-                  icon: Icons.message_rounded,
-                  label: 'Blog',
-                ),
-                SideNavigationBarItem(
-                  icon: Icons.event,
-                  label: 'Events',
-                ),
-                SideNavigationBarItem(
-                  icon: Icons.file_copy_outlined,
-                  label: 'Resources',
-                ),
-                SideNavigationBarItem(
-                  icon: Icons.person,
-                  label: 'Members',
-                ),
-                SideNavigationBarItem(
-                  icon: Icons.feed,
-                  label: 'Feed',
-                ),
+                selectedIndex: selectedIndex,
+                items: const <SideNavigationBarItem> [
+                  SideNavigationBarItem(
+                    icon: Icons.settings,
+                    label: 'Setting',
+                  ),
+                  SideNavigationBarItem(
+                    icon: Icons.message,
+                    label: 'Support',
+                  ),
+                  SideNavigationBarItem(
+                    icon: Icons.analytics,
+                    label: 'Course Analytics',
+                  ),
+                  SideNavigationBarItem(
+                    icon: Icons.pie_chart_rounded,
+                    label: 'User Stats',
+                  ),
+                  SideNavigationBarItem(
+                    icon: Icons.calendar_today_outlined,
+                    label: 'Calendar',
+                  ),
+                  SideNavigationBarItem(
+                    icon: Icons.message_rounded,
+                    label: 'Blog',
+                  ),
+                  SideNavigationBarItem(
+                    icon: Icons.event,
+                    label: 'Events',
+                  ),
+                  SideNavigationBarItem(
+                    icon: Icons.file_copy_outlined,
+                    label: 'Resources',
+                  ),
+                  SideNavigationBarItem(
+                    icon: Icons.person,
+                    label: 'Members',
+                  ),
+                  SideNavigationBarItem(
+                    icon: Icons.feed,
+                    label: 'Feed',
+                  ),
 
 
-              ],
-              onTap: _onItemTapped,
+                ],
+                onTap: _onItemTapped,
 
-              theme: SideNavigationBarTheme(
-                backgroundColor: Colors.white,
-                togglerTheme: SideNavigationBarTogglerTheme.standard(),
-                itemTheme: SideNavigationBarItemTheme.standard(),
-                dividerTheme: SideNavigationBarDividerTheme.standard(),
+                theme: SideNavigationBarTheme(
+                  backgroundColor: Colors.white,
+                  togglerTheme: SideNavigationBarTogglerTheme.standard(),
+                  itemTheme: SideNavigationBarItemTheme.standard(),
+                  dividerTheme: SideNavigationBarDividerTheme.standard(),
+                ),
+
               ),
-
             ),
 
             Expanded(
