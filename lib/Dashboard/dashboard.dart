@@ -107,7 +107,8 @@ class _DashboardState extends State<Dashboard> {
 
                 theme: SideNavigationBarTheme(
                   backgroundColor: Colors.white,
-                  togglerTheme: SideNavigationBarTogglerTheme.standard(),
+                  togglerTheme: SideNavigationBarTogglerTheme(
+                  ),
                   itemTheme: SideNavigationBarItemTheme.standard(),
                   dividerTheme: SideNavigationBarDividerTheme.standard(),
                 ),

@@ -291,7 +291,7 @@ class _Feeds1State extends State<Feeds1> {
                                 ),
 
                                 Padding(
-                                  padding: EdgeInsets.only(right: 5,left: 55,),
+                                  padding: EdgeInsets.only(right: 5,left: 55),
                                   child: PopupMenuButton(
                                     color: Colors.white,
                                     elevation: 20,
