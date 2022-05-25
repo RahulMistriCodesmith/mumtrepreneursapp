@@ -62,7 +62,7 @@ class _Forgot_passwordState extends State<Forgot_password> {
                       ),
                     ],
                     color: Color(0xffFFFFFF),
-                    borderRadius: BorderRadius.circular(5),
+                    borderRadius: BorderRadius.circular(15),
 
                   ),
                   child: TextFormField(
@@ -93,12 +93,13 @@ class _Forgot_passwordState extends State<Forgot_password> {
                   child: RaisedButton(
 
                     color: Color(0xff12496D),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(15),
+                    ),
 
                     child: Text('SEND OTP',
                       style: TextStyle(color: Color(0xffFFFFFF),fontSize: 15,fontWeight: FontWeight.bold,fontFamily: 'Sk-Modernist'),),
                     onPressed: (){
-
-
 
                       if (email.text == "abc@gmail.com") {
                         Navigator.push(context, MaterialPageRoute(builder: (context) =>  Forgot_password1()));

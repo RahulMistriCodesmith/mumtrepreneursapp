@@ -64,7 +64,7 @@ class _Login_PageState extends State<Login_Page> {
                       ),
                     ],
                     color: Color(0xffFFFFFF),
-                    borderRadius: BorderRadius.circular(5),
+                    borderRadius: BorderRadius.circular(15),
                   ),
                   child: TextFormField(
 
@@ -108,7 +108,7 @@ class _Login_PageState extends State<Login_Page> {
                       ),
                     ],
                     color: Color(0xffFFFFFF),
-                    borderRadius: BorderRadius.circular(5),
+                    borderRadius: BorderRadius.circular(15),
                   ),
                   child: TextFormField(
                     controller: password,

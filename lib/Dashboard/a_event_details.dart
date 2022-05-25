@@ -121,6 +121,9 @@ class _A_EventDetailsState extends State<A_EventDetails> {
                                       child: RaisedButton(
 
                                         color: Colors.grey,
+                                        shape: RoundedRectangleBorder(
+                                          borderRadius: BorderRadius.circular(15),
+                                        ),
 
                                         child: Padding(
                                           padding: const EdgeInsets.only(left: 5),
@@ -209,6 +212,9 @@ class _A_EventDetailsState extends State<A_EventDetails> {
                             child: RaisedButton(
 
                               color: Color(0xff12496D),
+                              shape: RoundedRectangleBorder(
+                                borderRadius: BorderRadius.circular(15),
+                              ),
 
                               child: Text('ABOUT DIANA',
                                 style: TextStyle(color: Color(0xffFFFFFF),fontSize: 15,fontWeight: FontWeight.bold,fontFamily: 'Sk-Modernist'),),
@@ -228,7 +234,7 @@ class _A_EventDetailsState extends State<A_EventDetails> {
                             height: 55,
                             decoration: BoxDecoration(
                               border: Border.all(color: Color(0xff12496D)),
-                              borderRadius: BorderRadius.circular(5),
+                              borderRadius: BorderRadius.circular(15),
                             ),
                             child: Image.asset('assets/Image/Calendar.png',scale: 6,color: Color(0xff12496D),),
                           ),
@@ -251,7 +257,7 @@ class _A_EventDetailsState extends State<A_EventDetails> {
                   child: RaisedButton(
                       color: Color(0xff12496D),
                       shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(5),
+                        borderRadius: BorderRadius.circular(15),
                       ),
                       child: Padding(
                         padding: const EdgeInsets.only(left: 115),

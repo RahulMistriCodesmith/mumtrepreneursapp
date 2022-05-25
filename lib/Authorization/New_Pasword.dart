@@ -64,7 +64,7 @@ class _New_PasswordState extends State<New_Password> {
                       ),
                     ],
                     color: Color(0xffFFFFFF),
-                    borderRadius: BorderRadius.circular(5),
+                    borderRadius: BorderRadius.circular(15),
                   ),
                   child: TextFormField(
                     obscureText: _isObscure,
@@ -97,13 +97,16 @@ class _New_PasswordState extends State<New_Password> {
               ),
 
               Padding(
-                padding: EdgeInsets.only(left: 40,top: 280,right: 13,bottom: 23),
+                padding: EdgeInsets.only(left: 40,top: 280,right: 10,bottom: 23),
                 child: Container(
                   width: 325,
                   height: 55,
                   child: RaisedButton(
 
                     color: Color(0xff12496D),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(15),
+                    ),
 
                     child: Text('UPDATE PASSWORD',
                       style: TextStyle(color: Color(0xffFFFFFF),fontSize: 15,fontWeight: FontWeight.bold,fontFamily: 'Sk-Modernist'),),

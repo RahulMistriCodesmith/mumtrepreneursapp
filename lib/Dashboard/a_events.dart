@@ -114,7 +114,7 @@ class _A_EventsState extends State<A_Events> {
                     ),
                   ],
                   color: Colors.white,
-                  borderRadius: BorderRadius.circular(5),
+                  borderRadius: BorderRadius.circular(15),
                 ),
                 child: TextFormField(
                   decoration: InputDecoration(
@@ -150,7 +150,7 @@ class _A_EventsState extends State<A_Events> {
                     ),
                   ],
                   color: Colors.white,
-                  borderRadius: BorderRadius.circular(10),
+                  borderRadius: BorderRadius.circular(15),
                 ),
                 child: Column(
 
@@ -217,6 +217,9 @@ class _A_EventsState extends State<A_Events> {
                               child: RaisedButton(
 
                                 color: Color(0xff12496D),
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(15),
+                                ),
 
                                 child: Text('ABOUT DIANA',
                                   style: TextStyle(color: Color(0xffFFFFFF),fontSize: 15,fontWeight: FontWeight.bold,fontFamily: 'Sk-Modernist'),),
@@ -236,7 +239,7 @@ class _A_EventsState extends State<A_Events> {
                               height: 45,
                               decoration: BoxDecoration(
                                 border: Border.all(color: Color(0xff12496D)),
-                                borderRadius: BorderRadius.circular(5),
+                                borderRadius: BorderRadius.circular(15),
                               ),
                               child: Image.asset('assets/Image/Calendar.png',scale: 6,color: Color(0xff12496D),),
                             ),
@@ -270,7 +273,7 @@ class _A_EventsState extends State<A_Events> {
                     ),
                   ],
                   color: Colors.white,
-                  borderRadius: BorderRadius.circular(10),
+                  borderRadius: BorderRadius.circular(15),
                 ),
                 child: Column(
                   children: [
@@ -335,6 +338,9 @@ class _A_EventsState extends State<A_Events> {
                               child: RaisedButton(
 
                                 color: Color(0xff12496D),
+                                shape: RoundedRectangleBorder(
+                                  borderRadius: BorderRadius.circular(15),
+                                ),
 
                                 child: Text('ABOUT DIANA',
                                   style: TextStyle(color: Color(0xffFFFFFF),fontSize: 15,fontWeight: FontWeight.bold,fontFamily: 'Sk-Modernist'),),
@@ -354,7 +360,7 @@ class _A_EventsState extends State<A_Events> {
                               height: 45,
                               decoration: BoxDecoration(
                                 border: Border.all(color: Color(0xff12496D)),
-                                borderRadius: BorderRadius.circular(5),
+                                borderRadius: BorderRadius.circular(15),
                               ),
                               child: Image.asset('assets/Image/Calendar.png',scale: 6,color: Color(0xff12496D),),
                             ),
@@ -378,7 +384,7 @@ class _A_EventsState extends State<A_Events> {
 
                     color: Color(0xff12496D),
                     shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(5),
+                      borderRadius: BorderRadius.circular(15),
                     ),
                     child: Row(
                       children: [

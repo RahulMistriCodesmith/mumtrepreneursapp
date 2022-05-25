@@ -84,10 +84,13 @@ class _Signup_2State extends State<Signup_2> {
                     width: 139,
                     height: 40,
                     decoration: BoxDecoration(
-                      borderRadius: BorderRadius.circular(5),
+                      borderRadius: BorderRadius.circular(15),
                     ),
                     child: RaisedButton(
                       color: Colors.white,
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(15),
+                      ),
                       child: Text('Upload Photo',
                         style: TextStyle(fontSize: 15,fontFamily: 'Sk-Modernist'),),
                       onPressed: (){
@@ -123,7 +126,7 @@ class _Signup_2State extends State<Signup_2> {
                       ),
                     ],
                     color: Colors.white,
-                    borderRadius: BorderRadius.circular(5),
+                    borderRadius: BorderRadius.circular(15),
                     
                   ),
                   child: TextFormField(
@@ -167,7 +170,7 @@ class _Signup_2State extends State<Signup_2> {
                       ),
                     ],
                     color: Colors.white,
-                    borderRadius: BorderRadius.circular(5),
+                    borderRadius: BorderRadius.circular(15),
                   ),
                   child: TextFormField(
 
@@ -209,7 +212,7 @@ class _Signup_2State extends State<Signup_2> {
                       ),
                     ],
                     color: Colors.white,
-                    borderRadius: BorderRadius.circular(5),
+                    borderRadius: BorderRadius.circular(15),
                   ),
                   child: TextFormField(
 
@@ -251,7 +254,7 @@ class _Signup_2State extends State<Signup_2> {
                       ),
                     ],
                     color: Colors.white,
-                    borderRadius: BorderRadius.circular(5),
+                    borderRadius: BorderRadius.circular(15),
                   ),
                   child: DropdownButtonFormField(
                     decoration: InputDecoration(
@@ -303,7 +306,7 @@ class _Signup_2State extends State<Signup_2> {
                       ),
                     ],
                     color: Colors.white,
-                    borderRadius: BorderRadius.circular(5),
+                    borderRadius: BorderRadius.circular(15),
                   ),
                   child: TextFormField(
 
@@ -348,7 +351,7 @@ class _Signup_2State extends State<Signup_2> {
                       ),
                     ],
                     color: Colors.white,
-                    borderRadius: BorderRadius.circular(5),
+                    borderRadius: BorderRadius.circular(15),
                   ),
                   child: TextFormField(
 
@@ -390,7 +393,7 @@ class _Signup_2State extends State<Signup_2> {
                       ),
                     ],
                     color: Colors.white,
-                    borderRadius: BorderRadius.circular(5),
+                    borderRadius: BorderRadius.circular(15),
                   ),
                   child: TextFormField(
 
@@ -417,6 +420,7 @@ class _Signup_2State extends State<Signup_2> {
 
                   decoration: BoxDecoration(
                     color: Colors.white,
+                    borderRadius: BorderRadius.circular(15),
                     boxShadow: [
                       BoxShadow(
                         color: Colors.grey,
@@ -465,7 +469,7 @@ class _Signup_2State extends State<Signup_2> {
                         ),
                       ],
                       color: Colors.white,
-                      borderRadius: BorderRadius.circular(5),
+                      borderRadius: BorderRadius.circular(15),
                     ),
                     child: TextButton(
                       child: Padding(
@@ -508,7 +512,7 @@ class _Signup_2State extends State<Signup_2> {
                     ],
                     color: Colors.white,
 
-                    borderRadius: BorderRadius.circular(5),
+                    borderRadius: BorderRadius.circular(15),
                   ),
                   child: DropdownButtonFormField(
                     decoration: InputDecoration(
@@ -559,7 +563,7 @@ class _Signup_2State extends State<Signup_2> {
                       ),
                     ],
                     color: Colors.white,
-                    borderRadius: BorderRadius.circular(5),
+                    borderRadius: BorderRadius.circular(15),
                   ),
                   child: DropdownButtonFormField(
                     decoration: InputDecoration(
@@ -610,7 +614,7 @@ class _Signup_2State extends State<Signup_2> {
                       ),
                     ],
                     color: Colors.white,
-                    borderRadius: BorderRadius.circular(5),
+                    borderRadius: BorderRadius.circular(15),
                   ),
                   child: TextFormField(
 
@@ -669,6 +673,9 @@ class _Signup_2State extends State<Signup_2> {
                     child: RaisedButton(
 
                       color: Color(0xff12496D),
+                      shape: RoundedRectangleBorder(
+                        borderRadius: BorderRadius.circular(15),
+                      ),
 
                       child: Text('SIGN UP',
                         style: TextStyle(color: Color(0xffFFFFFF),fontSize: 15,fontWeight: FontWeight.bold,fontFamily: 'Sk-Modernist'),),

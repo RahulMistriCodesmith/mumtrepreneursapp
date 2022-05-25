@@ -62,7 +62,7 @@ class _Sign_PageState extends State<Sign_Page> {
                       ),
                     ],
                     color: Color(0xffFFFFFF),
-                    borderRadius: BorderRadius.circular(5),
+                    borderRadius: BorderRadius.circular(15),
                   ),
                   child: TextFormField(
 
@@ -104,7 +104,7 @@ class _Sign_PageState extends State<Sign_Page> {
                       ),
                     ],
                     color: Color(0xffFFFFFF),
-                    borderRadius: BorderRadius.circular(5),
+                    borderRadius: BorderRadius.circular(15),
                   ),
                   child: TextFormField(
                     obscureText: _isObscure,
@@ -146,6 +146,9 @@ class _Sign_PageState extends State<Sign_Page> {
                   child: RaisedButton(
 
                     color: Color(0xff12496D),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(15),
+                    ),
 
                     child: Text('NEXT',
                       style: TextStyle(color: Color(0xffFFFFFF),fontSize: 15,fontWeight: FontWeight.bold,fontFamily: 'Sk-Modernist'),),

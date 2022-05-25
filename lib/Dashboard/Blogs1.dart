@@ -289,7 +289,7 @@ class _Blogs1State extends State<Blogs1> {
                 child: RaisedButton(
                     color: Color(0xff12496D),
                     shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(5),
+                      borderRadius: BorderRadius.circular(15),
                     ),
                     child: Padding(
                       padding: const EdgeInsets.only(left: 85,top: 16,bottom: 18.83),

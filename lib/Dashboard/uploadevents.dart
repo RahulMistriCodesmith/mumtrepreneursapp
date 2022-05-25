@@ -214,7 +214,7 @@ class _UploadEventsState extends State<UploadEvents> {
                   padding: EdgeInsets.only(top: 18.17,bottom: 18.83,left: 160,right: 160),
                   color: Color(0xff12496D),
                   shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(5),
+                    borderRadius: BorderRadius.circular(15),
                   ),
                   child: Text('Submit',style: TextStyle(color: Colors.white,fontSize: 15,fontFamily: 'Sk-Modernist',fontWeight: FontWeight.w700),),
 

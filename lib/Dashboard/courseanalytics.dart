@@ -16,19 +16,19 @@ class _CourseAnalyticsState extends State<CourseAnalytics> {
   String dropdownValue = 'Today';
 
   final List<ChartData> chartData = [
-    ChartData('Sun', 6),
-    ChartData('Mon', 8),
-    ChartData('Tue', 5),
-    ChartData('Wed', 7),
-    ChartData('Thu', 3),
-    ChartData('Fri', 5),
+    ChartData('Sun', 4),
+    ChartData('Mon', 6),
+    ChartData('Tue', 8),
+    ChartData('Wed', 4),
+    ChartData('Thu', 6),
+    ChartData('Fri', 4),
     ChartData('Sat', 8),
   ];
 
   final List<ChartData1> chartData1 = [
-    ChartData1('Sun', 4),
-    ChartData1('Mon', 9),
-    ChartData1('Tue', 4),
+    ChartData1('Sun', 6),
+    ChartData1('Mon', 6),
+    ChartData1('Tue', 3),
     ChartData1('Wed', 6),
     ChartData1('Thu', 2),
     ChartData1('Fri', 7),
@@ -138,14 +138,15 @@ class _CourseAnalyticsState extends State<CourseAnalytics> {
                                   child: SfCartesianChart(
 
                                       primaryXAxis: CategoryAxis(
-                                        // X axis is hidden now
+
                                           isVisible: true
                                       ),
 
-                          primaryYAxis: CategoryAxis(
-                              minimum: 0, maximum: 15, interval: 2,
-                              isVisible: false
-                          ),
+                                      primaryYAxis: CategoryAxis(
+                                          minimum: 0, maximum: 15, interval: 2,
+                                          isVisible: false
+                                      ),
+
                                       series: <ChartSeries>[
                                         SplineSeries<ChartData, String>(
 

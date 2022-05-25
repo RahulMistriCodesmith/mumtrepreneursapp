@@ -69,7 +69,7 @@ class _UserStatsState extends State<UserStats> {
                       icon: ImageIcon(AssetImage('assets/Image/filter_icon.png'),),
                       iconSize: 15,
                       shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(10),
+                        borderRadius: BorderRadius.circular(15),
                       ),
                       onSelected: (value) {
                         setState(() {
@@ -199,7 +199,7 @@ class _UserStatsState extends State<UserStats> {
 
                 decoration: BoxDecoration(
                   color: Colors.white,
-                  borderRadius: BorderRadius.circular(10),
+                  borderRadius: BorderRadius.circular(15),
                 ),
 
                 child: Padding(
@@ -243,7 +243,7 @@ class _UserStatsState extends State<UserStats> {
 
                 decoration: BoxDecoration(
                   color: Colors.white,
-                  borderRadius: BorderRadius.circular(10),
+                  borderRadius: BorderRadius.circular(15),
                 ),
 
                 child: Padding(
@@ -282,7 +282,7 @@ class _UserStatsState extends State<UserStats> {
 
                 decoration: BoxDecoration(
                   color: Colors.white,
-                  borderRadius: BorderRadius.circular(10),
+                  borderRadius: BorderRadius.circular(15),
                 ),
 
                 child: Padding(
@@ -330,7 +330,7 @@ class _UserStatsState extends State<UserStats> {
 
                 decoration: BoxDecoration(
                   color: Colors.white,
-                  borderRadius: BorderRadius.circular(10),
+                  borderRadius: BorderRadius.circular(15),
                 ),
 
                 child: Padding(
@@ -366,7 +366,7 @@ class _UserStatsState extends State<UserStats> {
 
                 decoration: BoxDecoration(
                   color: Colors.white,
-                  borderRadius: BorderRadius.circular(10),
+                  borderRadius: BorderRadius.circular(15),
                 ),
 
                 child: Padding(
@@ -405,7 +405,7 @@ class _UserStatsState extends State<UserStats> {
 
                 decoration: BoxDecoration(
                   color: Colors.white,
-                  borderRadius: BorderRadius.circular(10),
+                  borderRadius: BorderRadius.circular(15),
                 ),
 
                 child: Padding(
@@ -441,7 +441,7 @@ class _UserStatsState extends State<UserStats> {
 
                 decoration: BoxDecoration(
                   color: Colors.white,
-                  borderRadius: BorderRadius.circular(10),
+                  borderRadius: BorderRadius.circular(15),
                 ),
 
                 child: Padding(
@@ -480,7 +480,7 @@ class _UserStatsState extends State<UserStats> {
 
                 decoration: BoxDecoration(
                   color: Colors.white,
-                  borderRadius: BorderRadius.circular(10),
+                  borderRadius: BorderRadius.circular(15),
                 ),
 
                 child: Padding(

@@ -130,13 +130,16 @@ class _Forgot_password1State extends State<Forgot_password1> {
 
 
               Padding(
-                padding: EdgeInsets.only(left: 10,top: 170,right: 13,),
+                padding: EdgeInsets.only(left: 10,top: 170,right: 10,),
                 child: Container(
                   width: 325,
                   height: 55,
                   child: RaisedButton(
 
                     color: Color(0xff12496D),
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(15),
+                    ),
 
                     child: Text('RECOVER PASSWORD',
                       style: TextStyle(color: Color(0xffFFFFFF),fontSize: 15,fontWeight: FontWeight.bold,fontFamily: 'Sk-Modernist'),),

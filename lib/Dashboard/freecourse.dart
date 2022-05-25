@@ -17,22 +17,22 @@ class _FreeCourseState extends State<FreeCourse> {
   String dropdownValue = 'Today';
 
   final List<ChartData> chartData = [
-    ChartData('Sun', 2),
-    ChartData('Mon', 8),
-    ChartData('Tue', 1),
-    ChartData('Wed', 7),
-    ChartData('Thu', 3),
-    ChartData('Fri', 5),
-    ChartData('Sat', 4),
+    ChartData('Sun', 4),
+    ChartData('Mon', 6),
+    ChartData('Tue', 8),
+    ChartData('Wed', 4),
+    ChartData('Thu', 6),
+    ChartData('Fri', 4),
+    ChartData('Sat', 8),
   ];
 
   final List<ChartData1> chartData1 = [
-    ChartData1('Sun', 0),
-    ChartData1('Mon', 10),
+    ChartData1('Sun', 6),
+    ChartData1('Mon', 6),
     ChartData1('Tue', 3),
     ChartData1('Wed', 6),
     ChartData1('Thu', 2),
-    ChartData1('Fri', 9),
+    ChartData1('Fri', 7),
     ChartData1('Sat', 3),
   ];
 
