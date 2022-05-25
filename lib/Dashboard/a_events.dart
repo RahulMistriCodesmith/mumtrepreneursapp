@@ -150,7 +150,7 @@ class _A_EventsState extends State<A_Events> {
                     ),
                   ],
                   color: Colors.white,
-                  borderRadius: BorderRadius.circular(5),
+                  borderRadius: BorderRadius.circular(10),
                 ),
                 child: Column(
 
@@ -270,7 +270,7 @@ class _A_EventsState extends State<A_Events> {
                     ),
                   ],
                   color: Colors.white,
-                  borderRadius: BorderRadius.circular(5),
+                  borderRadius: BorderRadius.circular(10),
                 ),
                 child: Column(
                   children: [

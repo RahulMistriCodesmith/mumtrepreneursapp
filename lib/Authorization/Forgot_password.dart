@@ -100,7 +100,7 @@ class _Forgot_passwordState extends State<Forgot_password> {
 
 
 
-                      if (_formKey.currentState.validate()) {
+                      if (email.text == "abc@gmail.com") {
                         Navigator.push(context, MaterialPageRoute(builder: (context) =>  Forgot_password1()));
                       }
 

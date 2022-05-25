@@ -58,7 +58,7 @@ class _ResourcesState extends State<Resources> {
                         ),
                       ],
                       color: Colors.white,
-                      borderRadius: BorderRadius.circular(5),
+                      borderRadius: BorderRadius.circular(15),
                     ),
                     child: TextFormField(
                       decoration: InputDecoration(
@@ -78,7 +78,7 @@ class _ResourcesState extends State<Resources> {
                     height: 47,
                     decoration: BoxDecoration(
                       color: Colors.white,
-                      borderRadius: BorderRadius.circular(5),
+                      borderRadius: BorderRadius.circular(15),
                     ),
                     child: TabBar(
                       labelColor: Colors.white,
@@ -87,10 +87,10 @@ class _ResourcesState extends State<Resources> {
                       indicator: BoxDecoration(
                         color: Color(0xff12496D),
                         borderRadius: BorderRadius.only(
-                          topLeft: Radius.circular(5),
-                          bottomLeft: Radius.circular(5),
-                          topRight: Radius.circular(5),
-                          bottomRight: Radius.circular(5),
+                          topLeft: Radius.circular(15),
+                          bottomLeft: Radius.circular(15),
+                          topRight: Radius.circular(15),
+                          bottomRight: Radius.circular(15),
                         ),
                       ),
                       tabs: <Widget> [
@@ -131,7 +131,7 @@ class _ResourcesState extends State<Resources> {
                                   ),
                                 ],
                                 color: Colors.white,
-                                borderRadius: BorderRadius.circular(5),
+                                borderRadius: BorderRadius.circular(15),
                               ),
                               child: Padding(
                                 padding: const EdgeInsets.only(top: 15),
@@ -195,7 +195,7 @@ class _ResourcesState extends State<Resources> {
                                   ),
                                 ],
                                 color: Colors.white,
-                                borderRadius: BorderRadius.circular(5),
+                                borderRadius: BorderRadius.circular(15),
                               ),
                               child: Padding(
                                 padding: const EdgeInsets.only(top: 15),
@@ -262,7 +262,7 @@ class _ResourcesState extends State<Resources> {
                                   ),
                                 ],
                                 color: Colors.white,
-                                borderRadius: BorderRadius.circular(5),
+                                borderRadius: BorderRadius.circular(15),
                               ),
                               child: Padding(
                                 padding: const EdgeInsets.only(top: 15),
@@ -322,7 +322,7 @@ class _ResourcesState extends State<Resources> {
                                     ),
                                   ],
                                   color: Colors.white,
-                                  borderRadius: BorderRadius.circular(5),
+                                  borderRadius: BorderRadius.circular(15),
                                 ),
                                 child: Padding(
                                   padding: const EdgeInsets.only(top: 15),

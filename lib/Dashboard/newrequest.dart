@@ -39,7 +39,7 @@ class _NewRequestState extends State<NewRequest> {
                 child: Container(
                   decoration: BoxDecoration(
                     color: Colors.white,
-                    borderRadius: BorderRadius.circular(5),
+                    borderRadius: BorderRadius.circular(15),
                   ),
                   child: Column(
                     children: [
@@ -81,7 +81,7 @@ class _NewRequestState extends State<NewRequest> {
               child: Container(
                 decoration: BoxDecoration(
                   color: Colors.white,
-                  borderRadius: BorderRadius.circular(5),
+                  borderRadius: BorderRadius.circular(15),
                 ),
                 child: Column(
                   children: [
@@ -122,7 +122,7 @@ class _NewRequestState extends State<NewRequest> {
               child: Container(
                 decoration: BoxDecoration(
                   color: Colors.white,
-                  borderRadius: BorderRadius.circular(5),
+                  borderRadius: BorderRadius.circular(15),
                 ),
                 child: Column(
                   children: [
@@ -160,7 +160,7 @@ class _NewRequestState extends State<NewRequest> {
               child: Container(
                 decoration: BoxDecoration(
                   color: Colors.white,
-                  borderRadius: BorderRadius.circular(5),
+                  borderRadius: BorderRadius.circular(15),
                 ),
                 child: Column(
                   children: [

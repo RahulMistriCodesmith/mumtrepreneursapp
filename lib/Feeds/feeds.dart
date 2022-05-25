@@ -128,7 +128,13 @@ class _FeedsState extends State<Feeds> {
                     Container(
                       width: 409,
                       height: 510,
-                      color: Colors.white,
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                        borderRadius: BorderRadius.only(
+                          bottomLeft: Radius.circular(15),
+                          bottomRight: Radius.circular(15),
+                        ),
+                      ),
                       child: Column(
                         children: [
 
@@ -303,11 +309,15 @@ class _FeedsState extends State<Feeds> {
                     ),
 
                     Padding(
-                      padding: EdgeInsets.only(top: 10),
+                      padding: EdgeInsets.only(top: 10,bottom: 15),
                       child: Container(
                         width: 409,
                         height: 360,
-                        color: Colors.white,
+
+                        decoration: BoxDecoration(
+                          color: Colors.white,
+                          borderRadius: BorderRadius.circular(15),
+                        ),
                         child: Column(
                           children: [
 
@@ -549,7 +559,13 @@ class _FeedsState extends State<Feeds> {
                     Container(
                       width: 409,
                       height: 510,
-                      color: Colors.white,
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                        borderRadius: BorderRadius.only(
+                          bottomRight: Radius.circular(15),
+                          bottomLeft: Radius.circular(15),
+                        ),
+                      ),
                       child: Column(
                         children: [
 
@@ -581,7 +597,7 @@ class _FeedsState extends State<Feeds> {
                                     elevation: 20,
                                     enabled: true,
                                     shape: RoundedRectangleBorder(
-                                      borderRadius: BorderRadius.circular(10),
+                                      borderRadius: BorderRadius.circular(20),
                                     ),
                                     onSelected: (value) {
                                       setState(() {
@@ -702,11 +718,14 @@ class _FeedsState extends State<Feeds> {
                     ),
 
                     Padding(
-                      padding: EdgeInsets.only(top: 10),
+                      padding: EdgeInsets.only(top: 20,bottom: 20),
                       child: Container(
                         width: 409,
                         height: 512,
-                        color: Colors.white,
+                        decoration: BoxDecoration(
+                          color: Colors.white,
+                          borderRadius: BorderRadius.circular(15),
+                        ),
                         child: Column(
                           children: [
 

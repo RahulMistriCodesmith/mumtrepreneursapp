@@ -120,7 +120,7 @@ class _A_ChatState extends State<A_Chat> {
                 height: 55,
                 decoration: BoxDecoration(
 
-                    borderRadius: BorderRadius.circular(5),
+                    borderRadius: BorderRadius.circular(15),
 
                     border: Border.all(color: Colors.grey)
 
@@ -166,7 +166,7 @@ class _A_ChatState extends State<A_Chat> {
 
                   color: Color(0xff12496D),
 
-                  borderRadius: BorderRadius.circular(5),
+                  borderRadius: BorderRadius.circular(15),
 
                 ),
 

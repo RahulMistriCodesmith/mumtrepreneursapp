@@ -88,7 +88,13 @@ class _MY_GroupsState extends State<MY_Groups> {
             Container(
               width: 409,
               height: 514,
-              color: Colors.white,
+              decoration: BoxDecoration(
+                color: Colors.white,
+                borderRadius: BorderRadius.only(
+                  bottomLeft: Radius.circular(15),
+                  bottomRight: Radius.circular(15),
+                ),
+              ),
               child: Column(
                 children: [
 
@@ -242,7 +248,10 @@ class _MY_GroupsState extends State<MY_Groups> {
               child: Container(
                 width: 409,
                 height: 360,
-                color: Colors.white,
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.circular(15),
+                ),
                 child: Column(
                   children: [
 
@@ -396,7 +405,10 @@ class _MY_GroupsState extends State<MY_Groups> {
               child: Container(
                 width: 409,
                 height: 512,
-                color: Colors.white,
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                  borderRadius: BorderRadius.circular(15),
+                ),
                 child: Column(
                   children: [
 

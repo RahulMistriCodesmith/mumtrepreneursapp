@@ -140,7 +140,13 @@ class _AdminProfileState extends State<AdminProfile> {
                 child: Container(
                   width: 409,
                   height: 50,
-                  color: Colors.white,
+                  
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.only(
+                        topRight: Radius.circular(15),
+                        topLeft: Radius.circular(15)),
+                  ),
                   child: TabBar(
 
                     labelColor: Color(0xff12496D),
@@ -177,13 +183,20 @@ class _AdminProfileState extends State<AdminProfile> {
                   width: 409,
                   height: 1200,
 
+
                   child: TabBarView(
                     children: <Widget>[
                       Column(
                         children: [
                           Container(
 
-                            color: Colors.white,
+                            decoration: BoxDecoration(
+                              color: Colors.white,
+                              borderRadius: BorderRadius.only(
+                                bottomLeft: Radius.circular(15),
+                                bottomRight: Radius.circular(15)
+                              ),
+                            ),
                             child: Column(
                               children: [
 
@@ -325,7 +338,10 @@ class _AdminProfileState extends State<AdminProfile> {
                             padding: const EdgeInsets.only(top: 10),
                             child: Container(
 
-                              color: Colors.white,
+                              decoration: BoxDecoration(
+                                color: Colors.white,
+                                borderRadius: BorderRadius.circular(15),
+                              ),
                               child: Column(
                                 children: [
 
@@ -607,7 +623,13 @@ class _AdminProfileState extends State<AdminProfile> {
                           ),
 
                           Container(
-                            color: Colors.white,
+                            decoration: BoxDecoration(
+                              color: Colors.white,
+                              borderRadius: BorderRadius.only(
+                                bottomLeft: Radius.circular(15),
+                                bottomRight: Radius.circular(15),
+                              ),
+                            ),
                             child: Padding(
                               padding: const EdgeInsets.only(left: 16.08,top: 15,bottom: 14),
                               child: Row(

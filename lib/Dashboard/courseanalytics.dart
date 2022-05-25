@@ -12,26 +12,32 @@ class CourseAnalytics extends StatefulWidget {
 }
 
 class _CourseAnalyticsState extends State<CourseAnalytics> {
+
   String dropdownValue = 'Today';
 
   final List<ChartData> chartData = [
-    ChartData(2010, 35),
-    ChartData(2011, 13),
-    ChartData(2012, 34),
-    ChartData(2013, 27),
-    ChartData(2014, 40)
+    ChartData('Sun', 6),
+    ChartData('Mon', 8),
+    ChartData('Tue', 5),
+    ChartData('Wed', 7),
+    ChartData('Thu', 3),
+    ChartData('Fri', 5),
+    ChartData('Sat', 8),
   ];
 
   final List<ChartData1> chartData1 = [
-    ChartData1(2010, 40),
-    ChartData1(2011, 20),
-    ChartData1(2012, 10),
-    ChartData1(2013, 40),
-    ChartData1(2014, 30)
+    ChartData1('Sun', 4),
+    ChartData1('Mon', 9),
+    ChartData1('Tue', 4),
+    ChartData1('Wed', 6),
+    ChartData1('Thu', 2),
+    ChartData1('Fri', 7),
+    ChartData1('Sat', 3),
   ];
 
   @override
   Widget build(BuildContext context) {
+
     return Scaffold(
       backgroundColor: Color(0xffE5E5E5),
       appBar: AppBar(
@@ -65,7 +71,7 @@ class _CourseAnalyticsState extends State<CourseAnalytics> {
                     ),
                   ],
                   color: Colors.white,
-                  borderRadius: BorderRadius.circular(5),
+                  borderRadius: BorderRadius.circular(15),
                 ),
                 child: Column(
                   children: [
@@ -130,13 +136,24 @@ class _CourseAnalyticsState extends State<CourseAnalytics> {
                             children: [
                               Container(
                                   child: SfCartesianChart(
+
+                                      primaryXAxis: CategoryAxis(
+                                        // X axis is hidden now
+                                          isVisible: true
+                                      ),
+
+                          primaryYAxis: CategoryAxis(
+                              minimum: 0, maximum: 15, interval: 2,
+                              isVisible: false
+                          ),
                                       series: <ChartSeries>[
-                                        SplineSeries<ChartData, int>(
+                                        SplineSeries<ChartData, String>(
+
                                             dataSource: chartData,
                                             // Type of spline
                                             splineType: SplineType.cardinal,
                                             color: Color(0xffE7957E),
-                                            cardinalSplineTension: 0.9,
+                                            cardinalSplineTension: 10,
                                             xValueMapper: (ChartData data, _) => data.x,
                                             yValueMapper: (ChartData data, _) => data.y
                                         )
@@ -146,8 +163,18 @@ class _CourseAnalyticsState extends State<CourseAnalytics> {
 
                               Container(
                                   child: SfCartesianChart(
+
+                                      primaryXAxis: CategoryAxis(
+                                        // X axis is hidden now
+                                          isVisible: true
+                                      ),
+
+                                      primaryYAxis: CategoryAxis(
+                                          minimum: 0, maximum: 15, interval: 2,
+                                          isVisible: false
+                                      ),
                                       series: <ChartSeries>[
-                                        SplineSeries<ChartData1, int>(
+                                        SplineSeries<ChartData1, String>(
                                             dataSource: chartData1,
                                             // Type of spline
                                             splineType: SplineType.cardinal,
@@ -317,7 +344,7 @@ class _CourseAnalyticsState extends State<CourseAnalytics> {
                     ),
                   ],
                   color: Colors.white,
-                  borderRadius: BorderRadius.circular(5),
+                  borderRadius: BorderRadius.circular(15),
                 ),
                 child: Column(
                   children: [
@@ -383,8 +410,22 @@ class _CourseAnalyticsState extends State<CourseAnalytics> {
                             Container(
 
                                 child: SfCartesianChart(
+
+                                    primaryXAxis: CategoryAxis(
+                                      // X axis is hidden now
+                                        isVisible: true
+                                    ),
+
+                                    primaryYAxis: CategoryAxis(
+                                        minimum: 0, maximum: 15, interval: 2,
+                                        isVisible: false
+                                    ),
+
+
+
                                     series: <ChartSeries>[
-                                      SplineSeries<ChartData, int>(
+
+                                      SplineSeries<ChartData, String>(
                                           dataSource: chartData,
                                           // Type of spline
                                           splineType: SplineType.cardinal,
@@ -400,8 +441,17 @@ class _CourseAnalyticsState extends State<CourseAnalytics> {
                             Container(
 
                                 child: SfCartesianChart(
+                                    primaryXAxis: CategoryAxis(
+                                      // X axis is hidden now
+                                        isVisible: true
+                                    ),
+
+                                    primaryYAxis: CategoryAxis(
+                                        minimum: 0, maximum: 15, interval: 2,
+                                        isVisible: false
+                                    ),
                                     series: <ChartSeries>[
-                                      SplineSeries<ChartData1, int>(
+                                      SplineSeries<ChartData1, String>(
                                           dataSource: chartData1,
                                           // Type of spline
                                           splineType: SplineType.cardinal,
@@ -562,12 +612,12 @@ class _CourseAnalyticsState extends State<CourseAnalytics> {
 
 class ChartData {
   ChartData(this.x, this.y);
-  final int x;
+  final String x;
   final double y;
 }
 
 class ChartData1 {
   ChartData1(this.x1, this.y1);
-  final int x1;
+  final String x1;
   final double y1;
 }

@@ -120,7 +120,7 @@ class _EventsState extends State<Events> {
                       ),
                     ],
                     color: Colors.white,
-                    borderRadius: BorderRadius.circular(5),
+                    borderRadius: BorderRadius.circular(15),
                   ),
                   child: TextFormField(
                     decoration: InputDecoration(
@@ -158,7 +158,7 @@ class _EventsState extends State<Events> {
                       ),
                     ],
                     color: Colors.white,
-                    borderRadius: BorderRadius.circular(5),
+                    borderRadius: BorderRadius.circular(15),
                   ),
                   child: Column(
 
@@ -276,7 +276,7 @@ class _EventsState extends State<Events> {
                       ),
                     ],
                     color: Colors.white,
-                    borderRadius: BorderRadius.circular(5),
+                    borderRadius: BorderRadius.circular(15),
                   ),
                   child: Column(
                     children: [

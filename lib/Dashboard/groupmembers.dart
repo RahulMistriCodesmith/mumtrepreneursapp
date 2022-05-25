@@ -57,7 +57,7 @@ class _GroupMembersState extends State<GroupMembers> {
                     ),
                   ],
                   color: Colors.white,
-                  borderRadius: BorderRadius.circular(5),
+                  borderRadius: BorderRadius.circular(15),
                 ),
                 child: TextFormField(
                   decoration: InputDecoration(
@@ -202,7 +202,7 @@ class _GroupMembersState extends State<GroupMembers> {
 
                 decoration: BoxDecoration(
                   color: Colors.white,
-                  borderRadius: BorderRadius.circular(5),
+                  borderRadius: BorderRadius.circular(15),
                 ),
 
                 child: Padding(
@@ -230,7 +230,7 @@ class _GroupMembersState extends State<GroupMembers> {
                         elevation: 20,
                         enabled: true,
                         shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(10),
+                          borderRadius: BorderRadius.circular(15),
                         ),
                         onSelected: (value) {
                           setState(() {
@@ -267,7 +267,7 @@ class _GroupMembersState extends State<GroupMembers> {
 
                 decoration: BoxDecoration(
                   color: Colors.white,
-                  borderRadius: BorderRadius.circular(5),
+                  borderRadius: BorderRadius.circular(15),
                 ),
 
                 child: Padding(
@@ -298,7 +298,7 @@ class _GroupMembersState extends State<GroupMembers> {
                         elevation: 20,
                         enabled: true,
                         shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(10),
+                          borderRadius: BorderRadius.circular(15),
                         ),
                         onSelected: (value) {
                           setState(() {
@@ -335,7 +335,7 @@ class _GroupMembersState extends State<GroupMembers> {
 
                 decoration: BoxDecoration(
                   color: Colors.white,
-                  borderRadius: BorderRadius.circular(5),
+                  borderRadius: BorderRadius.circular(15),
                 ),
 
                 child: Padding(
@@ -375,7 +375,7 @@ class _GroupMembersState extends State<GroupMembers> {
                         elevation: 20,
                         enabled: true,
                         shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(10),
+                          borderRadius: BorderRadius.circular(15),
                         ),
                         onSelected: (value) {
                           setState(() {
@@ -411,7 +411,7 @@ class _GroupMembersState extends State<GroupMembers> {
 
                 decoration: BoxDecoration(
                   color: Colors.white,
-                  borderRadius: BorderRadius.circular(5),
+                  borderRadius: BorderRadius.circular(15),
                 ),
 
                 child: Padding(
@@ -439,7 +439,7 @@ class _GroupMembersState extends State<GroupMembers> {
                         elevation: 20,
                         enabled: true,
                         shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(10),
+                          borderRadius: BorderRadius.circular(15),
                         ),
                         onSelected: (value) {
                           setState(() {
@@ -475,7 +475,7 @@ class _GroupMembersState extends State<GroupMembers> {
 
                 decoration: BoxDecoration(
                   color: Colors.white,
-                  borderRadius: BorderRadius.circular(5),
+                  borderRadius: BorderRadius.circular(15),
                 ),
 
                 child: Padding(
@@ -506,7 +506,7 @@ class _GroupMembersState extends State<GroupMembers> {
                         elevation: 20,
                         enabled: true,
                         shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(10),
+                          borderRadius: BorderRadius.circular(15),
                         ),
                         onSelected: (value) {
                           setState(() {
@@ -542,7 +542,7 @@ class _GroupMembersState extends State<GroupMembers> {
 
                 decoration: BoxDecoration(
                   color: Colors.white,
-                  borderRadius: BorderRadius.circular(5),
+                  borderRadius: BorderRadius.circular(15),
                 ),
 
                 child: Padding(
@@ -570,7 +570,7 @@ class _GroupMembersState extends State<GroupMembers> {
                         elevation: 20,
                         enabled: true,
                         shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(10),
+                          borderRadius: BorderRadius.circular(15),
                         ),
                         onSelected: (value) {
                           setState(() {
@@ -606,7 +606,7 @@ class _GroupMembersState extends State<GroupMembers> {
 
                 decoration: BoxDecoration(
                   color: Colors.white,
-                  borderRadius: BorderRadius.circular(5),
+                  borderRadius: BorderRadius.circular(15),
                 ),
 
                 child: Padding(
@@ -637,7 +637,7 @@ class _GroupMembersState extends State<GroupMembers> {
                         elevation: 20,
                         enabled: true,
                         shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(10),
+                          borderRadius: BorderRadius.circular(15),
                         ),
                         onSelected: (value) {
                           setState(() {
@@ -673,7 +673,7 @@ class _GroupMembersState extends State<GroupMembers> {
 
                 decoration: BoxDecoration(
                   color: Colors.white,
-                  borderRadius: BorderRadius.circular(5),
+                  borderRadius: BorderRadius.circular(15),
                 ),
 
                 child: Padding(
@@ -710,7 +710,7 @@ class _GroupMembersState extends State<GroupMembers> {
                         elevation: 20,
                         enabled: true,
                         shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(10),
+                          borderRadius: BorderRadius.circular(15),
                         ),
                         onSelected: (value) {
                           setState(() {

@@ -37,6 +37,7 @@ class _DeletePostState extends State<DeletePost> {
                 padding: EdgeInsets.only(left: 14.72,top: 15),
                 decoration: BoxDecoration(
                   color: Colors.white,
+                  borderRadius: BorderRadius.circular(15),
                 ),
                 child: TextFormField(
                   maxLines: 6,
@@ -50,7 +51,7 @@ class _DeletePostState extends State<DeletePost> {
             ),
             
             Container(
-              width: 268,
+              width: 320,
               height: 55,
               child: RaisedButton(
                   color: Color(0xff12496D),

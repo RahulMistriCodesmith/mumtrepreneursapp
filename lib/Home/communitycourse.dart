@@ -55,7 +55,7 @@ class _CommunityCourseState extends State<CommunityCourse> {
                     ),
                   ],
                   color: Colors.white,
-                  borderRadius: BorderRadius.circular(5),
+                  borderRadius: BorderRadius.circular(15),
                 ),
                 child: TextFormField(
                   decoration: InputDecoration(
@@ -90,7 +90,7 @@ class _CommunityCourseState extends State<CommunityCourse> {
                             ),
                           ],
                           color: Colors.white,
-                          borderRadius: BorderRadius.circular(5),
+                          borderRadius: BorderRadius.circular(15),
                         ),
                         child: Padding(
                           padding:  EdgeInsets.only(top: 15),
@@ -146,7 +146,7 @@ class _CommunityCourseState extends State<CommunityCourse> {
                               ),
                             ],
                             color: Colors.white,
-                            borderRadius: BorderRadius.circular(5),
+                            borderRadius: BorderRadius.circular(15),
                           ),
                           child: Padding(
                             padding:  EdgeInsets.only(top: 15),
@@ -207,7 +207,7 @@ class _CommunityCourseState extends State<CommunityCourse> {
                             ),
                           ],
                           color: Colors.white,
-                          borderRadius: BorderRadius.circular(5),
+                          borderRadius: BorderRadius.circular(15),
                         ),
                         child: Padding(
                           padding:  EdgeInsets.only(top: 15),
@@ -261,7 +261,7 @@ class _CommunityCourseState extends State<CommunityCourse> {
                               ),
                             ],
                             color: Colors.white,
-                            borderRadius: BorderRadius.circular(5),
+                            borderRadius: BorderRadius.circular(15),
                           ),
                           child: Padding(
                             padding:  EdgeInsets.only(top: 15),
@@ -322,7 +322,7 @@ class _CommunityCourseState extends State<CommunityCourse> {
                             ),
                           ],
                           color: Colors.white,
-                          borderRadius: BorderRadius.circular(5),
+                          borderRadius: BorderRadius.circular(15),
                         ),
                         child: Padding(
                           padding:  EdgeInsets.only(top: 15),
@@ -376,7 +376,7 @@ class _CommunityCourseState extends State<CommunityCourse> {
                               ),
                             ],
                             color: Colors.white,
-                            borderRadius: BorderRadius.circular(5),
+                            borderRadius: BorderRadius.circular(15),
                           ),
                           child: Padding(
                             padding:  EdgeInsets.only(top: 15),
@@ -438,7 +438,7 @@ class _CommunityCourseState extends State<CommunityCourse> {
                             ),
                           ],
                           color: Colors.white,
-                          borderRadius: BorderRadius.circular(5),
+                          borderRadius: BorderRadius.circular(15),
                         ),
                         child: Padding(
                           padding:  EdgeInsets.only(top: 15),
@@ -492,7 +492,7 @@ class _CommunityCourseState extends State<CommunityCourse> {
                               ),
                             ],
                             color: Colors.white,
-                            borderRadius: BorderRadius.circular(5),
+                            borderRadius: BorderRadius.circular(15),
                           ),
                           child: Padding(
                             padding:  EdgeInsets.only(top: 15),
@@ -554,7 +554,7 @@ class _CommunityCourseState extends State<CommunityCourse> {
                             ),
                           ],
                           color: Colors.white,
-                          borderRadius: BorderRadius.circular(5),
+                          borderRadius: BorderRadius.circular(15),
                         ),
                         child: Padding(
                           padding:  EdgeInsets.only(top: 15),

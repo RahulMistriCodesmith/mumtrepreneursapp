@@ -35,7 +35,7 @@ class _SupportsState extends State<Supports> {
               Container(
                 decoration: BoxDecoration(
                   color: Color(0xff12496D),
-                  borderRadius: BorderRadius.circular(5),
+                  borderRadius: BorderRadius.circular(10),
                 ),
                 child: Padding(
                   padding: const EdgeInsets.only(left: 105,right: 106,top: 39,bottom: 40),
@@ -59,7 +59,7 @@ class _SupportsState extends State<Supports> {
                   child: Container(
                     decoration: BoxDecoration(
                       color: Colors.white,
-                      borderRadius: BorderRadius.circular(5),
+                      borderRadius: BorderRadius.circular(10),
                     ),
                     child: Padding(
                       padding: const EdgeInsets.only(top: 15,bottom: 17,left: 15),
@@ -98,7 +98,7 @@ class _SupportsState extends State<Supports> {
                   child: Container(
                     decoration: BoxDecoration(
                       color: Colors.white,
-                      borderRadius: BorderRadius.circular(5),
+                      borderRadius: BorderRadius.circular(10),
                     ),
                     child: Padding(
                       padding: const EdgeInsets.only(top: 15,bottom: 17,left: 15),

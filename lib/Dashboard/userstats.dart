@@ -54,7 +54,7 @@ class _UserStatsState extends State<UserStats> {
                     ),
                   ],
                   color: Colors.white,
-                  borderRadius: BorderRadius.circular(5),
+                  borderRadius: BorderRadius.circular(15),
                 ),
                 child: TextFormField(
                   decoration: InputDecoration(
@@ -99,7 +99,7 @@ class _UserStatsState extends State<UserStats> {
                                 ),
                               ],
                               color: Colors.white,
-                              borderRadius: BorderRadius.circular(5),
+                              borderRadius: BorderRadius.circular(10),
                             ),
                             child: DropdownButtonFormField(
                               decoration: InputDecoration(
@@ -154,7 +154,7 @@ class _UserStatsState extends State<UserStats> {
                                 ),
                               ],
                               color: Colors.white,
-                              borderRadius: BorderRadius.circular(5),
+                              borderRadius: BorderRadius.circular(10),
                             ),
                             child: DropdownButtonFormField(
                               decoration: InputDecoration(
@@ -199,7 +199,7 @@ class _UserStatsState extends State<UserStats> {
 
                 decoration: BoxDecoration(
                   color: Colors.white,
-                  borderRadius: BorderRadius.circular(5),
+                  borderRadius: BorderRadius.circular(10),
                 ),
 
                 child: Padding(
@@ -243,7 +243,7 @@ class _UserStatsState extends State<UserStats> {
 
                 decoration: BoxDecoration(
                   color: Colors.white,
-                  borderRadius: BorderRadius.circular(5),
+                  borderRadius: BorderRadius.circular(10),
                 ),
 
                 child: Padding(
@@ -282,7 +282,7 @@ class _UserStatsState extends State<UserStats> {
 
                 decoration: BoxDecoration(
                   color: Colors.white,
-                  borderRadius: BorderRadius.circular(5),
+                  borderRadius: BorderRadius.circular(10),
                 ),
 
                 child: Padding(
@@ -330,7 +330,7 @@ class _UserStatsState extends State<UserStats> {
 
                 decoration: BoxDecoration(
                   color: Colors.white,
-                  borderRadius: BorderRadius.circular(5),
+                  borderRadius: BorderRadius.circular(10),
                 ),
 
                 child: Padding(
@@ -366,7 +366,7 @@ class _UserStatsState extends State<UserStats> {
 
                 decoration: BoxDecoration(
                   color: Colors.white,
-                  borderRadius: BorderRadius.circular(5),
+                  borderRadius: BorderRadius.circular(10),
                 ),
 
                 child: Padding(
@@ -405,7 +405,7 @@ class _UserStatsState extends State<UserStats> {
 
                 decoration: BoxDecoration(
                   color: Colors.white,
-                  borderRadius: BorderRadius.circular(5),
+                  borderRadius: BorderRadius.circular(10),
                 ),
 
                 child: Padding(
@@ -441,7 +441,7 @@ class _UserStatsState extends State<UserStats> {
 
                 decoration: BoxDecoration(
                   color: Colors.white,
-                  borderRadius: BorderRadius.circular(5),
+                  borderRadius: BorderRadius.circular(10),
                 ),
 
                 child: Padding(
@@ -480,7 +480,7 @@ class _UserStatsState extends State<UserStats> {
 
                 decoration: BoxDecoration(
                   color: Colors.white,
-                  borderRadius: BorderRadius.circular(5),
+                  borderRadius: BorderRadius.circular(10),
                 ),
 
                 child: Padding(

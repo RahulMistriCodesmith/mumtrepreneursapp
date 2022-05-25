@@ -37,11 +37,10 @@ class _MessageState extends State<Message> {
           children: [
 
             Padding(
-              padding: const EdgeInsets.only(top: 31,left: 45,right: 25,bottom: 20),
+              padding: const EdgeInsets.only(top: 31,left: 20,right: 20,bottom: 20),
               child: Container(
                 padding: EdgeInsets.only(left: 15,bottom: 3),
-                width: 325,
-                height: 45,
+
                 decoration: BoxDecoration(
                   boxShadow: [
                     BoxShadow(
@@ -55,7 +54,7 @@ class _MessageState extends State<Message> {
                     ),
                   ],
                   color: Colors.white,
-                  borderRadius: BorderRadius.circular(5),
+                  borderRadius: BorderRadius.circular(15),
                 ),
                 child: TextFormField(
                   decoration: InputDecoration(

@@ -60,11 +60,10 @@ class _Home_PageState extends State<Home_Page> {
               ),
 
               Padding(
-                padding: const EdgeInsets.only(right: 30),
+                padding: const EdgeInsets.only(right: 25),
                 child: Container(
-                  padding: EdgeInsets.only(left: 15,bottom: 3),
-                  width: 325,
-                  height: 45,
+                  padding: EdgeInsets.only(left: 20,bottom: 3),
+
                   decoration: BoxDecoration(
                     boxShadow: [
                       BoxShadow(
@@ -78,7 +77,7 @@ class _Home_PageState extends State<Home_Page> {
                       ),
                     ],
                     color: Colors.white,
-                    borderRadius: BorderRadius.circular(5),
+                    borderRadius: BorderRadius.circular(15),
                   ),
                   child: TextFormField(
                     decoration: InputDecoration(
@@ -109,7 +108,7 @@ class _Home_PageState extends State<Home_Page> {
                       ),
                     ],
                     color: Color(0xffE7957E),
-                    borderRadius: BorderRadius.circular(5),
+                    borderRadius: BorderRadius.circular(15),
                   ),
 
                   child: Padding(
@@ -166,7 +165,7 @@ class _Home_PageState extends State<Home_Page> {
                                 ),
                               ],
                               color: Color(0xff12496D),
-                              borderRadius: BorderRadius.circular(5),
+                              borderRadius: BorderRadius.circular(15),
                             ),
                             child: Column(
                               children: [
@@ -209,7 +208,7 @@ class _Home_PageState extends State<Home_Page> {
                                   ),
                                 ],
                                 color: Color(0xff9DC8C7),
-                                borderRadius: BorderRadius.circular(5),
+                                borderRadius: BorderRadius.circular(15),
                               ),
                               child: Column(
                                 children: [
@@ -253,7 +252,7 @@ class _Home_PageState extends State<Home_Page> {
                                   ),
                                 ],
                                 color: Color(0xffE7957E),
-                                borderRadius: BorderRadius.circular(5),
+                                borderRadius: BorderRadius.circular(15),
                               ),
                               child: Column(
                                 children: [
@@ -302,7 +301,7 @@ class _Home_PageState extends State<Home_Page> {
                                   ),
                                 ],
                                 color: Color(0xff9DC8C7),
-                                borderRadius: BorderRadius.circular(5),
+                                borderRadius: BorderRadius.circular(15),
                               ),
                               child: Column(
                                 children: [
@@ -345,7 +344,7 @@ class _Home_PageState extends State<Home_Page> {
                                     ),
                                   ],
                                   color: Color(0xffE7957E),
-                                  borderRadius: BorderRadius.circular(5),
+                                  borderRadius: BorderRadius.circular(15),
                                 ),
                                 child: Column(
                                   children: [
@@ -385,7 +384,7 @@ class _Home_PageState extends State<Home_Page> {
                                     ),
                                   ],
                                   color: Color(0xff12496D),
-                                  borderRadius: BorderRadius.circular(5),
+                                  borderRadius: BorderRadius.circular(15),
                                 ),
                                 child: Column(
                                   children: [

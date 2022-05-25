@@ -1,7 +1,8 @@
-// ignore_for_file: deprecated_member_use, camel_case_types, file_names, prefer_const_constructors, sized_box_for_whitespace, non_constant_identifier_names, prefer_const_literals_to_create_immutables
+// ignore_for_file: deprecated_member_use, camel_case_types, file_names, prefer_const_constructors, sized_box_for_whitespace, non_constant_identifier_names, prefer_const_literals_to_create_immutables, curly_braces_in_flow_control_structures
 
 import 'package:flutter/material.dart';
 import 'package:mumtrepreneursapp/Authorization/Sign_Page.dart';
+import 'package:mumtrepreneursapp/Dashboard/dashboard.dart';
 import 'package:mumtrepreneursapp/Home/Bottom_Navigation_Bar.dart';
 import 'package:mumtrepreneursapp/Authorization/Forgot_password.dart';
 class Login_Page extends StatefulWidget {
@@ -166,12 +167,22 @@ class _Login_PageState extends State<Login_Page> {
                       style: TextStyle(color: Color(0xffFFFFFF),fontSize: 15,fontWeight: FontWeight.bold,fontFamily: 'Sk-Modernist'),),
                     onPressed: () async {
 
-                      if (_formKey.currentState.validate()) {
+                     /* if (_formKey.currentState.validate()) {
 
                         ScaffoldMessenger.of(context).showSnackBar(
                           SnackBar(content: Text('Login')),
                         );
+
+
+
+                      }*/
+
+                      if(email.text == "abc@gmail.com" && password.text == "1234"){
                         Navigator.push(context, MaterialPageRoute(builder: (context) => Bottom_Navigation_Bar(),),);
+
+                      }
+                      else if(email.text == "xyz@gmail.com"  && password.text == "1234"){
+                        Navigator.push(context, MaterialPageRoute(builder: (context) => Dashboard(),),);
                       }
                     },
                   ),

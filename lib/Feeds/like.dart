@@ -43,11 +43,11 @@ class _LikeState extends State<Like> {
         child: Column(
           children: [
 
-            Center(
+            Padding(
+              padding: const EdgeInsets.only(left: 20,right: 20),
               child: Container(
                 padding: EdgeInsets.only(left: 17),
-                width: 325,
-                height: 45,
+
                 decoration: BoxDecoration(
                   boxShadow: [
                     BoxShadow(
@@ -61,7 +61,7 @@ class _LikeState extends State<Like> {
                     ),
                   ],
                   color: Colors.white,
-                  borderRadius: BorderRadius.circular(5),
+                  borderRadius: BorderRadius.circular(15),
                 ),
                 child: TextFormField(
                   decoration: InputDecoration(

@@ -82,7 +82,7 @@ class _UserProfileState extends State<UserProfile> {
                 elevation: 20,
                 enabled: true,
                 shape: RoundedRectangleBorder(
-                  borderRadius: BorderRadius.circular(10),
+                  borderRadius: BorderRadius.circular(20),
                 ),
                 onSelected: (value) {
                   setState(() {
@@ -343,7 +343,13 @@ class _UserProfileState extends State<UserProfile> {
                 child: Container(
                   width: 409,
                   height: 50,
-                  color: Colors.white,
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.only(
+                      topLeft: Radius.circular(15),
+                      topRight: Radius.circular(15),
+                    ),
+                  ),
                   child: TabBar(
 
                     labelColor: Color(0xff12496D),
@@ -379,7 +385,13 @@ class _UserProfileState extends State<UserProfile> {
                         Container(
                           width: 409,
                           height: 510,
-                          color: Colors.white,
+                          decoration: BoxDecoration(
+                            color: Colors.white,
+                            borderRadius: BorderRadius.only(
+                              bottomLeft: Radius.circular(15),
+                              bottomRight: Radius.circular(15),
+                            ),
+                          ),
                           child: Column(
                             children: [
 
@@ -428,8 +440,7 @@ class _UserProfileState extends State<UserProfile> {
                                     ),
 
                                     Padding(
-                                      padding: const EdgeInsets.only(
-                                        right: 5, left: 150,),
+                                      padding: const EdgeInsets.only(right: 5, left: 150,),
                                       child: PopupMenuButton(
                                         color: Colors.white,
                                         elevation: 20,
@@ -446,9 +457,7 @@ class _UserProfileState extends State<UserProfile> {
 
                                             child: Row(
                                               children: [
-                                                Image.asset(
-                                                  'assets/Image/unfollow_icon.png',
-                                                  width: 16.37, height: 16.88,),
+                                                Image.asset('assets/Image/unfollow_icon.png',width: 16.37, height: 16.88,),
                                                 Padding(
                                                   padding: EdgeInsets.only(left: 10.99),
                                                   child: Text(
@@ -536,29 +545,23 @@ class _UserProfileState extends State<UserProfile> {
 
                               Padding(
                                 padding: EdgeInsets.only(top: 10),
-                                child: Image.asset(
-                                  'assets/Image/post_image.png', width: 409,
-                                  height: 320,),
+                                child: Image.asset('assets/Image/post_image.png', width: 409, height: 320,),
                               ),
 
                               Padding(
-                                padding: EdgeInsets.only(
-                                    top: 17.5, left: 26.23),
+                                padding: EdgeInsets.only(top: 17.5, left: 26.23),
                                 child: Row(
                                   children: [
-                                    Image.asset(
-                                      'assets/Image/like_icon2.png', width: 19,
-                                      height: 16.97,),
+                                    Image.asset('assets/Image/like_icon2.png', width: 19, height: 16.97,),
                                     GestureDetector(
                                       onTap: () {
-                                        Navigator.push(context,
-                                            MaterialPageRoute(
-                                                builder: (context) => Like()));
+                                        Navigator.push(context,MaterialPageRoute(builder: (context) => Like()));
                                       },
 
                                       child: Padding(
                                         padding: EdgeInsets.only(left: 8),
-                                        child: Text('1,525', style: TextStyle(
+                                        child: Text('1,525',
+                                          style: TextStyle(
                                             fontSize: 14,
                                             fontFamily: 'Sk-Modernist',
                                             fontWeight: FontWeight.bold),),
@@ -597,7 +600,10 @@ class _UserProfileState extends State<UserProfile> {
                           child: Container(
                             width: 409,
                             height: 540,
-                            color: Colors.white,
+                            decoration: BoxDecoration(
+                              color: Colors.white,
+                              borderRadius: BorderRadius.circular(15),
+                            ),
                             child: Column(
                               children: [
 

@@ -36,7 +36,7 @@ class _UploadBlogState extends State<UploadBlog> {
                 padding: EdgeInsets.only(left: 19.72),
                 decoration: BoxDecoration(
                   color: Colors.white,
-                  borderRadius: BorderRadius.circular(5),
+                  borderRadius: BorderRadius.circular(10),
                 ),
                 child: TextFormField(
                   decoration: InputDecoration(
@@ -59,7 +59,7 @@ class _UploadBlogState extends State<UploadBlog> {
                 padding: EdgeInsets.only(left: 19.72),
                 decoration: BoxDecoration(
                   color: Colors.white,
-                  borderRadius: BorderRadius.circular(5),
+                  borderRadius: BorderRadius.circular(10),
                 ),
                 child: TextFormField(
                   maxLines: 6,
@@ -83,14 +83,14 @@ class _UploadBlogState extends State<UploadBlog> {
                 padding: EdgeInsets.only(left: 16,right: 14,top: 16,bottom: 15),
                 decoration: BoxDecoration(
                   color: Colors.white,
-                  borderRadius: BorderRadius.circular(5),
+                  borderRadius: BorderRadius.circular(10),
                 ),
                 child: RaisedButton(
                   color: Color(0xff12495D0D),
                   padding: EdgeInsets.only(top: 14,bottom: 13),
 
                   shape: RoundedRectangleBorder(
-                    borderRadius: BorderRadius.circular(5),
+                    borderRadius: BorderRadius.circular(10),
                   ),
 
                   child: Row(

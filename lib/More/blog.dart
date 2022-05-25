@@ -83,7 +83,7 @@ class _BlogState extends State<Blog> {
         child: Column(
           children: [
             Container(
-              padding: EdgeInsets.only(left: 45,bottom: 3),
+              padding: EdgeInsets.only(left: 20,bottom: 3),
               width: 325,
               height: 45,
               decoration: BoxDecoration(
@@ -99,7 +99,7 @@ class _BlogState extends State<Blog> {
                   ),
                 ],
                 color: Colors.white,
-                borderRadius: BorderRadius.circular(5),
+                borderRadius: BorderRadius.circular(15),
               ),
               child: TextFormField(
                 decoration: InputDecoration(

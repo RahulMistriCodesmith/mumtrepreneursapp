@@ -76,7 +76,7 @@ class _AChangePasswordState extends State<AChangePassword> {
                     ),
                   ],
                   color: Colors.white,
-                  borderRadius: BorderRadius.circular(5),
+                  borderRadius: BorderRadius.circular(15),
                 ),
                 child: TextFormField(
                   controller: currentpassword,
@@ -121,7 +121,7 @@ class _AChangePasswordState extends State<AChangePassword> {
                       ),
                     ],
                     color: Color(0xffFFFFFF),
-                    borderRadius: BorderRadius.circular(5),
+                    borderRadius: BorderRadius.circular(15),
                   ),
                   child: TextFormField(
                     controller: newpassword,
@@ -179,7 +179,7 @@ class _AChangePasswordState extends State<AChangePassword> {
                       ),
                     ],
                     color: Color(0xffFFFFFF),
-                    borderRadius: BorderRadius.circular(5),
+                    borderRadius: BorderRadius.circular(15),
                   ),
                   child: TextFormField(
                     controller: confirmpassword,

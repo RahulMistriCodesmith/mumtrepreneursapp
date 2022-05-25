@@ -103,39 +103,35 @@ class _Events2State extends State<Events2> {
       ),
       body: SingleChildScrollView(
         child: Padding(
-          padding: const EdgeInsets.only(left: 40,top: 31),
+          padding: const EdgeInsets.only(left: 20,top: 31,right: 20),
           child: Column(
             children: [
 
-              Padding(
-                padding: const EdgeInsets.only(right: 30),
-                child: Container(
-                  padding: EdgeInsets.only(left: 15,bottom: 3),
-                  width: 325,
-                  height: 45,
-                  decoration: BoxDecoration(
+              Container(
+                padding: EdgeInsets.only(left: 15,bottom: 3),
 
-                    boxShadow: [
-                      BoxShadow(
-                        color: Colors.grey,
-                        offset: const Offset(
-                          2.0,
-                          4.0,
-                        ),
-                        blurRadius: 5.0,
-                        spreadRadius: 0.5,
+                decoration: BoxDecoration(
+
+                  boxShadow: [
+                    BoxShadow(
+                      color: Colors.grey,
+                      offset: const Offset(
+                        2.0,
+                        4.0,
                       ),
-                    ],
-                    color: Colors.white,
-                    borderRadius: BorderRadius.circular(5),
-                  ),
-                  child: TextFormField(
-                    decoration: InputDecoration(
-                      border: InputBorder.none,
-                      hintText: 'Search Here',
-                      hintStyle: TextStyle(color: Colors.grey,fontSize: 15,fontFamily: 'Sk-Modernist'),
-                      suffixIcon: Icon(Icons.search,color: Colors.grey,),
+                      blurRadius: 5.0,
+                      spreadRadius: 0.5,
                     ),
+                  ],
+                  color: Colors.white,
+                  borderRadius: BorderRadius.circular(15),
+                ),
+                child: TextFormField(
+                  decoration: InputDecoration(
+                    border: InputBorder.none,
+                    hintText: 'Search Here',
+                    hintStyle: TextStyle(color: Colors.grey,fontSize: 15,fontFamily: 'Sk-Modernist'),
+                    suffixIcon: Icon(Icons.search,color: Colors.grey,),
                   ),
                 ),
               ),
@@ -146,128 +142,125 @@ class _Events2State extends State<Events2> {
                 child: Text('Attend Events',style: TextStyle(fontSize: 15,fontWeight: FontWeight.bold,fontFamily: 'Sk-Modernist'),),
               ),
 
-              Padding(
-                padding: const EdgeInsets.only(right: 20),
-                child: Container(
-                  width: 325,
-                  height: 284,
-                  decoration: BoxDecoration(
-                    // ignore: prefer_const_literals_to_create_immutables
-                    boxShadow: [
-                      BoxShadow(
-                        color: Colors.grey,
-                        offset: const Offset(
-                          2.0,
-                          4.0,
-                        ),
-                        blurRadius: 5.0,
-                        spreadRadius: 0.5,
+              Container(
+                width: 325,
+                height: 284,
+                decoration: BoxDecoration(
+                  // ignore: prefer_const_literals_to_create_immutables
+                  boxShadow: [
+                    BoxShadow(
+                      color: Colors.grey,
+                      offset: const Offset(
+                        2.0,
+                        4.0,
                       ),
-                    ],
-                    color: Colors.white,
-                    borderRadius: BorderRadius.circular(5),
-                  ),
-                  child: Column(
-                    children: [
-                      Stack(
-                        children: [
-                          Padding(
-                            padding: const EdgeInsets.only(top: 15,bottom: 11),
-                            child: Image.asset('assets/Image/Mask group3.png',width: 395,height: 115,),
-                          ),
-                          Padding(
-                            padding: const EdgeInsets.only(left: 265,top: 30),
-                            child: Container(
-                              width: 35,
-                              height: 35,
-                              decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(17),
-                                color: Color(0xff00000061),
-                              ),
-                              child: InkWell(
-
-                                onTap: (){
-                                  share();
-                                },
-
-                                  child: Image.asset('assets/Image/Vector1.png',scale: 4,)),
+                      blurRadius: 5.0,
+                      spreadRadius: 0.5,
+                    ),
+                  ],
+                  color: Colors.white,
+                  borderRadius: BorderRadius.circular(15),
+                ),
+                child: Column(
+                  children: [
+                    Stack(
+                      children: [
+                        Padding(
+                          padding: const EdgeInsets.only(top: 15,bottom: 11),
+                          child: Image.asset('assets/Image/Mask group3.png',width: 395,height: 115,),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.only(left: 265,top: 30),
+                          child: Container(
+                            width: 35,
+                            height: 35,
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(17),
+                              color: Color(0xff00000061),
                             ),
+                            child: InkWell(
+
+                              onTap: (){
+                                share();
+                              },
+
+                                child: Image.asset('assets/Image/Vector1.png',scale: 4,)),
+                          ),
+                        ),
+                      ],
+                    ),
+
+                    Padding(
+                      padding: const EdgeInsets.only(left: 15),
+                      child: Row(
+                        children: [
+                          Icon(Icons.access_time,size: 17,color: Colors.grey,),
+                          Padding(
+                            padding: const EdgeInsets.only(left: 8,right: 19),
+                            child: Text('01:15 PM',style: TextStyle(fontSize: 14,fontFamily: 'Sk-Modernist',color: Colors.grey),),
+                          ),
+                          Image.asset('assets/Image/Calendar.png',color: Colors.grey,width: 12.98,height: 15,),
+                          Padding(
+                            padding: const EdgeInsets.only(left: 8),
+                            child: Text('30 April 2022',style: TextStyle(fontSize: 14,fontFamily: 'Sk-Modernist',color: Colors.grey),),
                           ),
                         ],
                       ),
+                    ),
 
-                      Padding(
-                        padding: const EdgeInsets.only(left: 15),
-                        child: Row(
-                          children: [
-                            Icon(Icons.access_time,size: 17,color: Colors.grey,),
-                            Padding(
-                              padding: const EdgeInsets.only(left: 8,right: 19),
-                              child: Text('01:15 PM',style: TextStyle(fontSize: 14,fontFamily: 'Sk-Modernist',color: Colors.grey),),
+                    Padding(
+                      padding: const EdgeInsets.only(top: 8,bottom: 16,left: 15,right: 70),
+                      child: Text('Expert Q&A Let’s talk Retention with Diana Tower',
+                        style: TextStyle(fontSize: 15,fontWeight: FontWeight.bold,fontFamily: 'Sk-Modernist'),),
+                    ),
+
+                    Row(
+                      children: [
+                        Padding(
+                          padding: const EdgeInsets.only(left: 15,right: 15),
+                          child: Container(
+                            width: 229,
+                            height: 45,
+                            child: RaisedButton(
+
+                              color: Color(0xff12496D),
+
+                              child: Text('ABOUT DIANA',
+                                style: TextStyle(color: Color(0xffFFFFFF),fontSize: 15,fontWeight: FontWeight.bold,fontFamily: 'Sk-Modernist'),),
+                              onPressed: (){
+                                Navigator.push(context, MaterialPageRoute(builder: (context) => Event_Details()));
+                              },
                             ),
-                            Image.asset('assets/Image/Calendar.png',color: Colors.grey,width: 12.98,height: 15,),
-                            Padding(
-                              padding: const EdgeInsets.only(left: 8),
-                              child: Text('30 April 2022',style: TextStyle(fontSize: 14,fontFamily: 'Sk-Modernist',color: Colors.grey),),
-                            ),
-                          ],
+                          ),
                         ),
-                      ),
 
-                      Padding(
-                        padding: const EdgeInsets.only(top: 8,bottom: 16,left: 15,right: 70),
-                        child: Text('Expert Q&A Let’s talk Retention with Diana Tower',
-                          style: TextStyle(fontSize: 15,fontWeight: FontWeight.bold,fontFamily: 'Sk-Modernist'),),
-                      ),
+                        InkWell(
 
-                      Row(
-                        children: [
-                          Padding(
-                            padding: const EdgeInsets.only(left: 15,right: 15),
-                            child: Container(
-                              width: 229,
-                              height: 45,
-                              child: RaisedButton(
 
-                                color: Color(0xff12496D),
+                          onTap: () => _selectDate(context),
 
-                                child: Text('ABOUT DIANA',
-                                  style: TextStyle(color: Color(0xffFFFFFF),fontSize: 15,fontWeight: FontWeight.bold,fontFamily: 'Sk-Modernist'),),
-                                onPressed: (){
-                                  Navigator.push(context, MaterialPageRoute(builder: (context) => Event_Details()));
-                                },
-                              ),
+
+                          child: Container(
+                            width: 51,
+                            height: 45,
+                            decoration: BoxDecoration(
+                              border: Border.all(color: Color(0xff12496D)),
+                              borderRadius: BorderRadius.circular(5),
                             ),
+                            child: Image.asset('assets/Image/Calendar.png',scale: 6,color: Color(0xff12496D),),
                           ),
+                        ),
 
-                          InkWell(
-
-
-                            onTap: () => _selectDate(context),
-
-
-                            child: Container(
-                              width: 51,
-                              height: 45,
-                              decoration: BoxDecoration(
-                                border: Border.all(color: Color(0xff12496D)),
-                                borderRadius: BorderRadius.circular(5),
-                              ),
-                              child: Image.asset('assets/Image/Calendar.png',scale: 6,color: Color(0xff12496D),),
-                            ),
-                          ),
-
-                        ],
-                      ),
+                      ],
+                    ),
 
 
-                    ],
-                  ),
+                  ],
                 ),
               ),
 
               Padding(
-                padding: const EdgeInsets.only(right: 20,top: 18),
+                padding: const EdgeInsets.only(top: 18),
                 child: Container(
                   width: 325,
                   height: 284,
@@ -285,7 +278,7 @@ class _Events2State extends State<Events2> {
                       ),
                     ],
                     color: Colors.white,
-                    borderRadius: BorderRadius.circular(5),
+                    borderRadius: BorderRadius.circular(15),
                   ),
                   child: Column(
                     children: [
@@ -386,129 +379,126 @@ class _Events2State extends State<Events2> {
 
 
               Padding(
-                padding: const EdgeInsets.only(top: 19,bottom: 12,right: 230),
+                padding: const EdgeInsets.only(top: 19,bottom: 12,right: 200),
                 child: Text('Upcoming Event',style: TextStyle(fontSize: 15,fontWeight: FontWeight.bold,fontFamily: 'Sk-Modernist'),),
               ),
 
-              Padding(
-                padding: const EdgeInsets.only(right: 20),
-                child: Container(
-                  width: 325,
-                  height: 284,
-                  decoration: BoxDecoration(
-                    boxShadow: [
-                      BoxShadow(
-                        color: Colors.grey,
-                        offset: const Offset(
-                          2.0,
-                          4.0,
-                        ),
-                        blurRadius: 5.0,
-                        spreadRadius: 0.5,
+              Container(
+                width: 325,
+                height: 284,
+                decoration: BoxDecoration(
+                  boxShadow: [
+                    BoxShadow(
+                      color: Colors.grey,
+                      offset: const Offset(
+                        2.0,
+                        4.0,
                       ),
-                    ],
-                    color: Colors.white,
-                    borderRadius: BorderRadius.circular(5),
-                  ),
-                  child: Column(
-                    children: [
-                      Stack(
-                        children: [
-                          Padding(
-                            padding: const EdgeInsets.only(top: 15,bottom: 11),
-                            child: Image.asset('assets/Image/Mask group3.png',width: 395,height: 115,),
-                          ),
-                          Padding(
-                            padding: const EdgeInsets.only(left: 265,top: 30),
-                            child: Container(
-                              width: 35,
-                              height: 35,
-                              decoration: BoxDecoration(
-                                borderRadius: BorderRadius.circular(17),
-                                color: Color(0xff00000061),
-                              ),
-                              child: InkWell(
-
-                                onTap: (){
-                                  share();
-                                },
-
-                                  child: Image.asset('assets/Image/Vector1.png',scale: 4,)),
+                      blurRadius: 5.0,
+                      spreadRadius: 0.5,
+                    ),
+                  ],
+                  color: Colors.white,
+                  borderRadius: BorderRadius.circular(15),
+                ),
+                child: Column(
+                  children: [
+                    Stack(
+                      children: [
+                        Padding(
+                          padding: const EdgeInsets.only(top: 15,bottom: 11),
+                          child: Image.asset('assets/Image/Mask group3.png',width: 395,height: 115,),
+                        ),
+                        Padding(
+                          padding: const EdgeInsets.only(left: 265,top: 30),
+                          child: Container(
+                            width: 35,
+                            height: 35,
+                            decoration: BoxDecoration(
+                              borderRadius: BorderRadius.circular(17),
+                              color: Color(0xff00000061),
                             ),
+                            child: InkWell(
+
+                              onTap: (){
+                                share();
+                              },
+
+                                child: Image.asset('assets/Image/Vector1.png',scale: 4,)),
+                          ),
+                        ),
+                      ],
+                    ),
+
+                    Padding(
+                      padding: const EdgeInsets.only(left: 15),
+                      child: Row(
+                        children: [
+                          Icon(Icons.access_time,size: 17,color: Colors.grey,),
+                          Padding(
+                            padding: const EdgeInsets.only(left: 8,right: 19),
+                            child: Text('01:15 PM',style: TextStyle(fontSize: 14,fontFamily: 'Sk-Modernist',color: Colors.grey),),
+                          ),
+                          Image.asset('assets/Image/Calendar.png',color: Colors.grey,width: 12.98,height: 15,),
+                          Padding(
+                            padding: const EdgeInsets.only(left: 8),
+                            child: Text('30 April 2022',style: TextStyle(fontSize: 14,fontFamily: 'Sk-Modernist',color: Colors.grey),),
                           ),
                         ],
                       ),
+                    ),
 
-                      Padding(
-                        padding: const EdgeInsets.only(left: 15),
-                        child: Row(
-                          children: [
-                            Icon(Icons.access_time,size: 17,color: Colors.grey,),
-                            Padding(
-                              padding: const EdgeInsets.only(left: 8,right: 19),
-                              child: Text('01:15 PM',style: TextStyle(fontSize: 14,fontFamily: 'Sk-Modernist',color: Colors.grey),),
+                    Padding(
+                      padding: const EdgeInsets.only(top: 8,bottom: 16,left: 15,right: 70),
+                      child: Text('Expert Q&A Let’s talk Retention with Diana Tower',
+                        style: TextStyle(fontSize: 15,fontWeight: FontWeight.bold,fontFamily: 'Sk-Modernist'),),
+                    ),
+
+                    Row(
+                      children: [
+                        Padding(
+                          padding: const EdgeInsets.only(left: 15,right: 15),
+                          child: Container(
+                            width: 229,
+                            height: 45,
+                            child: RaisedButton(
+
+                              color: Color(0xff12496D),
+
+                              child: Text('ABOUT DIANA',
+                                style: TextStyle(color: Color(0xffFFFFFF),fontSize: 15,fontWeight: FontWeight.bold,fontFamily: 'Sk-Modernist'),),
+                              onPressed: (){
+                                Navigator.push(context, MaterialPageRoute(builder: (context) => const Event_Details()));
+                              },
                             ),
-                            Image.asset('assets/Image/Calendar.png',color: Colors.grey,width: 12.98,height: 15,),
-                            Padding(
-                              padding: const EdgeInsets.only(left: 8),
-                              child: Text('30 April 2022',style: TextStyle(fontSize: 14,fontFamily: 'Sk-Modernist',color: Colors.grey),),
-                            ),
-                          ],
+                          ),
                         ),
-                      ),
 
-                      Padding(
-                        padding: const EdgeInsets.only(top: 8,bottom: 16,left: 15,right: 70),
-                        child: Text('Expert Q&A Let’s talk Retention with Diana Tower',
-                          style: TextStyle(fontSize: 15,fontWeight: FontWeight.bold,fontFamily: 'Sk-Modernist'),),
-                      ),
+                        InkWell(
 
-                      Row(
-                        children: [
-                          Padding(
-                            padding: const EdgeInsets.only(left: 15,right: 15),
-                            child: Container(
-                              width: 229,
-                              height: 45,
-                              child: RaisedButton(
+                          onTap: () => _selectDate(context),
 
-                                color: Color(0xff12496D),
-
-                                child: Text('ABOUT DIANA',
-                                  style: TextStyle(color: Color(0xffFFFFFF),fontSize: 15,fontWeight: FontWeight.bold,fontFamily: 'Sk-Modernist'),),
-                                onPressed: (){
-                                  Navigator.push(context, MaterialPageRoute(builder: (context) => const Event_Details()));
-                                },
-                              ),
+                          child: Container(
+                            width: 51,
+                            height: 45,
+                            decoration: BoxDecoration(
+                              border: Border.all(color: Color(0xff12496D)),
+                              borderRadius: BorderRadius.circular(5),
                             ),
+                            child: Image.asset('assets/Image/Calendar.png',scale: 6,color: Color(0xff12496D),),
                           ),
+                        ),
 
-                          InkWell(
-
-                            onTap: () => _selectDate(context),
-
-                            child: Container(
-                              width: 51,
-                              height: 45,
-                              decoration: BoxDecoration(
-                                border: Border.all(color: Color(0xff12496D)),
-                                borderRadius: BorderRadius.circular(5),
-                              ),
-                              child: Image.asset('assets/Image/Calendar.png',scale: 6,color: Color(0xff12496D),),
-                            ),
-                          ),
-
-                        ],
-                      ),
+                      ],
+                    ),
 
 
-                    ],
-                  ),
+                  ],
                 ),
               ),
 
               Padding(
-                padding: const EdgeInsets.only(right: 20,top: 18),
+                padding: const EdgeInsets.only(top: 18),
                 child: Container(
                   width: 325,
                   height: 284,
@@ -525,7 +515,7 @@ class _Events2State extends State<Events2> {
                       ),
                     ],
                     color: Colors.white,
-                    borderRadius: BorderRadius.circular(5),
+                    borderRadius: BorderRadius.circular(15),
                   ),
                   child: Column(
                     children: [

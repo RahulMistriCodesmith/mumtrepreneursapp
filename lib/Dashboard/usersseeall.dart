@@ -51,7 +51,7 @@ class _SeeAllState extends State<SeeAll> {
                     ),
                   ],
                   color: Colors.white,
-                  borderRadius: BorderRadius.circular(5),
+                  borderRadius: BorderRadius.circular(10),
                 ),
                 child: TextFormField(
                   decoration: InputDecoration(
@@ -196,7 +196,7 @@ class _SeeAllState extends State<SeeAll> {
 
                 decoration: BoxDecoration(
                   color: Colors.white,
-                  borderRadius: BorderRadius.circular(5),
+                  borderRadius: BorderRadius.circular(15),
                 ),
 
                 child: Padding(
@@ -234,7 +234,7 @@ class _SeeAllState extends State<SeeAll> {
                         elevation: 20,
                         enabled: true,
                         shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(10),
+                          borderRadius: BorderRadius.circular(15),
                         ),
                         onSelected: (value) {
                           setState(() {
@@ -310,7 +310,7 @@ class _SeeAllState extends State<SeeAll> {
 
                 decoration: BoxDecoration(
                   color: Colors.white,
-                  borderRadius: BorderRadius.circular(5),
+                  borderRadius: BorderRadius.circular(15),
                 ),
 
                 child: Padding(
@@ -341,7 +341,7 @@ class _SeeAllState extends State<SeeAll> {
                         elevation: 20,
                         enabled: true,
                         shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(10),
+                          borderRadius: BorderRadius.circular(15),
                         ),
                         onSelected: (value) {
                           setState(() {
@@ -417,7 +417,7 @@ class _SeeAllState extends State<SeeAll> {
 
                 decoration: BoxDecoration(
                   color: Colors.white,
-                  borderRadius: BorderRadius.circular(5),
+                  borderRadius: BorderRadius.circular(15),
                 ),
 
                 child: Padding(
@@ -457,7 +457,7 @@ class _SeeAllState extends State<SeeAll> {
                         elevation: 20,
                         enabled: true,
                         shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(10),
+                          borderRadius: BorderRadius.circular(15),
                         ),
                         onSelected: (value) {
                           setState(() {
@@ -533,7 +533,7 @@ class _SeeAllState extends State<SeeAll> {
 
                 decoration: BoxDecoration(
                   color: Colors.white,
-                  borderRadius: BorderRadius.circular(5),
+                  borderRadius: BorderRadius.circular(15),
                 ),
 
                 child: Padding(
@@ -561,7 +561,7 @@ class _SeeAllState extends State<SeeAll> {
                         elevation: 20,
                         enabled: true,
                         shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(10),
+                          borderRadius: BorderRadius.circular(15),
                         ),
                         onSelected: (value) {
                           setState(() {
@@ -637,7 +637,7 @@ class _SeeAllState extends State<SeeAll> {
 
                 decoration: BoxDecoration(
                   color: Colors.white,
-                  borderRadius: BorderRadius.circular(5),
+                  borderRadius: BorderRadius.circular(15),
                 ),
 
                 child: Padding(
@@ -668,7 +668,7 @@ class _SeeAllState extends State<SeeAll> {
                         elevation: 20,
                         enabled: true,
                         shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(10),
+                          borderRadius: BorderRadius.circular(15),
                         ),
                         onSelected: (value) {
                           setState(() {
@@ -744,7 +744,7 @@ class _SeeAllState extends State<SeeAll> {
 
                 decoration: BoxDecoration(
                   color: Colors.white,
-                  borderRadius: BorderRadius.circular(5),
+                  borderRadius: BorderRadius.circular(15),
                 ),
 
                 child: Padding(
@@ -772,7 +772,7 @@ class _SeeAllState extends State<SeeAll> {
                         elevation: 20,
                         enabled: true,
                         shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(10),
+                          borderRadius: BorderRadius.circular(15),
                         ),
                         onSelected: (value) {
                           setState(() {
@@ -848,7 +848,7 @@ class _SeeAllState extends State<SeeAll> {
 
                 decoration: BoxDecoration(
                   color: Colors.white,
-                  borderRadius: BorderRadius.circular(5),
+                  borderRadius: BorderRadius.circular(15),
                 ),
 
                 child: Padding(
@@ -879,7 +879,7 @@ class _SeeAllState extends State<SeeAll> {
                         elevation: 20,
                         enabled: true,
                         shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(10),
+                          borderRadius: BorderRadius.circular(15),
                         ),
                         onSelected: (value) {
                           setState(() {
@@ -955,7 +955,7 @@ class _SeeAllState extends State<SeeAll> {
 
                 decoration: BoxDecoration(
                   color: Colors.white,
-                  borderRadius: BorderRadius.circular(5),
+                  borderRadius: BorderRadius.circular(15),
                 ),
 
                 child: Padding(
@@ -992,7 +992,7 @@ class _SeeAllState extends State<SeeAll> {
                         elevation: 20,
                         enabled: true,
                         shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(10),
+                          borderRadius: BorderRadius.circular(15),
                         ),
                         onSelected: (value) {
                           setState(() {

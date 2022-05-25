@@ -73,7 +73,10 @@ class _Feeds1State extends State<Feeds1> {
                     padding: const EdgeInsets.only(left: 20,right: 20,top: 20),
                     child: Container(
 
-                      color: Colors.white,
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                        borderRadius: BorderRadius.circular(15),
+                      ),
                       child: Column(
                         children: [
 
@@ -207,7 +210,7 @@ class _Feeds1State extends State<Feeds1> {
 
                           Padding(
                             padding: EdgeInsets.only(top: 14),
-                            child: Image.asset('assets/Image/post_image_2.png',width: 268,height: 200.11,),
+                            child: Image.asset('assets/Image/post_image_2.png'),
                           ),
 
                           Padding(
@@ -250,7 +253,10 @@ class _Feeds1State extends State<Feeds1> {
                     padding: EdgeInsets.only(top: 20,bottom: 20,right: 20,left: 20),
                     child: Container(
 
-                      color: Colors.white,
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                        borderRadius: BorderRadius.circular(15),
+                      ),
                       child: Column(
                         children: [
 
@@ -324,7 +330,6 @@ class _Feeds1State extends State<Feeds1> {
 
                                                     width: 124,
                                                     height: 40,
-
 
                                                     child: FlatButton(
                                                       onPressed: () {
@@ -431,7 +436,7 @@ class _Feeds1State extends State<Feeds1> {
 
                           Padding(
                             padding: EdgeInsets.only(top: 14),
-                            child: Image.asset('assets/Image/post_image_3.png',width: 268,height: 200.11,),
+                            child: Image.asset('assets/Image/post_image_3.png',),
                           ),
 
 
@@ -496,7 +501,10 @@ class _Feeds1State extends State<Feeds1> {
                     padding: const EdgeInsets.only(top: 20,right: 20,left: 20,bottom: 20),
                     child: Container(
 
-                      color: Colors.white,
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                        borderRadius: BorderRadius.circular(15),
+                      ),
                       child: Column(
                         children: [
 
@@ -671,7 +679,10 @@ class _Feeds1State extends State<Feeds1> {
                     padding: EdgeInsets.only(left: 20,right: 20,bottom: 20),
                     child: Container(
 
-                      color: Colors.white,
+                      decoration: BoxDecoration(
+                        color: Colors.white,
+                        borderRadius: BorderRadius.circular(15),
+                      ),
                       child: Column(
                         children: [
 

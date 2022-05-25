@@ -56,7 +56,7 @@ class _SupportState extends State<Support> {
                   decoration: BoxDecoration(
 
                     color: Color(0xff12496D),
-                    borderRadius: BorderRadius.circular(5),
+                    borderRadius: BorderRadius.circular(15),
                   ),
                   child: Center(
                     child: Padding(
@@ -95,7 +95,7 @@ class _SupportState extends State<Support> {
                       ),
                     ],
                     color: Colors.white,
-                    borderRadius: BorderRadius.circular(5),
+                    borderRadius: BorderRadius.circular(15),
                   ),
                   child: TextFormField(
                     controller: fullname,
@@ -137,7 +137,7 @@ class _SupportState extends State<Support> {
                       ),
                     ],
                     color: Colors.white,
-                    borderRadius: BorderRadius.circular(5),
+                    borderRadius: BorderRadius.circular(15),
                   ),
                   child: TextFormField(
                     controller: email,
@@ -181,7 +181,7 @@ class _SupportState extends State<Support> {
                       ),
                     ],
                     color: Colors.white,
-                    borderRadius: BorderRadius.circular(5),
+                    borderRadius: BorderRadius.circular(15),
                   ),
                   child: TextFormField(
                     controller: subject,
@@ -223,7 +223,7 @@ class _SupportState extends State<Support> {
                       ),
                     ],
                     color: Colors.white,
-                    borderRadius: BorderRadius.circular(5),
+                    borderRadius: BorderRadius.circular(15),
                   ),
                   child: TextFormField(
                     controller: message,
@@ -251,7 +251,7 @@ class _SupportState extends State<Support> {
                     child: RaisedButton(
                       color: Color(0xff12496D),
                       shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(5),
+                        borderRadius: BorderRadius.circular(15),
                       ),
 
                       child: Text('SUBMIT',style: TextStyle(fontSize: 14,color: Colors.white,fontFamily: 'Sk-Modernist',fontWeight: FontWeight.bold),),

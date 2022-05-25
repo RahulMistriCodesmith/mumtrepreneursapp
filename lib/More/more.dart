@@ -62,7 +62,7 @@ class _MoreState extends State<More> {
                         ),
                       ],
                       color: Color(0xff12496D),
-                      borderRadius: BorderRadius.circular(5),
+                      borderRadius: BorderRadius.circular(15),
                     ),
                     child: Padding(
                       padding: const EdgeInsets.only(top: 19.37,left: 25),
@@ -116,7 +116,7 @@ class _MoreState extends State<More> {
                                 ),
                               ],
                               color: Color(0xff12496D),
-                              borderRadius: BorderRadius.circular(5),
+                              borderRadius: BorderRadius.circular(15),
                             ),
                             child: Column(
                               children: [
@@ -159,7 +159,7 @@ class _MoreState extends State<More> {
                                   ),
                                 ],
                                 color: Color(0xff9DC8C7),
-                                borderRadius: BorderRadius.circular(5),
+                                borderRadius: BorderRadius.circular(15),
                               ),
                               child: Column(
                                 children: [
@@ -203,7 +203,7 @@ class _MoreState extends State<More> {
                                   ),
                                 ],
                                 color: Color(0xffE7957E),
-                                borderRadius: BorderRadius.circular(5),
+                                borderRadius: BorderRadius.circular(15),
                               ),
                               child: Column(
                                 children: [
@@ -245,7 +245,7 @@ class _MoreState extends State<More> {
                                   ),
                                 ],
                                 color: Color(0xff9DC8C7),
-                                borderRadius: BorderRadius.circular(5),
+                                borderRadius: BorderRadius.circular(15),
                               ),
                               child: Column(
                                 children: [
@@ -294,7 +294,7 @@ class _MoreState extends State<More> {
                                   ),
                                 ],
                                 color: Color(0xff9DC8C7),
-                                borderRadius: BorderRadius.circular(5),
+                                borderRadius: BorderRadius.circular(15),
                               ),
                               child: Column(
                                 children: [
@@ -337,7 +337,7 @@ class _MoreState extends State<More> {
                                     ),
                                   ],
                                   color: Color(0xffE7957E),
-                                  borderRadius: BorderRadius.circular(5),
+                                  borderRadius: BorderRadius.circular(15),
                                 ),
                                 child: Column(
                                   children: [
@@ -379,7 +379,7 @@ class _MoreState extends State<More> {
                                     ),
                                   ],
                                   color: Color(0xff12496D),
-                                  borderRadius: BorderRadius.circular(5),
+                                  borderRadius: BorderRadius.circular(15),
                                 ),
                                 child: Column(
                                   children: [
@@ -421,7 +421,7 @@ class _MoreState extends State<More> {
                                     ),
                                   ],
                                   color: Color(0xffE7957E),
-                                  borderRadius: BorderRadius.circular(5),
+                                  borderRadius: BorderRadius.circular(15),
                                 ),
                                 child: Column(
                                   children: [

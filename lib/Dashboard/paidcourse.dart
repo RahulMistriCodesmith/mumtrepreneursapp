@@ -16,20 +16,25 @@ class _PaidCourseState extends State<PaidCourse> {
   String dropdownValue = 'Today';
 
   final List<ChartData> chartData = [
-    ChartData(2010, 35),
-    ChartData(2011, 13),
-    ChartData(2012, 34),
-    ChartData(2013, 27),
-    ChartData(2014, 40)
+    ChartData('Sun', 2),
+    ChartData('Mon', 8),
+    ChartData('Tue', 1),
+    ChartData('Wed', 7),
+    ChartData('Thu', 3),
+    ChartData('Fri', 5),
+    ChartData('Sat', 4),
   ];
 
   final List<ChartData1> chartData1 = [
-    ChartData1(2010, 40),
-    ChartData1(2011, 20),
-    ChartData1(2012, 10),
-    ChartData1(2013, 40),
-    ChartData1(2014, 30)
+    ChartData1('Sun', 0),
+    ChartData1('Mon', 10),
+    ChartData1('Tue', 3),
+    ChartData1('Wed', 6),
+    ChartData1('Thu', 2),
+    ChartData1('Fri', 9),
+    ChartData1('Sat', 3),
   ];
+
 
 
   @override
@@ -52,7 +57,7 @@ class _PaidCourseState extends State<PaidCourse> {
               child: Container(
                 decoration: BoxDecoration(
                   color: Color(0xff12496D),
-                  borderRadius: BorderRadius.circular(8),
+                  borderRadius: BorderRadius.circular(15),
                 ),
                 child: Padding(
                   padding: const EdgeInsets.only(top: 22,bottom: 23,left: 125,right: 125),
@@ -82,7 +87,7 @@ class _PaidCourseState extends State<PaidCourse> {
                     ),
                   ],
                   color: Colors.white,
-                  borderRadius: BorderRadius.circular(5),
+                  borderRadius: BorderRadius.circular(15),
                 ),
                 child: Column(
                   children: [
@@ -146,8 +151,17 @@ class _PaidCourseState extends State<PaidCourse> {
                         child: Stack(
                           children: [
                             SfCartesianChart(
+                                primaryXAxis: CategoryAxis(
+                                  // X axis is hidden now
+                                    isVisible: true
+                                ),
+
+                                primaryYAxis: CategoryAxis(
+                                    minimum: 0, maximum: 15, interval: 2,
+                                    isVisible: false
+                                ),
                                 series: <ChartSeries>[
-                                  SplineSeries<ChartData, int>(
+                                  SplineSeries<ChartData, String>(
                                       dataSource: chartData,
                                       // Type of spline
                                       splineType: SplineType.cardinal,
@@ -161,8 +175,17 @@ class _PaidCourseState extends State<PaidCourse> {
 
 
                             SfCartesianChart(
+                                primaryXAxis: CategoryAxis(
+                                  // X axis is hidden now
+                                    isVisible: true
+                                ),
+
+                                primaryYAxis: CategoryAxis(
+                                    minimum: 0, maximum: 15, interval: 2,
+                                    isVisible: false
+                                ),
                                 series: <ChartSeries>[
-                                  SplineSeries<ChartData1, int>(
+                                  SplineSeries<ChartData1, String>(
                                       dataSource: chartData1,
                                       // Type of spline
                                       splineType: SplineType.cardinal,

@@ -9,3 +9,11 @@ class Textstyle1Light18 {
       //color: Appcolors.greylight
   );
 }
+
+class Textstyle2Light18 {
+  static const TextStyle appbartextstyle = TextStyle(
+    fontSize: 13,
+    fontFamily: 'Sk-Modernist-Regular',
+    //color: Appcolors.greylight
+  );
+}

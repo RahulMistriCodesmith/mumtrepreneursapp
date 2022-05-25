@@ -37,7 +37,7 @@ class _A_MembersState extends State<A_Members> {
               padding: const EdgeInsets.only(top: 20,left: 20,right: 20,bottom: 10),
               child: Container(
                 decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(8),
+                  borderRadius: BorderRadius.circular(15),
                   color: Colors.white,
                 ),
                 child: Padding(
@@ -427,7 +427,7 @@ class _A_MembersState extends State<A_Members> {
               padding: const EdgeInsets.only(top: 20,left: 20,right: 20,bottom: 10),
               child: Container(
                 decoration: BoxDecoration(
-                  borderRadius: BorderRadius.circular(8),
+                  borderRadius: BorderRadius.circular(15),
                   color: Colors.white,
                 ),
                 child: Padding(

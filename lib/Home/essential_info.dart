@@ -56,7 +56,7 @@ class _Essential_InfoState extends State<Essential_Info> {
                   height: 55,
                   decoration: BoxDecoration(
                     color: Colors.white,
-                    borderRadius: BorderRadius.circular(5),
+                    borderRadius: BorderRadius.circular(15),
                   ),
                   child: Padding(
                     padding: const EdgeInsets.only(left: 21.5),
@@ -89,7 +89,7 @@ class _Essential_InfoState extends State<Essential_Info> {
                     height: 55,
                     decoration: BoxDecoration(
                       color: Colors.white,
-                      borderRadius: BorderRadius.circular(5),
+                      borderRadius: BorderRadius.circular(15),
                     ),
                     child: Padding(
                       padding: const EdgeInsets.only(left: 21.5),
@@ -123,7 +123,7 @@ class _Essential_InfoState extends State<Essential_Info> {
                     height: 55,
                     decoration: BoxDecoration(
                       color: Colors.white,
-                      borderRadius: BorderRadius.circular(5),
+                      borderRadius: BorderRadius.circular(15),
                     ),
                     child: Padding(
                       padding: const EdgeInsets.only(left: 21.5),
@@ -157,7 +157,7 @@ class _Essential_InfoState extends State<Essential_Info> {
                     height: 55,
                     decoration: BoxDecoration(
                       color: Colors.white,
-                      borderRadius: BorderRadius.circular(5),
+                      borderRadius: BorderRadius.circular(15),
                     ),
                     child: Padding(
                       padding: const EdgeInsets.only(left: 21.5),
@@ -191,7 +191,7 @@ class _Essential_InfoState extends State<Essential_Info> {
                     height: 55,
                     decoration: BoxDecoration(
                       color: Colors.white,
-                      borderRadius: BorderRadius.circular(5),
+                      borderRadius: BorderRadius.circular(15),
                     ),
                     child: Padding(
                       padding: const EdgeInsets.only(left: 21.5),
@@ -226,7 +226,7 @@ class _Essential_InfoState extends State<Essential_Info> {
                     height: 55,
                     decoration: BoxDecoration(
                       color: Colors.white,
-                      borderRadius: BorderRadius.circular(5),
+                      borderRadius: BorderRadius.circular(15),
                     ),
                     child: Padding(
                       padding: const EdgeInsets.only(left: 21.5),
@@ -261,7 +261,7 @@ class _Essential_InfoState extends State<Essential_Info> {
                     height: 55,
                     decoration: BoxDecoration(
                       color: Colors.white,
-                      borderRadius: BorderRadius.circular(5),
+                      borderRadius: BorderRadius.circular(15),
                     ),
                     child: Padding(
                       padding: const EdgeInsets.only(left: 21.5),
@@ -296,7 +296,7 @@ class _Essential_InfoState extends State<Essential_Info> {
                     height: 55,
                     decoration: BoxDecoration(
                       color: Colors.white,
-                      borderRadius: BorderRadius.circular(5),
+                      borderRadius: BorderRadius.circular(15),
                     ),
                     child: Padding(
                       padding: const EdgeInsets.only(left: 21.5),
@@ -331,7 +331,7 @@ class _Essential_InfoState extends State<Essential_Info> {
                     height: 55,
                     decoration: BoxDecoration(
                       color: Colors.white,
-                      borderRadius: BorderRadius.circular(5),
+                      borderRadius: BorderRadius.circular(15),
                     ),
                     child: Padding(
                       padding: const EdgeInsets.only(left: 21.5),

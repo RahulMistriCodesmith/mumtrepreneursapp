@@ -51,7 +51,7 @@ class _InviteMembersState extends State<InviteMembers> {
                     ),
                   ],
                   color: Colors.white,
-                  borderRadius: BorderRadius.circular(5),
+                  borderRadius: BorderRadius.circular(15),
                 ),
                 child: TextFormField(
                   decoration: InputDecoration(
@@ -191,12 +191,12 @@ class _InviteMembersState extends State<InviteMembers> {
             ),
 
             Padding(
-              padding: const EdgeInsets.only(left: 20,right: 20,top: 16),
+              padding: const EdgeInsets.only(left: 20,right: 20,top: 20),
               child: Container(
 
                 decoration: BoxDecoration(
                   color: Colors.white,
-                  borderRadius: BorderRadius.circular(5),
+                  borderRadius: BorderRadius.circular(15),
                 ),
 
                 child: Padding(
@@ -241,7 +241,7 @@ class _InviteMembersState extends State<InviteMembers> {
 
                 decoration: BoxDecoration(
                   color: Colors.white,
-                  borderRadius: BorderRadius.circular(5),
+                  borderRadius: BorderRadius.circular(15),
                 ),
 
                 child: Padding(
@@ -281,7 +281,7 @@ class _InviteMembersState extends State<InviteMembers> {
 
                 decoration: BoxDecoration(
                   color: Colors.white,
-                  borderRadius: BorderRadius.circular(5),
+                  borderRadius: BorderRadius.circular(15),
                 ),
 
                 child: Padding(
@@ -331,7 +331,7 @@ class _InviteMembersState extends State<InviteMembers> {
 
                 decoration: BoxDecoration(
                   color: Colors.white,
-                  borderRadius: BorderRadius.circular(5),
+                  borderRadius: BorderRadius.circular(15),
                 ),
 
                 child: Padding(
@@ -369,7 +369,7 @@ class _InviteMembersState extends State<InviteMembers> {
 
                 decoration: BoxDecoration(
                   color: Colors.white,
-                  borderRadius: BorderRadius.circular(5),
+                  borderRadius: BorderRadius.circular(15),
                 ),
 
                 child: Padding(
@@ -409,7 +409,7 @@ class _InviteMembersState extends State<InviteMembers> {
 
                 decoration: BoxDecoration(
                   color: Colors.white,
-                  borderRadius: BorderRadius.circular(5),
+                  borderRadius: BorderRadius.circular(15),
                 ),
 
                 child: Padding(
@@ -446,7 +446,7 @@ class _InviteMembersState extends State<InviteMembers> {
 
                 decoration: BoxDecoration(
                   color: Colors.white,
-                  borderRadius: BorderRadius.circular(5),
+                  borderRadius: BorderRadius.circular(15),
                 ),
 
                 child: Padding(
@@ -486,7 +486,7 @@ class _InviteMembersState extends State<InviteMembers> {
 
                 decoration: BoxDecoration(
                   color: Colors.white,
-                  borderRadius: BorderRadius.circular(5),
+                  borderRadius: BorderRadius.circular(15),
                 ),
 
                 child: Padding(

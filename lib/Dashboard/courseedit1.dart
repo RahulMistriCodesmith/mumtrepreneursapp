@@ -36,7 +36,7 @@ class _CourseEdit1State extends State<CourseEdit1> {
                 padding: EdgeInsets.only(left: 19.72),
                 decoration: BoxDecoration(
                   color: Colors.white,
-                  borderRadius: BorderRadius.circular(5),
+                  borderRadius: BorderRadius.circular(15),
                 ),
                 child: TextFormField(
                   decoration: InputDecoration(
@@ -58,7 +58,7 @@ class _CourseEdit1State extends State<CourseEdit1> {
                 padding: EdgeInsets.only(left: 19.72),
                 decoration: BoxDecoration(
                   color: Colors.white,
-                  borderRadius: BorderRadius.circular(5),
+                  borderRadius: BorderRadius.circular(15),
                 ),
                 child: TextFormField(
                   decoration: InputDecoration(
@@ -80,7 +80,7 @@ class _CourseEdit1State extends State<CourseEdit1> {
               child: Container(
                 decoration: BoxDecoration(
                   color: Colors.white,
-                  borderRadius: BorderRadius.circular(5),
+                  borderRadius: BorderRadius.circular(15),
                 ),
                 child: Column(
                   children: [
@@ -127,7 +127,7 @@ class _CourseEdit1State extends State<CourseEdit1> {
                             elevation: 20,
                             enabled: true,
                             shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(10),
+                              borderRadius: BorderRadius.circular(15),
                             ),
                             onSelected: (value) {
                               setState(() {
@@ -237,7 +237,7 @@ class _CourseEdit1State extends State<CourseEdit1> {
                             elevation: 20,
                             enabled: true,
                             shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(10),
+                              borderRadius: BorderRadius.circular(15),
                             ),
                             onSelected: (value) {
                               setState(() {
@@ -347,7 +347,7 @@ class _CourseEdit1State extends State<CourseEdit1> {
                             elevation: 20,
                             enabled: true,
                             shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(10),
+                              borderRadius: BorderRadius.circular(15),
                             ),
                             onSelected: (value) {
                               setState(() {
@@ -457,7 +457,7 @@ class _CourseEdit1State extends State<CourseEdit1> {
                             elevation: 20,
                             enabled: true,
                             shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(10),
+                              borderRadius: BorderRadius.circular(15),
                             ),
                             onSelected: (value) {
                               setState(() {
@@ -567,7 +567,7 @@ class _CourseEdit1State extends State<CourseEdit1> {
                             elevation: 20,
                             enabled: true,
                             shape: RoundedRectangleBorder(
-                              borderRadius: BorderRadius.circular(10),
+                              borderRadius: BorderRadius.circular(15),
                             ),
                             onSelected: (value) {
                               setState(() {
@@ -640,7 +640,7 @@ class _CourseEdit1State extends State<CourseEdit1> {
                         padding: EdgeInsets.only(left: 16,right: 14,top: 16,bottom: 15),
                         decoration: BoxDecoration(
                           color: Colors.white,
-                          borderRadius: BorderRadius.circular(5),
+                          borderRadius: BorderRadius.circular(15),
                         ),
                         child: RaisedButton(
                           color: Color(0xff12495D0D),

@@ -102,7 +102,7 @@ class _CalendarState extends State<Calendar> {
                 Container(
                   decoration: BoxDecoration(
                     color: Colors.white,
-                    borderRadius: BorderRadius.circular(5),
+                    borderRadius: BorderRadius.circular(15),
                   ),
                   child: Padding(
                     padding: const EdgeInsets.only(top: 17,left: 15,right: 15),
@@ -145,7 +145,7 @@ class _CalendarState extends State<Calendar> {
                 Container(
                   decoration: BoxDecoration(
                     color: Colors.white,
-                    borderRadius: BorderRadius.circular(5),
+                    borderRadius: BorderRadius.circular(15),
                   ),
                   child: Padding(
                     padding: const EdgeInsets.only(top: 17,left: 15,right: 15),

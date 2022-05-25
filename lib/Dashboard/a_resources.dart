@@ -57,7 +57,6 @@ class _A_ResourcesState extends State<A_Resources> {
                     decoration: Inputdec1.inputDecoration.copyWith(
                       fillColor: Colors.white,
 
-
                     ),
                   ),
                 ),
@@ -69,7 +68,7 @@ class _A_ResourcesState extends State<A_Resources> {
 
                   decoration: BoxDecoration(
                     color: Colors.white,
-                    borderRadius: BorderRadius.circular(5),
+                    borderRadius: BorderRadius.circular(15),
                   ),
                   child: TabBar(
 
@@ -79,10 +78,10 @@ class _A_ResourcesState extends State<A_Resources> {
                     indicator: BoxDecoration(
                       color: Color(0xff12496D),
                       borderRadius: BorderRadius.only(
-                        topLeft: Radius.circular(5),
-                        bottomLeft: Radius.circular(5),
-                        topRight: Radius.circular(5),
-                        bottomRight: Radius.circular(5),
+                        topLeft: Radius.circular(15),
+                        bottomLeft: Radius.circular(15),
+                        topRight: Radius.circular(15),
+                        bottomRight: Radius.circular(15),
                       ),
                     ),
                     tabs: <Widget> [
@@ -121,7 +120,7 @@ class _A_ResourcesState extends State<A_Resources> {
                                 ),
                               ],
                               color: Colors.white,
-                              borderRadius: BorderRadius.circular(5),
+                              borderRadius: BorderRadius.circular(15),
                             ),
                             child: Padding(
                               padding: const EdgeInsets.only(top: 15),
@@ -158,7 +157,8 @@ class _A_ResourcesState extends State<A_Resources> {
                                   ),
                                   Padding(
                                     padding: const EdgeInsets.only(right: 40),
-                                    child: Text('152 Videos',style: TextStyle(color: Colors.grey,fontSize: 14,fontFamily: 'Sk-Modernist-Regular'),),
+                                    child: Text('152 Videos',
+                                        style: Textstyle2Light18.appbartextstyle.copyWith(color: Colors.grey))
                                   ),
                                 ],
                               ),
@@ -187,7 +187,7 @@ class _A_ResourcesState extends State<A_Resources> {
                                 ),
                               ],
                               color: Colors.white,
-                              borderRadius: BorderRadius.circular(5),
+                              borderRadius: BorderRadius.circular(15),
                             ),
                             child: Padding(
                               padding: const EdgeInsets.only(top: 15),
@@ -223,7 +223,8 @@ class _A_ResourcesState extends State<A_Resources> {
                                   ),
                                   Padding(
                                     padding: const EdgeInsets.only(right: 50),
-                                    child: Text('215 Videos',style: TextStyle(color: Colors.grey,fontSize: 14,fontFamily: 'Sk-Modernist'),),
+                                    child: Text('215 Videos',
+                                        style: Textstyle2Light18.appbartextstyle.copyWith(color: Colors.grey))
                                   ),
                                 ],
                               ),
@@ -255,7 +256,7 @@ class _A_ResourcesState extends State<A_Resources> {
                                 ),
                               ],
                               color: Colors.white,
-                              borderRadius: BorderRadius.circular(5),
+                              borderRadius: BorderRadius.circular(15),
                             ),
                             child: Padding(
                               padding: const EdgeInsets.only(top: 15),
@@ -291,7 +292,9 @@ class _A_ResourcesState extends State<A_Resources> {
                                   ),
                                   Padding(
                                     padding: const EdgeInsets.only(right: 50),
-                                    child: Text('251 Videos',style: TextStyle(color: Colors.grey,fontSize: 14,fontFamily: 'Sk-Modernist'),),
+                                    child: Text('251 Videos',
+                                        style: Textstyle2Light18.appbartextstyle.copyWith(color: Colors.grey))
+
                                   ),
                                 ],
                               ),
@@ -316,7 +319,7 @@ class _A_ResourcesState extends State<A_Resources> {
                                   ),
                                 ],
                                 color: Colors.white,
-                                borderRadius: BorderRadius.circular(5),
+                                borderRadius: BorderRadius.circular(15),
                               ),
                               child: Padding(
                                 padding: const EdgeInsets.only(top: 15),
@@ -352,7 +355,8 @@ class _A_ResourcesState extends State<A_Resources> {
                                     ),
                                     Padding(
                                       padding: const EdgeInsets.only(right: 50),
-                                      child: Text('50 Videos',style: TextStyle(color: Colors.grey,fontSize: 14,fontFamily: 'Sk-Modernist'),),
+                                      child: Text('50 Videos',
+                                          style: Textstyle2Light18.appbartextstyle.copyWith(color: Colors.grey))
                                     ),
                                   ],
                                 ),
@@ -377,7 +381,7 @@ class _A_ResourcesState extends State<A_Resources> {
                   child: RaisedButton(
                       color: Color(0xff12496D),
                       shape: RoundedRectangleBorder(
-                        borderRadius: BorderRadius.circular(5),
+                        borderRadius: BorderRadius.circular(15),
                       ),
                       child: Padding(
                         padding: const EdgeInsets.only(left: 85),

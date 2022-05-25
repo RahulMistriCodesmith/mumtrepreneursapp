@@ -52,7 +52,7 @@ class _Edit_EventsState extends State<Edit_Events> {
                 padding: EdgeInsets.only(left: 19.72),
                 decoration: BoxDecoration(
                   color: Colors.white,
-                  borderRadius: BorderRadius.circular(5),
+                  borderRadius: BorderRadius.circular(15),
                 ),
                 child: TextFormField(
                   decoration: InputDecoration(
@@ -74,7 +74,7 @@ class _Edit_EventsState extends State<Edit_Events> {
                 padding: EdgeInsets.only(left: 19.72),
                 decoration: BoxDecoration(
                   color: Colors.white,
-                  borderRadius: BorderRadius.circular(5),
+                  borderRadius: BorderRadius.circular(15),
                 ),
                 child: TextFormField(
                   decoration: InputDecoration(
@@ -96,7 +96,7 @@ class _Edit_EventsState extends State<Edit_Events> {
                 padding: EdgeInsets.only(left: 19.72),
                 decoration: BoxDecoration(
                   color: Colors.white,
-                  borderRadius: BorderRadius.circular(5),
+                  borderRadius: BorderRadius.circular(15),
                 ),
                 child: TextFormField(
                   decoration: InputDecoration(
@@ -130,7 +130,7 @@ class _Edit_EventsState extends State<Edit_Events> {
                 padding: EdgeInsets.only(left: 19.72),
                 decoration: BoxDecoration(
                   color: Colors.white,
-                  borderRadius: BorderRadius.circular(5),
+                  borderRadius: BorderRadius.circular(15),
                 ),
                 child: TextFormField(
                   decoration: InputDecoration(
@@ -161,7 +161,7 @@ class _Edit_EventsState extends State<Edit_Events> {
                 padding: EdgeInsets.only(left: 19.72),
                 decoration: BoxDecoration(
                   color: Colors.white,
-                  borderRadius: BorderRadius.circular(5),
+                  borderRadius: BorderRadius.circular(15),
                 ),
                 child: TextFormField(
                   decoration: InputDecoration(
@@ -184,7 +184,7 @@ class _Edit_EventsState extends State<Edit_Events> {
                 padding: EdgeInsets.only(left: 16,right: 14,top: 16,bottom: 15),
                 decoration: BoxDecoration(
                   color: Colors.white,
-                  borderRadius: BorderRadius.circular(5),
+                  borderRadius: BorderRadius.circular(15),
                 ),
                 child: Column(
                   children: [

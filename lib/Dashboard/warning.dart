@@ -39,7 +39,7 @@ class _WarningState extends State<Warning> {
                   padding: EdgeInsets.only(top: 40,left: 130,right: 130,bottom: 40),
                   decoration: BoxDecoration(
                     color: Color(0xff12496D),
-                    borderRadius: BorderRadius.circular(5),
+                    borderRadius: BorderRadius.circular(15),
                   ),
                   child: Column(
                     children: [
@@ -68,7 +68,7 @@ class _WarningState extends State<Warning> {
                         padding: EdgeInsets.only(left: 35,right: 35,top: 25,bottom: 25),
                         decoration: BoxDecoration(
                             color: _colorContainer,
-                          borderRadius: BorderRadius.circular(5),
+                          borderRadius: BorderRadius.circular(15),
                         ),
                         child: Image.asset('assets/Image/warning_icon.png',width: 30,height: 30,),
                       ),
@@ -79,7 +79,7 @@ class _WarningState extends State<Warning> {
                         padding: EdgeInsets.only(left: 35,right: 35,top: 25,bottom: 25),
                         decoration: BoxDecoration(
                           color: Colors.white,
-                          borderRadius: BorderRadius.circular(5),
+                          borderRadius: BorderRadius.circular(15),
                         ),
                         child: Image.asset('assets/Image/warning_icon.png',width: 30,height: 30,),
                       ),
@@ -88,7 +88,7 @@ class _WarningState extends State<Warning> {
                       padding: EdgeInsets.only(left: 35,right: 35,top: 25,bottom: 25),
                       decoration: BoxDecoration(
                         color: Colors.white,
-                        borderRadius: BorderRadius.circular(5),
+                        borderRadius: BorderRadius.circular(15),
                       ),
                       child: Image.asset('assets/Image/warning_icon.png',width: 30,height: 30,),
                     ),
@@ -107,7 +107,7 @@ class _WarningState extends State<Warning> {
 
                 decoration: BoxDecoration(
                   color: Colors.white,
-                  borderRadius: BorderRadius.circular(5),
+                  borderRadius: BorderRadius.circular(15),
                 ),
                 child: DropdownButtonFormField(
                   decoration: InputDecoration(
@@ -147,6 +147,7 @@ class _WarningState extends State<Warning> {
                   padding: EdgeInsets.only(left: 14.72,top: 15),
                   decoration: BoxDecoration(
                     color: Colors.white,
+                    borderRadius: BorderRadius.circular(15),
                   ),
                   child: TextFormField(
                     maxLines: 6,

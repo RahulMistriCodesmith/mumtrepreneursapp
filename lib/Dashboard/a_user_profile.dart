@@ -256,7 +256,13 @@ class _A_User_ProfileState extends State<A_User_Profile> {
                 child: Container(
                   width: 409,
                   height: 50,
-                  color: Colors.white,
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.only(
+                      topLeft: Radius.circular(15),
+                      topRight: Radius.circular(15),
+                    ),
+                  ),
                   child: TabBar(
 
                     labelColor: Color(0xff12496D),
@@ -293,7 +299,13 @@ class _A_User_ProfileState extends State<A_User_Profile> {
                         children: [
                           Container(
 
-                            color: Colors.white,
+                            decoration: BoxDecoration(
+                              color: Colors.white,
+                              borderRadius: BorderRadius.only(
+                                bottomRight: Radius.circular(15),
+                                bottomLeft: Radius.circular(15),
+                              ),
+                            ),
                             child: Column(
                               children: [
 
@@ -467,7 +479,10 @@ class _A_User_ProfileState extends State<A_User_Profile> {
                             padding: const EdgeInsets.only(top: 10),
                             child: Container(
 
-                              color: Colors.white,
+                              decoration: BoxDecoration(
+                                color: Colors.white,
+                                borderRadius: BorderRadius.circular(15),
+                              ),
                               child: Column(
                                 children: [
 

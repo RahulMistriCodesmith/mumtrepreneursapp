@@ -192,7 +192,7 @@ class _ProfileState extends State<Profile> {
                         child: RaisedButton(
                           color: Color(0xff12496D),
                           shape: RoundedRectangleBorder(
-                            borderRadius: BorderRadius.circular(5),
+                            borderRadius: BorderRadius.circular(15),
                           ),
                           child: Row(
                             mainAxisAlignment: MainAxisAlignment.center,
@@ -221,7 +221,13 @@ class _ProfileState extends State<Profile> {
                 child: Container(
                   width: 409,
                   height: 50,
-                  color: Colors.white,
+                  decoration: BoxDecoration(
+                    color: Colors.white,
+                    borderRadius: BorderRadius.only(
+                      topRight: Radius.circular(15),
+                      topLeft: Radius.circular(15),
+                    ),
+                  ),
                   child: TabBar(
 
                     labelColor: Color(0xff12496D),
@@ -255,7 +261,13 @@ class _ProfileState extends State<Profile> {
                         Container(
                           width: 409,
                           height: 510,
-                          color: Colors.white,
+                          decoration: BoxDecoration(
+                            color: Colors.white,
+                            borderRadius: BorderRadius.only(
+                              bottomRight: Radius.circular(15),
+                              bottomLeft: Radius.circular(15),
+                            ),
+                          ),
                           child: Column(
                             children: [
 
@@ -426,7 +438,10 @@ class _ProfileState extends State<Profile> {
                           child: Container(
                             width: 409,
                             height: 360,
-                            color: Colors.white,
+                            decoration: BoxDecoration(
+                              color: Colors.white,
+                              borderRadius: BorderRadius.circular(15),
+                            ),
                             child: Column(
                               children: [
 

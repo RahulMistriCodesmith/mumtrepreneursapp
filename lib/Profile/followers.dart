@@ -54,7 +54,7 @@ class _FollowerState extends State<Follower> {
                       height: 47,
                       decoration: BoxDecoration(
                         color: Color(0xff12496D),
-                        borderRadius: BorderRadius.circular(5),
+                        borderRadius: BorderRadius.circular(15),
                       ),
                       child: Center(
                           child: Text('5.2K Followers',style: TextStyle(color: Colors.white,fontSize: 15,fontFamily: 'Sk-Modernist',fontWeight: FontWeight.bold),)),
@@ -65,7 +65,7 @@ class _FollowerState extends State<Follower> {
                       height: 47,
                       decoration: BoxDecoration(
                         color: Colors.white,
-                        borderRadius: BorderRadius.circular(5),
+                        borderRadius: BorderRadius.circular(15),
                       ),
                       child: Center(
                           child: Text('1.5K Following',style: TextStyle(color: Colors.grey,fontSize: 15,fontFamily: 'Sk-Modernist',fontWeight: FontWeight.bold),)),
@@ -94,7 +94,7 @@ class _FollowerState extends State<Follower> {
                       ),
                     ],
                     color: Colors.white,
-                    borderRadius: BorderRadius.circular(5),
+                    borderRadius: BorderRadius.circular(15),
                   ),
                   child: TextFormField(
                     decoration: InputDecoration(

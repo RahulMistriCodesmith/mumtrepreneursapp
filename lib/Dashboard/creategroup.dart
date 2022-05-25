@@ -60,7 +60,7 @@ class _CreateGroupState extends State<CreateGroup> {
                 padding: EdgeInsets.only(left: 19.72),
                 decoration: BoxDecoration(
                   color: Colors.white,
-                  borderRadius: BorderRadius.circular(5),
+                  borderRadius: BorderRadius.circular(15),
                 ),
                 child: TextFormField(
                   decoration: InputDecoration(
@@ -83,7 +83,7 @@ class _CreateGroupState extends State<CreateGroup> {
                 padding: EdgeInsets.only(left: 19.72),
                 decoration: BoxDecoration(
                   color: Colors.white,
-                  borderRadius: BorderRadius.circular(5),
+                  borderRadius: BorderRadius.circular(15),
                 ),
                 child: TextFormField(
                   decoration: InputDecoration(

@@ -53,10 +53,13 @@ class _EditProfileState extends State<EditProfile> {
                   width: 139,
                   height: 40,
                   decoration: BoxDecoration(
-                    borderRadius: BorderRadius.circular(5),
+                    borderRadius: BorderRadius.circular(15),
                   ),
                   child: RaisedButton(
                     color: Colors.white,
+                    shape: RoundedRectangleBorder(
+                      borderRadius: BorderRadius.circular(15),
+                    ),
                     child: Text('Upload Photo',
                       style: TextStyle(fontSize: 15,fontFamily: 'Sk-Modernist'),),
                     onPressed: (){
@@ -92,7 +95,7 @@ class _EditProfileState extends State<EditProfile> {
                     ),
                   ],
                   color: Colors.white,
-                  borderRadius: BorderRadius.circular(5),
+                  borderRadius: BorderRadius.circular(15),
                 ),
                 child: TextFormField(
                   controller: username,
@@ -134,7 +137,7 @@ class _EditProfileState extends State<EditProfile> {
                   ],
 
                   color: Colors.white,
-                  borderRadius: BorderRadius.circular(5),
+                  borderRadius: BorderRadius.circular(15),
                 ),
                 child: TextFormField(
                   controller: firstname,
@@ -174,7 +177,7 @@ class _EditProfileState extends State<EditProfile> {
                     ),
                   ],
                   color: Colors.white,
-                  borderRadius: BorderRadius.circular(5),
+                  borderRadius: BorderRadius.circular(15),
                 ),
                 child: TextFormField(
                   controller: emailid,
@@ -214,7 +217,7 @@ class _EditProfileState extends State<EditProfile> {
                     ),
                   ],
                   color: Colors.white,
-                  borderRadius: BorderRadius.circular(5),
+                  borderRadius: BorderRadius.circular(15),
                 ),
                 child: TextFormField(
                   controller: industry,
@@ -240,7 +243,7 @@ class _EditProfileState extends State<EditProfile> {
                   child: RaisedButton(
                     color: Color(0xff12496D),
                     shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(5),
+                      borderRadius: BorderRadius.circular(15),
                     ),
 
                     child: Text('SAVE',style: TextStyle(fontSize: 14,color: Colors.white,fontFamily: 'Sk-Modernist',fontWeight: FontWeight.bold),),
@@ -266,7 +269,7 @@ class _EditProfileState extends State<EditProfile> {
                 height: 76.33,
                 decoration: BoxDecoration(
                   color: Colors.white,
-                  borderRadius: BorderRadius.circular(5),
+                  borderRadius: BorderRadius.circular(15),
                 ),
                 child: Padding(
                   padding: const EdgeInsets.only(left: 15,right: 11.21,top: 17),

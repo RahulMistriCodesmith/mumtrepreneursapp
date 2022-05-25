@@ -49,11 +49,9 @@ class _My_NetworkState extends State<My_Network> {
         child: Column(
           children: [
             Padding(
-              padding: const EdgeInsets.only(left: 40,right: 30,bottom: 5),
+              padding: const EdgeInsets.only(left: 20,right: 20,bottom: 5),
               child: Container(
-                padding: EdgeInsets.only(bottom: 4),
-                width: 325,
-                height: 45,
+
                 decoration: BoxDecoration(
                   boxShadow: [
                     BoxShadow(
@@ -67,7 +65,7 @@ class _My_NetworkState extends State<My_Network> {
                     ),
                   ],
                   color: Colors.white,
-                  borderRadius: BorderRadius.circular(5),
+                  borderRadius: BorderRadius.circular(15),
                 ),
                 child: TextFormField(
                   decoration: InputDecoration(

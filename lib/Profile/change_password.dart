@@ -75,7 +75,7 @@ class _Change_PasswordState extends State<Change_Password> {
                     ),
                   ],
                   color: Colors.white,
-                  borderRadius: BorderRadius.circular(5),
+                  borderRadius: BorderRadius.circular(15),
                 ),
                 child: TextFormField(
                   controller: currentpassword,
@@ -120,7 +120,7 @@ class _Change_PasswordState extends State<Change_Password> {
                       ),
                     ],
                     color: Color(0xffFFFFFF),
-                    borderRadius: BorderRadius.circular(5),
+                    borderRadius: BorderRadius.circular(15),
                   ),
                   child: TextFormField(
                     controller: newpassword,
@@ -178,7 +178,7 @@ class _Change_PasswordState extends State<Change_Password> {
                       ),
                     ],
                     color: Color(0xffFFFFFF),
-                    borderRadius: BorderRadius.circular(5),
+                    borderRadius: BorderRadius.circular(15),
                   ),
                   child: TextFormField(
                     controller: confirmpassword,
@@ -219,7 +219,7 @@ class _Change_PasswordState extends State<Change_Password> {
                   child: RaisedButton(
                     color: Color(0xff12496D),
                     shape: RoundedRectangleBorder(
-                      borderRadius: BorderRadius.circular(5),
+                      borderRadius: BorderRadius.circular(15),
                     ),
 
                     child: Text('CONFIRM',style: TextStyle(fontSize: 14,color: Colors.white,fontFamily: 'Sk-Modernist',fontWeight: FontWeight.bold),),

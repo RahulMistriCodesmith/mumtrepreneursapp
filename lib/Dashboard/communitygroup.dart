@@ -100,7 +100,7 @@ class _CommunityGroupState extends State<CommunityGroup> {
 
                 decoration: BoxDecoration(
                   color: Colors.white,
-                  borderRadius: BorderRadius.circular(5),
+                  borderRadius: BorderRadius.circular(15),
                 ),
                 
                 child: Column(
@@ -235,7 +235,7 @@ class _CommunityGroupState extends State<CommunityGroup> {
 
                 decoration: BoxDecoration(
                   color: Colors.white,
-                  borderRadius: BorderRadius.circular(5),
+                  borderRadius: BorderRadius.circular(15),
                 ),
 
                 child: Column(
